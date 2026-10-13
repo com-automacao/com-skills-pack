@@ -244,6 +244,14 @@ Só vale a pena em tarefas grandes, com 3 ou mais agentes.
 | Plugins | `init-project`, `ruflo-doctor`, `ruflo-status`, `discover-plugins`, `witness`, `swarm-init`, `monitor-stream` | Instalar, diagnosticar e monitorar o Ruflo. |
 | Comandos | `.claude/commands/` (~168) | Atalhos `/sparc:*`, `/swarm:*`, `/github:*`, `/hive-mind:*` e outros. |
 
+### 14. Engenharia reversa (REA)
+
+Origem: [morluto/rea](https://github.com/morluto/rea) (MIT). Pasta: `rea/.agents/skills/`. A skill depende do servidor MCP do REA; instale pelo programa oficial: `npm install --global rea-agents` e depois `rea setup --client claude_code`. Para atualizar: `rea update`.
+
+| Skill | O que faz |
+|---|---|
+| `reverse-engineer-anything` | Investiga como um programa funciona sem o código-fonte: apps JavaScript/Electron, .NET, sites, binários nativos e firmware. Explica a funcionalidade com evidências, compara versões e guia uma reconstrução no seu projeto. Binários nativos exigem Ghidra, IDA ou Hopper instalados. Uso apenas em software próprio, autorizado ou para pesquisa, educação e interoperabilidade. |
+
 ---
 
 ## Fora do pack

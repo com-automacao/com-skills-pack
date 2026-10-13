@@ -22,6 +22,7 @@ licença original da sua origem.
 | `perfex-crm-skills` | [yasserstudio/perfex-crm-skills](https://github.com/yasserstudio/perfex-crm-skills) | MIT | [packs/perfex-crm-skills/LICENSE](packs/perfex-crm-skills/LICENSE) |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | [packs/codeigniter-skills/LICENSE](packs/codeigniter-skills/LICENSE) |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | [packs/find-skills/LICENSE](packs/find-skills/LICENSE) |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | [packs/rea/LICENSE](packs/rea/LICENSE) |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | NONE | não redistribuído (só link) |
 
 `packs/com-automacao/` contém skills próprias da Com Automação.

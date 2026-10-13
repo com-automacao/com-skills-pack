@@ -8,8 +8,8 @@ Uso:
     python scripts/install.py --skip genjutsu,img2threejs   # deixa grupos de fora
     python scripts/install.py --dest .claude/skills   # instala so neste projeto
 
-Skills de plugins (engineering, data, design, base44, ruflo, scroll-craft) e as do
-ai-memory nao sao instaladas aqui: use o plugin ou o programa oficial (veja o README).
+Skills de plugins (engineering, data, design, base44, ruflo, scroll-craft), as do
+ai-memory e a do REA nao sao instaladas aqui: use o plugin ou o programa oficial (veja o README).
 """
 from __future__ import annotations
 

@@ -269,6 +269,18 @@ sources:
       - LICENSE
       - skills/find-skills
 
+  rea:
+    # A skill do REA depende do servidor MCP do pacote npm rea-agents.
+    # Instalacao oficial: npm install --global rea-agents && rea setup
+    repo: morluto/rea
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: .agents/skills
+    paths:
+      - LICENSE
+      - .agents/skills/reverse-engineer-anything
+
   threejs-skills:
     # Sem licenca declarada: redistribuir e proibido. So monitoramos e o
     # README ensina a instalar direto da origem.

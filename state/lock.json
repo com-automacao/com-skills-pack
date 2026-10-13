@@ -781,6 +781,28 @@
   "repo": "yasserstudio/perfex-crm-skills",
   "updated_at": "2026-10-13 16:23 UTC"
  },
+ "rea": {
+  "checked_at": "2026-10-13 16:53 UTC",
+  "commit": "1b6c899b031421dcf2d725a63e67d99375028d6e",
+  "files": {
+   ".agents/skills/reverse-engineer-anything/SKILL.md": "f3ce4a48cfd3500d0741e845a6d27c52167753801014fbac922909678b5d7493",
+   ".agents/skills/reverse-engineer-anything/references/android-applications.md": "412d9cb462d85b07f6fdbc2453dd741ca3da2c0dbba627867d5624df94afa74c",
+   ".agents/skills/reverse-engineer-anything/references/connection-and-recovery.md": "a33760c84ae100f6ffd27d666e515956c5014ac33a6ee2414807833ae666a2b1",
+   ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "97e7a2130c4c1047b077b6825b2e693dc93e4d69441f7a16fcbc8d59500da9d8",
+   ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "b3e5e999833baac828addbb6b7a4ed859f0c68befd465812597bf19c27aa7a0b",
+   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "f967faaff389fce96f433165da9e52bf39ea61e5916905e8afbe9f1650d0590e",
+   ".agents/skills/reverse-engineer-anything/references/runtime-observation.md": "9d222a6f4f044fa92616a22f1aed41913a107ae24de3801a6857b6e8dca8fa6c",
+   "LICENSE": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b"
+  },
+  "known_upstream": [
+   ".agents/skills/rea-changelog-update",
+   ".agents/skills/rea-ci-tests-audit",
+   ".agents/skills/rea-tool-design"
+  ],
+  "license": "MIT",
+  "repo": "morluto/rea",
+  "updated_at": "2026-10-13 16:53 UTC"
+ },
  "ruflo": {
   "checked_at": "2026-10-13 16:23 UTC",
   "commit": "55e2c9011c20d25e347a175427ca8084dacde40c",
