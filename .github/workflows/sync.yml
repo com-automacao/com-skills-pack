@@ -15,6 +15,10 @@ on:
         description: "Reprocessar todas as fontes mesmo sem commit novo"
         type: boolean
         default: false
+      teste_alerta:
+        description: "Disparar um alerta de teste (nao altera nenhuma skill)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -49,7 +53,7 @@ jobs:
 
       - name: Sincronizar (aplica so o que passou na checagem)
         id: sync
-        run: python scripts/sync.py --report report.md ${{ inputs.force && '--force' || '' }}
+        run: python scripts/sync.py --report report.md ${{ inputs.force && '--force' || '' }} ${{ inputs.teste_alerta && '--simulate-alert' || '' }}
 
       - name: Commitar atualizacoes seguras no main
         if: steps.sync.outputs.changed == 'true'
@@ -74,6 +78,7 @@ jobs:
         env:
           FP: ${{ steps.sync.outputs.fingerprint }}
           BLOCK: ${{ steps.sync.outputs.has_block }}
+          TESTE: ${{ inputs.teste_alerta && 'true' || 'false' }}
           REPO: ${{ github.repository }}
           OWNER: ${{ github.repository_owner }}
         run: |
@@ -101,4 +106,5 @@ jobs:
             echo
             echo "<!-- fingerprint: $FP -->"
           } > issue.md
+          if [ "$TESTE" = "true" ]; then TITLE="[TESTE] $TITLE"; fi
           gh issue create --title "$TITLE" --body-file issue.md --label alerta-sync

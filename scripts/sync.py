@@ -523,6 +523,8 @@ def main():
     ap.add_argument("--force", action="store_true", help="reprocessa mesmo sem commit novo")
     ap.add_argument("--only", default="")
     ap.add_argument("--report", default="")
+    ap.add_argument("--simulate-alert", action="store_true",
+                    help="injeta um achado de teste para conferir o caminho do alerta; nao altera arquivos")
     args = ap.parse_args()
 
     cfg = yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8"))
@@ -541,6 +543,13 @@ def main():
             report[sid] = {"findings": [Finding(BLOCK, "SYNC_ERROR", str(e)[:300])], "notes": {"repo": src["repo"]}, "applied": False}
         for f in report[sid]["findings"]:
             print(f"   [{f['level']}] {f['code']} {f['where']} {f['msg'][:120]}")
+
+    if args.simulate_alert:
+        sid = next(iter(report), "teste")
+        report.setdefault(sid, {"findings": [], "notes": {"repo": "-"}, "applied": False})
+        report[sid]["findings"].append(Finding(
+            BLOCK, "TESTE", "alerta de teste disparado manualmente. Nenhuma origem mudou; pode fechar esta issue.",
+            now()))
 
     if not args.dry_run:
         LOCK.parent.mkdir(exist_ok=True)
