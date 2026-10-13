@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 report*.md
 issue.md
+.claude-flow/
+.swarm/
+/com-skills-pack/
