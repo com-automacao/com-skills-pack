@@ -2,11 +2,11 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-13 16:23 UTC**
+Última verificação: **2026-10-13 16:36 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
-| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`1be8e34`](https://github.com/addyosmani/agent-skills/commit/1be8e34187e34647bb83adc3a1323b26ae6f6abe) | 2026-10-13 16:22 UTC | 🟢 ok |
+| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`1be8e34`](https://github.com/addyosmani/agent-skills/commit/1be8e34187e34647bb83adc3a1323b26ae6f6abe) | 2026-10-13 16:36 UTC | 🟢 ok |
 | `gsap-skills` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | MIT | copiado | 8 | [`aed9cfd`](https://github.com/greensock/gsap-skills/commit/aed9cfd3277740755f6bfc1155c7aa645403b760) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `genjutsu` | [AThevon/genjutsu](https://github.com/AThevon/genjutsu) | NOASSERTION | copiado | 1 | [`1f518a7`](https://github.com/AThevon/genjutsu/commit/1f518a71378b15d423389e546e767cffc86e14c3) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `motion-design` | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) | MIT | copiado | 1 | [`f9a8a04`](https://github.com/LottieFiles/motion-design-skill/commit/f9a8a041b85185ee4881b3471d3415e939aac772) | 2026-10-13 16:22 UTC | 🟢 ok |
@@ -28,6 +28,10 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
 - `agent-skills`: [skills/constraint-driven-development](https://github.com/addyosmani/agent-skills/tree/HEAD/skills/constraint-driven-development)
 - `agent-skills`: [skills/using-agent-skills](https://github.com/addyosmani/agent-skills/tree/HEAD/skills/using-agent-skills)
+- `genjutsu`: [skills/_jutsu](https://github.com/AThevon/genjutsu/tree/HEAD/skills/_jutsu)
+- `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
+- `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
+- `genjutsu`: [skills/paint](https://github.com/AThevon/genjutsu/tree/HEAD/skills/paint)
 - `perfex-crm-skills`: [skills/perfex-email](https://github.com/yasserstudio/perfex-crm-skills/tree/HEAD/skills/perfex-email)
 - `perfex-crm-skills`: [skills/perfex-pdf](https://github.com/yasserstudio/perfex-crm-skills/tree/HEAD/skills/perfex-pdf)
 - `ruflo`: [.claude/skills/agentic-jujutsu](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/agentic-jujutsu)
@@ -36,9 +40,5 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `ruflo`: [.claude/skills/performance-analysis](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/performance-analysis)
 - `ruflo`: [.claude/skills/worker-benchmarks](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/worker-benchmarks)
 - `ruflo`: [.claude/skills/worker-integration](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/worker-integration)
-- `genjutsu`: [skills/_jutsu](https://github.com/AThevon/genjutsu/tree/HEAD/skills/_jutsu)
-- `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
-- `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
-- `genjutsu`: [skills/paint](https://github.com/AThevon/genjutsu/tree/HEAD/skills/paint)
 
 Para incluir, acrescente o caminho em `sources.yaml` e rode o sync.

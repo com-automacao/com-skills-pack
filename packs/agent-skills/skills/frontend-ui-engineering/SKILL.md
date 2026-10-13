@@ -1,6 +1,6 @@
 ---
 name: frontend-ui-engineering
-description: "Accessibility, responsiveness, HTML semantics and state management for user-facing UIs. Use when meeting WCAG requirements, auditing responsive behavior, structuring semantic markup, or managing component state. NOT for visual design, animation, micro-interactions, motion or visual identity — the `genjutsu` skill always takes precedence for those, and for any general \"build/redesign/polish this UI\" request. Prefer running after genjutsu has settled the visual and motion decisions."
+description: "Accessibility, responsiveness, HTML semantics and state management for user-facing UIs. Use when meeting WCAG requirements, auditing responsive behavior, structuring semantic markup, or managing component state. NOT for visual design, animation, micro-interactions, motion or visual identity — the genjutsu skills (`cast`, `paint`, `bunshin`) always take precedence for those, and for any general \"build/redesign/polish this UI\" request. Prefer running after genjutsu has settled the visual and motion decisions."
 ---
 
 # Frontend UI Engineering
