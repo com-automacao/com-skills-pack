@@ -28,7 +28,6 @@ GROUPS = [
     "motion-design/skills",
     "mattpocock-skills/skills/engineering",
     "anthropic-skills/skills",
-    "perfex-crm-skills/skills",
     "codeigniter-skills/skills",
     "find-skills/skills",
     "com-automacao/skills",

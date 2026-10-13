@@ -187,16 +187,9 @@ Origem: [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowle
 | `base44-sandbox` | `base44/skills/` | Desenvolve um app Base44 dentro do sandbox na nuvem, sem checkout local. |
 | `base44-remote-dev` | `base44/skills/` | Conecta seu agente ao sandbox Base44 para desenvolver remotamente. |
 | `base44-troubleshooter` | `base44/skills/` | Investiga erros de produção pelos logs das funções e workflows. |
-| `perfex-module-dev` | `perfex-crm-skills/skills/` | Criar e depurar módulos do Perfex CRM. |
-| `perfex-core-apis` | `perfex-crm-skills/skills/` | APIs centrais do Perfex: options, hooks, helpers. |
-| `perfex-database` | `perfex-crm-skills/skills/` | SQL e migrações de módulos Perfex, chaves para as tabelas nativas. |
-| `perfex-customfields` | `perfex-crm-skills/skills/` | Campos personalizados do Perfex. |
-| `perfex-payment-gateway` | `perfex-crm-skills/skills/` | Gateways de pagamento (`App_gateway`). |
-| `perfex-security` | `perfex-crm-skills/skills/` | Tokens, CSRF, permissões e código sensível no Perfex. |
-| `perfex-theme` | `perfex-crm-skills/skills/` | Temas personalizados da área do cliente. |
 | `codeigniter` | `codeigniter-skills/skills/` | CodeIgniter 3 e 4: controllers, models, rotas, banco, migrações. |
 
-Origens: [base44/skills](https://github.com/base44/skills) (MIT; como instalar: `/plugin marketplace add base44/skills` e depois `/plugin install base44@base44-skills`), [yasserstudio/perfex-crm-skills](https://github.com/yasserstudio/perfex-crm-skills) e [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) (MIT).
+Origens: [base44/skills](https://github.com/base44/skills) (MIT; como instalar: `/plugin marketplace add base44/skills` e depois `/plugin install base44@base44-skills`), [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) (MIT).
 
 ### 10. Construir ferramentas para IA
 

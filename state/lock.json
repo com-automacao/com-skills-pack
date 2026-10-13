@@ -183,7 +183,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-10-13 16:23 UTC",
+  "checked_at": "2026-10-13 18:53 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -759,27 +759,6 @@
   "license": "MIT",
   "repo": "LottieFiles/motion-design-skill",
   "updated_at": "2026-10-13 16:22 UTC"
- },
- "perfex-crm-skills": {
-  "checked_at": "2026-10-13 16:23 UTC",
-  "commit": "60189375991853724cf9d89c3568814288b75722",
-  "files": {
-   "LICENSE": "5ff50ddb4e326752a698487e6813f4b06bde46be4e506a44517c5de3046c9c2a",
-   "skills/perfex-core-apis/SKILL.md": "ff1bab2121e621ae7ced2564dc3549daa1bee60d74c3b4d5a9d2e9bc2a201a88",
-   "skills/perfex-customfields/SKILL.md": "0424d0603d0ecf174af47439f45316a7976da4d4cb9bcaed3c42fe699c50fc9a",
-   "skills/perfex-database/SKILL.md": "54d7671e2c567a2a70f1dc5f5e00cdd4513be8b3bf8062b817ded4049fa9ec10",
-   "skills/perfex-module-dev/SKILL.md": "0dab29a4d092af544e2174bca36eebcd77b4f938402b1ebe6ba7ab94668e3a1a",
-   "skills/perfex-payment-gateway/SKILL.md": "f090e2d5f516d426608d79e66b60f765dfedaced7607d93d0754417ae3fe2bc3",
-   "skills/perfex-security/SKILL.md": "ff039647387ffc45bb77918d95d9111332359e26e18e7fde8be70ad61b73289e",
-   "skills/perfex-theme/SKILL.md": "afc49ac299242792a503904bf3016f96d3abcbe48e42dbab0d2c4273da48bd34"
-  },
-  "known_upstream": [
-   "skills/perfex-email",
-   "skills/perfex-pdf"
-  ],
-  "license": "MIT",
-  "repo": "yasserstudio/perfex-crm-skills",
-  "updated_at": "2026-10-13 16:23 UTC"
  },
  "rea": {
   "checked_at": "2026-10-13 16:53 UTC",

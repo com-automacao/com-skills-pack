@@ -235,21 +235,6 @@ sources:
       - LICENSE
       - crates/ai-memory-core/src/routing_skills
 
-  perfex-crm-skills:
-    repo: yasserstudio/perfex-crm-skills
-    branch: main
-    license: MIT
-    mode: vendor
-    watch: skills
-    paths:
-      - LICENSE
-      - skills/perfex-core-apis
-      - skills/perfex-customfields
-      - skills/perfex-database
-      - skills/perfex-module-dev
-      - skills/perfex-payment-gateway
-      - skills/perfex-security
-      - skills/perfex-theme
 
   codeigniter-skills:
     repo: yasserstudio/codeigniter-skills

@@ -19,7 +19,6 @@ licença original da sua origem.
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | [packs/base44/LICENSE](packs/base44/LICENSE) |
 | `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | [packs/ruflo/LICENSE](packs/ruflo/LICENSE) |
 | `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | [packs/ai-memory/LICENSE](packs/ai-memory/LICENSE) |
-| `perfex-crm-skills` | [yasserstudio/perfex-crm-skills](https://github.com/yasserstudio/perfex-crm-skills) | MIT | [packs/perfex-crm-skills/LICENSE](packs/perfex-crm-skills/LICENSE) |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | [packs/codeigniter-skills/LICENSE](packs/codeigniter-skills/LICENSE) |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | [packs/find-skills/LICENSE](packs/find-skills/LICENSE) |
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | [packs/rea/LICENSE](packs/rea/LICENSE) |

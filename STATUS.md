@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-13 16:53 UTC**
+Última verificação: **2026-10-13 18:53 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -19,7 +19,6 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`ec2ae22`](https://github.com/base44/skills/commit/ec2ae226d4441326e32fa56c230b5f49f0682885) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`55e2c90`](https://github.com/ruvnet/ruflo/commit/55e2c9011c20d25e347a175427ca8084dacde40c) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`d408450`](https://github.com/akitaonrails/ai-memory/commit/d408450d0157af5f3e3577e77853bec846424fae) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `perfex-crm-skills` | [yasserstudio/perfex-crm-skills](https://github.com/yasserstudio/perfex-crm-skills) | MIT | copiado | 7 | [`6018937`](https://github.com/yasserstudio/perfex-crm-skills/commit/60189375991853724cf9d89c3568814288b75722) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`13e4063`](https://github.com/vercel-labs/skills/commit/13e4063a1cf913f5606d57d42ab83a86f5001e04) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`1b6c899`](https://github.com/morluto/rea/commit/1b6c899b031421dcf2d725a63e67d99375028d6e) | 2026-10-13 16:53 UTC | 🟢 ok |
@@ -33,16 +32,14 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
 - `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
 - `genjutsu`: [skills/paint](https://github.com/AThevon/genjutsu/tree/HEAD/skills/paint)
-- `perfex-crm-skills`: [skills/perfex-email](https://github.com/yasserstudio/perfex-crm-skills/tree/HEAD/skills/perfex-email)
-- `perfex-crm-skills`: [skills/perfex-pdf](https://github.com/yasserstudio/perfex-crm-skills/tree/HEAD/skills/perfex-pdf)
+- `rea`: [.agents/skills/rea-changelog-update](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-changelog-update)
+- `rea`: [.agents/skills/rea-ci-tests-audit](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-ci-tests-audit)
+- `rea`: [.agents/skills/rea-tool-design](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-tool-design)
 - `ruflo`: [.claude/skills/agentic-jujutsu](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/agentic-jujutsu)
 - `ruflo`: [.claude/skills/dual-mode](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/dual-mode)
 - `ruflo`: [.claude/skills/hive-mind-advanced](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/hive-mind-advanced)
 - `ruflo`: [.claude/skills/performance-analysis](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/performance-analysis)
 - `ruflo`: [.claude/skills/worker-benchmarks](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/worker-benchmarks)
 - `ruflo`: [.claude/skills/worker-integration](https://github.com/ruvnet/ruflo/tree/HEAD/.claude/skills/worker-integration)
-- `rea`: [.agents/skills/rea-changelog-update](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-changelog-update)
-- `rea`: [.agents/skills/rea-ci-tests-audit](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-ci-tests-audit)
-- `rea`: [.agents/skills/rea-tool-design](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-tool-design)
 
 Para incluir, acrescente o caminho em `sources.yaml` e rode o sync.
