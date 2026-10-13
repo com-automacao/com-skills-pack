@@ -1,0 +1,304 @@
+# Manifesto do pack: de onde vem cada skill.
+#
+# O sincronizador (scripts/sync.py) le este arquivo, baixa cada repositorio
+# de origem e copia os caminhos listados para packs/<id>/, preservando a
+# estrutura original (assim os links relativos entre arquivos continuam valendo).
+#
+# Campos de cada fonte:
+#   repo     dono/repositorio no GitHub
+#   branch   branch acompanhada
+#   license  licenca SPDX esperada. Se mudar, o sync gera ALERTA e nao aplica.
+#   mode     vendor = copia os arquivos para o pack
+#            link   = so monitora (licenca nao permite redistribuir)
+#   paths    caminhos copiados/monitorados dentro do repositorio
+#   watch    pasta onde novas skills upstream devem ser avisadas (opcional)
+#
+# Para adicionar uma skill: acrescente o caminho em `paths` e rode
+#   python scripts/sync.py
+
+sources:
+
+  agent-skills:
+    repo: addyosmani/agent-skills
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - references
+      - skills/api-and-interface-design
+      - skills/browser-testing-with-devtools
+      - skills/ci-cd-and-automation
+      - skills/code-review-and-quality
+      - skills/code-simplification
+      - skills/context-engineering
+      - skills/debugging-and-error-recovery
+      - skills/deprecation-and-migration
+      - skills/documentation-and-adrs
+      - skills/doubt-driven-development
+      - skills/frontend-ui-engineering
+      - skills/git-workflow-and-versioning
+      - skills/idea-refine
+      - skills/incremental-implementation
+      - skills/interview-me
+      - skills/observability-and-instrumentation
+      - skills/performance-optimization
+      - skills/planning-and-task-breakdown
+      - skills/security-and-hardening
+      - skills/shipping-and-launch
+      - skills/source-driven-development
+      - skills/spec-driven-development
+      - skills/test-driven-development
+
+  gsap-skills:
+    repo: greensock/gsap-skills
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - skills/gsap-core
+      - skills/gsap-frameworks
+      - skills/gsap-performance
+      - skills/gsap-plugins
+      - skills/gsap-react
+      - skills/gsap-scrolltrigger
+      - skills/gsap-timeline
+      - skills/gsap-utils
+
+  genjutsu:
+    repo: AThevon/genjutsu
+    branch: main
+    # O arquivo LICENSE e MIT, mas o GitHub nao o reconhece e informa NOASSERTION.
+    # O texto do LICENSE e conferido a cada sync.
+    license: NOASSERTION
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - skills
+
+  motion-design:
+    repo: LottieFiles/motion-design-skill
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - skills/motion-design
+
+  design-dna:
+    repo: zanwei/design-dna
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - SKILL.md
+      - docs
+      - references
+      - scripts
+
+  img2threejs:
+    repo: img2threejs/img2threejs
+    branch: main
+    license: Apache-2.0
+    mode: vendor
+    paths:
+      - LICENSE
+      - SKILL.md
+      - CHANGELOG.md
+      - assets
+      - docs
+      - forge
+      - grimoire
+      - scripts
+      - skills
+
+  scroll-craft:
+    repo: nateherkai/scroll-craft
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - plugins/nateherk-design/skills/scroll-craft
+
+  mattpocock-skills:
+    repo: mattpocock/skills
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - skills/engineering/improve-codebase-architecture
+
+  knowledge-work-plugins:
+    repo: anthropics/knowledge-work-plugins
+    branch: main
+    license: Apache-2.0
+    mode: vendor
+    paths:
+      - LICENSE
+      - engineering/skills
+      - data/skills/sql-queries
+      - data/skills/write-query
+      - data/skills/explore-data
+      - data/skills/create-viz
+      - data/skills/data-visualization
+      - data/skills/build-dashboard
+      - design/skills/accessibility-review
+      - design/skills/design-handoff
+      - design/skills/design-system
+      - product-management/skills/write-spec
+
+  anthropic-skills:
+    repo: anthropics/skills
+    branch: main
+    # O repositorio nao declara licenca na raiz (o GitHub informa NONE); cada
+    # skill traz o proprio LICENSE.txt (Apache-2.0). O sync confere esses textos.
+    license: NONE
+    mode: vendor
+    paths:
+      - skills/mcp-builder
+      - skills/skill-creator
+
+  base44:
+    repo: base44/skills
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - skills/base44-cli
+      - skills/base44-remote-dev
+      - skills/base44-sandbox
+      - skills/base44-sdk
+      - skills/base44-troubleshooter
+
+  ruflo:
+    # Antigo ruvnet/claude-flow (renomeado). Repositorio grande: o sync baixa so
+    # as pastas abaixo.
+    repo: ruvnet/ruflo
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: .claude/skills
+    paths:
+      - LICENSE
+      - plugins/ruflo-core/skills
+      - plugins/ruflo-swarm/skills
+      - .claude/commands
+      - .claude/skills/agentdb-advanced
+      - .claude/skills/agentdb-learning
+      - .claude/skills/agentdb-memory-patterns
+      - .claude/skills/agentdb-optimization
+      - .claude/skills/agentdb-vector-search
+      - .claude/skills/browser
+      - .claude/skills/flow-nexus-neural
+      - .claude/skills/flow-nexus-platform
+      - .claude/skills/flow-nexus-swarm
+      - .claude/skills/github-code-review
+      - .claude/skills/github-multi-repo
+      - .claude/skills/github-project-management
+      - .claude/skills/github-release-management
+      - .claude/skills/github-workflow-automation
+      - .claude/skills/hooks-automation
+      - .claude/skills/pair-programming
+      - .claude/skills/reasoningbank-agentdb
+      - .claude/skills/reasoningbank-intelligence
+      - .claude/skills/skill-builder
+      - .claude/skills/sparc-methodology
+      - .claude/skills/stream-chain
+      - .claude/skills/swarm-advanced
+      - .claude/skills/swarm-orchestration
+      - .claude/skills/v3-cli-modernization
+      - .claude/skills/v3-core-implementation
+      - .claude/skills/v3-ddd-architecture
+      - .claude/skills/v3-integration-deep
+      - .claude/skills/v3-mcp-optimization
+      - .claude/skills/v3-memory-unification
+      - .claude/skills/v3-performance-optimization
+      - .claude/skills/v3-security-overhaul
+      - .claude/skills/v3-swarm-coordination
+      - .claude/skills/verification-quality
+
+  ai-memory:
+    repo: akitaonrails/ai-memory
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - crates/ai-memory-core/src/routing_skills
+
+  perfex-crm-skills:
+    repo: yasserstudio/perfex-crm-skills
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - skills/perfex-core-apis
+      - skills/perfex-customfields
+      - skills/perfex-database
+      - skills/perfex-module-dev
+      - skills/perfex-payment-gateway
+      - skills/perfex-security
+      - skills/perfex-theme
+
+  codeigniter-skills:
+    repo: yasserstudio/codeigniter-skills
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - skills/codeigniter
+
+  find-skills:
+    repo: vercel-labs/skills
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - skills/find-skills
+
+  threejs-skills:
+    # Sem licenca declarada: redistribuir e proibido. So monitoramos e o
+    # README ensina a instalar direto da origem.
+    repo: CloudAI-X/threejs-skills
+    branch: main
+    license: NONE
+    mode: link
+    watch: skills
+    paths:
+      - skills/threejs-animation
+      - skills/threejs-fundamentals
+      - skills/threejs-geometry
+      - skills/threejs-interaction
+      - skills/threejs-lighting
+      - skills/threejs-loaders
+      - skills/threejs-materials
+      - skills/threejs-postprocessing
+      - skills/threejs-shaders
+      - skills/threejs-textures
+
+# Ajustes locais aplicados por cima da copia upstream a cada sync.
+# Hoje: so campos do frontmatter do SKILL.md.
+overrides:
+  agent-skills:
+    skills/frontend-ui-engineering:
+      description: >-
+        Accessibility, responsiveness, HTML semantics and state management for
+        user-facing UIs. Use when meeting WCAG requirements, auditing responsive
+        behavior, structuring semantic markup, or managing component state. NOT
+        for visual design, animation, micro-interactions, motion or visual
+        identity — the `genjutsu` skill always takes precedence for those, and
+        for any general "build/redesign/polish this UI" request. Prefer running
+        after genjutsu has settled the visual and motion decisions.

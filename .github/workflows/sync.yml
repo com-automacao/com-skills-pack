@@ -1,0 +1,104 @@
+name: Sincronizar skills
+
+# Todo dia confere os repositorios de origem listados em sources.yaml.
+#  - Mudanca normal         -> commit direto no main.
+#  - Aviso                  -> commit no main + issue de alerta.
+#  - Bloqueio               -> NAO entra no main. Vai para o branch sync/pendente
+#                              e abre issue de alerta para revisao humana.
+
+on:
+  schedule:
+    - cron: "0 11 * * *" # 08:00 em Brasilia
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Reprocessar todas as fontes mesmo sem commit novo"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sync-skills
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pyyaml==6.0.3
+
+      - name: Configurar git
+        run: |
+          git config user.name "com-skills-pack[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Sincronizar (aplica so o que passou na checagem)
+        id: sync
+        run: python scripts/sync.py --report report.md ${{ inputs.force && '--force' || '' }}
+
+      - name: Commitar atualizacoes seguras no main
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git add -A packs state STATUS.md THIRD_PARTY_NOTICES.md
+          if ! git diff --cached --quiet; then
+            git commit -q -m "sync: atualiza skills das origens" -m "$(cat report.md)"
+            git push origin HEAD:main
+          fi
+
+      - name: Separar mudancas bloqueadas no branch sync/pendente
+        if: steps.sync.outputs.has_block == 'true'
+        run: |
+          git checkout -q -B sync/pendente
+          python scripts/sync.py --apply all --report report-all.md
+          git add -A packs state STATUS.md THIRD_PARTY_NOTICES.md
+          git commit -q -m "sync: mudancas bloqueadas aguardando revisao" -m "$(cat report-all.md)" || true
+          git push -f origin sync/pendente
+
+      - name: Abrir alerta
+        if: steps.sync.outputs.has_block == 'true' || steps.sync.outputs.has_warn == 'true'
+        env:
+          FP: ${{ steps.sync.outputs.fingerprint }}
+          BLOCK: ${{ steps.sync.outputs.has_block }}
+          REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          gh label create alerta-sync --color D93F0B --description "Mudanca fora do padrao nas origens das skills" 2>/dev/null || true
+          if [ -n "$(gh issue list --label alerta-sync --state all --search "$FP in:body" --json number -q '.[].number')" ]; then
+            echo "Alerta com os mesmos achados ja existe; nada a fazer."
+            exit 0
+          fi
+          if [ "$BLOCK" = "true" ]; then
+            TITLE="🔴 Skills: mudança bloqueada aguardando revisão ($(date -u +%d/%m/%Y))"
+            ACTION="As fontes com bloqueio **não** foram atualizadas no \`main\`. A versão nova está no branch [\`sync/pendente\`](https://github.com/$REPO/compare/main...sync/pendente).
+
+          - **Aceitar:** abra o link acima, clique em *Create pull request* e faça o merge.
+          - **Recusar:** feche esta issue. O \`main\` continua com a versão anterior."
+          else
+            TITLE="🟡 Skills: atualização com aviso ($(date -u +%d/%m/%Y))"
+            ACTION="As mudanças já foram aplicadas no \`main\`. Confira os pontos abaixo; se algo não estiver certo, reverta o último commit de sync."
+          fi
+          {
+            echo "@$OWNER, o sync diário encontrou mudanças fora do padrão nas origens das skills."
+            echo
+            echo "$ACTION"
+            echo
+            cat report.md
+            echo
+            echo "<!-- fingerprint: $FP -->"
+          } > issue.md
+          gh issue create --title "$TITLE" --body-file issue.md --label alerta-sync
