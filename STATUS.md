@@ -2,11 +2,11 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-13 18:53 UTC**
+Última verificação: **2026-10-14 12:20 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
-| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`1be8e34`](https://github.com/addyosmani/agent-skills/commit/1be8e34187e34647bb83adc3a1323b26ae6f6abe) | 2026-10-13 16:36 UTC | 🟢 ok |
+| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`aeac41d`](https://github.com/addyosmani/agent-skills/commit/aeac41d4d005999432bb7312f7ff06383a91d59d) | 2026-10-14 12:20 UTC | 🟢 ok |
 | `gsap-skills` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | MIT | copiado | 8 | [`aed9cfd`](https://github.com/greensock/gsap-skills/commit/aed9cfd3277740755f6bfc1155c7aa645403b760) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `genjutsu` | [AThevon/genjutsu](https://github.com/AThevon/genjutsu) | NOASSERTION | copiado | 1 | [`1f518a7`](https://github.com/AThevon/genjutsu/commit/1f518a71378b15d423389e546e767cffc86e14c3) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `motion-design` | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) | MIT | copiado | 1 | [`f9a8a04`](https://github.com/LottieFiles/motion-design-skill/commit/f9a8a041b85185ee4881b3471d3415e939aac772) | 2026-10-13 16:22 UTC | 🟢 ok |
@@ -16,12 +16,12 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | copiado | 1 | [`49dd158`](https://github.com/mattpocock/skills/commit/49dd158d1076134a641b33efb035946536778336) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`02ffa99`](https://github.com/anthropics/knowledge-work-plugins/commit/02ffa99ff00ce4d3046ccebabb8357cb39f3ab06) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`dbd4588`](https://github.com/anthropics/skills/commit/dbd4588f9e1033efb41dad4bef2f7947c8993d44) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`ec2ae22`](https://github.com/base44/skills/commit/ec2ae226d4441326e32fa56c230b5f49f0682885) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`55e2c90`](https://github.com/ruvnet/ruflo/commit/55e2c9011c20d25e347a175427ca8084dacde40c) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`d408450`](https://github.com/akitaonrails/ai-memory/commit/d408450d0157af5f3e3577e77853bec846424fae) | 2026-10-13 16:23 UTC | 🟢 ok |
+| `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`c3ae9cb`](https://github.com/base44/skills/commit/c3ae9cbc7d55d832f635717e479f1a5d7c71ccdd) | 2026-10-14 12:20 UTC | 🟢 ok |
+| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`9c62e91`](https://github.com/ruvnet/ruflo/commit/9c62e91e9e8d531ab3527085b11b6662d4389145) | 2026-10-14 12:20 UTC | 🟢 ok |
+| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`705aba7`](https://github.com/akitaonrails/ai-memory/commit/705aba70bc1a3ce6349194135206fb622ca55749) | 2026-10-14 12:20 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`13e4063`](https://github.com/vercel-labs/skills/commit/13e4063a1cf913f5606d57d42ab83a86f5001e04) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`1b6c899`](https://github.com/morluto/rea/commit/1b6c899b031421dcf2d725a63e67d99375028d6e) | 2026-10-13 16:53 UTC | 🟢 ok |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`cbc0e97`](https://github.com/morluto/rea/commit/cbc0e97c29b8dcb3d6ff96eb3af9e0f519a22345) | 2026-10-14 12:20 UTC | 🟡 aviso |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | NONE | só link | 10 | [`b1c6230`](https://github.com/CloudAI-X/threejs-skills/commit/b1c623076c661fc9b03dac19292e825a5d106823) | 2026-10-13 16:23 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
