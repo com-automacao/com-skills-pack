@@ -29,7 +29,7 @@ python scripts/install.py             # instala em ~/.claude/skills
 
 ## Como o pack se mantém atualizado
 
-Todo dia às 08:00 (Brasília), o GitHub Actions roda [`scripts/sync.py`](scripts/sync.py):
+Todo dia às 08:17 (Brasília), o GitHub Actions roda [`scripts/sync.py`](scripts/sync.py):
 
 1. Baixa só as pastas das skills de cada repositório listado em [`sources.yaml`](sources.yaml).
 2. Compara com a versão anterior, arquivo por arquivo.
