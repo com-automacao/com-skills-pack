@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-14 12:20 UTC**
+Última verificação: **2026-10-15 15:36 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -14,14 +14,14 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `img2threejs` | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Apache-2.0 | copiado | 8 | [`d508b59`](https://github.com/img2threejs/img2threejs/commit/d508b596cb221f1509f6e50ab68fce275a5cfb44) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `scroll-craft` | [nateherkai/scroll-craft](https://github.com/nateherkai/scroll-craft) | MIT | copiado | 1 | [`75d81f7`](https://github.com/nateherkai/scroll-craft/commit/75d81f74e83692add18cd7a8a8e078b8a887a579) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | copiado | 1 | [`49dd158`](https://github.com/mattpocock/skills/commit/49dd158d1076134a641b33efb035946536778336) | 2026-10-13 16:22 UTC | 🟢 ok |
-| `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`02ffa99`](https://github.com/anthropics/knowledge-work-plugins/commit/02ffa99ff00ce4d3046ccebabb8357cb39f3ab06) | 2026-10-13 16:22 UTC | 🟢 ok |
+| `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`e6b5053`](https://github.com/anthropics/knowledge-work-plugins/commit/e6b505348c39c6e751a70d52ff407e7b0a6bf676) | 2026-10-15 15:36 UTC | 🟢 ok |
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`dbd4588`](https://github.com/anthropics/skills/commit/dbd4588f9e1033efb41dad4bef2f7947c8993d44) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`c3ae9cb`](https://github.com/base44/skills/commit/c3ae9cbc7d55d832f635717e479f1a5d7c71ccdd) | 2026-10-14 12:20 UTC | 🟢 ok |
-| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`9c62e91`](https://github.com/ruvnet/ruflo/commit/9c62e91e9e8d531ab3527085b11b6662d4389145) | 2026-10-14 12:20 UTC | 🟢 ok |
-| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`705aba7`](https://github.com/akitaonrails/ai-memory/commit/705aba70bc1a3ce6349194135206fb622ca55749) | 2026-10-14 12:20 UTC | 🟢 ok |
+| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`1882006`](https://github.com/ruvnet/ruflo/commit/1882006a02487590c8c66a7eec8d7504f6af33c3) | 2026-10-15 15:36 UTC | 🟢 ok |
+| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`b70679a`](https://github.com/akitaonrails/ai-memory/commit/b70679af9fb19c5dff69acf4a742f2d755b25290) | 2026-10-15 15:36 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`13e4063`](https://github.com/vercel-labs/skills/commit/13e4063a1cf913f5606d57d42ab83a86f5001e04) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`cbc0e97`](https://github.com/morluto/rea/commit/cbc0e97c29b8dcb3d6ff96eb3af9e0f519a22345) | 2026-10-14 12:20 UTC | 🟡 aviso |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`40f73f6`](https://github.com/morluto/rea/commit/40f73f62bc3acf8b444dbafba1b8ed0aef6dd641) | 2026-10-15 15:36 UTC | 🟢 ok |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | NONE | só link | 10 | [`b1c6230`](https://github.com/CloudAI-X/threejs-skills/commit/b1c623076c661fc9b03dac19292e825a5d106823) | 2026-10-13 16:23 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
