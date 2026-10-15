@@ -245,6 +245,38 @@ Origem: [morluto/rea](https://github.com/morluto/rea) (MIT). Pasta: `rea/.agents
 |---|---|
 | `reverse-engineer-anything` | Investiga como um programa funciona sem o código-fonte: apps JavaScript/Electron, .NET, sites, binários nativos e firmware. Explica a funcionalidade com evidências, compara versões e guia uma reconstrução no seu projeto. Binários nativos exigem Ghidra, IDA ou Hopper instalados. Uso apenas em software próprio, autorizado ou para pesquisa, educação e interoperabilidade. |
 
+### 15. Superpowers (fluxo de trabalho com agentes)
+
+Origem: [obra/superpowers](https://github.com/obra/superpowers) (MIT). Pasta: `superpowers/skills/`. Como instalar: `/plugin install superpowers@claude-plugins-official`.
+
+**Atenção:** o plugin tem um hook que roda no início de toda sessão e orienta o agente a preferir estas skills. O sync acompanha a pasta `hooks/`: qualquer mudança nela gera aviso ou bloqueio. Várias skills se sobrepõem às da seção 1 (TDD, debug, revisão, planejamento).
+
+| Skill | O que faz |
+|---|---|
+| `brainstorming` | Explora a ideia com perguntas antes de qualquer código e fecha um design aprovado. |
+| `writing-plans` | Transforma o design em um plano de implementação passo a passo. |
+| `executing-plans` | Executa um plano em lotes, com pontos de revisão. |
+| `subagent-driven-development` | Executa o plano despachando um subagente por tarefa, com revisão entre elas. |
+| `dispatching-parallel-agents` | Divide problemas independentes entre agentes em paralelo. |
+| `test-driven-development` | TDD estrito: teste que falha primeiro, sempre. |
+| `systematic-debugging` | Depuração em 4 fases, pela causa raiz. |
+| `verification-before-completion` | Exige prova (comando rodado, saída vista) antes de dizer que terminou. |
+| `requesting-code-review` / `receiving-code-review` | Pedir revisão e responder a ela com rigor técnico, sem concordar por educação. |
+| `using-git-worktrees` | Isola o trabalho em worktrees do git. |
+| `finishing-a-development-branch` | Fecha o branch: testes, opções de merge ou PR, limpeza. |
+| `writing-skills` | Cria e testa skills novas. |
+| `using-superpowers` / `diagnosing-superpowers` | Como o plugin escolhe as skills, e diagnóstico quando algo não carrega. |
+
+### 16. Context7 (documentação atualizada)
+
+Origem: [upstash/context7](https://github.com/upstash/context7) (MIT). Pasta: `context7/plugins/claude/context7/`. Como instalar: `/plugin install context7@claude-plugins-official`.
+
+| Item | O que faz |
+|---|---|
+| MCP `context7` | Busca a documentação atual da versão certa de uma biblioteca no momento de programar, em vez de confiar no que o modelo lembra. Funciona sem conta (limite compartilhado); para limite próprio e gratuito, rode `npx ctx7 setup --claude` e confirme o login no navegador. |
+
+O sync acompanha o `.mcp.json`: se o endereço do servidor mudar, gera aviso.
+
 ---
 
 ## Fora do pack

@@ -266,6 +266,30 @@ sources:
       - LICENSE
       - .agents/skills/reverse-engineer-anything
 
+  superpowers:
+    # Plugin superpowers@claude-plugins-official. Tem um hook de SessionStart:
+    # acompanhamos hooks/ para que qualquer mudanca nele gere aviso ou bloqueio.
+    repo: obra/superpowers
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - .claude-plugin
+      - hooks
+      - skills
+
+  context7:
+    # Plugin context7@claude-plugins-official (MCP remoto da Upstash).
+    repo: upstash/context7
+    branch: master
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - plugins/claude/context7
+
   threejs-skills:
     # Sem licenca declarada: redistribuir e proibido. So monitoramos e o
     # README ensina a instalar direto da origem.
