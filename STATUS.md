@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-16 15:23 UTC**
+Última verificação: **2026-10-16 17:34 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -24,6 +24,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`2c1dee1`](https://github.com/morluto/rea/commit/2c1dee16df7c3839eb1bad115e10d102d6641ea2) | 2026-10-16 15:23 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`bb92a77`](https://github.com/obra/superpowers/commit/bb92a77741419a4ab5f06e711a283343f1ada0c3) | 2026-10-15 19:35 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`e004194`](https://github.com/upstash/context7/commit/e0041949fdb3b49b304d98715dde35be51b7c3d1) | 2026-10-16 15:23 UTC | 🟢 ok |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`a499253`](https://github.com/earthtojake/text-to-cad/commit/a499253845c717e5144471ca75f9eb0f90e7964f) | 2026-10-16 17:34 UTC | 🟢 ok |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | NONE | só link | 10 | [`b1c6230`](https://github.com/CloudAI-X/threejs-skills/commit/b1c623076c661fc9b03dac19292e825a5d106823) | 2026-10-13 16:23 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
@@ -58,5 +59,17 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `superpowers`: [skills/verification-before-completion](https://github.com/obra/superpowers/tree/HEAD/skills/verification-before-completion)
 - `superpowers`: [skills/writing-plans](https://github.com/obra/superpowers/tree/HEAD/skills/writing-plans)
 - `superpowers`: [skills/writing-skills](https://github.com/obra/superpowers/tree/HEAD/skills/writing-skills)
+- `text-to-cad`: [skills/bambu-labs](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/bambu-labs)
+- `text-to-cad`: [skills/cad](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/cad)
+- `text-to-cad`: [skills/dfam-check](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/dfam-check)
+- `text-to-cad`: [skills/dfm](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/dfm)
+- `text-to-cad`: [skills/dxf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/dxf)
+- `text-to-cad`: [skills/engineering-drawing](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/engineering-drawing)
+- `text-to-cad`: [skills/gcode](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/gcode)
+- `text-to-cad`: [skills/sdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/sdf)
+- `text-to-cad`: [skills/sendcutsend](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/sendcutsend)
+- `text-to-cad`: [skills/srdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/srdf)
+- `text-to-cad`: [skills/step-parts](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/step-parts)
+- `text-to-cad`: [skills/urdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/urdf)
 
 Para incluir, acrescente o caminho em `sources.yaml` e rode o sync.

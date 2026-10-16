@@ -277,6 +277,25 @@ Origem: [upstash/context7](https://github.com/upstash/context7) (MIT). Pasta: `c
 
 O sync acompanha o `.mcp.json`: se o endereço do servidor mudar, gera aviso.
 
+### 17. CAD e fabricação (text-to-cad)
+
+Origem: [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) (MIT), branch `latest`. Pasta: `text-to-cad/skills/`. Como instalar: `claude plugin marketplace add earthtojake/text-to-cad#latest` e depois `claude plugin install text-to-cad@earthtojake`. Precisa do [uv](https://docs.astral.sh/uv/).
+
+O plugin traz o servidor local `cad`, que mostra os modelos na conversa. **Windows 11:** se o Smart App Control estiver ligado, o núcleo de CAD é bloqueado; `uvx cadgen doctor` diz se está tudo certo. **Telemetria:** vem ligada; desligue com `uvx cadgen telemetry off`.
+
+| Skill | O que faz |
+|---|---|
+| `cad` | Cria e edita peças 3D paramétricas em código (STEP, STL, GLB, 3MF), abre e mede modelos existentes e mostra tudo na conversa. |
+| `step-parts` | Busca e baixa peças compráveis prontas no step.parts (servos, motores, placas, conectores, parafusos, rolamentos). |
+| `engineering-drawing` | Gera desenho técnico em PDF: vistas, cotas, furos, notas e carimbo em folha ISO. |
+| `dfm` | Revisa se a peça é viável de fabricar (usinagem, chapa, injeção). |
+| `dfam-check` | Revisa se a peça é viável em impressão 3D. |
+| `gcode` | Fatia o modelo e gera G-code para impressão 3D. |
+| `bambu-labs` | Envia e acompanha impressões em impressoras Bambu Lab. |
+| `dxf` | Gera arquivos DXF 2D para corte a laser, plasma ou jato d'água. |
+| `sendcutsend` | Revisa arquivos DXF e STEP antes do pedido no SendCutSend: material, espessura e se o arquivo será aceito. |
+| `urdf` / `srdf` / `sdf` | Descrições de robôs e cenas para simulação (ROS, MoveIt, Gazebo). |
+
 ---
 
 ## Fora do pack

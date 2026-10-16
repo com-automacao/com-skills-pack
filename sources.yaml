@@ -290,6 +290,21 @@ sources:
       - LICENSE
       - plugins/claude/context7
 
+  text-to-cad:
+    # Plugin text-to-cad@earthtojake. Acompanha o branch `latest` (so versoes
+    # publicadas), o mesmo que a instalacao usa. O claude.mcp.json fixa a versao
+    # do motor cadgen baixado do PyPI: mudancas nele aparecem no relatorio.
+    repo: earthtojake/text-to-cad
+    branch: latest
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - .claude-plugin
+      - claude.mcp.json
+      - skills
+
   threejs-skills:
     # Sem licenca declarada: redistribuir e proibido. So monitoramos e o
     # README ensina a instalar direto da origem.
