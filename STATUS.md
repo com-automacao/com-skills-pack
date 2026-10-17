@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-16 17:34 UTC**
+Última verificação: **2026-10-17 14:14 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -17,11 +17,11 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`33eeda1`](https://github.com/anthropics/knowledge-work-plugins/commit/33eeda1e8fd856455b05479d13a0f85b5f803744) | 2026-10-16 15:23 UTC | 🟢 ok |
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`dbd4588`](https://github.com/anthropics/skills/commit/dbd4588f9e1033efb41dad4bef2f7947c8993d44) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`c3ae9cb`](https://github.com/base44/skills/commit/c3ae9cbc7d55d832f635717e479f1a5d7c71ccdd) | 2026-10-14 12:20 UTC | 🟢 ok |
-| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`1882006`](https://github.com/ruvnet/ruflo/commit/1882006a02487590c8c66a7eec8d7504f6af33c3) | 2026-10-15 15:36 UTC | 🟢 ok |
+| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`3bc6cfa`](https://github.com/ruvnet/ruflo/commit/3bc6cfa6e532ea0c0f5422e2c3a6a97476f7d010) | 2026-10-17 14:13 UTC | 🟢 ok |
 | `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`584ab79`](https://github.com/akitaonrails/ai-memory/commit/584ab792a2ac506445ca27629f040311ad8dc0d2) | 2026-10-16 15:23 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`13e4063`](https://github.com/vercel-labs/skills/commit/13e4063a1cf913f5606d57d42ab83a86f5001e04) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`2c1dee1`](https://github.com/morluto/rea/commit/2c1dee16df7c3839eb1bad115e10d102d6641ea2) | 2026-10-16 15:23 UTC | 🟢 ok |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`376eeca`](https://github.com/morluto/rea/commit/376eeca770820b31f7f8d4c5fcc397315621643e) | 2026-10-17 14:13 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`bb92a77`](https://github.com/obra/superpowers/commit/bb92a77741419a4ab5f06e711a283343f1ada0c3) | 2026-10-15 19:35 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`e004194`](https://github.com/upstash/context7/commit/e0041949fdb3b49b304d98715dde35be51b7c3d1) | 2026-10-16 15:23 UTC | 🟢 ok |
 | `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`a499253`](https://github.com/earthtojake/text-to-cad/commit/a499253845c717e5144471ca75f9eb0f90e7964f) | 2026-10-16 17:34 UTC | 🟢 ok |
@@ -35,6 +35,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
 - `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
 - `genjutsu`: [skills/paint](https://github.com/AThevon/genjutsu/tree/HEAD/skills/paint)
+- `rea`: [.agents/skills/rea-analysis-optimization](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-analysis-optimization)
 - `rea`: [.agents/skills/rea-changelog-update](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-changelog-update)
 - `rea`: [.agents/skills/rea-ci-tests-audit](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-ci-tests-audit)
 - `rea`: [.agents/skills/rea-tool-design](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-tool-design)
