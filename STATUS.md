@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-19 17:30 UTC**
+Última verificação: **2026-10-20 15:40 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -14,17 +14,17 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `img2threejs` | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Apache-2.0 | copiado | 8 | [`d508b59`](https://github.com/img2threejs/img2threejs/commit/d508b596cb221f1509f6e50ab68fce275a5cfb44) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `scroll-craft` | [nateherkai/scroll-craft](https://github.com/nateherkai/scroll-craft) | MIT | copiado | 1 | [`75d81f7`](https://github.com/nateherkai/scroll-craft/commit/75d81f74e83692add18cd7a8a8e078b8a887a579) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | copiado | 1 | [`5beb35b`](https://github.com/mattpocock/skills/commit/5beb35b040e3de97e54fa9e386d7e42d15c295c2) | 2026-10-19 17:29 UTC | 🟢 ok |
-| `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`33eeda1`](https://github.com/anthropics/knowledge-work-plugins/commit/33eeda1e8fd856455b05479d13a0f85b5f803744) | 2026-10-16 15:23 UTC | 🟢 ok |
+| `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`a266ab8`](https://github.com/anthropics/knowledge-work-plugins/commit/a266ab8c3c754a3ccf7a634044fc1595fc06e50e) | 2026-10-20 15:40 UTC | 🟢 ok |
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`dbd4588`](https://github.com/anthropics/skills/commit/dbd4588f9e1033efb41dad4bef2f7947c8993d44) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`19aebec`](https://github.com/base44/skills/commit/19aebec4eea92d32422646db1e45c4dc13f620a2) | 2026-10-18 14:36 UTC | 🟢 ok |
-| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`aedd3d5`](https://github.com/ruvnet/ruflo/commit/aedd3d53757fd0255ca804d0923ea056e739f75d) | 2026-10-19 17:29 UTC | 🟢 ok |
-| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`186f0f4`](https://github.com/akitaonrails/ai-memory/commit/186f0f44cac512c817a00266e038c4be774aeda9) | 2026-10-19 17:30 UTC | 🟢 ok |
+| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`558f194`](https://github.com/ruvnet/ruflo/commit/558f194506abb50faec68b97b945a17b484def6a) | 2026-10-20 15:40 UTC | 🟢 ok |
+| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`11ab100`](https://github.com/akitaonrails/ai-memory/commit/11ab1003d9ef3788f5fc40b87fff54abf7f17dc0) | 2026-10-20 15:40 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`b465908`](https://github.com/vercel-labs/skills/commit/b4659087ef401e67f1432997885fb048167bdcac) | 2026-10-19 17:30 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`b44cb5b`](https://github.com/morluto/rea/commit/b44cb5bd306de5b20466cf7b35f56247492dd41d) | 2026-10-19 17:30 UTC | 🟢 ok |
+| `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`a80e4c9`](https://github.com/vercel-labs/skills/commit/a80e4c9d12d607631249d4d7d059f835d4b2f13a) | 2026-10-20 15:40 UTC | 🟢 ok |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`0ba4d6f`](https://github.com/morluto/rea/commit/0ba4d6f43ad610dacc861a1548be1a5c4712cd61) | 2026-10-20 15:40 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`bb92a77`](https://github.com/obra/superpowers/commit/bb92a77741419a4ab5f06e711a283343f1ada0c3) | 2026-10-15 19:35 UTC | 🟢 ok |
-| `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`c7f80ce`](https://github.com/upstash/context7/commit/c7f80ce5af1ff1403d167579b76784482cf7f3e2) | 2026-10-19 17:30 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`a08ff0e`](https://github.com/earthtojake/text-to-cad/commit/a08ff0e0bfa2dbe40d4d8ba2655baa054f4f8bc6) | 2026-10-19 17:30 UTC | 🟢 ok |
+| `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`4ac5139`](https://github.com/upstash/context7/commit/4ac51399a2a752bfcb3caa9d8efc09dcbd8453dd) | 2026-10-20 15:40 UTC | 🟢 ok |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`a98c08d`](https://github.com/earthtojake/text-to-cad/commit/a98c08dd3fed5fcf7eb2d214d700fd62e5dd7bb2) | 2026-10-20 15:40 UTC | 🟢 ok |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | NONE | só link | 10 | [`b1c6230`](https://github.com/CloudAI-X/threejs-skills/commit/b1c623076c661fc9b03dac19292e825a5d106823) | 2026-10-13 16:23 UTC | 🔴 bloqueado |
 
 ## Skills disponíveis na origem e ainda não incluídas
