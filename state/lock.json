@@ -1,6 +1,6 @@
 {
  "agent-skills": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:53 UTC",
   "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
   "files": {
    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
@@ -50,25 +50,25 @@
   "updated_at": "2026-10-14 12:20 UTC"
  },
  "ai-memory": {
-  "checked_at": "2026-10-21 15:58 UTC",
-  "commit": "ad264519488c06e4468f1ad9f805d5fed2f97855",
+  "checked_at": "2026-10-22 15:54 UTC",
+  "commit": "ae7b8bba8c056e478592c0972669c8371152bac9",
   "files": {
    "LICENSE": "18332c61780ce8e694d4fa330770cd4d8c85e33f47ac13a80d72d70bb032ae72",
    "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md": "8771edcc5e529430d19c360ba5a250f6f0cdf45c95f4dea48af6f6646f8f6e13",
-   "crates/ai-memory-core/src/routing_skills/ai-memory-handoff/SKILL.md": "b6ca7952f87144ceea0209a97974eb9d7e9521ef499acbd1b0f8507e2d74b092",
+   "crates/ai-memory-core/src/routing_skills/ai-memory-handoff/SKILL.md": "9d12e0d7d15070a17f5dd565d432cf926b70ea350dda7568c16a453cef423a1b",
    "crates/ai-memory-core/src/routing_skills/ai-memory-learning-maintenance/SKILL.md": "6fa35891c97e98270e9b4ac023a7cdf650c2f92dcdcb82bce7b0dbc5437f74c9",
    "crates/ai-memory-core/src/routing_skills/ai-memory-messaging/SKILL.md": "3b76b008086af9bf9d655bec401bd29f70c2752f00575d4bd6d875918d0eefd8",
-   "crates/ai-memory-core/src/routing_skills/ai-memory-retrieval/SKILL.md": "3866f9a8bc884c4400c788a7a4279c04ff208dca27b6a73d2e5f750afe3a1e54",
-   "crates/ai-memory-core/src/routing_skills/ai-memory-routing-install/SKILL.md": "a9d2564945eb61146d230684219b18720cec29055ae8d761988cd02ed8f217ea",
+   "crates/ai-memory-core/src/routing_skills/ai-memory-retrieval/SKILL.md": "6230a240ff72f77361a8100aff928796aeb5d5999c50b6d708763bdec1b85673",
+   "crates/ai-memory-core/src/routing_skills/ai-memory-routing-install/SKILL.md": "51275899408a7d383879b5121c70fbf5655463d0fcc466c81e7a0bfef44de12c",
    "crates/ai-memory-core/src/routing_skills/grok-handoff-rule.md": "7f06d50601d12f5669dc8caf1a5102611b09e63d786102ce08f5bbe50ff11ab5"
   },
   "known_upstream": [],
   "license": "MIT",
   "repo": "akitaonrails/ai-memory",
-  "updated_at": "2026-10-21 15:58 UTC"
+  "updated_at": "2026-10-22 15:54 UTC"
  },
  "anthropic-skills": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:54 UTC",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "files": {
    "skills/mcp-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
@@ -106,8 +106,8 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "base44": {
-  "checked_at": "2026-10-21 15:58 UTC",
-  "commit": "19aebec4eea92d32422646db1e45c4dc13f620a2",
+  "checked_at": "2026-10-22 15:54 UTC",
+  "commit": "259e9f9a992434d3f23d0bd4aca0b3e22890e997",
   "files": {
    "LICENSE": "5546cdc657881c6a454bb4d09044e59fb4f84f3951fcb88c8102b7fe8332b4a4",
    "skills/base44-cli/SKILL.md": "ede4c1a413d79ee67ea81c67f949dbe650106b48f436a2618ab9a8e8b6e18de9",
@@ -158,21 +158,21 @@
    "skills/base44-cli/references/workspace-get.md": "321266cae5b0141374855d79d9dd00bb31dd0bfaf1bee51d6d294c00c781d253",
    "skills/base44-cli/references/workspace-list.md": "4f0563cc39dd3875fc7819c2aaa48a9ef4442c78a9bacc9c97dbb306aaad974c",
    "skills/base44-cli/references/workspace-move.md": "9a5e69596a40386fc74cd6a53d687641654c04056133949aa80a2f5aa8ec2089",
-   "skills/base44-remote-dev/SKILL.md": "66d49d83b31ab8b06de2325fbda8a2cc4671b4852279ba2599791fcaa459c368",
-   "skills/base44-sandbox/SKILL.md": "b3b0bb4314208073d83a354ea833b95c052998eadc6dc8e7abdfba968dfc8a80",
+   "skills/base44-remote-dev/SKILL.md": "77e9f994b159875dd2efc0aa5e689d82065992b89d6d6511f381b99a2008be8c",
+   "skills/base44-sandbox/SKILL.md": "159a8b1ae303490b1e346d02cb6bb9b3ddf3742bf6e35cc4e762ae3a74c0da67",
    "skills/base44-sdk/SKILL.md": "e6b14731c06f165165a84c8a06cf9079f0d64cf193c08e2b482325f1a902139e",
    "skills/base44-sdk/references/QUICK_REFERENCE.md": "80ecf7d6047de463458f34cef77bc249bfd2b92c3812fff186dbb84678f630af",
    "skills/base44-sdk/references/actors.md": "3f13d13a8a6e02a75d944b0f18e6885cbcd3581bc8f5d399baf221f1aff06cff",
    "skills/base44-sdk/references/ai-gateway.md": "6533e558db3283bfa9fe5159c20e8533e3cc5dab43c647202544e1b34dce652f",
    "skills/base44-sdk/references/analytics.md": "f01ea8edcd601d12f0e4c241c4ff08bde401dfca8882634f9eb2f76d366009e7",
    "skills/base44-sdk/references/app-logs.md": "424e4038d83cb2e5e76a137c9cf81ec9c6ffe45c49fb872a004f100233c96e73",
-   "skills/base44-sdk/references/auth.md": "3caef0125346a8db1d049447ddcf82b81cee3dd3e244eee29f89ddee871d18ba",
+   "skills/base44-sdk/references/auth.md": "401561a3ae12f408acb6abe7dd9dde243b47914f4031056117c0e0ef77188871",
    "skills/base44-sdk/references/base44-agents.md": "677cd50ac0e11d25dd9abc1dc4a6682d47bfe0e49f3b103da7f6f69f5e9eb1ab",
    "skills/base44-sdk/references/client.md": "1bbaaad90b061bd66f52878d5a9105706a4a250046d27b42aa2eacd380b2a4c0",
    "skills/base44-sdk/references/connectors.md": "b86f1666f1b124d3a65b5360f84277a66f95ae0e4a7f4ce5a9383e734343e032",
    "skills/base44-sdk/references/entities.md": "d33397fee13324c9768b998846821485e7b594fb0b183dc1c1fee5a4483cbb9c",
    "skills/base44-sdk/references/functions.md": "9b6266adcbc5ee8293925b1bf8e9cd53d46aaab3f5cb53ff8a85331401219736",
-   "skills/base44-sdk/references/integrations.md": "966e7f35d05b332ab69708d5bba2e5edf012354560132eb724e3a55ded0c8dad",
+   "skills/base44-sdk/references/integrations.md": "646bf80acb415c49ff94f675c2b4908fe3000644c9c630850e1e0c787518106a",
    "skills/base44-sdk/references/sso.md": "1e4ab24c53fd7ab2ea71fd60c81b087dcfc6c6f9f243b77cd3b99cf63c93f27e",
    "skills/base44-sdk/references/users.md": "349699b931c1feef43441c45ef95c224fa74870b2938a76c35edbc9c18e302d7",
    "skills/base44-troubleshooter/SKILL.md": "e958c8da90a2e1d74f2446f90619f7c228b160df385c9ec23b8bd0589409b5de",
@@ -181,10 +181,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "base44/skills",
-  "updated_at": "2026-10-18 14:36 UTC"
+  "updated_at": "2026-10-22 15:54 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:54 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -199,8 +199,8 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "context7": {
-  "checked_at": "2026-10-21 15:59 UTC",
-  "commit": "98fb27dbcbc8fb04227ef4f15a14f623ffdeb9f8",
+  "checked_at": "2026-10-22 15:55 UTC",
+  "commit": "739d164ae30112c4e5c59643457d775fbbf711d9",
   "files": {
    "LICENSE": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c",
    "plugins/claude/context7/.claude-plugin/plugin.json": "38d9722bc43c83a5974bb75433f106d45b57eac7c61e083b0342e90c225f0e00",
@@ -210,10 +210,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "upstash/context7",
-  "updated_at": "2026-10-21 15:59 UTC"
+  "updated_at": "2026-10-22 15:55 UTC"
  },
  "design-dna": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:53 UTC",
   "commit": "593e39bc9e3652734653bd75544a333d7d43615e",
   "files": {
    "LICENSE": "2de108bcd0d904f8756e1135ca77ce1e3e9ca0edb1ae6abecb97dea76d27d174",
@@ -234,7 +234,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "find-skills": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:54 UTC",
   "commit": "a80e4c9d12d607631249d4d7d059f835d4b2f13a",
   "files": {
    "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
@@ -246,7 +246,7 @@
   "updated_at": "2026-10-20 15:40 UTC"
  },
  "genjutsu": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:53 UTC",
   "commit": "1f518a71378b15d423389e546e767cffc86e14c3",
   "files": {
    "LICENSE": "19fd36b46fd5b393c6d58ad1ac26afd436bdce6951a9952094eff70366e5b314",
@@ -370,7 +370,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:53 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -389,7 +389,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-10-22 13:45 UTC",
+  "checked_at": "2026-10-22 15:53 UTC",
   "commit": "954cd5845e90efd045694bab725d68a9863c20e0",
   "files": {
    "CHANGELOG.md": "3bbd981052b05cd2189db85fc69733a8f3e39658b2b57e44904f6fcd246d375b",
@@ -715,8 +715,8 @@
   "updated_at": "2026-10-22 13:45 UTC"
  },
  "knowledge-work-plugins": {
-  "checked_at": "2026-10-21 15:58 UTC",
-  "commit": "bc8f6922cfeea215a202cdcc9f0d299a990889a8",
+  "checked_at": "2026-10-22 15:54 UTC",
+  "commit": "33d3dea41a341b341d4f5da2e8801ae0c89be2b8",
   "files": {
    "LICENSE": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26",
    "data/skills/build-dashboard/SKILL.md": "6f23faa0b266820a23096f76df9d83e6b67597af4fc8c3306b4eba7e9f409f99",
@@ -743,10 +743,10 @@
   "known_upstream": [],
   "license": "Apache-2.0",
   "repo": "anthropics/knowledge-work-plugins",
-  "updated_at": "2026-10-21 15:58 UTC"
+  "updated_at": "2026-10-22 15:54 UTC"
  },
  "mattpocock-skills": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:54 UTC",
   "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
   "files": {
    "LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
@@ -760,7 +760,7 @@
   "updated_at": "2026-10-19 17:29 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:53 UTC",
   "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
@@ -788,15 +788,15 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "rea": {
-  "checked_at": "2026-10-21 15:58 UTC",
-  "commit": "d8a9673fc44fde4bd30ff98c241886e6683580ca",
+  "checked_at": "2026-10-22 15:54 UTC",
+  "commit": "584937c7611e6de1e3a81dd3e32f90e200ae3f42",
   "files": {
-   ".agents/skills/reverse-engineer-anything/SKILL.md": "6368f7440023d2285f7878836d2ce92bcf6d2f7c0f37c8d3bf4febf9cd014e36",
-   ".agents/skills/reverse-engineer-anything/references/android-applications.md": "67a9237d76a5b736640c6404f5e1fe01d83369848142feb7e11d78f4a5e62732",
+   ".agents/skills/reverse-engineer-anything/SKILL.md": "4eccf0a3296892172e45d9b4427f463b8618d7672557c13e9269207567869153",
+   ".agents/skills/reverse-engineer-anything/references/android-applications.md": "ae78da20a572e92a1d5fac3f9fdf10caa7ed09fe0b6c9132b4e878470c28f9c0",
    ".agents/skills/reverse-engineer-anything/references/connection-and-recovery.md": "cf25b8774810cc24dc188a7a351d2d948c5d07027dab7c34868522225d240ee0",
-   ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "e67a4d96efa266977d8959b15d3e95d468bfccffb8754e8108d809d2275328fe",
-   ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "b78af72ffac3471f8ccbd060556c9eb268d78dbfc04ca9604ad15190369464a8",
-   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "01b8f740f8aa4ae95aa3241b2fd2164a78f4a7e374de5fb4ea52cb699367fdb8",
+   ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "229da00674c160b45d0618d2d0fc03a85a23552f34a54866735f6f733d2d8f40",
+   ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "9003206fb2bb70d0db65c6cb49d3e62b7a4e46d8697100b683d11e9a4e9b0dbd",
+   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "8b9eb84712a578b188eda944e3bac304fe3df394d39f6e7a824a79dc34b28e35",
    ".agents/skills/reverse-engineer-anything/references/runtime-observation.md": "da6728e31648a47444d3282fdb3fd17eaab38c0715ac987b6d410c0473ec8036",
    "LICENSE": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b"
   },
@@ -808,11 +808,11 @@
   ],
   "license": "MIT",
   "repo": "morluto/rea",
-  "updated_at": "2026-10-21 15:58 UTC"
+  "updated_at": "2026-10-22 15:54 UTC"
  },
  "ruflo": {
-  "checked_at": "2026-10-21 15:58 UTC",
-  "commit": "d8832d5512f335a3ab2f138828220f7566758c89",
+  "checked_at": "2026-10-22 15:54 UTC",
+  "commit": "96c6aa89b5a2cf5487df4d52c6b5d55134493fab",
   "files": {
    ".claude/commands/agents/README.md": "52f50d320ed2058cc815a836530e43cba4511df56eb9edac8837b922339fcbd7",
    ".claude/commands/agents/agent-capabilities.md": "1fa62c27d0e4b9969e7394c1cbbcfd92ecb95750f66ea67204ad10de7b9a7223",
@@ -997,7 +997,7 @@
    ".claude/skills/github-release-management/SKILL.md": "e3467ff559be1dcffe508b576c395125a0da84b01791f65c3e0ac5aceb366b1d",
    ".claude/skills/github-workflow-automation/SKILL.md": "6e2d7b7865411209e7c20fe38dbdc77decd4b022bff4b1f8fb69a24661c1c24f",
    ".claude/skills/hooks-automation/SKILL.md": "748868e06e46fd98c2c219d9e2cc05bcd4109d86c768c2e819c150e1c45020bd",
-   ".claude/skills/pair-programming/SKILL.md": "32ef344d86f63817fefbadc949ecafee891fc91ab1de97c21031e7540bb61108",
+   ".claude/skills/pair-programming/SKILL.md": "0b706d7d1fc40706614b57b750078113180ecb552a8e8acac4dad4ac8d47f74d",
    ".claude/skills/reasoningbank-agentdb/SKILL.md": "d60a616ad0bbe90ce3907ea1047731ca45fb33704f4359a22f6723022b9ea255",
    ".claude/skills/reasoningbank-intelligence/SKILL.md": "b62b18984d12dd918bd9b74740eefcbff2c203e09956c01021389882923192d4",
    ".claude/skills/skill-builder/SKILL.md": "3ebb2c70e4d816c24ce7ac03c762b0bba1afaa34505e3aaa3c04f65ed8270297",
@@ -1034,10 +1034,10 @@
   ],
   "license": "MIT",
   "repo": "ruvnet/ruflo",
-  "updated_at": "2026-10-21 15:58 UTC"
+  "updated_at": "2026-10-22 15:54 UTC"
  },
  "scroll-craft": {
-  "checked_at": "2026-10-21 15:58 UTC",
+  "checked_at": "2026-10-22 15:53 UTC",
   "commit": "75d81f74e83692add18cd7a8a8e078b8a887a579",
   "files": {
    "LICENSE": "dd471a27eca72488a53e6ea6fbe9392d81aa3f01e950e63fe328affb2ddfa6e3",
@@ -1072,17 +1072,17 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "superpowers": {
-  "checked_at": "2026-10-21 15:58 UTC",
-  "commit": "b739a8af570e10a95898f2bdf6cec97467fa6c12",
+  "checked_at": "2026-10-22 15:55 UTC",
+  "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "files": {
-   ".claude-plugin/marketplace.json": "c730744e1f3b159652a7d2ee43b3f5e9e177d692d619212638a01f24eb3267a5",
-   ".claude-plugin/plugin.json": "f1e28bae51b4a6af9ea340868b140362b4a00ba72bd722e7037cec37c23aa0bb",
+   ".claude-plugin/marketplace.json": "aa23337d43302fffa00927f3700205e92b6c09b79dfe4a13bf66b7b15122604a",
+   ".claude-plugin/plugin.json": "fa3b15088f102c31b7cf1abd4d329fd50d76a99222083638aab810d81930b162",
    "LICENSE": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
    "hooks/hooks-cursor.json": "53d8ceb3ff5d8bb1c4f283f238cc868b8c1af22e40a3ac30f6d6e4173effefbd",
    "hooks/hooks.json": "47fd72cc8bedf31c72702b35b4ed7bab670294d658c4ce518330337525a3798b",
    "hooks/run-hook.cmd": "d1fcecfe19df2d083994803f73417710f745bd96c0938f594f87096005b1e403",
    "hooks/session-start": "5c15e62a90ed13ad8e4b3561148c54c26c6ee28b41ec3a55a241f68b400d886d",
-   "skills/brainstorming/SKILL.md": "6ee10d1481b8a2580d5336ff66c5c08acc9d4b251b13bbc3bfd31be99c261d43",
+   "skills/brainstorming/SKILL.md": "61a7ef918652108c76a3fd01e02dd92d39996c6b46d4cb2819cbd03f6c45e46a",
    "skills/brainstorming/builder-check-prompt.md": "36d51a4723d6f0a3ce5811a0ea3b3a8424f07533947e1355f5d8cb8cce40c55e",
    "skills/brainstorming/scripts/frame-template.html": "6a8a4e58bd6a44b904e2e3c57de774481d909204597e1498de53f1b2fecc4c4e",
    "skills/brainstorming/scripts/helper.js": "43c6d69954a46ec34a2a262bcc62a9a7e83e839c739f199cb72646d397c686e3",
@@ -1111,16 +1111,23 @@
    "skills/diagnosing-superpowers/templates/issue.md": "afd21779e5de5bc5adfe2f5a50a04e44ab8d50d9ad0f829243de248d6f023eed",
    "skills/diagnosing-superpowers/templates/report.md": "38295d0fd785e8608f330815c59ebd7047942002ec7085aecbed54681f56b0c1",
    "skills/dispatching-parallel-agents/SKILL.md": "1968923066f3b707eb01d1992cdf4c42284c3855f70253b9cd5000ff45fca13c",
-   "skills/executing-plans/SKILL.md": "f38e8f2ddcf079f65493adc713c1fed78421dfaf5f4dbf6b3a6b2b1d95466e71",
+   "skills/executing-plans/SKILL.md": "e4649e59880ef2643d1da128e3d607e87e3f969410d72095a5bf65811b6036dc",
    "skills/executing-plans/scripts/task-done": "d0d4f2397c85a4426443ea955e699ef12568b41b408ec6122d4ec2433ee3a5f6",
    "skills/executing-plans/scripts/task-start": "f833693c8fce3700fc9f841562d80f8015cd40f652c168a3405ac3e46947a1fe",
    "skills/finishing-a-development-branch/SKILL.md": "8db5a922b242dd4e1bf824cb91c13b3e8d8e8a86d6ceaf7f0774eb9cce909d65",
    "skills/receiving-code-review/SKILL.md": "091df1629510af1b92fc4abd6f96732ebedb4cb2c0f3457e8f2740b0504a2438",
    "skills/requesting-code-review/SKILL.md": "2180e14a448e9410bec88e6646a2d1f0ce7fdd58de27388c1e052e929679d2bc",
    "skills/requesting-code-review/code-reviewer.md": "82e370be6b3447523816286195571e4216ba56ba1ad6ad0e87862294c4c78dcb",
-   "skills/subagent-driven-development/SKILL.md": "8dde5589ee083fb4999106d116f01c8fdaf3116a8a9813fdedeb80329de49046",
+   "skills/subagent-driven-development/SKILL.md": "ba41f697136cba88a7962d60c8e2f97488ba04a8688b1d0fbeb27f6953808e75",
    "skills/subagent-driven-development/implementer-prompt.md": "81dd9d5a3fb0b09b96b5829f03b9796842f3199ef7591d1ba1c2db2a515f64d0",
    "skills/subagent-driven-development/re-review-prompt.md": "0828a5e9cbb12ba49f14621dd8c3953c48c0fc383e75bb5494f055ed0d6d824f",
+   "skills/subagent-driven-development/references/batching.md": "b54dc7e23dbfb90db89bcb2fb3af591aabf6a271a165fbc0da4c6f9439980eac",
+   "skills/subagent-driven-development/references/cannot-verify.md": "e698713a15e0eabf1a2ab26ffe1bb04bf70c9d6d2e2060d44a0f9a1bdd4408bf",
+   "skills/subagent-driven-development/references/final-review.md": "2fd999d86e5dd0b9b32aaf93f2a41663ef30b3e3cb78fb2fd5cb450eb59eb9de",
+   "skills/subagent-driven-development/references/fix-loop.md": "eafff1f801af2ced86e8761f3eeef04b701860d986ba5d0a8b20d506a75104bb",
+   "skills/subagent-driven-development/references/handling-reports.md": "8f759cdd4936220c38aab05b6d6c48c6df8ac8f146b0f37a6d2facbf87133c67",
+   "skills/subagent-driven-development/references/preflight.md": "3ea21c5fc1af1a190ac8a9d19ceb0849b47bf2ffe27b87dffcc21b6a0539776c",
+   "skills/subagent-driven-development/references/resuming.md": "ff6e38bde2276faa2a7e93513086caded0ea10edbf2ec7f349a7e3b0d7c668c4",
    "skills/subagent-driven-development/scripts/review-package": "f9275175b2276b1d5fdb1bae0bedaadd2a950659b7c6f311ea37ff85e1861b1f",
    "skills/subagent-driven-development/scripts/sdd-workspace": "4fd9770e7a49b6bde488c0e92bac1b3bd01fcbdaf8f06b6c4efbe3a1abd99f86",
    "skills/subagent-driven-development/scripts/task-brief": "cc563538e09abf719b34ddf4b2fa7a65cf3b301729039dbfa923cb060f729146",
@@ -1149,13 +1156,16 @@
    "skills/using-superpowers/references/pi-tools.md": "703dbc83d23ecab9c6f388460c38abc482e9dee2fe6772a8c7a255152ad3a4d5",
    "skills/verification-before-completion/SKILL.md": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
    "skills/writing-plans/SKILL.md": "a6c67c1900064347c2a329990dd3c555657c51c3ec53b259a08aa01a2c26139a",
-   "skills/writing-skills/SKILL.md": "bbdfe742f853562e643a3d40d64476359d47881e39cef80a189283fa26d11ab9",
-   "skills/writing-skills/anthropic-best-practices.md": "217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a",
-   "skills/writing-skills/examples/CLAUDE_MD_TESTING.md": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0",
-   "skills/writing-skills/graphviz-conventions.dot": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694",
-   "skills/writing-skills/persuasion-principles.md": "a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03",
-   "skills/writing-skills/render-graphs.js": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196",
-   "skills/writing-skills/testing-skills-with-subagents.md": "c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade"
+   "skills/writing-skills/SKILL.md": "8cb3ac68c6d8c4bb46886b998b09af7989643cab8bd0e46ee86dd62e64546bbe",
+   "skills/writing-skills/references/CLAUDE_MD_TESTING.md": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0",
+   "skills/writing-skills/references/anthropic-best-practices.md": "217629b356c09c9bd11017c9788e8fc654ca1b32c92d4a51cd490e16dd65e59a",
+   "skills/writing-skills/references/bulletproofing.md": "9397023e6bc85b556a57f3097371363bf03e28e755c57f403f470bcda90e0a23",
+   "skills/writing-skills/references/discovery.md": "c6bbc74af3be90f693f7cbc986af6fa94e8df75f65109b52e96032587f5b92af",
+   "skills/writing-skills/references/flowcharts.md": "8b1f542391f274f0d33f3457ac099a3d317d6877eaa3b8d3b1ebef151b55fda7",
+   "skills/writing-skills/references/graphviz-conventions.dot": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694",
+   "skills/writing-skills/references/persuasion-principles.md": "a51bc9bf75189ea73a27b3fb504a2fdfdb966fb1f7f1cdf03203230a216ccc03",
+   "skills/writing-skills/references/testing-skills-with-subagents.md": "ed8a6862c085900135962390530d9dc7637ad6d650b4324ce3b051287a5c3f22",
+   "skills/writing-skills/render-graphs.js": "c7f412cc629461c4d10287e668731874c0497707023e3e3f74a5355eb2cee196"
   },
   "known_upstream": [
    "skills/brainstorming",
@@ -1176,10 +1186,10 @@
   ],
   "license": "MIT",
   "repo": "obra/superpowers",
-  "updated_at": "2026-10-21 15:58 UTC"
+  "updated_at": "2026-10-22 15:55 UTC"
  },
  "text-to-cad": {
-  "checked_at": "2026-10-21 15:59 UTC",
+  "checked_at": "2026-10-22 15:55 UTC",
   "commit": "338cef365867a74f2a37584ff1685b7f00d2524d",
   "files": {
    ".claude-plugin/icon.png": "8c44d41c85e0131a3daf2ae58ec1bef6eb54f8731db665dea5dc7c19524aacbe",
@@ -1292,7 +1302,7 @@
   "updated_at": "2026-10-21 15:59 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-10-22 13:45 UTC",
+  "checked_at": "2026-10-22 15:55 UTC",
   "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
    "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
