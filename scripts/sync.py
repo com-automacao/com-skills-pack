@@ -563,7 +563,8 @@ def main():
     has_warn = any(f["level"] == WARN for r in report.values() for f in r["findings"])
     changed = any(r["applied"] and not r["notes"].get("unchanged") for r in report.values())
     # impressao digital dos achados: evita abrir o mesmo alerta todo dia
-    keys = sorted(f"{sid}|{f['code']}|{f['where']}|{(r['notes'].get('commit') or '')[:12]}"
+    # sem o commit: a mesma pendencia nao pode abrir uma issue nova a cada dia
+    keys = sorted(f"{sid}|{f['code']}|{f['where']}|{f['msg']}"
                   for sid, r in report.items() for f in r["findings"] if f["level"] != INFO)
     fingerprint = hashlib.sha256("\n".join(keys).encode()).hexdigest()[:16]
     gh_out = os.environ.get("GITHUB_OUTPUT")
