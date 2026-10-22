@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-21 15:59 UTC**
+Última verificação: **2026-10-22 13:45 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -11,7 +11,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `genjutsu` | [AThevon/genjutsu](https://github.com/AThevon/genjutsu) | NOASSERTION | copiado | 1 | [`1f518a7`](https://github.com/AThevon/genjutsu/commit/1f518a71378b15d423389e546e767cffc86e14c3) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `motion-design` | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) | MIT | copiado | 1 | [`f9a8a04`](https://github.com/LottieFiles/motion-design-skill/commit/f9a8a041b85185ee4881b3471d3415e939aac772) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `design-dna` | [zanwei/design-dna](https://github.com/zanwei/design-dna) | MIT | copiado | 4 | [`593e39b`](https://github.com/zanwei/design-dna/commit/593e39bc9e3652734653bd75544a333d7d43615e) | 2026-10-13 16:22 UTC | 🟢 ok |
-| `img2threejs` | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Apache-2.0 | copiado | 8 | [`d508b59`](https://github.com/img2threejs/img2threejs/commit/d508b596cb221f1509f6e50ab68fce275a5cfb44) | 2026-10-13 16:22 UTC | 🔴 bloqueado |
+| `img2threejs` | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Apache-2.0 | copiado | 8 | [`954cd58`](https://github.com/img2threejs/img2threejs/commit/954cd5845e90efd045694bab725d68a9863c20e0) | 2026-10-22 13:45 UTC | 🟢 ok |
 | `scroll-craft` | [nateherkai/scroll-craft](https://github.com/nateherkai/scroll-craft) | MIT | copiado | 1 | [`75d81f7`](https://github.com/nateherkai/scroll-craft/commit/75d81f74e83692add18cd7a8a8e078b8a887a579) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | copiado | 1 | [`5beb35b`](https://github.com/mattpocock/skills/commit/5beb35b040e3de97e54fa9e386d7e42d15c295c2) | 2026-10-19 17:29 UTC | 🟢 ok |
 | `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`bc8f692`](https://github.com/anthropics/knowledge-work-plugins/commit/bc8f6922cfeea215a202cdcc9f0d299a990889a8) | 2026-10-21 15:58 UTC | 🟢 ok |
@@ -25,7 +25,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`b739a8a`](https://github.com/obra/superpowers/commit/b739a8af570e10a95898f2bdf6cec97467fa6c12) | 2026-10-21 15:58 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`98fb27d`](https://github.com/upstash/context7/commit/98fb27dbcbc8fb04227ef4f15a14f623ffdeb9f8) | 2026-10-21 15:59 UTC | 🟢 ok |
 | `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`338cef3`](https://github.com/earthtojake/text-to-cad/commit/338cef365867a74f2a37584ff1685b7f00d2524d) | 2026-10-21 15:59 UTC | 🟢 ok |
-| `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | NONE | só link | 10 | [`b1c6230`](https://github.com/CloudAI-X/threejs-skills/commit/b1c623076c661fc9b03dac19292e825a5d106823) | 2026-10-13 16:23 UTC | 🔴 bloqueado |
+| `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🔴 bloqueado |
 
 ## Skills disponíveis na origem e ainda não incluídas
 

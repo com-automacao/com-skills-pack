@@ -306,22 +306,25 @@ sources:
       - skills
 
   threejs-skills:
-    # Sem licenca declarada: redistribuir e proibido. So monitoramos e o
-    # README ensina a instalar direto da origem.
+    # Era so link (sem licenca). O autor adicionou MIT em 2026-10-18.
     repo: CloudAI-X/threejs-skills
     branch: main
-    license: NONE
-    mode: link
+    license: MIT
+    mode: vendor
     watch: skills
     paths:
+      - LICENSE
       - skills/threejs-animation
+      - skills/threejs-asset-pipeline
       - skills/threejs-fundamentals
       - skills/threejs-geometry
       - skills/threejs-interaction
       - skills/threejs-lighting
       - skills/threejs-loaders
       - skills/threejs-materials
+      - skills/threejs-performance
       - skills/threejs-postprocessing
+      - skills/threejs-react-three-fiber
       - skills/threejs-shaders
       - skills/threejs-textures
 

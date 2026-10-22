@@ -29,6 +29,7 @@ GROUPS = [
     "mattpocock-skills/skills/engineering",
     "anthropic-skills/skills",
     "codeigniter-skills/skills",
+    "threejs-skills/skills",
     "find-skills/skills",
     "com-automacao/skills",
 ]

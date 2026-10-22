@@ -139,10 +139,24 @@ Origem: [greensock/gsap-skills](https://github.com/greensock/gsap-skills) (MIT).
 
 ### 6. 3D
 
+Origem das `threejs-*`: [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) (MIT desde 18/10/2026; antes não tinha licença e ficava só como link).
+
 | Skill | Pasta | O que faz |
 |---|---|---|
 | `img2threejs` | `img2threejs/` | Transforma uma imagem de referência em modelo 3D procedural em código Three.js, pronto para animar. ([img2threejs/img2threejs](https://github.com/img2threejs/img2threejs), Apache-2.0) |
-| `threejs-*` (10) | não incluída | Cena, geometria, materiais, texturas, luz, loaders, animação, interação, shaders e pós-processamento. **Só link**: o repositório [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) não tem licença, o que proíbe redistribuir. Instale direto: `npx skills add CloudAI-X/threejs-skills`. O sync continua monitorando. |
+| `threejs-fundamentals` | `threejs-skills/skills/` | Cena, câmeras, renderer, hierarquia de objetos e coordenadas. |
+| `threejs-geometry` | `threejs-skills/skills/` | Formas prontas, BufferGeometry, geometria customizada e instancing. |
+| `threejs-materials` | `threejs-skills/skills/` | Materiais PBR, basic, phong e de shader. |
+| `threejs-textures` | `threejs-skills/skills/` | Texturas, mapeamento UV, environment maps e HDR. |
+| `threejs-lighting` | `threejs-skills/skills/` | Luzes, sombras e iluminação por ambiente (IBL). |
+| `threejs-loaders` | `threejs-skills/skills/` | Carregar GLTF, texturas e HDR, com progresso. |
+| `threejs-animation` | `threejs-skills/skills/` | Keyframes, esqueleto, morph targets e mixer. |
+| `threejs-interaction` | `threejs-skills/skills/` | Raycasting, controles de câmera, clique e toque em objetos. |
+| `threejs-shaders` | `threejs-skills/skills/` | GLSL, ShaderMaterial, uniforms e efeitos customizados. |
+| `threejs-postprocessing` | `threejs-skills/skills/` | EffectComposer: bloom, profundidade de campo, efeitos de tela. |
+| `threejs-performance` | `threejs-skills/skills/` | **Nova.** Mede e otimiza a velocidade: estatísticas de render, memória, menos draw calls (merge, instancing, LOD), sombras e shaders. |
+| `threejs-asset-pipeline` | `threejs-skills/skills/` | **Nova.** Comprime modelos glTF com gltf-transform: Draco, meshopt e texturas KTX2/WebP/AVIF. |
+| `threejs-react-three-fiber` | `threejs-skills/skills/` | **Nova.** Cenas Three.js em React com React Three Fiber e drei. |
 
 ### 7. Dados e SQL (plugin `data`)
 
@@ -302,7 +316,6 @@ O plugin traz o servidor local `cad`, que mostra os modelos na conversa. **Windo
 
 | O quê | Por quê |
 |---|---|
-| `threejs-*` (CloudAI-X) | Sem licença: só link e monitoramento (seção 6). |
 | `maestri-*` (7) | Vêm com o app comercial Maestri; não há repositório público. |
 | Nativas do Claude Code (`/code-review`, `/simplify`, `/security-review`, `/init`, `run`, `claude-api`, `dataviz`, `plugin-authoring`, `update-config`) | Já vêm com o Claude Code em qualquer instalação. |
 | Design visual, documentos, vendas, marketing | Não são de programação. |

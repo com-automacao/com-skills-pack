@@ -389,12 +389,12 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-10-21 15:58 UTC",
-  "commit": "d508b596cb221f1509f6e50ab68fce275a5cfb44",
+  "checked_at": "2026-10-22 13:45 UTC",
+  "commit": "954cd5845e90efd045694bab725d68a9863c20e0",
   "files": {
    "CHANGELOG.md": "3bbd981052b05cd2189db85fc69733a8f3e39658b2b57e44904f6fcd246d375b",
    "LICENSE": "4595055948a67e91177115c57e154804046878e77ff223de22accc880012827a",
-   "SKILL.md": "3ea56481a7663c60b2046b53e6e07e5777cc96561461181bbe52f19909a5c49c",
+   "SKILL.md": "d9fa095b398d806ec539022f601b77735446ede61ad7b07abe857e5cfb7e97a2",
    "assets/logo.svg": "2f6d08b28aeb06308aaa7b3b4a634d979fd320dcfae17c18cd36aae5c206c6ec",
    "assets/sponsors/atlas-cloud-logomark-black.svg": "a2e7497a99c8319bbf364ec233ddfb4d5f5f8a8d4750e5b168436dced3ae762b",
    "assets/sponsors/atlas-cloud-logomark-white.svg": "2bbf6426db8066cca05549a7d2e5cdafb1514dbbda8d10f514244e08b5bbee14",
@@ -409,6 +409,8 @@
    "docs/GLB_CHARACTER_POLISH_PROMPT.md": "43ae51659fe493b73ca3fc81a242c2cf1f0071a45c46a4ef04cc32aecfd8c610",
    "docs/GLB_CHARACTER_PROMPT.md": "61181686cee933f4f1a1668e8ae3dd5b074b294454e0424635f891ea0b7132e8",
    "docs/HAIR_PIPELINE.md": "7ca97ee8e74168c1bdf3d0794308996319471eefd108a8ebcfaca55921ed3c3c",
+   "docs/INSTALL.md": "dd5cc03d5490d86a08d038a59e98e5f35321a6384629e66e9ffd24398ab34571",
+   "docs/PLUGINS.md": "f0f54a389288e5d57398db930bb96e30201a6fc85bcf18328367a432a94db326",
    "docs/RESEARCH_TRELLIS2_TO_IMG2THREEJS.md": "5022e02717c95f32a8b40f74a4bba089da025aa2a8de6739d8dd09b02fe553c3",
    "docs/STAGE_R_BACKLOG.md": "e67b99f56b776915afff881af6d511a2748268843509444e67b3b4edb1215f2e",
    "docs/STAGE_R_TEST_PLAN.md": "8388d542f778e6c1f78cce8c9423fa01ef7e998833ecb1a2738ae49a826fa05f",
@@ -693,6 +695,16 @@
    "grimoire/scripts.md": "669021051ab79a5d291978ae45c0e773cd761c862ff65e707c759a7d9014aff3",
    "scripts/capture_threejs_playwright.py": "b5ba378a841d31fba6b49d0d6eb1888423d0cab12dbbb4b63897ead88cbd0870",
    "scripts/character_audit.sh": "ad3be955a31201b894abc773971d144e113dc36d00342517013b22d5d7a2260e",
+   "scripts/ci/link-baseline.txt": "1e778768bfa69028d7c0c5ef57a14054a10fa0740d54d489227d5895071bb34c",
+   "scripts/ci/md_links.py": "e8199a7b02a75fe9a00832204355ada1724690964efe2eff8a7256711e7c2117",
+   "scripts/ci/md_tables.py": "8aa944eb9d70bf870df3c8bfdd9045d9afaba0c525ec36ac8719acc1281c0b7d",
+   "scripts/ci/mdcommon.py": "ffbbf649fa0c14d59014f08e58ed240cd6ec3e044e18cc063696f3581e6347b7",
+   "scripts/ci/plugin_table.py": "1a44808f85c96c3388c94cfd7779b540d4a8bae20b014cd0f0eabfacc562fbf2",
+   "scripts/ci/pr_scope.py": "2ee4766a7b9df98c33629b0ebb35adea033d67938a3d10854d4c5c7e73e97f04",
+   "scripts/ci/showcase_table.py": "d6664f67f446a9bcc5e3ce5eb689dc9676cf9908eed79a9f7b63cd0df6f39e83",
+   "scripts/ci/skill-budget.json": "09802a2675956c379667d2b08da87d253ca11e5a6d962541440a11fb17704f89",
+   "scripts/ci/skill_budget.py": "3662f099b6c2e25f6d385906a0ae3fbd6ff01c793d7f7341074a0c89b154312a",
+   "scripts/ci/tests/test_ci_scripts.py": "f712759ac8fcc6af6c5eeaca64280fd3ae7d032f7f5fe5b7e686d2e0bb014c32",
    "scripts/issue_triage.py": "c48c2bb4f1d1a2fc63305d739306e30a0b6491e4e304955abf8e6765c9dedf25",
    "scripts/release_metadata.py": "cb1c13d2f6bd0b0b5cbf13249bcc75ba9a4d43358885e8873bf76ac5acdcc10a",
    "skills/generic-extract-skill.md": "1ca28b9a27d4318da7f863f348ba5ad14fbf1c15bd714e158544941644667d8d"
@@ -700,7 +712,7 @@
   "known_upstream": [],
   "license": "Apache-2.0",
   "repo": "img2threejs/img2threejs",
-  "updated_at": "2026-10-13 16:22 UTC"
+  "updated_at": "2026-10-22 13:45 UTC"
  },
  "knowledge-work-plugins": {
   "checked_at": "2026-10-21 15:58 UTC",
@@ -1280,23 +1292,27 @@
   "updated_at": "2026-10-21 15:59 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-10-21 15:59 UTC",
-  "commit": "b1c623076c661fc9b03dac19292e825a5d106823",
+  "checked_at": "2026-10-22 13:45 UTC",
+  "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
-   "skills/threejs-animation/SKILL.md": "b24dc96c7a854ab97fa797a8e20d6bf981f155dfc625fd1ef347042395b7754c",
-   "skills/threejs-fundamentals/SKILL.md": "eb66d52f53f489067d602b9b62df507adb391d8220bdd1a8aae6b73e6cee578a",
-   "skills/threejs-geometry/SKILL.md": "8337bcf86621411f54ef39727b338c84890815e4b3612ce635d593dd9c321a3e",
-   "skills/threejs-interaction/SKILL.md": "1bb23f0388d39863432494ff00ea0a96ae7d093c0c6f3149fb223ba1e673fef6",
-   "skills/threejs-lighting/SKILL.md": "777875f7d6a75219d009ac69310772236231eec7cb57287c0509bb53e994af9d",
-   "skills/threejs-loaders/SKILL.md": "03e0d7319692bb7eaa13cfada5d27d39840c7520c5ddc3fc8cc07b645dcba2e9",
-   "skills/threejs-materials/SKILL.md": "d5846d1b8254b903eacb3014486efbe331101518604b451098fd31989c3e7fe7",
-   "skills/threejs-postprocessing/SKILL.md": "570b86434c30ad9bdc30f4f6d4e8c04124a07dd4ccaa778d4717ecc211dc1d90",
-   "skills/threejs-shaders/SKILL.md": "6702267bd3ee70d458b54078211db36b1c3738c3faa0570e88e33dceaf478a4d",
-   "skills/threejs-textures/SKILL.md": "2a90ce70931e9b172fa5b70c13fd12e7b6f1600482d3ba0c73d95570fe728b65"
+   "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
+   "skills/threejs-animation/SKILL.md": "0ab1b79cb977a1b5b03b247f9ef677acc76c3ee80d42904afb1b66838a19c481",
+   "skills/threejs-asset-pipeline/SKILL.md": "25ca0a26ce01a1151c6757757569ef7bea56bc1af77b216c386c136060e5952d",
+   "skills/threejs-fundamentals/SKILL.md": "cb6a0db8f05bb7d8196cad0ca6ae245e2baec53da4675e1b94be4fa735ed8a09",
+   "skills/threejs-geometry/SKILL.md": "c29c1568cb56e902999b6a50316cd5079c53ee620138148897d269e9716e8da7",
+   "skills/threejs-interaction/SKILL.md": "46f60f3235aa11f2b89320cc2fb5b0adc167f3e8f0c717ba60ad1b006b41621f",
+   "skills/threejs-lighting/SKILL.md": "f12faf79625a7f42952124a5456d338e8399a65e16326c1a6a3239aa8e5ce489",
+   "skills/threejs-loaders/SKILL.md": "ddf6ed2d7dfc809ce722482541fe88af7d349cd8066a4617fabaea865a2a831d",
+   "skills/threejs-materials/SKILL.md": "7d17cefac80196f3dd5068e2042e66244073925d24a55b7ca77534d594c5bc81",
+   "skills/threejs-performance/SKILL.md": "dacbf6a43ed280bdfcda2ce9fcf7a3f0ae54c25ed264e62f6e9a0117d6534285",
+   "skills/threejs-postprocessing/SKILL.md": "0063f5f544215748ed666d878f1d69112094e662792228445a3ab9a56d209fb1",
+   "skills/threejs-react-three-fiber/SKILL.md": "07c0f09516dce50c91c3d23c5baca83c35d161e1abe3d8460782aba56e9476fa",
+   "skills/threejs-shaders/SKILL.md": "8dc55ed6cc348abaad60851ae9f3f5ebcc6e3027dd7f7a55acc1832c73f11bca",
+   "skills/threejs-textures/SKILL.md": "43b4fde95cf9fe42b05f38fe6a6c6d5f36eb062cb15b3fd21a0eed376a5d1d9b"
   },
   "known_upstream": [],
-  "license": "NONE",
+  "license": "MIT",
   "repo": "CloudAI-X/threejs-skills",
-  "updated_at": "2026-10-13 16:23 UTC"
+  "updated_at": "2026-10-22 13:45 UTC"
  }
 }
