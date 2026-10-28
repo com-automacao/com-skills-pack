@@ -1,6 +1,6 @@
 {
  "agent-skills": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
   "files": {
    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
@@ -50,8 +50,8 @@
   "updated_at": "2026-10-14 12:20 UTC"
  },
  "ai-memory": {
-  "checked_at": "2026-10-27 16:42 UTC",
-  "commit": "0e5488073d7073caa3181bbaf184102b215dcf66",
+  "checked_at": "2026-10-28 17:12 UTC",
+  "commit": "f32a9c5334185d0f35702d3ea50d094f83d0da82",
   "files": {
    "LICENSE": "18332c61780ce8e694d4fa330770cd4d8c85e33f47ac13a80d72d70bb032ae72",
    "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md": "8771edcc5e529430d19c360ba5a250f6f0cdf45c95f4dea48af6f6646f8f6e13",
@@ -65,10 +65,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "akitaonrails/ai-memory",
-  "updated_at": "2026-10-27 16:42 UTC"
+  "updated_at": "2026-10-28 17:12 UTC"
  },
  "anthropic-skills": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
   "files": {
    "skills/mcp-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
@@ -106,7 +106,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "base44": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "061d03659782a90899703eed7b8eb87ce2db05d1",
   "files": {
    "LICENSE": "5546cdc657881c6a454bb4d09044e59fb4f84f3951fcb88c8102b7fe8332b4a4",
@@ -188,7 +188,7 @@
   "updated_at": "2026-10-26 17:24 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:12 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -203,8 +203,8 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "context7": {
-  "checked_at": "2026-10-27 16:43 UTC",
-  "commit": "5c368c93ef923e457ac64957d80a1b6b12a9788f",
+  "checked_at": "2026-10-28 17:13 UTC",
+  "commit": "eabe36965ec69b2f3487c4eb329c448dd60b817c",
   "files": {
    "LICENSE": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c",
    "plugins/claude/context7/.claude-plugin/plugin.json": "38d9722bc43c83a5974bb75433f106d45b57eac7c61e083b0342e90c225f0e00",
@@ -214,10 +214,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "upstash/context7",
-  "updated_at": "2026-10-27 16:43 UTC"
+  "updated_at": "2026-10-28 17:13 UTC"
  },
  "design-dna": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "593e39bc9e3652734653bd75544a333d7d43615e",
   "files": {
    "LICENSE": "2de108bcd0d904f8756e1135ca77ce1e3e9ca0edb1ae6abecb97dea76d27d174",
@@ -238,8 +238,8 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "find-skills": {
-  "checked_at": "2026-10-27 16:42 UTC",
-  "commit": "533c7df02f9b4d913fb8eba553aa99d86103d1d4",
+  "checked_at": "2026-10-28 17:12 UTC",
+  "commit": "699d35b21bd3c97dbc0edeae062b2698898bb2e5",
   "files": {
    "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
    "skills/find-skills/SKILL.md": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
@@ -247,10 +247,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "vercel-labs/skills",
-  "updated_at": "2026-10-27 16:42 UTC"
+  "updated_at": "2026-10-28 17:12 UTC"
  },
  "genjutsu": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "1f518a71378b15d423389e546e767cffc86e14c3",
   "files": {
    "LICENSE": "19fd36b46fd5b393c6d58ad1ac26afd436bdce6951a9952094eff70366e5b314",
@@ -374,7 +374,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -393,7 +393,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "3e7099e1b7fe93e187e06db4bdbe1e1906c21a28",
   "files": {
    "CHANGELOG.md": "3bbd981052b05cd2189db85fc69733a8f3e39658b2b57e44904f6fcd246d375b",
@@ -720,8 +720,8 @@
   "updated_at": "2026-10-27 16:42 UTC"
  },
  "knowledge-work-plugins": {
-  "checked_at": "2026-10-27 16:42 UTC",
-  "commit": "c75fda00ff0e41c8ee331ae312c8a07f1967653b",
+  "checked_at": "2026-10-28 17:11 UTC",
+  "commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
   "files": {
    "LICENSE": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26",
    "data/skills/build-dashboard/SKILL.md": "6f23faa0b266820a23096f76df9d83e6b67597af4fc8c3306b4eba7e9f409f99",
@@ -748,10 +748,10 @@
   "known_upstream": [],
   "license": "Apache-2.0",
   "repo": "anthropics/knowledge-work-plugins",
-  "updated_at": "2026-10-27 16:42 UTC"
+  "updated_at": "2026-10-28 17:11 UTC"
  },
  "mattpocock-skills": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
   "files": {
    "LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
@@ -765,7 +765,7 @@
   "updated_at": "2026-10-27 16:42 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
@@ -793,16 +793,16 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "rea": {
-  "checked_at": "2026-10-27 16:43 UTC",
-  "commit": "65f1c447344a423fa2785847dbcea1e9a9e2454a",
+  "checked_at": "2026-10-28 17:12 UTC",
+  "commit": "a6295e433b7e141740ee1aeccd1c077952e77808",
   "files": {
-   ".agents/skills/reverse-engineer-anything/SKILL.md": "547bffd9dcbb88378a488bada8ea32c60bddd561ccee5246be996e993c5a7113",
+   ".agents/skills/reverse-engineer-anything/SKILL.md": "65108ceed2e6ef47a43a614c2a6ab58695061275ddb25038e09b680204b2f097",
    ".agents/skills/reverse-engineer-anything/references/android-applications.md": "1698a9a21eacc685b327059efee2e9cdb6ac1f55fa3875eed96b4b304ab155f3",
-   ".agents/skills/reverse-engineer-anything/references/connection-and-recovery.md": "3c2049047f2e9c01a224d71c1b54fbf429a98cdf8e691e9058d67ec4bc1df616",
-   ".agents/skills/reverse-engineer-anything/references/environments.md": "17f1eb5d3161f1ec9ca80ee82bc474b02468e0de0fa6243a701c8b0ef91e2a53",
+   ".agents/skills/reverse-engineer-anything/references/connection-and-recovery.md": "69aae4c8c2741cc745171a007257cf94fa65247bf73e4c4eb031a1361a06831e",
+   ".agents/skills/reverse-engineer-anything/references/environments.md": "bb1065d7c0c96f82d6350c4f55071a883f99dd852fa1e6e62650b26782cdc95b",
    ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "f44b68acc6ebaa60c1f5d0670e4f9ff7212d351a0ecc6e6ca77ce38b9177ea57",
    ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "15ae2177ef1c41e25095238c64b38f34d8ea53ea3c4c74f627096f90b8eaa54b",
-   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "defbc67dda232bdb940147c8dc5d589bfc7a7f7839c898cc70eb48bade98e469",
+   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "67c9b93db93f6a3113ece6f66ca6a58cac30057659ca1312dead84781a84791f",
    ".agents/skills/reverse-engineer-anything/references/runtime-observation.md": "e207a912470a1a56dc02316eb7b040ac50b4d763f2273e97a6811863d9051d74",
    "LICENSE": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b"
   },
@@ -814,16 +814,16 @@
   ],
   "license": "MIT",
   "repo": "morluto/rea",
-  "updated_at": "2026-10-27 16:43 UTC"
+  "updated_at": "2026-10-28 17:12 UTC"
  },
  "ruflo": {
-  "checked_at": "2026-10-27 16:42 UTC",
-  "commit": "b49078cc40945d2a81ab1dd9d0faeccd04f827f5",
+  "checked_at": "2026-10-28 17:12 UTC",
+  "commit": "7387295568883490d609317ec719aa8f8e80d410",
   "files": {
    ".claude/commands/agents/README.md": "52f50d320ed2058cc815a836530e43cba4511df56eb9edac8837b922339fcbd7",
    ".claude/commands/agents/agent-capabilities.md": "1fa62c27d0e4b9969e7394c1cbbcfd92ecb95750f66ea67204ad10de7b9a7223",
    ".claude/commands/agents/agent-coordination.md": "7b6f421214b0dfd6402d0fcd17c78059806648618b312aadf496e54ed4ec2a75",
-   ".claude/commands/agents/agent-spawning.md": "74bfe922137a05922a5d936c2bdc9fa4aef8972e2a8a5b18f59bad08aee2bfee",
+   ".claude/commands/agents/agent-spawning.md": "0e21c12d8ca7ae1f45af5da5662789ce722503f3737c8cc8fdb733353023793b",
    ".claude/commands/agents/agent-types.md": "d791bef16a138c8f903a5ad73dfbf58ade712295531e62df85737c455cd1e949",
    ".claude/commands/analysis/COMMAND_COMPLIANCE_REPORT.md": "8e72f8fedc8805655ab55d835a2b47740b60dee260f8b8d33d6aba49e67ca5a6",
    ".claude/commands/analysis/README.md": "e65e139f07695b2a92e14dc07bf63bd9a915006bb66b0e624c9cebb5d17ca0cf",
@@ -861,21 +861,21 @@
    ".claude/commands/github/README.md": "4fb6c4348f6f8c2d5c252203115942a770743e5e7eb4c696e2d359916050948c",
    ".claude/commands/github/code-review-swarm.md": "2f1b3210ca060bada1aeb29ba770ec346723722162d05863763391104413b4b8",
    ".claude/commands/github/code-review.md": "c1bc7608b43aa1ee100d29795d369bef0df6cac114d94c30b42c206038c84be2",
-   ".claude/commands/github/github-modes.md": "622955b84aa0784980fa2d97fe6494f46fe7b4dd7c3515d1e164be9ed6d999aa",
+   ".claude/commands/github/github-modes.md": "5f00688ce900b62816e271a59b8b4b8875a16363ca1a0634537d1e499c193e88",
    ".claude/commands/github/github-swarm.md": "8af56205449b4c82e546901c6ffca10f122619757bf50aaed7b70bf43a6b8bca",
-   ".claude/commands/github/issue-tracker.md": "e703cc1b48242262dec4f16ff032f70b320b1ca930252c4027ed6b42856cbb3e",
+   ".claude/commands/github/issue-tracker.md": "cb5ed489453a79378893abc5370f4c53b02c1be6d9c8470613f6fc9a884b2881",
    ".claude/commands/github/issue-triage.md": "c0d647e0dfe4d16a746a295bde36ff2f6ebef3931387393c9a461c741b90aef0",
    ".claude/commands/github/multi-repo-swarm.md": "df285d1a6eb107e7e22f4bebbcae61d70743b972a47b60041bac331608b1e2f0",
    ".claude/commands/github/pr-enhance.md": "b295761f0a6f2eff72c27d66803c534b7e3ad4f4e6482bd516cd6065f8c6eff4",
-   ".claude/commands/github/pr-manager.md": "2857dfbb9a47ff573edbbcca3838ced824a9d0122d675a6b0cc4659175f9aee1",
+   ".claude/commands/github/pr-manager.md": "08cc654001954a70fc406f7705740a7684f23386625390241fbd5726446f83d7",
    ".claude/commands/github/project-board-sync.md": "7109a7b4e54f5af8a547e336b25092e3d6d82ff5b1ff92758b6d2aa54ce835b1",
-   ".claude/commands/github/release-manager.md": "39c2907d25183858ef65d86cddae28ab280755097d124d838da8e8b903271bc4",
+   ".claude/commands/github/release-manager.md": "fad2df5ffa54674a6d0cabe65350aac8569c37fa151bc59b81f874085a137557",
    ".claude/commands/github/release-swarm.md": "ac52624cab6a6d4bcff2c9f03b033c05fc5d47a1fe8c076cabb025aea37e2401",
    ".claude/commands/github/repo-analyze.md": "7c57c22d09ee9a7eea693a606e189a4f2d04e00f5f92120b73afdeb8e95e2f11",
-   ".claude/commands/github/repo-architect.md": "503b48a2d00ba6b9a2e31539f6c84ab11d0a898b40c9097e579532dcc91e0212",
+   ".claude/commands/github/repo-architect.md": "7791e70603c2d9d7e4b7cfe853f1b97ef4e2c348ec732e81cc018abfcf9a7be0",
    ".claude/commands/github/swarm-issue.md": "38ce94624385c31f509a258639775c3ca27c352b7b4a37ff7dd0c00ecee3042d",
    ".claude/commands/github/swarm-pr.md": "403feac4519f61216b89156c280f10eeb55ecd79e780a22ec298793104f885f1",
-   ".claude/commands/github/sync-coordinator.md": "197e5b633bd2d8163e2ad70c53f3a32cfab7ed4185d6d1f1ad60d9902ef62732",
+   ".claude/commands/github/sync-coordinator.md": "c01a09a8cb01f68ea8fcbb6a00f7bd8584d4a6852a54e2d2d65467e817091adf",
    ".claude/commands/github/workflow-automation.md": "409fd383f327a893cd44192706a0d9ef9f2bc55f55ac7967f769918a19e7e359",
    ".claude/commands/hive-mind/README.md": "fa9fd39a53ee30b6ca4e9ea9a2242006ceeee8b0c05150a099a5761ceda5bfd7",
    ".claude/commands/hive-mind/hive-mind-consensus.md": "f506ae557ab8ae1211a36ceb14ddd3c98d27318e01646d007e73b2da0ef04b64",
@@ -939,13 +939,13 @@
    ".claude/commands/sparc/mcp.md": "c0a68234d8cd14ee6e8e29c44560ed1dcdeeb592a51e3f101abc53495e1b7b0c",
    ".claude/commands/sparc/memory-manager.md": "94608382b51c78b50042dfc21d6445f08cd4066875a22e86c0988ef144c02875",
    ".claude/commands/sparc/optimizer.md": "5f5c2ab6e0f7248512a3819013983c7bbc1a604b3f6043eea37885b6981a2137",
-   ".claude/commands/sparc/orchestrator.md": "29fab62338b6172e5d42f51918b1abfee89afbcf909668190c767521ed82f9ef",
+   ".claude/commands/sparc/orchestrator.md": "93ae54f5a280d338163c2aacb1341bd9c0cba3e96e59c87b3145b06d99a1fdba",
    ".claude/commands/sparc/post-deployment-monitoring-mode.md": "f112e0fd1d1b9705e0e0a302329799ba4b80d7f3f666d4cb7910b6655309cdc7",
    ".claude/commands/sparc/refinement-optimization-mode.md": "aaef74635728ca063af5e738ae7247af38d3f5015617568735e2804682b3ba78",
    ".claude/commands/sparc/researcher.md": "ec6c5c30269db2066ce65869faa398fc0357f48073f75de097e43653a1e9cc23",
    ".claude/commands/sparc/reviewer.md": "f81d581bc6ceeb8319e01439030f905f8f49a677614021f177eb91ef23b05d6b",
    ".claude/commands/sparc/security-review.md": "c9029a10c045fbcb99c9f69ddc5d1b036197006c2f846823c4098976d092eece",
-   ".claude/commands/sparc/sparc-modes.md": "2c740231aeed49a427b2695629e437cd7fd980ddb25b3a4411820f9888ac24de",
+   ".claude/commands/sparc/sparc-modes.md": "4702a8fe937e5685c8c8262a95fdeaf5686ee2e2f4966f0a53c0f4c12fb1becb",
    ".claude/commands/sparc/sparc.md": "9e54e553a2ba6d8f249ed05ec1fbdcdb5e7affada7871063e062d988e9cd4abc",
    ".claude/commands/sparc/spec-pseudocode.md": "d60a693ba51f6a34fb9d12aadd8debebdb541e094b90388114603918e681459e",
    ".claude/commands/sparc/supabase-admin.md": "25b952c5e90d3c30d158d91e80e07954609eb7e080e8996d1a49c7756c7cfdb9",
@@ -997,19 +997,19 @@
    ".claude/skills/flow-nexus-neural/SKILL.md": "2aa5305df456c419c53d83da64a8b11d39b29e6924fd3bc2dcbbb59feaa2105c",
    ".claude/skills/flow-nexus-platform/SKILL.md": "7b0b002fa0edda7130a095c1df192c4f9ffc7aaf59936d28ad5de22212eb6486",
    ".claude/skills/flow-nexus-swarm/SKILL.md": "dade8c057c833bb4baa8855d97d13befb9bd40722cbdf2c9aa9fa353f0191789",
-   ".claude/skills/github-code-review/SKILL.md": "ae2003bc1d2cb4bf4b50714166839a12cca80a7b34edd1414e123cce3ee3b08b",
-   ".claude/skills/github-multi-repo/SKILL.md": "4bffcdde56dde22ccea63322360588fd718e780a34f9f476bf8bca9c748b2401",
-   ".claude/skills/github-project-management/SKILL.md": "3dc34b30895bde5204dadf80127c73452cb57b2c917730b3e1d7515be50fc0fc",
-   ".claude/skills/github-release-management/SKILL.md": "e3467ff559be1dcffe508b576c395125a0da84b01791f65c3e0ac5aceb366b1d",
-   ".claude/skills/github-workflow-automation/SKILL.md": "6e2d7b7865411209e7c20fe38dbdc77decd4b022bff4b1f8fb69a24661c1c24f",
-   ".claude/skills/hooks-automation/SKILL.md": "748868e06e46fd98c2c219d9e2cc05bcd4109d86c768c2e819c150e1c45020bd",
+   ".claude/skills/github-code-review/SKILL.md": "095a7e347a6076d00385ff8621f53b2baa41f63de116ce519cdf021310f8609b",
+   ".claude/skills/github-multi-repo/SKILL.md": "b77174ca86c2ddc8c5abf2854f70802117139090e60c62030671618d008cd39e",
+   ".claude/skills/github-project-management/SKILL.md": "fefb0a9927f0cf2a27919c3ee49ed9f3e80cbe7e11b74faaf61d5dfcc4e8c934",
+   ".claude/skills/github-release-management/SKILL.md": "b830dcc8111b453e4a908226be1a4727c02473ce0a3498e16a507bf62322e8ba",
+   ".claude/skills/github-workflow-automation/SKILL.md": "48d5f0975b47293032f2038e56e034378d3f5e81cdf35b742d02a633ae79cc33",
+   ".claude/skills/hooks-automation/SKILL.md": "354d1794dcbb9d051a2aed60a7c74902153ca6ab996ba534b62b6172b0ff00c0",
    ".claude/skills/pair-programming/SKILL.md": "0b706d7d1fc40706614b57b750078113180ecb552a8e8acac4dad4ac8d47f74d",
    ".claude/skills/reasoningbank-agentdb/SKILL.md": "d60a616ad0bbe90ce3907ea1047731ca45fb33704f4359a22f6723022b9ea255",
    ".claude/skills/reasoningbank-intelligence/SKILL.md": "b62b18984d12dd918bd9b74740eefcbff2c203e09956c01021389882923192d4",
    ".claude/skills/skill-builder/SKILL.md": "3ebb2c70e4d816c24ce7ac03c762b0bba1afaa34505e3aaa3c04f65ed8270297",
-   ".claude/skills/sparc-methodology/SKILL.md": "eb858ef5f83ea9bdd6c2811df4afc869a2767bc2e374a3c5a9258d449fe193dc",
+   ".claude/skills/sparc-methodology/SKILL.md": "d727af3fb77ceabf488c0727075f6f0b2c271610b7c5ce42660ab7371741613b",
    ".claude/skills/stream-chain/SKILL.md": "09a978590c2cc3013230c2a7cd99a4cdef53b8d3df5114c34ceba6539a33194d",
-   ".claude/skills/swarm-advanced/SKILL.md": "562445160f552fd634538224b01528b009c4d59362fc29826fd51722d0ab4927",
+   ".claude/skills/swarm-advanced/SKILL.md": "104fe418cef98521dbd9df289ddbe9370db6110dacf2d041af1fd449a5fc96bf",
    ".claude/skills/swarm-orchestration/SKILL.md": "9f0bc14c44ec5c11eb753c02afa843b6ace5043d44b23da25fbca73e8098857a",
    ".claude/skills/v3-cli-modernization/SKILL.md": "73d3fff016626ecd675a7ae6b87ad87193c396cbe6440885683b675089f873fc",
    ".claude/skills/v3-core-implementation/SKILL.md": "9eb11363e80417b89daf3926b906ab2078e65530ab43538f40fae9c3fded9f31",
@@ -1040,10 +1040,10 @@
   ],
   "license": "MIT",
   "repo": "ruvnet/ruflo",
-  "updated_at": "2026-10-27 16:42 UTC"
+  "updated_at": "2026-10-28 17:12 UTC"
  },
  "scroll-craft": {
-  "checked_at": "2026-10-27 16:42 UTC",
+  "checked_at": "2026-10-28 17:11 UTC",
   "commit": "75d81f74e83692add18cd7a8a8e078b8a887a579",
   "files": {
    "LICENSE": "dd471a27eca72488a53e6ea6fbe9392d81aa3f01e950e63fe328affb2ddfa6e3",
@@ -1078,7 +1078,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "superpowers": {
-  "checked_at": "2026-10-27 16:43 UTC",
+  "checked_at": "2026-10-28 17:12 UTC",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "files": {
    ".claude-plugin/marketplace.json": "aa23337d43302fffa00927f3700205e92b6c09b79dfe4a13bf66b7b15122604a",
@@ -1195,7 +1195,7 @@
   "updated_at": "2026-10-22 15:55 UTC"
  },
  "text-to-cad": {
-  "checked_at": "2026-10-27 16:43 UTC",
+  "checked_at": "2026-10-28 17:13 UTC",
   "commit": "338cef365867a74f2a37584ff1685b7f00d2524d",
   "files": {
    ".claude-plugin/icon.png": "8c44d41c85e0131a3daf2ae58ec1bef6eb54f8731db665dea5dc7c19524aacbe",
@@ -1308,7 +1308,7 @@
   "updated_at": "2026-10-21 15:59 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-10-27 16:43 UTC",
+  "checked_at": "2026-10-28 17:13 UTC",
   "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
    "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
