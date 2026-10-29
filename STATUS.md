@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-28 17:13 UTC**
+Última verificação: **2026-10-29 17:23 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -21,10 +21,10 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`f32a9c5`](https://github.com/akitaonrails/ai-memory/commit/f32a9c5334185d0f35702d3ea50d094f83d0da82) | 2026-10-28 17:12 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`699d35b`](https://github.com/vercel-labs/skills/commit/699d35b21bd3c97dbc0edeae062b2698898bb2e5) | 2026-10-28 17:12 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`a6295e4`](https://github.com/morluto/rea/commit/a6295e433b7e141740ee1aeccd1c077952e77808) | 2026-10-28 17:12 UTC | 🟡 aviso |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`a6295e4`](https://github.com/morluto/rea/commit/a6295e433b7e141740ee1aeccd1c077952e77808) | 2026-10-28 17:12 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`2ce8aa1`](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | 2026-10-22 15:55 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`eabe369`](https://github.com/upstash/context7/commit/eabe36965ec69b2f3487c4eb329c448dd60b817c) | 2026-10-28 17:13 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`338cef3`](https://github.com/earthtojake/text-to-cad/commit/338cef365867a74f2a37584ff1685b7f00d2524d) | 2026-10-21 15:59 UTC | 🔴 bloqueado |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`2781952`](https://github.com/earthtojake/text-to-cad/commit/2781952aebca62cb4fd11a9d2f91b4e26ea48590) | 2026-10-29 17:23 UTC | 🟡 aviso |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
