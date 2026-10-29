@@ -299,7 +299,7 @@ O plugin traz o servidor local `cad`, que mostra os modelos na conversa. **Windo
 
 | Skill | O que faz |
 |---|---|
-| `cad` | Cria e edita peças 3D paramétricas em código (STEP, STL, GLB, 3MF), abre e mede modelos existentes e mostra tudo na conversa. |
+| `cad` | Cria e edita peças e montagens 3D paramétricas em código, com visualização ao vivo na conversa; exporta STEP, STL, 3MF e GLB, mede geometria e articula montagens. |
 | `step-parts` | Busca e baixa peças compráveis prontas no step.parts (servos, motores, placas, conectores, parafusos, rolamentos). |
 | `engineering-drawing` | Gera desenho técnico em PDF: vistas, cotas, furos, notas e carimbo em folha ISO. |
 | `dfm` | Revisa se a peça é viável de fabricar (usinagem, chapa, injeção). |
