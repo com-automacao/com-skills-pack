@@ -156,9 +156,18 @@ def frontmatter(text: str) -> dict:
         return {}
     try:
         data = yaml.safe_load(m.group(1))
-        return data if isinstance(data, dict) else {}
+        if isinstance(data, dict):
+            return data
     except yaml.YAMLError:
-        return {}
+        pass
+    # YAML invalido (ex.: "a: b" sem aspas na descricao): o Claude Code ainda le a skill,
+    # entao extraimos nome e descricao linha a linha em vez de concluir que o nome sumiu
+    out = {}
+    for line in m.group(1).split("\n"):
+        mm = re.match(r"^(name|description)\s*:\s*(.*)$", line)
+        if mm:
+            out[mm.group(1)] = mm.group(2).strip().strip("\"'")
+    return out
 
 
 def set_frontmatter_fields(text: str, fields: dict) -> str:
@@ -564,8 +573,10 @@ def main():
     changed = any(r["applied"] and not r["notes"].get("unchanged") for r in report.values())
     # impressao digital dos achados: evita abrir o mesmo alerta todo dia
     # sem o commit: a mesma pendencia nao pode abrir uma issue nova a cada dia
+    # com bloqueio, so os bloqueios contam: um aviso novo nao reabre o mesmo alerta
+    lv = {BLOCK} if any(f["level"] == BLOCK for r in report.values() for f in r["findings"]) else {WARN}
     keys = sorted(f"{sid}|{f['code']}|{f['where']}|{f['msg']}"
-                  for sid, r in report.items() for f in r["findings"] if f["level"] != INFO)
+                  for sid, r in report.items() for f in r["findings"] if f["level"] in lv)
     fingerprint = hashlib.sha256("\n".join(keys).encode()).hexdigest()[:16]
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if gh_out:
