@@ -1,29 +1,29 @@
 {
  "agent-skills": {
-  "checked_at": "2026-10-28 17:11 UTC",
-  "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+  "checked_at": "2026-10-29 17:27 UTC",
+  "commit": "eb07f19f52c2669f2364897aaa293e2aaddd7b1c",
   "files": {
    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
-   "references/accessibility-checklist.md": "61c759d94d52296231f5f310b92b401f56c44e4430dc3cc95ebac5d7b1d5ffac",
+   "references/accessibility-checklist.md": "4a5c7e182040335f0888ac7e4b08319b6747cbb2e71b3385bb73ef8e822c934a",
    "references/definition-of-done.md": "d1c75d2ae65d2c7a9cd01f93fa8de63e00e75f2fe5d08be224d576157054dcee",
    "references/observability-checklist.md": "25fcd0e854596a5ab6f11b002050d245bf78f5ae0fcbd1df699b89451ae0e1e8",
    "references/orchestration-patterns.md": "61e543d86f19f86b83074f8c1c769455c7085a2c72dd47b1da21a8c63785be4a",
-   "references/performance-checklist.md": "fffc38b8f3b328a973aab8b1a2efdd72b65710d8f4b57f28f8374ddae7f8a88b",
+   "references/performance-checklist.md": "ce946457d4a502846e781a2747cf6af50bcc79b1957a66dc024f50557e8982e1",
    "references/security-checklist.md": "37774056502fe8970dcd2fd27dca5fa31f2a55232649fc3056c89c3af7d62755",
-   "references/testing-patterns.md": "f0bf05acd0edcadc27297ad5b74f104c8103ccfedba1a05cd6d6ae4af8364c56",
-   "skills/api-and-interface-design/SKILL.md": "e83d34f52ff12dd8a7c5134cd7e8140ea4541ec65e204f8a1e4cd366e30c4192",
+   "references/testing-patterns.md": "8607fda9150f639eae3097d322399e08c5978cce56fe3a3c6291553cb89edf88",
+   "skills/api-and-interface-design/SKILL.md": "cc5e2166c484b2c297e8253f56e7525e5031f81d66101ca4e760ef378ea6bad0",
    "skills/browser-testing-with-devtools/SKILL.md": "4e3aacd6a380cd25bc6c2d67fdd1c926a9b22535b8a62109ecd33cefd909e3d9",
-   "skills/ci-cd-and-automation/SKILL.md": "a6ed8ed56456b01ff8314c44eefc69897d9905ae4e06bb2b7036286efb79b5f0",
+   "skills/ci-cd-and-automation/SKILL.md": "5e0e55c059670a7838dc9d58dc20a3a645c0d43c974416490112af7de522df95",
    "skills/code-review-and-quality/SKILL.md": "2db1e850379f255fd3091ef278cde24cd6c7d2ba23e360cc52ea522c40d4396e",
-   "skills/code-simplification/SKILL.md": "f0c5ed754057eb0c1e027e2587f59de816651feb5e837242296c43ea21cf621d",
-   "skills/context-engineering/SKILL.md": "8b736cb9e55b82b265ab6ff78349c0e826e8a6df550deddf665b7fb3ff858b63",
-   "skills/debugging-and-error-recovery/SKILL.md": "21f3960f5d7ae2cc95c40896545004dbbcbbd752ea65fc2d53962554d4174220",
-   "skills/deprecation-and-migration/SKILL.md": "6a624f942e09c69863a4219b9bd5d56975026b67b0c70bc83385ffd2120b6142",
-   "skills/documentation-and-adrs/SKILL.md": "b60d503925bbaacee7fd63935db70b9ced5b2514ff5a56a672130e01b9690bc5",
+   "skills/code-simplification/SKILL.md": "e13b433345e6bf425c3625442ac1b3507b371c18d7ea3e3db822da7a7f742a29",
+   "skills/context-engineering/SKILL.md": "5bf1e3806f206383a10016bb5a0868aeac807e4df6001715ba8957ad34b8c244",
+   "skills/debugging-and-error-recovery/SKILL.md": "01cff31fbd8796b444225f8a8386219792c25cebb5d4d76df664afd1d13ed610",
+   "skills/deprecation-and-migration/SKILL.md": "1896d7db836fc067e2856739664db9ff5bb642526fdff2126d08ec0d588da4b7",
+   "skills/documentation-and-adrs/SKILL.md": "6fccf3088d5042a3c889faa25113ffa47b9f7f999f4fc9e527d5e5226888442f",
    "skills/doubt-driven-development/SKILL.md": "6fa1fcd8420c28daf7e53c5b08b0f20b907911efd2a6d9bce0b9740da20a4008",
-   "skills/frontend-ui-engineering/SKILL.md": "29a3e53d57c0a128831a20730ae874a8c4fda40c001fcdc15f8e9ad4b5f72f1b",
+   "skills/frontend-ui-engineering/SKILL.md": "93a0ebffbb6075340d85255ae50724bc5e5e19b0fcbf2ae5d5857b9c5ddf9498",
    "skills/git-workflow-and-versioning/SKILL.md": "b7465d187935c52546d39fdc7bd6ac36d94eda25a9500ef8c18b767d2eb116ea",
-   "skills/idea-refine/SKILL.md": "21ef828e3a2144245b67f840cc3805f761e98c9acce9a96670b7cd7441353463",
+   "skills/idea-refine/SKILL.md": "c226c1cd369bef2671073f5fd1f4108731691f725ef28f8c8c01d247c214d0c3",
    "skills/idea-refine/examples.md": "563204bfbf2f80a444151695205af4cb759e722b3d1e5460e08f278a69c89ba1",
    "skills/idea-refine/frameworks.md": "161ebc18fdf2d996bc62a87a2d747cf1bf53548354f8925de25c732c27f00309",
    "skills/idea-refine/refinement-criteria.md": "1ca2973a4d01b5cb37ab7ddb2eff77fa4e792634a33d0ce44961c068fc88d51a",
@@ -31,14 +31,14 @@
    "skills/incremental-implementation/SKILL.md": "df66536610071727feae1ca95f3c391c248ad828041750ccd3699cce763aa00b",
    "skills/interview-me/SKILL.md": "ace4b675999bb504593d572e0f73f3d7e803ad6fddf318445598c82c11939db2",
    "skills/observability-and-instrumentation/SKILL.md": "e7fcb0820306d46268de9594d676ad98e35040858926c412b7000faa52a61f87",
-   "skills/performance-optimization/SKILL.md": "bd36a30e55a5f84329a6977eba5e1ab7654146e71eaba88e34337d4ee020460f",
+   "skills/performance-optimization/SKILL.md": "82af71540457cf853893685211f64509cd1e781c0de09d0186f16960f2d6eeba",
    "skills/performance-optimization/references/optimization-patterns.md": "fbf724076ffb8ac1a28e1a2773c0b550f5361090024b2dd32e5a682c69b7945f",
    "skills/planning-and-task-breakdown/SKILL.md": "ed0f90cc5951ddd4bcab7f871f64efec93a49af9279ef93bc470da77ad8da3f7",
    "skills/security-and-hardening/SKILL.md": "2e3fc60eed5aba97fe416f3f3c9317fdb014a682925ec70a733c3ff99e4b9858",
-   "skills/security-and-hardening/references/hardening-patterns.md": "2e1b93a502b4cdb0258404441f3aab029b0cce4003fbbcc61af9a2de18bab9ab",
+   "skills/security-and-hardening/references/hardening-patterns.md": "cad8ac9a24236266a61e4c47738e03c240c903d8ab210ac4cd6dba1e548e0e5f",
    "skills/shipping-and-launch/SKILL.md": "726f3e546369db289160b8d42195590f00b6432887e17bf19070dcc9a347fe39",
-   "skills/source-driven-development/SKILL.md": "c59faf851377f0eeda45306398d16eb96d77ab1c2fd3e1a7fb58e9a0af33c1e9",
-   "skills/spec-driven-development/SKILL.md": "c4b97ce3d7f24be0e67fd612c7595f65504872e3a9f8d338d098b2363fdb66ef",
+   "skills/source-driven-development/SKILL.md": "df38a852658679a67c7a9e4840160570c95094a13a63307e834045ddbf8aa287",
+   "skills/spec-driven-development/SKILL.md": "b9d05b4259c14550bbffbaafd8201492129926d37ede716db352c6e4f91b404d",
    "skills/test-driven-development/SKILL.md": "a3aa6ba95638497025577469eda10ed17918698209615aeafbc26f131bf2469d"
   },
   "known_upstream": [
@@ -47,11 +47,11 @@
   ],
   "license": "MIT",
   "repo": "addyosmani/agent-skills",
-  "updated_at": "2026-10-14 12:20 UTC"
+  "updated_at": "2026-10-29 17:27 UTC"
  },
  "ai-memory": {
-  "checked_at": "2026-10-28 17:12 UTC",
-  "commit": "f32a9c5334185d0f35702d3ea50d094f83d0da82",
+  "checked_at": "2026-10-29 17:27 UTC",
+  "commit": "4a903a9ae622f5cb4bd2b2c811491757d2e9c395",
   "files": {
    "LICENSE": "18332c61780ce8e694d4fa330770cd4d8c85e33f47ac13a80d72d70bb032ae72",
    "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md": "8771edcc5e529430d19c360ba5a250f6f0cdf45c95f4dea48af6f6646f8f6e13",
@@ -65,17 +65,18 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "akitaonrails/ai-memory",
-  "updated_at": "2026-10-28 17:12 UTC"
+  "updated_at": "2026-10-29 17:27 UTC"
  },
  "anthropic-skills": {
-  "checked_at": "2026-10-28 17:11 UTC",
-  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "checked_at": "2026-10-29 17:27 UTC",
+  "commit": "ca45fc496a3436251f191354091d557da31c15b5",
   "files": {
    "skills/mcp-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
-   "skills/mcp-builder/SKILL.md": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+   "skills/mcp-builder/SKILL.md": "b483b56d6673134497e45489c317f26ae0f1429c194db0297e43073e17e6748c",
    "skills/mcp-builder/reference/evaluation.md": "8c99479f8a2d22a636c38e274537aac3610879e26f34e0709825077c4576f427",
    "skills/mcp-builder/reference/mcp_best_practices.md": "80fb4369a349447cf18ecdd7494fe7938b6065377e9f08c077cec411093a3007",
-   "skills/mcp-builder/reference/node_mcp_server.md": "c3ba35a4f599dd53be9c6555ae72c19a7bf412cd5426576c2c08d42755482c66",
+   "skills/mcp-builder/reference/node_mcp_server.md": "ee3c95d812e450f6168b734390d0c9ef6f8ebeef041d73a122c972dfbd4d476a",
+   "skills/mcp-builder/reference/node_mcp_server_v2.md": "49b2fe48f33910b743ae3a56353fffa5d5f252f531053f24f2da4e5914c0d3aa",
    "skills/mcp-builder/reference/python_mcp_server.md": "2da52f77e675191014ca2e146a4b95aa04d0ca7dd7e2b100322df15ade685e80",
    "skills/mcp-builder/scripts/connections.py": "9403668a2041568772082a8b334122c1f88daf0541fb393af4522d0094a47a6e",
    "skills/mcp-builder/scripts/evaluation.py": "49ed1d17cdce5da101b210197740713f49b935c29d4f339542a14b132658e6f7",
@@ -103,11 +104,11 @@
   "known_upstream": [],
   "license": "NONE",
   "repo": "anthropics/skills",
-  "updated_at": "2026-10-13 16:23 UTC"
+  "updated_at": "2026-10-29 17:27 UTC"
  },
  "base44": {
-  "checked_at": "2026-10-28 17:11 UTC",
-  "commit": "061d03659782a90899703eed7b8eb87ce2db05d1",
+  "checked_at": "2026-10-29 17:27 UTC",
+  "commit": "f43b791bb33db44d6c984f1d84df643e154016e1",
   "files": {
    "LICENSE": "5546cdc657881c6a454bb4d09044e59fb4f84f3951fcb88c8102b7fe8332b4a4",
    "skills/base44-cli/SKILL.md": "63627dccdc96785d42f7c0ec0aacf6453b2ee238eb30cffaa3d79d64d8b25dfe",
@@ -167,7 +168,7 @@
    "skills/base44-sdk/SKILL.md": "e6b14731c06f165165a84c8a06cf9079f0d64cf193c08e2b482325f1a902139e",
    "skills/base44-sdk/references/QUICK_REFERENCE.md": "80ecf7d6047de463458f34cef77bc249bfd2b92c3812fff186dbb84678f630af",
    "skills/base44-sdk/references/actors.md": "3f13d13a8a6e02a75d944b0f18e6885cbcd3581bc8f5d399baf221f1aff06cff",
-   "skills/base44-sdk/references/ai-gateway.md": "6533e558db3283bfa9fe5159c20e8533e3cc5dab43c647202544e1b34dce652f",
+   "skills/base44-sdk/references/ai-gateway.md": "c1cb0c296d199498821614a915a14433055f9bceacffb5c0018cd7357b65beb5",
    "skills/base44-sdk/references/analytics.md": "f01ea8edcd601d12f0e4c241c4ff08bde401dfca8882634f9eb2f76d366009e7",
    "skills/base44-sdk/references/app-logs.md": "424e4038d83cb2e5e76a137c9cf81ec9c6ffe45c49fb872a004f100233c96e73",
    "skills/base44-sdk/references/auth.md": "401561a3ae12f408acb6abe7dd9dde243b47914f4031056117c0e0ef77188871",
@@ -185,10 +186,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "base44/skills",
-  "updated_at": "2026-10-26 17:24 UTC"
+  "updated_at": "2026-10-29 17:27 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-10-28 17:12 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -203,7 +204,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "context7": {
-  "checked_at": "2026-10-28 17:13 UTC",
+  "checked_at": "2026-10-29 17:28 UTC",
   "commit": "eabe36965ec69b2f3487c4eb329c448dd60b817c",
   "files": {
    "LICENSE": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c",
@@ -217,7 +218,7 @@
   "updated_at": "2026-10-28 17:13 UTC"
  },
  "design-dna": {
-  "checked_at": "2026-10-28 17:11 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "593e39bc9e3652734653bd75544a333d7d43615e",
   "files": {
    "LICENSE": "2de108bcd0d904f8756e1135ca77ce1e3e9ca0edb1ae6abecb97dea76d27d174",
@@ -238,8 +239,8 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "find-skills": {
-  "checked_at": "2026-10-28 17:12 UTC",
-  "commit": "699d35b21bd3c97dbc0edeae062b2698898bb2e5",
+  "checked_at": "2026-10-29 17:27 UTC",
+  "commit": "92a9a34ac3bf88e695e468b90c7bf32f163d32c8",
   "files": {
    "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
    "skills/find-skills/SKILL.md": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f"
@@ -247,10 +248,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "vercel-labs/skills",
-  "updated_at": "2026-10-28 17:12 UTC"
+  "updated_at": "2026-10-29 17:27 UTC"
  },
  "genjutsu": {
-  "checked_at": "2026-10-28 17:11 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "1f518a71378b15d423389e546e767cffc86e14c3",
   "files": {
    "LICENSE": "19fd36b46fd5b393c6d58ad1ac26afd436bdce6951a9952094eff70366e5b314",
@@ -374,7 +375,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-10-28 17:11 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -393,7 +394,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-10-28 17:11 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "3e7099e1b7fe93e187e06db4bdbe1e1906c21a28",
   "files": {
    "CHANGELOG.md": "3bbd981052b05cd2189db85fc69733a8f3e39658b2b57e44904f6fcd246d375b",
@@ -720,7 +721,7 @@
   "updated_at": "2026-10-27 16:42 UTC"
  },
  "knowledge-work-plugins": {
-  "checked_at": "2026-10-28 17:11 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
   "files": {
    "LICENSE": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26",
@@ -751,21 +752,21 @@
   "updated_at": "2026-10-28 17:11 UTC"
  },
  "mattpocock-skills": {
-  "checked_at": "2026-10-28 17:11 UTC",
-  "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+  "checked_at": "2026-10-29 17:27 UTC",
+  "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
   "files": {
    "LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
    "skills/engineering/improve-codebase-architecture/HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
-   "skills/engineering/improve-codebase-architecture/SKILL.md": "552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392",
+   "skills/engineering/improve-codebase-architecture/SKILL.md": "35b03a3db61e0f5aa333ea59b54963e45a3d2ace6649b2ef4f9576603e2582a6",
    "skills/engineering/improve-codebase-architecture/agents/openai.yaml": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1"
   },
   "known_upstream": [],
   "license": "MIT",
   "repo": "mattpocock/skills",
-  "updated_at": "2026-10-27 16:42 UTC"
+  "updated_at": "2026-10-29 17:27 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-10-28 17:11 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
@@ -793,16 +794,16 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "rea": {
-  "checked_at": "2026-10-28 17:12 UTC",
-  "commit": "a6295e433b7e141740ee1aeccd1c077952e77808",
+  "checked_at": "2026-10-29 17:28 UTC",
+  "commit": "c0c3902207d6b1a33709e42b80c7e570da7db964",
   "files": {
-   ".agents/skills/reverse-engineer-anything/SKILL.md": "65108ceed2e6ef47a43a614c2a6ab58695061275ddb25038e09b680204b2f097",
+   ".agents/skills/reverse-engineer-anything/SKILL.md": "5e074e4b9b01358291aba1d2119b3766b360be5b64483ce1d3fe5f2649b363c1",
    ".agents/skills/reverse-engineer-anything/references/android-applications.md": "1698a9a21eacc685b327059efee2e9cdb6ac1f55fa3875eed96b4b304ab155f3",
    ".agents/skills/reverse-engineer-anything/references/connection-and-recovery.md": "69aae4c8c2741cc745171a007257cf94fa65247bf73e4c4eb031a1361a06831e",
-   ".agents/skills/reverse-engineer-anything/references/environments.md": "bb1065d7c0c96f82d6350c4f55071a883f99dd852fa1e6e62650b26782cdc95b",
-   ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "f44b68acc6ebaa60c1f5d0670e4f9ff7212d351a0ecc6e6ca77ce38b9177ea57",
+   ".agents/skills/reverse-engineer-anything/references/environments.md": "4a84b3be1eb36b1d2e658b4076b151570ba97a60e7d97da0876ab324c917b305",
+   ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "bfa94989199029b93f297cc373dca96770056da8e7d5586a895f22a4a09a8fe7",
    ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "15ae2177ef1c41e25095238c64b38f34d8ea53ea3c4c74f627096f90b8eaa54b",
-   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "67c9b93db93f6a3113ece6f66ca6a58cac30057659ca1312dead84781a84791f",
+   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "931ed1422b2f07eef1d615dbb38e02c22c83284a5d918ca7138f7ef314582bb5",
    ".agents/skills/reverse-engineer-anything/references/runtime-observation.md": "e207a912470a1a56dc02316eb7b040ac50b4d763f2273e97a6811863d9051d74",
    "LICENSE": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b"
   },
@@ -814,11 +815,11 @@
   ],
   "license": "MIT",
   "repo": "morluto/rea",
-  "updated_at": "2026-10-28 17:12 UTC"
+  "updated_at": "2026-10-29 17:28 UTC"
  },
  "ruflo": {
-  "checked_at": "2026-10-28 17:12 UTC",
-  "commit": "7387295568883490d609317ec719aa8f8e80d410",
+  "checked_at": "2026-10-29 17:27 UTC",
+  "commit": "7f6fb3345b7f4ea1d7acc4905ea88bad29136066",
   "files": {
    ".claude/commands/agents/README.md": "52f50d320ed2058cc815a836530e43cba4511df56eb9edac8837b922339fcbd7",
    ".claude/commands/agents/agent-capabilities.md": "1fa62c27d0e4b9969e7394c1cbbcfd92ecb95750f66ea67204ad10de7b9a7223",
@@ -1040,10 +1041,10 @@
   ],
   "license": "MIT",
   "repo": "ruvnet/ruflo",
-  "updated_at": "2026-10-28 17:12 UTC"
+  "updated_at": "2026-10-29 17:27 UTC"
  },
  "scroll-craft": {
-  "checked_at": "2026-10-28 17:11 UTC",
+  "checked_at": "2026-10-29 17:27 UTC",
   "commit": "75d81f74e83692add18cd7a8a8e078b8a887a579",
   "files": {
    "LICENSE": "dd471a27eca72488a53e6ea6fbe9392d81aa3f01e950e63fe328affb2ddfa6e3",
@@ -1078,7 +1079,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "superpowers": {
-  "checked_at": "2026-10-28 17:12 UTC",
+  "checked_at": "2026-10-29 17:28 UTC",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "files": {
    ".claude-plugin/marketplace.json": "aa23337d43302fffa00927f3700205e92b6c09b79dfe4a13bf66b7b15122604a",
@@ -1195,7 +1196,7 @@
   "updated_at": "2026-10-22 15:55 UTC"
  },
  "text-to-cad": {
-  "checked_at": "2026-10-29 17:23 UTC",
+  "checked_at": "2026-10-29 17:28 UTC",
   "commit": "2781952aebca62cb4fd11a9d2f91b4e26ea48590",
   "files": {
    ".claude-plugin/icon.png": "8c44d41c85e0131a3daf2ae58ec1bef6eb54f8731db665dea5dc7c19524aacbe",
@@ -1305,7 +1306,7 @@
   "updated_at": "2026-10-29 17:23 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-10-28 17:13 UTC",
+  "checked_at": "2026-10-29 17:28 UTC",
   "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
    "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
