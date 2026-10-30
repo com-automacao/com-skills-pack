@@ -36,6 +36,7 @@ import sys
 import tempfile
 import urllib.error
 import urllib.request
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
@@ -91,6 +92,7 @@ PATTERNS = [
 ]
 PATTERNS = [(c, lvl, re.compile(rx, re.I), code, why) for c, lvl, rx, code, why in PATTERNS]
 URL_RX = re.compile(r"https?://([A-Za-z0-9.-]+\.[A-Za-z]{2,})")
+FRONTMATTER_RX = re.compile(r"^---\s*\n(.*?)\n---", re.S)
 
 LEVEL_ORDER = {BLOCK: 0, WARN: 1, INFO: 2}
 
@@ -151,7 +153,7 @@ def is_binary(p: Path) -> bool:
 
 
 def frontmatter(text: str) -> dict:
-    m = re.match(r"^---\s*\n(.*?)\n---", text, re.S)
+    m = FRONTMATTER_RX.match(text)
     if not m:
         return {}
     try:
@@ -170,28 +172,27 @@ def frontmatter(text: str) -> dict:
     return out
 
 
+def replace_field(lines: list[str], key: str, new: str) -> list[str]:
+    """Troca o campo e suas linhas de continuacao; se nao existir, acrescenta no fim."""
+    out, skipping, done = [], False, False
+    for line in lines:
+        if re.match(rf"^{re.escape(key)}\s*:", line):
+            out.append(new)
+            done = skipping = True
+        elif not (skipping and (line.startswith((" ", "\t")) or line == "")):
+            out.append(line)
+            skipping = False
+    return out if done else out + [new]
+
+
 def set_frontmatter_fields(text: str, fields: dict) -> str:
     """Troca campos do frontmatter preservando o resto do arquivo byte a byte."""
-    m = re.match(r"^---\s*\n(.*?)\n---", text, re.S)
+    m = FRONTMATTER_RX.match(text)
     if not m:
         return text
     lines = m.group(1).split("\n")
     for key, value in fields.items():
-        new = f"{key}: {json.dumps(value, ensure_ascii=False)}"
-        out, i, done = [], 0, False
-        while i < len(lines):
-            if re.match(rf"^{re.escape(key)}\s*:", lines[i]):
-                out.append(new)
-                done = True
-                i += 1
-                while i < len(lines) and (lines[i].startswith((" ", "\t")) or lines[i] == ""):
-                    i += 1
-                continue
-            out.append(lines[i])
-            i += 1
-        if not done:
-            out.append(new)
-        lines = out
+        lines = replace_field(lines, key, f"{key}: {json.dumps(value, ensure_ascii=False)}")
     return "---\n" + "\n".join(lines) + "\n---" + text[m.end():]
 
 
@@ -248,6 +249,36 @@ class Finding(dict):
         super().__init__(level=level, code=code, msg=msg, where=where)
 
 
+@dataclass
+class Job:
+    """Uma fonte sendo processada nesta execucao."""
+    sid: str
+    src: dict
+    entry: dict | None
+    findings: list = field(default_factory=list)
+    notes: dict = field(default_factory=dict)
+    clone: Path | None = None
+    head: str = ""
+
+    @property
+    def vendored(self) -> bool:
+        return self.src.get("mode", "vendor") == "vendor"
+
+    @property
+    def old_files(self) -> dict:
+        return (self.entry or {}).get("files", {})
+
+    def add(self, level, code, msg, where=""):
+        self.findings.append(Finding(level, code, msg, where))
+
+    def touch(self):
+        if self.entry:
+            self.entry["checked_at"] = now()
+
+    def pack_text(self, rel: str) -> str:
+        return read_text(PACKS / self.sid / rel)
+
+
 def scan_lines(rel: str, lines: list[str], findings: list):
     ext = Path(rel).suffix.lower()
     seen = set()
@@ -274,187 +305,255 @@ def domains(text: str) -> set[str]:
     return {d.lower() for d in URL_RX.findall(text)}
 
 
-def analyze_source(sid, src, lock_entry, clone, head, findings, notes):
-    """Compara a copia nova com a anterior e preenche findings/notes."""
-    repo, paths, mode = src["repo"], src["paths"], src.get("mode", "vendor")
-    old_files = (lock_entry or {}).get("files", {})
-    new_files = file_map(clone, paths)
-    baseline = not lock_entry
+def diff_files(old: dict, new: dict):
+    added = sorted(set(new) - set(old))
+    removed = sorted(set(old) - set(new))
+    changed = sorted(f for f in set(new) & set(old) if new[f] != old[f])
+    return added, removed, changed
 
-    for rel in paths:
-        if not (clone / rel).exists():
-            findings.append(Finding(BLOCK, "PATH_MISSING", "caminho sumiu na origem (removido ou renomeado)", rel))
 
-    added = sorted(set(new_files) - set(old_files))
-    removed = sorted(set(old_files) - set(new_files))
-    changed = sorted(f for f in set(new_files) & set(old_files) if new_files[f] != old_files[f])
-    notes["added"], notes["removed"], notes["changed"] = added, removed, changed
-    if baseline:
-        return
+def check_paths_exist(job: Job):
+    for rel in job.src["paths"]:
+        if not (job.clone / rel).exists():
+            job.add(BLOCK, "PATH_MISSING", "caminho sumiu na origem (removido ou renomeado)", rel)
 
-    # remocao em massa por caminho acompanhado
-    for rel in paths:
-        before = [f for f in old_files if f == rel or f.startswith(rel + "/")]
+
+def check_mass_delete(job: Job, removed: list[str]):
+    for rel in job.src["paths"]:
+        before = [f for f in job.old_files if f == rel or f.startswith(rel + "/")]
         gone = [f for f in before if f in removed]
         if len(before) > 3 and len(gone) / len(before) > 0.5:
-            findings.append(Finding(BLOCK, "MASS_DELETE", f"{len(gone)} de {len(before)} arquivos removidos", rel))
+            job.add(BLOCK, "MASS_DELETE", f"{len(gone)} de {len(before)} arquivos removidos", rel)
 
-    # linhas novas: copia local (vendor) ou patches da API (link)
+
+def check_file_traits(job: Job, rel: str, is_new: bool):
+    p = job.clone / rel
+    ext = p.suffix.lower()
+    size = p.stat().st_size
+    if size > MAX_FILE_BYTES:
+        job.add(BLOCK, "LARGE_FILE", f"arquivo de {size // 1024} KB", rel)
+    if ext in EXEC_EXT and is_new:
+        job.add(BLOCK, "NEW_EXECUTABLE", f"novo script/executavel ({ext})", rel)
+    elif ext in EXEC_EXT:
+        job.add(WARN, "SCRIPT_CHANGED", "script existente foi alterado", rel)
+
+
+def known_domains(job: Job) -> set[str]:
+    if not job.vendored:
+        return set()
+    return set().union(*(domains(job.pack_text(rel)) for rel in job.old_files))
+
+
+def lines_to_scan(job: Job, rel: str, is_new: bool, new_text: str, patches) -> list[str]:
+    """Linhas novas: pela copia anterior (vendor) ou pelos patches da API (link)."""
+    if job.vendored:
+        return added_lines("" if is_new else job.pack_text(rel), new_text)
+    return (patches or {}).get(rel, new_text.split("\n"))
+
+
+def check_new_domains(job: Job, rel: str, lines: list[str], old_domains: set[str]):
+    new_d = domains("\n".join(lines)) - old_domains
+    if new_d:
+        job.add(WARN, "NEW_DOMAIN", "novos enderecos externos: " + ", ".join(sorted(new_d)[:8]), rel)
+
+
+def check_skill_md(job: Job, rel: str, new_text: str):
+    old_text = job.pack_text(rel)
+    fo, fn = frontmatter(old_text), frontmatter(new_text)
+    if fo.get("name") != fn.get("name"):
+        job.add(BLOCK, "NAME_CHANGED", f"nome mudou de `{fo.get('name')}` para `{fn.get('name')}`", rel)
+    if fo.get("description") != fn.get("description"):
+        job.add(INFO, "DESCRIPTION_CHANGED", "descricao (gatilho de uso) mudou", rel)
+    ratio = difflib.SequenceMatcher(None, old_text, new_text, autojunk=False).ratio()
+    if ratio < 0.35:
+        job.add(WARN, "BIG_REWRITE", f"SKILL.md reescrito ({int(ratio * 100)}% igual ao anterior)", rel)
+
+
+def analyze_file(job: Job, rel: str, is_new: bool, patches, old_domains: set[str]):
+    p = job.clone / rel
+    check_file_traits(job, rel, is_new)
+    if p.suffix.lower() not in MEDIA_EXT and is_binary(p):
+        job.add(BLOCK, "NEW_BINARY", "arquivo binario nao reconhecido", rel)
+        return
+    if Path(rel).name.lower() in LICENSE_NAMES:
+        job.add(BLOCK, "LICENSE_TEXT_CHANGED", "texto da licenca mudou", rel)
+    new_text = read_text(p)
+    lines = lines_to_scan(job, rel, is_new, new_text, patches)
+    scan_lines(rel, lines, job.findings)
+    if job.vendored:
+        check_new_domains(job, rel, lines, old_domains)
+        if Path(rel).name == "SKILL.md" and not is_new:
+            check_skill_md(job, rel, new_text)
+
+
+def analyze_source(job: Job):
+    """Compara a copia nova com a anterior e preenche findings/notes."""
+    check_paths_exist(job)
+    added, removed, changed = diff_files(job.old_files, file_map(job.clone, job.src["paths"]))
+    job.notes.update(added=added, removed=removed, changed=changed)
+    if not job.entry:
+        return
+    check_mass_delete(job, removed)
     patches = None
-    if mode == "link":
-        _, patches = compare_patches(repo, lock_entry["commit"], head)
-    old_domains = set()
-    for rel in old_files:
-        if mode == "vendor":
-            old_domains |= domains(read_text(PACKS / sid / rel))
-
-    for rel in added + changed:
-        p = clone / rel
-        ext = p.suffix.lower()
-        size = p.stat().st_size
-        if size > MAX_FILE_BYTES:
-            findings.append(Finding(BLOCK, "LARGE_FILE", f"arquivo de {size // 1024} KB", rel))
-        if rel in added and ext in EXEC_EXT:
-            findings.append(Finding(BLOCK, "NEW_EXECUTABLE", f"novo script/executavel ({ext})", rel))
-        elif rel in changed and ext in EXEC_EXT:
-            findings.append(Finding(WARN, "SCRIPT_CHANGED", "script existente foi alterado", rel))
-        if ext not in MEDIA_EXT and is_binary(p):
-            findings.append(Finding(BLOCK, "NEW_BINARY", "arquivo binario nao reconhecido", rel))
-            continue
-        if Path(rel).name.lower() in LICENSE_NAMES:
-            findings.append(Finding(BLOCK, "LICENSE_TEXT_CHANGED", "texto da licenca mudou", rel))
-        new_text = read_text(p)
-        if mode == "vendor":
-            old_text = read_text(PACKS / sid / rel) if rel in changed else ""
-            lines = added_lines(old_text, new_text)
-        else:
-            lines = (patches or {}).get(rel, new_text.split("\n"))
-        scan_lines(rel, lines, findings)
-        if mode == "vendor":
-            new_d = domains("\n".join(lines)) - old_domains
-            if new_d:
-                findings.append(Finding(WARN, "NEW_DOMAIN", "novos enderecos externos: " + ", ".join(sorted(new_d)[:8]), rel))
-        if Path(rel).name == "SKILL.md" and rel in changed and mode == "vendor":
-            old_text = read_text(PACKS / sid / rel)
-            fo, fn = frontmatter(old_text), frontmatter(new_text)
-            if fo.get("name") != fn.get("name"):
-                findings.append(Finding(BLOCK, "NAME_CHANGED", f"nome mudou de `{fo.get('name')}` para `{fn.get('name')}`", rel))
-            if fo.get("description") != fn.get("description"):
-                findings.append(Finding(INFO, "DESCRIPTION_CHANGED", "descricao (gatilho de uso) mudou", rel))
-            ratio = difflib.SequenceMatcher(None, old_text, new_text, autojunk=False).ratio()
-            if ratio < 0.35:
-                findings.append(Finding(WARN, "BIG_REWRITE", f"SKILL.md reescrito ({int(ratio * 100)}% igual ao anterior)", rel))
+    if not job.vendored:
+        _, patches = compare_patches(job.src["repo"], job.entry["commit"], job.head)
+    old_domains = known_domains(job)
+    for rel in added:
+        analyze_file(job, rel, True, patches, old_domains)
+    for rel in changed:
+        analyze_file(job, rel, False, patches, old_domains)
 
 
 # ---------------------------------------------------------------- execucao
 
-def process(sid, src, lock, overrides, args, report):
-    repo, branch, mode = src["repo"], src.get("branch", "main"), src.get("mode", "vendor")
-    entry = lock.get(sid)
-    findings: list[Finding] = []
-    notes: dict = {"repo": repo, "mode": mode}
-    report[sid] = {"findings": findings, "notes": notes, "applied": False}
-
+def check_repo(job: Job) -> str | None:
+    """Confere o repositorio na API. Devolve a licenca, ou None se ele esta inacessivel."""
+    repo = job.src["repo"]
     status, meta = api(f"repos/{repo}")
     if status != 200 or not meta:
-        findings.append(Finding(BLOCK, "REPO_GONE", f"repositorio inacessivel (HTTP {status})"))
-        return
+        job.add(BLOCK, "REPO_GONE", f"repositorio inacessivel (HTTP {status})")
+        return None
     if meta["full_name"].lower() != repo.lower():
-        findings.append(Finding(BLOCK, "REPO_RENAMED", f"repositorio agora se chama `{meta['full_name']}`; atualize o sources.yaml"))
+        job.add(BLOCK, "REPO_RENAMED", f"repositorio agora se chama `{meta['full_name']}`; atualize o sources.yaml")
     if meta.get("archived"):
-        findings.append(Finding(WARN, "ARCHIVED", "repositorio arquivado: nao recebera mais atualizacoes"))
+        job.add(WARN, "ARCHIVED", "repositorio arquivado: nao recebera mais atualizacoes")
     spdx = (meta.get("license") or {}).get("spdx_id") or "NONE"
-    expected = src.get("license", "NONE")
+    expected = job.src.get("license", "NONE")
     if spdx != expected:
-        findings.append(Finding(BLOCK, "LICENSE_CHANGED", f"licenca esperada `{expected}`, encontrada `{spdx}`"))
-    notes["license"] = spdx
+        job.add(BLOCK, "LICENSE_CHANGED", f"licenca esperada `{expected}`, encontrada `{spdx}`")
+    job.notes["license"] = spdx
+    return spdx
 
+
+def fetch(job: Job, tmp: str) -> bool:
+    job.clone = Path(tmp) / "repo"
+    try:
+        job.head = sparse_clone(job.src["repo"], job.src.get("branch", "main"), job.src["paths"], job.clone)
+    except RuntimeError as e:
+        job.add(BLOCK, "CLONE_FAILED", str(e).splitlines()[-1][:200])
+        return False
+    job.notes["commit"] = job.head
+    job.notes["previous"] = (job.entry or {}).get("commit")
+    return True
+
+
+def note_upstream_skills(job: Job):
+    watch = job.src.get("watch")
+    if not watch:
+        return
+    fresh = [d for d in list_dirs(job.clone, watch) if d not in job.src["paths"]]
+    known = set((job.entry or {}).get("known_upstream", []))
+    job.notes["upstream_extra"] = fresh
+    for d in fresh:
+        if job.entry and d not in known:
+            job.add(INFO, "NEW_UPSTREAM_SKILL", "skill nova na origem (nao incluida)", d)
+
+
+def is_unchanged(job: Job, args) -> bool:
+    return bool(job.entry) and job.entry.get("commit") == job.head and not args.force
+
+
+def check_history(job: Job):
+    previous = (job.entry or {}).get("commit")
+    if not previous or previous == job.head:
+        return
+    status, _ = compare_patches(job.src["repo"], previous, job.head)
+    if status is None or status == "diverged":
+        job.add(BLOCK, "HISTORY_REWRITTEN", "historico da origem foi reescrito (force-push); commit anterior sumiu")
+
+
+def held_back(job: Job, args) -> bool:
+    return args.dry_run or (args.apply == "safe" and any(f["level"] == BLOCK for f in job.findings))
+
+
+def copy_path(job: Job, rel: str, dest: Path):
+    s = job.clone / rel
+    if not s.exists():
+        if any(f == rel or f.startswith(rel + "/") for f in job.old_files):
+            job.add(WARN, "KEPT_OLD", "caminho ausente na origem; mantida a copia anterior", rel)
+        return
+    d = dest / rel
+    d.parent.mkdir(parents=True, exist_ok=True)
+    if s.is_dir():
+        shutil.copytree(s, d, ignore=shutil.ignore_patterns(".git"))
+    else:
+        shutil.copy2(s, d)
+
+
+def apply_overrides(dest: Path, overrides: dict):
+    for rel, fields in overrides.items():
+        skill_md = dest / rel / "SKILL.md"
+        if skill_md.exists():
+            raw = skill_md.read_bytes().decode("utf-8")
+            skill_md.write_bytes(set_frontmatter_fields(raw.replace("\r\n", "\n"), fields).encode("utf-8"))
+
+
+def vendor_files(job: Job, overrides: dict):
+    dest = PACKS / job.sid
+    if dest.exists():
+        shutil.rmtree(dest)
+    for rel in job.src["paths"]:
+        copy_path(job, rel, dest)
+    apply_overrides(dest, overrides)
+
+
+def new_lock_entry(job: Job, spdx: str) -> dict:
+    return {
+        "repo": job.src["repo"],
+        "commit": job.head,
+        "license": spdx,
+        "checked_at": now(),
+        "updated_at": now(),
+        "files": file_map(job.clone, job.src["paths"]),
+        "known_upstream": job.notes.get("upstream_extra", []),
+    }
+
+
+def process(sid, src, lock, overrides, args, report):
+    job = Job(sid, src, lock.get(sid), notes={"repo": src["repo"], "mode": src.get("mode", "vendor")})
+    report[sid] = {"findings": job.findings, "notes": job.notes, "applied": False}
+    spdx = check_repo(job)
+    if spdx is None:
+        return
     with tempfile.TemporaryDirectory(prefix=f"sync-{sid}-") as tmp:
-        clone = Path(tmp) / "repo"
-        try:
-            head = sparse_clone(repo, branch, src["paths"], clone)
-        except RuntimeError as e:
-            findings.append(Finding(BLOCK, "CLONE_FAILED", str(e).splitlines()[-1][:200]))
+        if not fetch(job, tmp):
             return
-        notes["commit"] = head
-        notes["previous"] = (entry or {}).get("commit")
-        if src.get("watch"):
-            tracked = {p for p in src["paths"]}
-            fresh = [d for d in list_dirs(clone, src["watch"]) if d not in tracked]
-            known = set((entry or {}).get("known_upstream", []))
-            notes["upstream_extra"] = fresh
-            for d in fresh:
-                if entry and d not in known:
-                    findings.append(Finding(INFO, "NEW_UPSTREAM_SKILL", "skill nova na origem (nao incluida)", d))
-
-        if entry and entry.get("commit") == head and not args.force:
-            notes["unchanged"] = True
-            entry["checked_at"] = now()
+        note_upstream_skills(job)
+        if is_unchanged(job, args):
+            job.notes["unchanged"] = True
+            job.touch()
             return
-
-        if entry and entry.get("commit") and entry["commit"] != head:
-            st, _ = compare_patches(repo, entry["commit"], head)
-            if st is None or st == "diverged":
-                findings.append(Finding(BLOCK, "HISTORY_REWRITTEN", "historico da origem foi reescrito (force-push); commit anterior sumiu"))
-
-        analyze_source(sid, src, entry, clone, head, findings, notes)
-
-        has_block = any(f["level"] == BLOCK for f in findings)
-        if args.dry_run or (has_block and args.apply == "safe"):
-            if entry:
-                entry["checked_at"] = now()
+        check_history(job)
+        analyze_source(job)
+        if held_back(job, args):
+            job.touch()
             return
-
-        if mode == "vendor":
-            dest = PACKS / sid
-            if dest.exists():
-                shutil.rmtree(dest)
-            for rel in src["paths"]:
-                s = clone / rel
-                if not s.exists():
-                    old = (entry or {}).get("files", {})
-                    if any(f == rel or f.startswith(rel + "/") for f in old):
-                        findings.append(Finding(WARN, "KEPT_OLD", "caminho ausente na origem; mantida a copia anterior", rel))
-                    continue
-                d = dest / rel
-                d.parent.mkdir(parents=True, exist_ok=True)
-                if s.is_dir():
-                    shutil.copytree(s, d, ignore=shutil.ignore_patterns(".git"))
-                else:
-                    shutil.copy2(s, d)
-            for rel, fields in (overrides.get(sid) or {}).items():
-                skill_md = dest / rel / "SKILL.md"
-                if skill_md.exists():
-                    raw = skill_md.read_bytes().decode("utf-8")
-                    skill_md.write_bytes(set_frontmatter_fields(raw.replace("\r\n", "\n"), fields).encode("utf-8"))
-        lock[sid] = {
-            "repo": repo,
-            "commit": head,
-            "license": spdx,
-            "checked_at": now(),
-            "updated_at": now(),
-            "files": file_map(clone, src["paths"]),
-            "known_upstream": notes.get("upstream_extra", []),
-        }
+        if job.vendored:
+            vendor_files(job, overrides.get(sid) or {})
+        lock[sid] = new_lock_entry(job, spdx)
         report[sid]["applied"] = True
 
 
+def status_state(findings: list) -> str:
+    worst = min((LEVEL_ORDER[f["level"]] for f in findings if f["level"] != INFO), default=None)
+    return {0: "🔴 bloqueado", 1: "🟡 aviso"}.get(worst, "🟢 ok")
+
+
+def status_row(sid: str, src: dict, entry: dict, findings: list) -> str:
+    repo = src["repo"]
+    items = len([p for p in src["paths"] if Path(p).name.lower() not in LICENSE_NAMES])
+    commit = entry.get("commit", "")
+    link = f"[`{commit[:7]}`](https://github.com/{repo}/commit/{commit})" if commit else "-"
+    modo = "copiado" if src.get("mode", "vendor") == "vendor" else "só link"
+    return (f"| `{sid}` | [{repo}](https://github.com/{repo}) | {src.get('license')} | {modo} | {items} "
+            f"| {link} | {entry.get('updated_at', '-')} | {status_state(findings)} |")
+
+
 def write_status(cfg, lock, report):
-    rows = []
-    for sid, src in cfg["sources"].items():
-        e = lock.get(sid, {})
-        fs = report.get(sid, {}).get("findings", [])
-        worst = min((LEVEL_ORDER[f["level"]] for f in fs if f["level"] != INFO), default=None)
-        state = {0: "🔴 bloqueado", 1: "🟡 aviso"}.get(worst, "🟢 ok")
-        n = len([p for p in src["paths"] if Path(p).name.lower() not in LICENSE_NAMES])
-        commit = e.get("commit", "")
-        link = f"[`{commit[:7]}`](https://github.com/{src['repo']}/commit/{commit})" if commit else "-"
-        modo = "copiado" if src.get("mode", "vendor") == "vendor" else "só link"
-        rows.append(f"| `{sid}` | [{src['repo']}](https://github.com/{src['repo']}) | {src.get('license')} | {modo} | {n} | {link} | {e.get('updated_at', '-')} | {state} |")
-    extra = []
-    for sid, e in lock.items():
-        for d in e.get("known_upstream", []):
-            extra.append(f"- `{sid}`: [{d}](https://github.com/{e['repo']}/tree/HEAD/{d})")
+    rows = [status_row(sid, src, lock.get(sid, {}), report.get(sid, {}).get("findings", []))
+            for sid, src in cfg["sources"].items()]
+    extra = [f"- `{sid}`: [{d}](https://github.com/{e['repo']}/tree/HEAD/{d})"
+             for sid, e in lock.items() for d in e.get("known_upstream", [])]
     text = [
         "# Situação do pack",
         "",
@@ -495,29 +594,54 @@ def write_notices(cfg):
     (ROOT / "THIRD_PARTY_NOTICES.md").write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
-def write_report(path, report, blocked_applied):
-    out = [f"## Sync de {now()}", ""]
-    for level, title in ((BLOCK, "🔴 Bloqueios (não aplicados automaticamente)"), (WARN, "🟡 Avisos (aplicados)")):
-        items = [(sid, f) for sid, r in report.items() for f in r["findings"] if f["level"] == level]
-        if items:
-            out += [f"### {title}", ""]
-            for sid, f in items:
-                where = f" — `{f['where']}`" if f["where"] else ""
-                out.append(f"- **{sid}** · `{f['code']}`{where}: {f['msg']}")
-            out.append("")
-    upd = []
-    for sid, r in report.items():
-        n = r["notes"]
-        if r["applied"] and not n.get("unchanged"):
-            prev, cur = (n.get("previous") or "")[:7], (n.get("commit") or "")[:7]
-            rng = f"[{prev}…{cur}](https://github.com/{n['repo']}/compare/{n.get('previous')}...{n.get('commit')})" if prev else cur
-            upd.append(f"- **{sid}** {rng}: +{len(n.get('added', []))} / ~{len(n.get('changed', []))} / -{len(n.get('removed', []))} arquivos")
-    if upd:
-        out += ["### Atualizações aplicadas", "", *upd, ""]
-    infos = [(sid, f) for sid, r in report.items() for f in r["findings"] if f["level"] == INFO]
-    if infos:
-        out += ["### Informativo", ""] + [f"- **{sid}** · {f['msg']} — `{f['where']}`" for sid, f in infos] + [""]
-    if not upd and not any(r["findings"] for r in report.values()):
+def by_level(report: dict, level: str) -> list:
+    return [(sid, f) for sid, r in report.items() for f in r["findings"] if f["level"] == level]
+
+
+def findings_section(report: dict, level: str, title: str) -> list[str]:
+    items = by_level(report, level)
+    if not items:
+        return []
+    lines = [f"### {title}", ""]
+    for sid, f in items:
+        where = f" — `{f['where']}`" if f["where"] else ""
+        lines.append(f"- **{sid}** · `{f['code']}`{where}: {f['msg']}")
+    return lines + [""]
+
+
+def update_line(sid: str, n: dict) -> str:
+    prev, cur = (n.get("previous") or "")[:7], (n.get("commit") or "")[:7]
+    compare = f"https://github.com/{n['repo']}/compare/{n.get('previous')}...{n.get('commit')}"
+    rng = f"[{prev}…{cur}]({compare})" if prev else cur
+    return f"- **{sid}** {rng}: +{len(n.get('added', []))} / ~{len(n.get('changed', []))} / -{len(n.get('removed', []))} arquivos"
+
+
+def was_updated(result: dict) -> bool:
+    return result["applied"] and not result["notes"].get("unchanged")
+
+
+def updates_section(report: dict) -> list[str]:
+    lines = [update_line(sid, r["notes"]) for sid, r in report.items() if was_updated(r)]
+    return ["### Atualizações aplicadas", "", *lines, ""] if lines else []
+
+
+def info_section(report: dict) -> list[str]:
+    items = by_level(report, INFO)
+    if not items:
+        return []
+    return ["### Informativo", ""] + [f"- **{sid}** · {f['msg']} — `{f['where']}`" for sid, f in items] + [""]
+
+
+def write_report(path, report):
+    updates = updates_section(report)
+    out = [
+        f"## Sync de {now()}", "",
+        *findings_section(report, BLOCK, "🔴 Bloqueios (não aplicados automaticamente)"),
+        *findings_section(report, WARN, "🟡 Avisos (aplicados)"),
+        *updates,
+        *info_section(report),
+    ]
+    if not updates and not any(r["findings"] for r in report.values()):
         out.append("Nenhuma mudança nas origens.")
     text = "\n".join(out)
     if path:
@@ -525,7 +649,7 @@ def write_report(path, report, blocked_applied):
     return text
 
 
-def main():
+def parse_args():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", choices=["safe", "all"], default="safe")
     ap.add_argument("--dry-run", action="store_true")
@@ -534,8 +658,62 @@ def main():
     ap.add_argument("--report", default="")
     ap.add_argument("--simulate-alert", action="store_true",
                     help="injeta um achado de teste para conferir o caminho do alerta; nao altera arquivos")
-    args = ap.parse_args()
+    return ap.parse_args()
 
+
+def sync_source(sid, src, lock, overrides, args, report):
+    print(f"-> {sid} ({src['repo']})", flush=True)
+    try:
+        process(sid, src, lock, overrides, args, report)
+    except Exception as e:  # uma fonte com erro nao derruba as outras
+        report[sid] = {"findings": [Finding(BLOCK, "SYNC_ERROR", str(e)[:300])], "notes": {"repo": src["repo"]}, "applied": False}
+    for f in report[sid]["findings"]:
+        print(f"   [{f['level']}] {f['code']} {f['where']} {f['msg'][:120]}")
+
+
+def inject_test_alert(report: dict):
+    sid = next(iter(report), "teste")
+    report.setdefault(sid, {"findings": [], "notes": {"repo": "-"}, "applied": False})
+    report[sid]["findings"].append(Finding(
+        BLOCK, "TESTE", "alerta de teste disparado manualmente. Nenhuma origem mudou; pode fechar esta issue.",
+        now()))
+
+
+def save_state(cfg, lock, report):
+    LOCK.parent.mkdir(exist_ok=True)
+    LOCK.write_text(json.dumps(lock, indent=1, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+    write_status(cfg, lock, report)
+    write_notices(cfg)
+
+
+def alert_fingerprint(report: dict) -> str:
+    """Identifica a pendencia para nao abrir o mesmo alerta todo dia.
+
+    Sem o commit, que muda sem a pendencia mudar. Com bloqueio, so os bloqueios
+    contam: um aviso novo nao reabre o mesmo alerta.
+    """
+    level = BLOCK if by_level(report, BLOCK) else WARN
+    keys = sorted(f"{sid}|{f['code']}|{f['where']}|{f['msg']}" for sid, f in by_level(report, level))
+    return hashlib.sha256("\n".join(keys).encode()).hexdigest()[:16]
+
+
+def write_github_outputs(report: dict):
+    gh_out = os.environ.get("GITHUB_OUTPUT")
+    if not gh_out:
+        return
+    flags = {
+        "has_block": by_level(report, BLOCK),
+        "has_warn": by_level(report, WARN),
+        "changed": any(was_updated(r) for r in report.values()),
+    }
+    with open(gh_out, "a", encoding="utf-8") as fh:
+        fh.write(f"fingerprint={alert_fingerprint(report)}\n")
+        for name, value in flags.items():
+            fh.write(f"{name}={'true' if value else 'false'}\n")
+
+
+def main():
+    args = parse_args()
     cfg = yaml.safe_load((ROOT / "sources.yaml").read_text(encoding="utf-8"))
     lock = json.loads(LOCK.read_text(encoding="utf-8")) if LOCK.exists() else {}
     overrides = cfg.get("overrides") or {}
@@ -543,48 +721,14 @@ def main():
     report: dict = {}
 
     for sid, src in cfg["sources"].items():
-        if only and sid not in only:
-            continue
-        print(f"-> {sid} ({src['repo']})", flush=True)
-        try:
-            process(sid, src, lock, overrides, args, report)
-        except Exception as e:  # uma fonte com erro nao derruba as outras
-            report[sid] = {"findings": [Finding(BLOCK, "SYNC_ERROR", str(e)[:300])], "notes": {"repo": src["repo"]}, "applied": False}
-        for f in report[sid]["findings"]:
-            print(f"   [{f['level']}] {f['code']} {f['where']} {f['msg'][:120]}")
-
+        if not only or sid in only:
+            sync_source(sid, src, lock, overrides, args, report)
     if args.simulate_alert:
-        sid = next(iter(report), "teste")
-        report.setdefault(sid, {"findings": [], "notes": {"repo": "-"}, "applied": False})
-        report[sid]["findings"].append(Finding(
-            BLOCK, "TESTE", "alerta de teste disparado manualmente. Nenhuma origem mudou; pode fechar esta issue.",
-            now()))
-
+        inject_test_alert(report)
     if not args.dry_run:
-        LOCK.parent.mkdir(exist_ok=True)
-        LOCK.write_text(json.dumps(lock, indent=1, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
-        write_status(cfg, lock, report)
-        write_notices(cfg)
-    text = write_report(args.report, report, args.apply == "all")
-    print("\n" + text)
-
-    has_block = any(f["level"] == BLOCK for r in report.values() for f in r["findings"])
-    has_warn = any(f["level"] == WARN for r in report.values() for f in r["findings"])
-    changed = any(r["applied"] and not r["notes"].get("unchanged") for r in report.values())
-    # impressao digital dos achados: evita abrir o mesmo alerta todo dia
-    # sem o commit: a mesma pendencia nao pode abrir uma issue nova a cada dia
-    # com bloqueio, so os bloqueios contam: um aviso novo nao reabre o mesmo alerta
-    lv = {BLOCK} if any(f["level"] == BLOCK for r in report.values() for f in r["findings"]) else {WARN}
-    keys = sorted(f"{sid}|{f['code']}|{f['where']}|{f['msg']}"
-                  for sid, r in report.items() for f in r["findings"] if f["level"] in lv)
-    fingerprint = hashlib.sha256("\n".join(keys).encode()).hexdigest()[:16]
-    gh_out = os.environ.get("GITHUB_OUTPUT")
-    if gh_out:
-        with open(gh_out, "a", encoding="utf-8") as fh:
-            fh.write(f"fingerprint={fingerprint}\n")
-            fh.write(f"has_block={'true' if has_block else 'false'}\n")
-            fh.write(f"has_warn={'true' if has_warn else 'false'}\n")
-            fh.write(f"changed={'true' if changed else 'false'}\n")
+        save_state(cfg, lock, report)
+    print("\n" + write_report(args.report, report))
+    write_github_outputs(report)
 
 
 if __name__ == "__main__":

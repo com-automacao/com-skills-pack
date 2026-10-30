@@ -56,6 +56,15 @@ python scripts/sync.py                    # aplica o que é seguro
 python scripts/sync.py --only gsap-skills # uma origem só
 ```
 
+### Testes do sincronizador
+
+```bash
+pip install pytest pyyaml
+python -m pytest tests -q
+```
+
+Os testes usam uma origem falsa, sem rede nem git, e cobrem cada regra de detecção.
+
 ### Adicionar uma skill
 
 Acrescente o caminho em `paths` da origem certa em `sources.yaml` (ou crie uma origem nova) e rode o sync. Ajustes próprios em cima de uma skill de terceiros ficam em `overrides` no mesmo arquivo. Hoje existe um: a descrição do `frontend-ui-engineering`, que dá prioridade ao genjutsu em trabalho visual.

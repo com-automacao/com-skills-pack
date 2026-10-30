@@ -5,3 +5,7 @@ issue.md
 .claude-flow/
 .swarm/
 /com-skills-pack/
+.metrics/
+target/
+.coverage
+.pytest_cache/
