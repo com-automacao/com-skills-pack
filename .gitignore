@@ -9,3 +9,4 @@ issue.md
 target/
 .coverage
 .pytest_cache/
+packs/.stage-*

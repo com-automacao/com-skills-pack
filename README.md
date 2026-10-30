@@ -45,7 +45,7 @@ Todo dia às 08:17 (Brasília), o GitHub Actions roda [`scripts/sync.py`](script
 - Para **aceitar**, clique em *Create pull request* e faça o merge.
 - Para **recusar**, feche a issue. O `main` continua na versão anterior.
 
-O mesmo alerta não é aberto duas vezes. Para rodar fora do horário: aba **Actions** → *Sincronizar skills* → *Run workflow*.
+Se o GitHub estiver instável (sem conexão, limite de uso, erro do servidor), a origem é adiada para o próximo sync, sem alerta. O mesmo alerta não é aberto duas vezes. Para rodar fora do horário: aba **Actions** → *Sincronizar skills* → *Run workflow*.
 
 ### Rodar na sua máquina
 

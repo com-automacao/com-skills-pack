@@ -674,3 +674,99 @@ def test_copia_mantem_links_relativos_e_estrutura(env):
     env.files["skills/a/ref/deep/x.md"] = "y\n"
     run(env)
     assert pack(env, "skills/a/ref/deep/x.md").exists()
+
+
+# ---------------------------------------------------------------- caminho ausente mantido
+
+def test_kept_old_mantem_de_verdade_a_copia_anterior(env):
+    seed(env)
+    del env.files["skills/a/SKILL.md"]
+    run(env, apply="all")
+    assert pack(env, "skills/a/SKILL.md").read_text(encoding="utf-8") == SKILL
+
+
+def test_kept_old_continua_valendo_nas_execucoes_seguintes(env):
+    seed(env)
+    del env.files["skills/a/SKILL.md"]
+    run(env, apply="all")
+    assert "skills/a/SKILL.md" in env.lock["s"]["files"]
+    env.head = "c3" * 20
+    r = run(env, apply="all")
+    assert "KEPT_OLD" in codes(r) and pack(env, "skills/a/SKILL.md").exists()
+
+
+def test_kept_old_atualiza_os_demais_caminhos(env):
+    seed(env)
+    del env.files["skills/a/SKILL.md"]
+    env.files["LICENSE"] = "MIT License\nnova linha\n"
+    run(env, apply="all")
+    assert "nova linha" in pack(env, "LICENSE").read_text(encoding="utf-8")
+
+
+def test_caminho_tirado_do_manifesto_sai_da_copia(env):
+    seed(env)
+    run(env, {**SRC, "paths": ["LICENSE"]}, force=True)
+    assert not pack(env, "skills/a").exists()
+
+
+def test_override_vale_tambem_para_copia_nova(env):
+    seed(env)
+    env.files["skills/a/SKILL.md"] = SKILL + "\nnovo\n"
+    run(env, overrides={"s": {"skills/a": {"description": "minha"}}})
+    assert 'description: "minha"' in pack(env, "skills/a/SKILL.md").read_text(encoding="utf-8")
+
+
+# ---------------------------------------------------------------- API instavel
+
+@pytest.mark.parametrize("http", [403, 429, 500, 503])
+def test_falha_passageira_no_compare_nao_e_historico_reescrito(env, http):
+    seed(env)
+    env.compare_status = http
+    env.files["skills/a/SKILL.md"] = SKILL + "\nnovo\n"
+    r = run(env)
+    assert codes(r) == {"API_UNAVAILABLE"} and f"HTTP {http}" in r["findings"][0]["msg"]
+    assert r["findings"][0]["level"] == sync.INFO
+
+
+def test_falha_passageira_adia_sem_aplicar_e_tenta_de_novo(env):
+    seed(env)
+    env.compare_status = 503
+    env.files["skills/a/SKILL.md"] = SKILL + "\nnovo\n"
+    r = run(env)
+    assert not r["applied"] and env.lock["s"]["commit"] == "c1" * 20
+    assert "novo" not in pack(env, "skills/a/SKILL.md").read_text(encoding="utf-8")
+    env.compare_status = 200
+    assert run(env)["applied"] and env.lock["s"]["commit"] == "c2" * 20
+
+
+@pytest.mark.parametrize("http", [0, 429, 502])
+def test_falha_passageira_no_repositorio_nao_e_repositorio_sumido(env, http):
+    seed(env)
+    env.status = http
+    r = run(env)
+    assert codes(r) == {"API_UNAVAILABLE"} and not r["applied"]
+
+
+def test_commit_sumido_de_verdade_continua_bloqueando(env):
+    seed(env)
+    env.compare_status = 404
+    assert "HISTORY_REWRITTEN" in codes(run(env), sync.BLOCK)
+
+
+def test_erro_desconhecido_no_compare_continua_bloqueando(env):
+    seed(env)
+    env.compare_status = 422
+    assert "HISTORY_REWRITTEN" in codes(run(env), sync.BLOCK)
+
+
+def test_repositorio_sumido_de_verdade_continua_bloqueando(env):
+    env.status = 404
+    assert codes(run(env)) == {"REPO_GONE"}
+
+
+def test_api_sem_conexao_devolve_status_zero(monkeypatch):
+    def offline(*a, **k):
+        raise sync.urllib.error.URLError("sem rede")
+
+    monkeypatch.setattr(sync.urllib.request, "urlopen", offline)
+    assert sync.api("repos/x/y") == (0, None)

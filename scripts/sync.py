@@ -135,6 +135,13 @@ def api(path: str):
             return r.status, json.loads(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         return e.code, None
+    except urllib.error.URLError:
+        return 0, None
+
+
+def is_transient(status: int) -> bool:
+    """Falha passageira do GitHub: sem conexao, limite de uso ou erro do servidor."""
+    return status in (0, 403, 429) or status >= 500
 
 
 def sha256(p: Path) -> str:
@@ -231,9 +238,15 @@ def list_dirs(clone: Path, watch: str) -> list[str]:
 
 
 def compare_patches(repo: str, old: str, new: str):
-    """Linhas adicionadas por arquivo via API compare. None se a historia foi reescrita."""
+    """(estado, linhas adicionadas por arquivo) via API compare.
+
+    Estado None: a origem nao reconhece o commit anterior (historia reescrita).
+    Numero: codigo HTTP de uma falha passageira da API.
+    """
     status, data = api(f"repos/{repo}/compare/{old}...{new}")
-    if status == 404 or not data:
+    if is_transient(status):
+        return status, None
+    if status != 200 or not data:
         return None, None
     added = {}
     for f in data.get("files", []):
@@ -259,6 +272,8 @@ class Job:
     notes: dict = field(default_factory=dict)
     clone: Path | None = None
     head: str = ""
+    kept: list = field(default_factory=list)
+    postponed: bool = False
 
     @property
     def vendored(self) -> bool:
@@ -270,6 +285,10 @@ class Job:
 
     def add(self, level, code, msg, where=""):
         self.findings.append(Finding(level, code, msg, where))
+
+    def postpone(self, status: int):
+        self.postponed = True
+        self.add(INFO, "API_UNAVAILABLE", f"API do GitHub indisponivel (HTTP {status}); nova tentativa no proximo sync")
 
     def touch(self):
         if self.entry:
@@ -320,7 +339,7 @@ def check_paths_exist(job: Job):
 
 def check_mass_delete(job: Job, removed: list[str]):
     for rel in job.src["paths"]:
-        before = [f for f in job.old_files if f == rel or f.startswith(rel + "/")]
+        before = [f for f in job.old_files if is_under(f, rel)]
         gone = [f for f in before if f in removed]
         if len(before) > 3 and len(gone) / len(before) > 0.5:
             job.add(BLOCK, "MASS_DELETE", f"{len(gone)} de {len(before)} arquivos removidos", rel)
@@ -410,6 +429,9 @@ def check_repo(job: Job) -> str | None:
     """Confere o repositorio na API. Devolve a licenca, ou None se ele esta inacessivel."""
     repo = job.src["repo"]
     status, meta = api(f"repos/{repo}")
+    if is_transient(status):
+        job.postpone(status)
+        return None
     if status != 200 or not meta:
         job.add(BLOCK, "REPO_GONE", f"repositorio inacessivel (HTTP {status})")
         return None
@@ -458,7 +480,9 @@ def check_history(job: Job):
     if not previous or previous == job.head:
         return
     status, _ = compare_patches(job.src["repo"], previous, job.head)
-    if status is None or status == "diverged":
+    if isinstance(status, int):
+        job.postpone(status)
+    elif status is None or status == "diverged":
         job.add(BLOCK, "HISTORY_REWRITTEN", "historico da origem foi reescrito (force-push); commit anterior sumiu")
 
 
@@ -466,18 +490,26 @@ def held_back(job: Job, args) -> bool:
     return args.dry_run or (args.apply == "safe" and any(f["level"] == BLOCK for f in job.findings))
 
 
-def copy_path(job: Job, rel: str, dest: Path):
-    s = job.clone / rel
-    if not s.exists():
-        if any(f == rel or f.startswith(rel + "/") for f in job.old_files):
-            job.add(WARN, "KEPT_OLD", "caminho ausente na origem; mantida a copia anterior", rel)
-        return
-    d = dest / rel
-    d.parent.mkdir(parents=True, exist_ok=True)
-    if s.is_dir():
-        shutil.copytree(s, d, ignore=shutil.ignore_patterns(".git"))
+def copy_any(source: Path, target: Path):
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if source.is_dir():
+        shutil.copytree(source, target, ignore=shutil.ignore_patterns(".git"))
     else:
-        shutil.copy2(s, d)
+        shutil.copy2(source, target)
+
+
+def is_under(path: str, root: str) -> bool:
+    return path == root or path.startswith(root + "/")
+
+
+def copy_path(job: Job, rel: str, dest: Path, stage: Path):
+    if (job.clone / rel).exists():
+        copy_any(job.clone / rel, stage / rel)
+    elif any(is_under(f, rel) for f in job.old_files):
+        job.add(WARN, "KEPT_OLD", "caminho ausente na origem; mantida a copia anterior", rel)
+        job.kept.append(rel)
+        if (dest / rel).exists():
+            copy_any(dest / rel, stage / rel)
 
 
 def apply_overrides(dest: Path, overrides: dict):
@@ -489,12 +521,24 @@ def apply_overrides(dest: Path, overrides: dict):
 
 
 def vendor_files(job: Job, overrides: dict):
+    """Monta a copia nova ao lado e so entao troca: um erro no meio nao perde a anterior."""
     dest = PACKS / job.sid
+    stage = PACKS / f".stage-{job.sid}"
+    if stage.exists():
+        shutil.rmtree(stage)
+    stage.mkdir(parents=True)
+    for rel in job.src["paths"]:
+        copy_path(job, rel, dest, stage)
+    apply_overrides(stage, overrides)
     if dest.exists():
         shutil.rmtree(dest)
-    for rel in job.src["paths"]:
-        copy_path(job, rel, dest)
-    apply_overrides(dest, overrides)
+    stage.rename(dest)
+
+
+def locked_files(job: Job) -> dict:
+    """Arquivos da copia: os da origem e os mantidos de caminhos ausentes."""
+    kept = {f: h for f, h in job.old_files.items() if any(is_under(f, rel) for rel in job.kept)}
+    return {**kept, **file_map(job.clone, job.src["paths"])}
 
 
 def new_lock_entry(job: Job, spdx: str) -> dict:
@@ -504,7 +548,7 @@ def new_lock_entry(job: Job, spdx: str) -> dict:
         "license": spdx,
         "checked_at": now(),
         "updated_at": now(),
-        "files": file_map(job.clone, job.src["paths"]),
+        "files": locked_files(job),
         "known_upstream": job.notes.get("upstream_extra", []),
     }
 
@@ -524,6 +568,9 @@ def process(sid, src, lock, overrides, args, report):
             job.touch()
             return
         check_history(job)
+        if job.postponed:
+            job.touch()
+            return
         analyze_source(job)
         if held_back(job, args):
             job.touch()
