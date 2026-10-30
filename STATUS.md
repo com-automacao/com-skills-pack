@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-30 19:55 UTC**
+Última verificação: **2026-10-30 19:58 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -24,7 +24,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`d48e472`](https://github.com/morluto/rea/commit/d48e472fa6a664cacbb400560e673533005795ce) | 2026-10-30 19:55 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`2ce8aa1`](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | 2026-10-22 15:55 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`7836c58`](https://github.com/upstash/context7/commit/7836c583918374fbecffacf866afb7594b919466) | 2026-10-30 17:02 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`3035ad2`](https://github.com/earthtojake/text-to-cad/commit/3035ad230c9312f7a7cb099c1f2796f222387522) | 2026-10-30 17:02 UTC | 🔴 bloqueado |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`6c7276c`](https://github.com/earthtojake/text-to-cad/commit/6c7276c6159fbc03537cbfc946033362af0f3ad4) | 2026-10-30 19:58 UTC | 🔴 bloqueado |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
 | `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | só link | 1 | [`57a8bdd`](https://github.com/unclebob/ub-mode/commit/57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f) | 2026-10-30 18:25 UTC | 🟢 ok |
 
