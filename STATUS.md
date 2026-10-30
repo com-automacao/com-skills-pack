@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-30 18:25 UTC**
+Última verificação: **2026-10-30 19:12 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -21,7 +21,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`ac699b5`](https://github.com/akitaonrails/ai-memory/commit/ac699b5696ccb37eaa901893fd16bb2b8ba59d90) | 2026-10-30 17:02 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`92a9a34`](https://github.com/vercel-labs/skills/commit/92a9a34ac3bf88e695e468b90c7bf32f163d32c8) | 2026-10-29 17:27 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`675d407`](https://github.com/morluto/rea/commit/675d4076de1af5052f01709a9cf4cdf0cc3e2c67) | 2026-10-30 17:02 UTC | 🟢 ok |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`47fa6ab`](https://github.com/morluto/rea/commit/47fa6ab3795d547207001ffb01643c0aa39dcad8) | 2026-10-30 19:12 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`2ce8aa1`](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | 2026-10-22 15:55 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`7836c58`](https://github.com/upstash/context7/commit/7836c583918374fbecffacf866afb7594b919466) | 2026-10-30 17:02 UTC | 🟢 ok |
 | `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`3035ad2`](https://github.com/earthtojake/text-to-cad/commit/3035ad230c9312f7a7cb099c1f2796f222387522) | 2026-10-30 17:02 UTC | 🟢 ok |
