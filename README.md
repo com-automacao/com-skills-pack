@@ -316,6 +316,7 @@ O plugin traz o servidor local `cad`, que mostra os modelos na conversa. **Windo
 
 | O quê | Por quê |
 |---|---|
+| `ub-mode` ([unclebob/ub-mode](https://github.com/unclebob/ub-mode)) | Método de engenharia do Uncle Bob: fazer funcionar, fazer direito, prática. O repositório não tem licença: **só monitorado**, sem cópia no pack. Para instalar, copie o `SKILL.md` para `~/.claude/skills/ub-mode/`. |
 | `maestri-*` (7) | Vêm com o app comercial Maestri; não há repositório público. |
 | Nativas do Claude Code (`/code-review`, `/simplify`, `/security-review`, `/init`, `run`, `claude-api`, `dataviz`, `plugin-authoring`, `update-config`) | Já vêm com o Claude Code em qualquer instalação. |
 | Design visual, documentos, vendas, marketing | Não são de programação. |

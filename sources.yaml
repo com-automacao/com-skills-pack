@@ -328,6 +328,16 @@ sources:
       - skills/threejs-shaders
       - skills/threejs-textures
 
+  ub-mode:
+    # Sem licenca declarada: redistribuir e proibido. So monitoramos.
+    # Instalacao: copiar SKILL.md para ~/.claude/skills/ub-mode/
+    repo: unclebob/ub-mode
+    branch: master
+    license: NONE
+    mode: link
+    paths:
+      - SKILL.md
+
 # Ajustes locais aplicados por cima da copia upstream a cada sync.
 # Hoje: so campos do frontmatter do SKILL.md.
 overrides:

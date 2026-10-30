@@ -1328,5 +1328,16 @@
   "license": "MIT",
   "repo": "CloudAI-X/threejs-skills",
   "updated_at": "2026-10-22 13:45 UTC"
+ },
+ "ub-mode": {
+  "checked_at": "2026-10-30 18:25 UTC",
+  "commit": "57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f",
+  "files": {
+   "SKILL.md": "4120873db2e3681ea9b7de4d7105fc9d3406657c9ada91ce77b9b3c4962f3202"
+  },
+  "known_upstream": [],
+  "license": "NONE",
+  "repo": "unclebob/ub-mode",
+  "updated_at": "2026-10-30 18:25 UTC"
  }
 }
