@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-10-30 19:12 UTC**
+Última verificação: **2026-10-30 19:55 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -17,14 +17,14 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`2574e29`](https://github.com/anthropics/knowledge-work-plugins/commit/2574e29377c7173d0cecffef29a6ecbd7f8ccb5d) | 2026-10-28 17:11 UTC | 🟢 ok |
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`ca45fc4`](https://github.com/anthropics/skills/commit/ca45fc496a3436251f191354091d557da31c15b5) | 2026-10-29 17:27 UTC | 🟢 ok |
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`f43b791`](https://github.com/base44/skills/commit/f43b791bb33db44d6c984f1d84df643e154016e1) | 2026-10-29 17:27 UTC | 🟢 ok |
-| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`243bc57`](https://github.com/ruvnet/ruflo/commit/243bc57f0bf24aad06b84f4140cce0009618ddf6) | 2026-10-30 17:01 UTC | 🟢 ok |
+| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`9b3e26d`](https://github.com/ruvnet/ruflo/commit/9b3e26d200ae1b0cb8fa7a8a49bea4da8660e26b) | 2026-10-30 19:54 UTC | 🟢 ok |
 | `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`ac699b5`](https://github.com/akitaonrails/ai-memory/commit/ac699b5696ccb37eaa901893fd16bb2b8ba59d90) | 2026-10-30 17:02 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`92a9a34`](https://github.com/vercel-labs/skills/commit/92a9a34ac3bf88e695e468b90c7bf32f163d32c8) | 2026-10-29 17:27 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`47fa6ab`](https://github.com/morluto/rea/commit/47fa6ab3795d547207001ffb01643c0aa39dcad8) | 2026-10-30 19:12 UTC | 🟢 ok |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`d48e472`](https://github.com/morluto/rea/commit/d48e472fa6a664cacbb400560e673533005795ce) | 2026-10-30 19:55 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`2ce8aa1`](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | 2026-10-22 15:55 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`7836c58`](https://github.com/upstash/context7/commit/7836c583918374fbecffacf866afb7594b919466) | 2026-10-30 17:02 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`3035ad2`](https://github.com/earthtojake/text-to-cad/commit/3035ad230c9312f7a7cb099c1f2796f222387522) | 2026-10-30 17:02 UTC | 🟢 ok |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`3035ad2`](https://github.com/earthtojake/text-to-cad/commit/3035ad230c9312f7a7cb099c1f2796f222387522) | 2026-10-30 17:02 UTC | 🔴 bloqueado |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
 | `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | só link | 1 | [`57a8bdd`](https://github.com/unclebob/ub-mode/commit/57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f) | 2026-10-30 18:25 UTC | 🟢 ok |
 
