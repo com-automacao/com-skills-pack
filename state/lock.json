@@ -1,6 +1,6 @@
 {
  "agent-skills": {
-  "checked_at": "2026-10-31 16:07 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
   "files": {
    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
@@ -50,8 +50,8 @@
   "updated_at": "2026-10-31 16:07 UTC"
  },
  "ai-memory": {
-  "checked_at": "2026-10-31 16:08 UTC",
-  "commit": "ac699b5696ccb37eaa901893fd16bb2b8ba59d90",
+  "checked_at": "2026-11-01 17:09 UTC",
+  "commit": "1c506228b701f4496d3d9af6f00180749e0563d1",
   "files": {
    "LICENSE": "18332c61780ce8e694d4fa330770cd4d8c85e33f47ac13a80d72d70bb032ae72",
    "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md": "554d2adcbe1bc6c018d720134f58d29fb2151b82ea1c87e460158e84ee05f32a",
@@ -65,10 +65,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "akitaonrails/ai-memory",
-  "updated_at": "2026-10-30 17:02 UTC"
+  "updated_at": "2026-11-01 17:09 UTC"
  },
  "anthropic-skills": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "ca45fc496a3436251f191354091d557da31c15b5",
   "files": {
    "skills/mcp-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
@@ -107,7 +107,7 @@
   "updated_at": "2026-10-29 17:27 UTC"
  },
  "base44": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "f43b791bb33db44d6c984f1d84df643e154016e1",
   "files": {
    "LICENSE": "5546cdc657881c6a454bb4d09044e59fb4f84f3951fcb88c8102b7fe8332b4a4",
@@ -189,7 +189,7 @@
   "updated_at": "2026-10-29 17:27 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -204,7 +204,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "context7": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "7836c583918374fbecffacf866afb7594b919466",
   "files": {
    "LICENSE": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c",
@@ -218,7 +218,7 @@
   "updated_at": "2026-10-30 17:02 UTC"
  },
  "design-dna": {
-  "checked_at": "2026-10-31 16:07 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "593e39bc9e3652734653bd75544a333d7d43615e",
   "files": {
    "LICENSE": "2de108bcd0d904f8756e1135ca77ce1e3e9ca0edb1ae6abecb97dea76d27d174",
@@ -239,7 +239,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "find-skills": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "92a9a34ac3bf88e695e468b90c7bf32f163d32c8",
   "files": {
    "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
@@ -251,49 +251,49 @@
   "updated_at": "2026-10-29 17:27 UTC"
  },
  "genjutsu": {
-  "checked_at": "2026-10-31 16:07 UTC",
-  "commit": "1f518a71378b15d423389e546e767cffc86e14c3",
+  "checked_at": "2026-11-01 17:08 UTC",
+  "commit": "ac9ca74156946be8e449f0d6acc8043a105a38f3",
   "files": {
    "LICENSE": "19fd36b46fd5b393c6d58ad1ac26afd436bdce6951a9952094eff70366e5b314",
-   "skills/_jutsu/VERSIONS.md": "0ddd8e587e2be9b74a29f36d914270da2e1f7083cd145e57b50e6a61c3a95c23",
+   "skills/_jutsu/VERSIONS.md": "23fb19399ec7019c4254b814639caa8ddb5164ab5b8e9cf214b6fc779c3708ed",
    "skills/_jutsu/canvas-generative/SKILL.md": "ed1c384706688bff70ddc165ef8ffe2aa6ddbc9dac06ff9c3bccb44d6f522e21",
    "skills/_jutsu/canvas-generative/references/algorithms.md": "0de2b469554f796ca8a4220625d0a24d7e9fcc670bbaebe9df41e41871a4eb55",
-   "skills/_jutsu/compose-graphics/SKILL.md": "c63088ab7c1a90ec887be0e3684da550deb42affdacef7597227cc7d542b96c6",
+   "skills/_jutsu/compose-graphics/SKILL.md": "6e022c3e18a5611722b2a7d554c9a22b13ed9c0c9f785857187eebf1bee404cf",
    "skills/_jutsu/compose-graphics/references/agsl-recipes.md": "74b91463f08149f112925345a46ee32909d7d53b219e8152d75ec36383ac0d2f",
    "skills/_jutsu/compose-graphics/references/canvas-generative.md": "4436203dc5c93c0a80b28c6a8cb71c5104188030301883fd66dcc5d3a9bc6cda",
-   "skills/_jutsu/compose-graphics/references/m3-expressive-deep.md": "5b24735cceedc3f4e1a73087bc43acb68765de95bd3e31671771ed95a4d65b86",
-   "skills/_jutsu/compose-motion/SKILL.md": "9cc4d7f73ecf413ff67c92f82053fdac838656bfb73e521edcc583502b8f262a",
+   "skills/_jutsu/compose-graphics/references/m3-expressive-deep.md": "b706accdccf3f1af5bed0fa8c3d3aebf994c9006761c13a7b73eb237e255c770",
+   "skills/_jutsu/compose-motion/SKILL.md": "abdb1d53ffa83a5ab6ccafd435a9f130d73a08afecd22fc6df19d53000293f35",
    "skills/_jutsu/compose-motion/references/gestures-compose.md": "eb5e7b23952db8f029c5165ac368a90c661f5cb08f66c6ca3adc255eb7581b7b",
    "skills/_jutsu/compose-motion/references/recomposition-and-anim.md": "a73843d4d25a1cc59012c7a64c252f4a0d9f808a5a9098cc6398d5c9c99b5ff6",
-   "skills/_jutsu/compose-motion/references/shared-transitions.md": "92efaedea8325cb6ef5a842d474f8a46b6b6bee96f961948a4abb52ab03d1289",
-   "skills/_jutsu/compose-multiplatform/SKILL.md": "c33bb7297a12ebb2209d9e47102d5d7e02b2103486048898c923ccec7a9e2e88",
+   "skills/_jutsu/compose-motion/references/shared-transitions.md": "1f6b1a8badb70b4988ca107e8e9527de586d8cf2076555789fb72dfaaa17de46",
+   "skills/_jutsu/compose-multiplatform/SKILL.md": "a92bd631372d0d5d1500f20d2609bfeb139e3303840eabade51149c85f7f1a36",
    "skills/_jutsu/compose-multiplatform/references/cmp-interop.md": "23cdb3fb37a12e88db535b7ec508b818c38c0d4d7009490b529301fc5836bb69",
-   "skills/_jutsu/compose-multiplatform/references/cmp-platform-quirks.md": "fca2b5c2dddb0d53dc809f7da3b19903e293f0bce4c93c8b67ddef9ff7da5ebe",
-   "skills/_jutsu/css-native/SKILL.md": "9390d0239f23e2dfc9314e147c19e30088d9501d7490a72a100d7977a5a3f95a",
-   "skills/_jutsu/css-native/references/modern-css.md": "fab27a9d7364f54d74aad7dd32bab11e1afd2f119402a38c4b70229c0c07dc7f",
+   "skills/_jutsu/compose-multiplatform/references/cmp-platform-quirks.md": "8ff703aa0e61663605700d2816a2a25a4834556ef5c30905d20fe89aa7a2bbd8",
+   "skills/_jutsu/css-native/SKILL.md": "d6869299cc76cf10fb88888791e64cd9648049a838371ec26ce27b9c6845abf8",
+   "skills/_jutsu/css-native/references/modern-css.md": "7417cea704aa5ba721e9ffa84e1385b0ade6a45387f68b7a83bcbc549839bf87",
    "skills/_jutsu/design-audit/SKILL.md": "2fece54e0d0cd005afa36bb259beaead511ebb8a5edbfbd3ec9213f9cf3b3b16",
    "skills/_jutsu/design-audit/scripts/audit.py": "09d0bc7e717f8e4edd83e193a203508a0d8045978752696e2790b9c346e7ec75",
    "skills/_jutsu/design-audit/scripts/tests/test_audit.py": "274187ae77fe5a2930b97cac9b39be3a45fc2aca6aa148136932ed2537ed53f7",
    "skills/_jutsu/desktop-principles/SKILL.md": "23a54e63b4f430994ad45d0567d169a6d6332523908876dd336153eac5decb34",
    "skills/_jutsu/desktop-principles/references/keyboard-patterns.md": "3acfb1a2342668dbaddf6ef9c42c6d99b562de50a7b8aca6c674206601873d9b",
    "skills/_jutsu/desktop-principles/references/multi-window.md": "5c069e2780f16bc8462e9d35d31b92c7e4e183119d62b7117afaf133534e4fe1",
-   "skills/_jutsu/framer-motion/SKILL.md": "17fcdcb3180bbdd90d187d9148a0e763cf7574d66ea8bbfdd3685650504ae9ed",
-   "skills/_jutsu/framer-motion/references/api.md": "7592a835439b56db28df728a873010338068a6e85486ddb01e138ce396b683e0",
+   "skills/_jutsu/framer-motion/SKILL.md": "9cab4c969621e47e91a7455bf4c65d591f9da560918a641a4baf2270b4e9430d",
+   "skills/_jutsu/framer-motion/references/api.md": "24482a5d2ba5416fbc437d28a6c6c377a2534ddd62878682e2b24f92cd861c63",
    "skills/_jutsu/gsap/SKILL.md": "3bb575e5b5f68afc02d1c6f7538eb3e9c4f3086791f5a588d0d70bcab8857ea9",
    "skills/_jutsu/gsap/references/core.md": "7f66e95dd457e65610e073ed46a050ac929d9da026b3457a9d3b63d51b9b034f",
    "skills/_jutsu/gsap/references/plugins.md": "229c18f2ac804e30734674a0b2e8588a7b2af8d2bd0a082c2b8131e7bb53ea8c",
    "skills/_jutsu/gsap/references/scrolltrigger.md": "d490ac65ce4ac013c119757f44d18aa2ef1b655656af508da64b6ed78e6c2487",
    "skills/_jutsu/gsap/references/timeline.md": "394a7e3a6a39f912cbebe518061a7eae8ef703880958a5e9660991ab27724c0f",
-   "skills/_jutsu/mobile-principles/SKILL.md": "22ecaf170b9504fd9d52e9cb95238285a304824bacdac8545305eb485e32e03f",
+   "skills/_jutsu/mobile-principles/SKILL.md": "79abf16243ea91938e7cda44ba53746692a288df35d07ced91b569bdb039a96d",
    "skills/_jutsu/mobile-principles/references/accessibility-mobile.md": "ff8136eb63df2fab85419796a40b7c6c0325dd64f0994ef55f14cc984d2e171d",
-   "skills/_jutsu/mobile-principles/references/gestures-deep.md": "6b0af70e95c852df6ab24dfce4836c660b2f2794e956c322909bd1cbcabb12e4",
+   "skills/_jutsu/mobile-principles/references/gestures-deep.md": "eeb96781534f613a554b8f65df1b4afc4de6ccf6c9327b84cc8ee607727165a6",
    "skills/_jutsu/motion-principles/SKILL.md": "da789e4612bf6b8e192769f2e766a10c54ca2648341a6d067e91999d878fa0f9",
    "skills/_jutsu/motion-principles/references/designers.md": "e7df9e53bd3e9d9dc17ef3a2510d00f1ad3a6ba6bf5b4b75a8e5abcc456cffaa",
    "skills/_jutsu/motion-principles/references/easing-guide.md": "ea03e1289e8adec19cfaaa6d7d4328cf31bead89650d4b4dffb9ecc6dce37065",
    "skills/_jutsu/motion-principles/references/enter-exit-recipes.md": "bb2d3e08a13f12ec7e864cfd1a6cbbe217a2f32837c9f0620f0dee27bf0e42e1",
-   "skills/_jutsu/orchestration/SKILL.md": "7fca98cf6464789a7a284a1c215bbbea7001007a7738b82051fa417459bdbd6a",
-   "skills/_jutsu/orchestration/references/evidence.md": "1f53f62206f8f2c1f9eb16ca34cf7755c1af219e6fad4f05fa8f8d79d43a2056",
-   "skills/_jutsu/orchestration/references/impeccable.md": "5df861e73629564fa408299d1596a76596f6b60be5d8326d4fc501c9b3b7931c",
+   "skills/_jutsu/orchestration/SKILL.md": "76a4632ebfe8fbf78d5afc845a01188f484593daa43a2bda7b7c39831d2ba730",
+   "skills/_jutsu/orchestration/references/evidence.md": "53fda82e900bf529ce144fe849b2e473b9ce3ac1c7f9be6c1cb0035b4035d2ed",
+   "skills/_jutsu/orchestration/references/impeccable.md": "440c11282c17288065abd0f163dc69934233fabf82014d7809e17ff991fbae20",
    "skills/_jutsu/orchestration/references/material.md": "5bb666918682db2fcc4034aacb830933ff1e64913a473ae035450a3623222570",
    "skills/_jutsu/orchestration/scripts/brief.mjs": "92fdd7d3fcb0cac6894b7868540ca931d65de779535ff097c4082f086630d933",
    "skills/_jutsu/orchestration/scripts/shoot.mjs": "744ffe6e6292b46e805e606f90c991400de80a8cddd60476d3d49c956205aa50",
@@ -306,14 +306,14 @@
    "skills/_jutsu/swiftui-graphics/references/canvas-swiftui.md": "e507b315a7fd5d4b73df80555f818f47af44dcdcf2f834f4d826a44bccd9a2ae",
    "skills/_jutsu/swiftui-graphics/references/liquid-glass-deep.md": "ef0a700e6c56f569951128af0e4e264875e013d1cd4b56c0f755614fd8dee5f1",
    "skills/_jutsu/swiftui-graphics/references/metal-recipes.md": "a356efd287406857645d1a857cb5ccd991a6d4a63fe24b376ce3080ef68767f2",
-   "skills/_jutsu/swiftui-motion/SKILL.md": "eb89b9eb536397259a92a74de95e68eefff7bc7de3a83867c95d63cf1890270d",
-   "skills/_jutsu/swiftui-motion/references/gestures-swiftui.md": "49bb1c8af270927ccb2b94b3c883870917b7be9251c1b43ab99d4a4394337215",
+   "skills/_jutsu/swiftui-motion/SKILL.md": "71c210c3ec3fef1a958f921bb08f1f8ed03f9202134be59edac4412570e683c2",
+   "skills/_jutsu/swiftui-motion/references/gestures-swiftui.md": "94f822a43acda7e708f38f31b9b43bf378d058ee568580dd235ef9129e7103c5",
    "skills/_jutsu/swiftui-motion/references/phase-keyframe-deep.md": "acc2e9954b14c04b81acfc9bd078ea042726af8161f55073b4a80503d6d01b19",
    "skills/_jutsu/swiftui-motion/references/springs-cheatsheet.md": "3a4208d5c1abc1ac5ee69b75fb6a7e3ad29f5cdfcf0d44bcd728f6586f0d5891",
    "skills/_jutsu/tells/SKILL.md": "df447924dafeeb58120c75680ee6c7c48ef3ccd97d91355c2682ce31d5de7392",
    "skills/_jutsu/tells/references/web.md": "65b40dc4f4a760077d2d819ea148b5e054008f34913ee74bdc2ad1cf0fe274a1",
-   "skills/_jutsu/threejs-r3f/SKILL.md": "b11af603c15b77279b18ce0dc6d4c62b47a79126c162cf6cfe937b9a0c6bf6de",
-   "skills/_jutsu/threejs-r3f/references/scene-setup.md": "c14d13a0a2e81dc85f34d292cf0fb1f092ef1b10b31a47e28246215e1b7f5611",
+   "skills/_jutsu/threejs-r3f/SKILL.md": "bfa2cfcfb5f804cf970f4c80228410395f88e46de567aaccdbfd16e123d2dc26",
+   "skills/_jutsu/threejs-r3f/references/scene-setup.md": "b9cfdd208dfe0aa5e219358955e91c096e0484d882d849898c24af62a39c23dd",
    "skills/_jutsu/threejs-r3f/references/shaders.md": "50812b378f8c9368bed5857a672ab944eb314b3c74fad5b4a4b63d43e0529df7",
    "skills/_jutsu/ui-ux-pro-max/LICENSE-upstream.txt": "738f69dfa83db5c347c678fb9d90e560877059f0de93a327c39001bff92dc014",
    "skills/_jutsu/ui-ux-pro-max/SKILL.md": "506136c567494cb6dc1e5ee99a328b0009cd10ef42d4df42710507b86acc08ba",
@@ -372,10 +372,10 @@
   ],
   "license": "NOASSERTION",
   "repo": "AThevon/genjutsu",
-  "updated_at": "2026-10-13 16:23 UTC"
+  "updated_at": "2026-11-01 17:08 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-10-31 16:07 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -394,7 +394,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-10-31 16:07 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "3e7099e1b7fe93e187e06db4bdbe1e1906c21a28",
   "files": {
    "CHANGELOG.md": "3bbd981052b05cd2189db85fc69733a8f3e39658b2b57e44904f6fcd246d375b",
@@ -721,7 +721,7 @@
   "updated_at": "2026-10-27 16:42 UTC"
  },
  "knowledge-work-plugins": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
   "files": {
    "LICENSE": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26",
@@ -752,7 +752,7 @@
   "updated_at": "2026-10-28 17:11 UTC"
  },
  "mattpocock-skills": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
   "files": {
    "LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
@@ -766,7 +766,7 @@
   "updated_at": "2026-10-31 16:08 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-10-31 16:07 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
@@ -794,16 +794,16 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "rea": {
-  "checked_at": "2026-10-31 16:08 UTC",
-  "commit": "2d5dec26c31662764c9adfe3ff996174901b8d49",
+  "checked_at": "2026-11-01 17:09 UTC",
+  "commit": "85013da0cec7b854f51e47de77fd24391c8fd8ed",
   "files": {
-   ".agents/skills/reverse-engineer-anything/SKILL.md": "315bbaeb3364f9c8cc61cc5392cbe07e9fc6767359382877fe389033905faabf",
+   ".agents/skills/reverse-engineer-anything/SKILL.md": "0b86284fad27631968c5fb54a2ae8ef55f88f4d20615b0ba45fba5f47f193192",
    ".agents/skills/reverse-engineer-anything/references/android-applications.md": "1698a9a21eacc685b327059efee2e9cdb6ac1f55fa3875eed96b4b304ab155f3",
    ".agents/skills/reverse-engineer-anything/references/connection-and-recovery.md": "69aae4c8c2741cc745171a007257cf94fa65247bf73e4c4eb031a1361a06831e",
    ".agents/skills/reverse-engineer-anything/references/environments.md": "4a84b3be1eb36b1d2e658b4076b151570ba97a60e7d97da0876ab324c917b305",
    ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "eb763e4662f7cf9cab202c0f84444e539f09c6ae50749c135ba169a7cecf3fa0",
-   ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "f7d9828c31c2f42a7c553e4045258e451daa5cbb687ad9ce44de515a3ca2db76",
-   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "c5d5e8687bc8ee986de45a1090a95b008150618dd8388e8f710bdd86ca62185b",
+   ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "d43c10966dd76e997ff05dcdafdb4164f801a3f0199cf19bb71360bc78a75925",
+   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "57ed920bab10e62fe38be66cd9f95d1316c02e6b00b9bb4f6d98da35d1864a67",
    ".agents/skills/reverse-engineer-anything/references/runtime-observation.md": "e207a912470a1a56dc02316eb7b040ac50b4d763f2273e97a6811863d9051d74",
    "LICENSE": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b"
   },
@@ -815,10 +815,10 @@
   ],
   "license": "MIT",
   "repo": "morluto/rea",
-  "updated_at": "2026-10-31 16:08 UTC"
+  "updated_at": "2026-11-01 17:09 UTC"
  },
  "ruflo": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "49adc540a051916f6b8fad2c3dc30f8fba8c1bc3",
   "files": {
    ".claude/commands/agents/README.md": "52f50d320ed2058cc815a836530e43cba4511df56eb9edac8837b922339fcbd7",
@@ -1044,7 +1044,7 @@
   "updated_at": "2026-10-31 16:08 UTC"
  },
  "scroll-craft": {
-  "checked_at": "2026-10-31 16:07 UTC",
+  "checked_at": "2026-11-01 17:08 UTC",
   "commit": "75d81f74e83692add18cd7a8a8e078b8a887a579",
   "files": {
    "LICENSE": "dd471a27eca72488a53e6ea6fbe9392d81aa3f01e950e63fe328affb2ddfa6e3",
@@ -1079,7 +1079,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "superpowers": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
   "files": {
    ".claude-plugin/marketplace.json": "aa23337d43302fffa00927f3700205e92b6c09b79dfe4a13bf66b7b15122604a",
@@ -1196,7 +1196,7 @@
   "updated_at": "2026-10-22 15:55 UTC"
  },
  "text-to-cad": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "6c7276c6159fbc03537cbfc946033362af0f3ad4",
   "files": {
    ".claude-plugin/icon.png": "8c44d41c85e0131a3daf2ae58ec1bef6eb54f8731db665dea5dc7c19524aacbe",
@@ -1312,7 +1312,7 @@
   "updated_at": "2026-10-30 19:58 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
    "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
@@ -1336,7 +1336,7 @@
   "updated_at": "2026-10-22 13:45 UTC"
  },
  "ub-mode": {
-  "checked_at": "2026-10-31 16:08 UTC",
+  "checked_at": "2026-11-01 17:09 UTC",
   "commit": "57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f",
   "files": {
    "SKILL.md": "4120873db2e3681ea9b7de4d7105fc9d3406657c9ada91ce77b9b3c4962f3202"
