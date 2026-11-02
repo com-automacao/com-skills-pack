@@ -2,11 +2,11 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-01 17:09 UTC**
+Última verificação: **2026-11-02 20:49 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
-| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`8bfcc1f`](https://github.com/addyosmani/agent-skills/commit/8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e) | 2026-10-31 16:07 UTC | 🟢 ok |
+| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`301b02b`](https://github.com/addyosmani/agent-skills/commit/301b02b12bff98e4688e6984af6556802322bbde) | 2026-11-02 20:47 UTC | 🟢 ok |
 | `gsap-skills` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | MIT | copiado | 8 | [`aed9cfd`](https://github.com/greensock/gsap-skills/commit/aed9cfd3277740755f6bfc1155c7aa645403b760) | 2026-10-13 16:22 UTC | 🟢 ok |
 | `genjutsu` | [AThevon/genjutsu](https://github.com/AThevon/genjutsu) | NOASSERTION | copiado | 1 | [`ac9ca74`](https://github.com/AThevon/genjutsu/commit/ac9ca74156946be8e449f0d6acc8043a105a38f3) | 2026-11-01 17:08 UTC | 🟢 ok |
 | `motion-design` | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) | MIT | copiado | 1 | [`f9a8a04`](https://github.com/LottieFiles/motion-design-skill/commit/f9a8a041b85185ee4881b3471d3415e939aac772) | 2026-10-13 16:22 UTC | 🟢 ok |
@@ -16,22 +16,31 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT | copiado | 1 | [`4ae2317`](https://github.com/mattpocock/skills/commit/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d) | 2026-10-31 16:08 UTC | 🟢 ok |
 | `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`2574e29`](https://github.com/anthropics/knowledge-work-plugins/commit/2574e29377c7173d0cecffef29a6ecbd7f8ccb5d) | 2026-10-28 17:11 UTC | 🟢 ok |
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`ca45fc4`](https://github.com/anthropics/skills/commit/ca45fc496a3436251f191354091d557da31c15b5) | 2026-10-29 17:27 UTC | 🟢 ok |
-| `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`f43b791`](https://github.com/base44/skills/commit/f43b791bb33db44d6c984f1d84df643e154016e1) | 2026-10-29 17:27 UTC | 🟢 ok |
+| `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`b46cf84`](https://github.com/base44/skills/commit/b46cf8494211d1c7264e67555a5e1a9715862809) | 2026-11-02 20:48 UTC | 🟢 ok |
 | `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`49adc54`](https://github.com/ruvnet/ruflo/commit/49adc540a051916f6b8fad2c3dc30f8fba8c1bc3) | 2026-10-31 16:08 UTC | 🔴 bloqueado |
-| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`1c50622`](https://github.com/akitaonrails/ai-memory/commit/1c506228b701f4496d3d9af6f00180749e0563d1) | 2026-11-01 17:09 UTC | 🟢 ok |
+| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`72e4f42`](https://github.com/akitaonrails/ai-memory/commit/72e4f4273a5cfc6cbfd3384766021b7b26b282b3) | 2026-11-02 20:49 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
-| `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`92a9a34`](https://github.com/vercel-labs/skills/commit/92a9a34ac3bf88e695e468b90c7bf32f163d32c8) | 2026-10-29 17:27 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`85013da`](https://github.com/morluto/rea/commit/85013da0cec7b854f51e47de77fd24391c8fd8ed) | 2026-11-01 17:09 UTC | 🟢 ok |
+| `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`51b9062`](https://github.com/vercel-labs/skills/commit/51b9062b3fc51dc04c89ab92dbeb65681fa0cb25) | 2026-11-02 20:49 UTC | 🟢 ok |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`9bea563`](https://github.com/morluto/rea/commit/9bea563e30fd255d639d6877a91109ba9ff2eb00) | 2026-11-02 20:49 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`2ce8aa1`](https://github.com/obra/superpowers/commit/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | 2026-10-22 15:55 UTC | 🟢 ok |
-| `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`7836c58`](https://github.com/upstash/context7/commit/7836c583918374fbecffacf866afb7594b919466) | 2026-10-30 17:02 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`6c7276c`](https://github.com/earthtojake/text-to-cad/commit/6c7276c6159fbc03537cbfc946033362af0f3ad4) | 2026-10-30 19:58 UTC | 🟢 ok |
+| `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`ceaf5f9`](https://github.com/upstash/context7/commit/ceaf5f91f48949eaa6e4da5e66f3f59d1b44556d) | 2026-11-02 20:49 UTC | 🟢 ok |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`6c7276c`](https://github.com/earthtojake/text-to-cad/commit/6c7276c6159fbc03537cbfc946033362af0f3ad4) | 2026-10-30 19:58 UTC | 🔴 bloqueado |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
-| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | só link | 1 | [`57a8bdd`](https://github.com/unclebob/ub-mode/commit/57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f) | 2026-10-30 18:25 UTC | 🟢 ok |
+| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | só link | 1 | [`57a8bdd`](https://github.com/unclebob/ub-mode/commit/57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f) | 2026-10-30 18:25 UTC | 🔴 bloqueado |
 
 ## Skills disponíveis na origem e ainda não incluídas
 
 - `agent-skills`: [skills/constraint-driven-development](https://github.com/addyosmani/agent-skills/tree/HEAD/skills/constraint-driven-development)
 - `agent-skills`: [skills/using-agent-skills](https://github.com/addyosmani/agent-skills/tree/HEAD/skills/using-agent-skills)
+- `base44`: [skills/base44-platform-actors](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-actors)
+- `base44`: [skills/base44-platform-agents](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-agents)
+- `base44`: [skills/base44-platform-backend-functions](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-backend-functions)
+- `base44`: [skills/base44-platform-connectors](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-connectors)
+- `base44`: [skills/base44-platform-entities](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-entities)
+- `base44`: [skills/base44-platform-frontend](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-frontend)
+- `base44`: [skills/base44-platform-integrations-sdk](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-integrations-sdk)
+- `base44`: [skills/base44-platform-platform](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-platform)
+- `base44`: [skills/base44-platform-workflows](https://github.com/base44/skills/tree/HEAD/skills/base44-platform-workflows)
 - `genjutsu`: [skills/_jutsu](https://github.com/AThevon/genjutsu/tree/HEAD/skills/_jutsu)
 - `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
 - `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
