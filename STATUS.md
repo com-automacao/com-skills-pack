@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-04 12:51 UTC**
+Última verificação: **2026-11-04 13:13 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -17,7 +17,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `knowledge-work-plugins` | [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | Apache-2.0 | copiado | 11 | [`2574e29`](https://github.com/anthropics/knowledge-work-plugins/commit/2574e29377c7173d0cecffef29a6ecbd7f8ccb5d) | 2026-10-28 17:11 UTC | 🟢 ok |
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`ca45fc4`](https://github.com/anthropics/skills/commit/ca45fc496a3436251f191354091d557da31c15b5) | 2026-10-29 17:27 UTC | 🟢 ok |
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`94e26d7`](https://github.com/base44/skills/commit/94e26d798ee1e2fc1551f8d7c59ceb59604a06a5) | 2026-11-03 18:28 UTC | 🟢 ok |
-| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`49adc54`](https://github.com/ruvnet/ruflo/commit/49adc540a051916f6b8fad2c3dc30f8fba8c1bc3) | 2026-10-31 16:08 UTC | 🟢 ok |
+| `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`91e383b`](https://github.com/ruvnet/ruflo/commit/91e383bd5afe15f0cd79a5c544e53518351d4993) | 2026-11-04 13:13 UTC | 🔴 bloqueado |
 | `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`d445475`](https://github.com/akitaonrails/ai-memory/commit/d445475eb09d2c9e6b2a9997180deee091a1a831) | 2026-11-03 18:29 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`7a5e920`](https://github.com/vercel-labs/skills/commit/7a5e920bead4b1039a6d6df5d7e1163b7b09423a) | 2026-11-03 18:29 UTC | 🟢 ok |
@@ -47,6 +47,12 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
 - `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
 - `genjutsu`: [skills/paint](https://github.com/AThevon/genjutsu/tree/HEAD/skills/paint)
+- `ponytail`: [skills/ponytail-audit](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-audit)
+- `ponytail`: [skills/ponytail-debt](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-debt)
+- `ponytail`: [skills/ponytail-gain](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-gain)
+- `ponytail`: [skills/ponytail-help](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-help)
+- `ponytail`: [skills/ponytail-review](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-review)
+- `ponytail`: [skills/ponytail](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail)
 - `rea`: [.agents/skills/rea-analysis-optimization](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-analysis-optimization)
 - `rea`: [.agents/skills/rea-changelog-update](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-changelog-update)
 - `rea`: [.agents/skills/rea-ci-tests-audit](https://github.com/morluto/rea/tree/HEAD/.agents/skills/rea-ci-tests-audit)
@@ -84,11 +90,5 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `text-to-cad`: [skills/srdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/srdf)
 - `text-to-cad`: [skills/step-parts](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/step-parts)
 - `text-to-cad`: [skills/urdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/urdf)
-- `ponytail`: [skills/ponytail-audit](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-audit)
-- `ponytail`: [skills/ponytail-debt](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-debt)
-- `ponytail`: [skills/ponytail-gain](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-gain)
-- `ponytail`: [skills/ponytail-help](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-help)
-- `ponytail`: [skills/ponytail-review](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-review)
-- `ponytail`: [skills/ponytail](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail)
 
 Para incluir, acrescente o caminho em `sources.yaml` e rode o sync.
