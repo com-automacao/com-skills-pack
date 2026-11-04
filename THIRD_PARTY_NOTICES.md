@@ -25,6 +25,8 @@ licença original da sua origem.
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | [packs/superpowers/LICENSE](packs/superpowers/LICENSE) |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | [packs/context7/LICENSE](packs/context7/LICENSE) |
 | `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | [packs/text-to-cad/LICENSE](packs/text-to-cad/LICENSE) |
+| `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT | [packs/security-audit/LICENSE](packs/security-audit/LICENSE) |
+| `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | [packs/ponytail/LICENSE](packs/ponytail/LICENSE) |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | [packs/threejs-skills/LICENSE](packs/threejs-skills/LICENSE) |
 | `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | não redistribuído (só link) |
 

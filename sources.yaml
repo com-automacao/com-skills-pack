@@ -305,6 +305,29 @@ sources:
       - claude.mcp.json
       - skills
 
+  security-audit:
+    repo: cloudflare/security-audit-skill
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - skills/security-audit
+
+  ponytail:
+    # Plugin ponytail@ponytail. Hooks ativos em toda sessao: acompanhamos hooks/
+    # para que qualquer mudanca neles gere aviso ou bloqueio.
+    repo: DietrichGebert/ponytail
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - .claude-plugin
+      - hooks
+      - skills
+
   threejs-skills:
     # Era so link (sem licenca). O autor adicionou MIT em 2026-10-18.
     repo: CloudAI-X/threejs-skills

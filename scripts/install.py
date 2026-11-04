@@ -8,7 +8,7 @@ Uso:
     python scripts/install.py --skip genjutsu,img2threejs   # deixa grupos de fora
     python scripts/install.py --dest .claude/skills   # instala so neste projeto
 
-Skills de plugins (engineering, data, design, base44, ruflo, scroll-craft), as do
+Skills de plugins (engineering, data, design, base44, ruflo, scroll-craft, ponytail), as do
 ai-memory e a do REA nao sao instaladas aqui: use o plugin ou o programa oficial (veja o README).
 """
 from __future__ import annotations
@@ -30,6 +30,7 @@ GROUPS = [
     "anthropic-skills/skills",
     "codeigniter-skills/skills",
     "threejs-skills/skills",
+    "security-audit/skills",
     "find-skills/skills",
     "com-automacao/skills",
 ]

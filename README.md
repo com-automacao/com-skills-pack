@@ -319,6 +319,29 @@ O plugin traz o servidor local `cad`, que mostra os modelos na conversa. **Windo
 | `sendcutsend` | Revisa arquivos DXF e STEP antes do pedido no SendCutSend: material, espessura e se o arquivo será aceito. |
 | `urdf` / `srdf` / `sdf` | Descrições de robôs e cenas para simulação (ROS, MoveIt, Gazebo). |
 
+### 18. Auditoria de segurança (Cloudflare)
+
+Origem: [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) (MIT). Pasta: `security-audit/skills/`. Instalada pelo `scripts/install.py`.
+
+| Skill | O que faz |
+|---|---|
+| `security-audit` | Revisão de segurança defensiva de código, APIs, serviços, CLIs e bibliotecas: acha falhas que cruzam uma fronteira de confiança real e entrega evidência no código, reprodução segura, prioridade e a menor correção eficaz. Por padrão só orienta; a auditoria completa em várias fases, com relatório validado por script, roda só quando pedida. |
+
+### 19. Ponytail (o sênior mais preguiçoso da sala)
+
+Origem: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (MIT). Pasta: `ponytail/skills/`. Como instalar: `/plugin marketplace add DietrichGebert/ponytail` e depois `/plugin install ponytail@ponytail`.
+
+**Atenção:** fica ativo em toda sessão (hooks de início de sessão, subagente e envio de prompt) e grava um registro de cada tarefa (custo, turnos, tokens) em `~/.config/ponytail/band/`. Um webhook opcional pode enviar esse registro para fora; vem vazio, e assim nada sai da máquina. O sync acompanha a pasta `hooks/`.
+
+| Skill | O que faz |
+|---|---|
+| `ponytail` | Modo "sênior preguiçoso": a menor mudança que resolve o problema por inteiro (YAGNI, biblioteca padrão primeiro, sem abstração não pedida) e respostas que se entendem numa leitura. Níveis `lite`, `full`, `ultra` ou `off`. |
+| `ponytail-review` | Revisa uma mudança: lógica, segurança, carga real, código arriscado sem teste, lentidão e o que dá para cortar. Lê o código conectado, não só o diff. |
+| `ponytail-audit` | A mesma revisão para o repositório inteiro, do mais importante para o menos. |
+| `ponytail-debt` | Lista os comentários `shortcut:` deixados para depois, como um livro de dívidas. |
+| `ponytail-gain` | Mostra a economia medida (menos código, custo e tempo) no benchmark do autor. |
+| `ponytail-help` | Referência rápida de níveis e comandos. |
+
 ---
 
 ## Fora do pack
