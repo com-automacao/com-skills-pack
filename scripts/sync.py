@@ -56,7 +56,7 @@ EXEC_EXT = {
 CODE_EXT = EXEC_EXT - {".exe", ".dll", ".so", ".dylib", ".jar", ".bin", ".msi", ".scr", ".wasm", ".com", ".apk"}
 MEDIA_EXT = {
     ".png", ".jpg", ".jpeg", ".gif", ".webp", ".avif", ".svg", ".ico", ".woff", ".woff2",
-    ".ttf", ".otf", ".mp4", ".webm", ".mov", ".pdf", ".glb", ".gltf", ".hdr", ".mp3", ".wav",
+    ".ttf", ".otf", ".mp4", ".webm", ".mov", ".pdf", ".glb", ".gltf", ".hdr", ".mp3", ".wav", ".ogg",
 }
 MAX_FILE_BYTES = 2 * 1024 * 1024
 

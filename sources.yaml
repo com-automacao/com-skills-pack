@@ -328,6 +328,27 @@ sources:
       - hooks
       - skills
 
+  teardown:
+    # Simulador 3D de maquinas. Fica fora: docs/ (14 MB de GIFs de exemplo).
+    # Depois de instalar: npm install && npx playwright install chromium na pasta.
+    repo: elvarofficial/teardown
+    branch: main
+    license: MIT
+    mode: vendor
+    paths:
+      - LICENSE
+      - README.md
+      - SKILL.md
+      - .gitignore
+      - package.json
+      - package-lock.json
+      - paths.mjs
+      - run_sfx.py
+      - sheet.mjs
+      - wave.mjs
+      - sfx
+      - sims
+
   threejs-skills:
     # Era so link (sem licenca). O autor adicionou MIT em 2026-10-18.
     repo: CloudAI-X/threejs-skills

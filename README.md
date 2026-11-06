@@ -153,6 +153,7 @@ Origem das `threejs-*`: [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/
 | Skill | Pasta | O que faz |
 |---|---|---|
 | `img2threejs` | `img2threejs/` | Transforma uma imagem de referência em modelo 3D procedural em código Three.js, pronto para animar. ([img2threejs/img2threejs](https://github.com/img2threejs/img2threejs), Apache-2.0) |
+| `teardown` | `teardown/` | **Nova.** Simulador 3D de uma máquina real (motor, trem de pouso, engrenagens) numa página HTML offline: a máquina funciona, os painéis mostram os números reais, cada botão abre uma parte e a página faz um tour sozinha. Também grava vídeo de 60 fps com som. ([elvarofficial/teardown](https://github.com/elvarofficial/teardown), MIT) |
 | `threejs-fundamentals` | `threejs-skills/skills/` | Cena, câmeras, renderer, hierarquia de objetos e coordenadas. |
 | `threejs-geometry` | `threejs-skills/skills/` | Formas prontas, BufferGeometry, geometria customizada e instancing. |
 | `threejs-materials` | `threejs-skills/skills/` | Materiais PBR, basic, phong e de shader. |
@@ -166,6 +167,8 @@ Origem das `threejs-*`: [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/
 | `threejs-performance` | `threejs-skills/skills/` | **Nova.** Mede e otimiza a velocidade: estatísticas de render, memória, menos draw calls (merge, instancing, LOD), sombras e shaders. |
 | `threejs-asset-pipeline` | `threejs-skills/skills/` | **Nova.** Comprime modelos glTF com gltf-transform: Draco, meshopt e texturas KTX2/WebP/AVIF. |
 | `threejs-react-three-fiber` | `threejs-skills/skills/` | **Nova.** Cenas Three.js em React com React Three Fiber e drei. |
+
+**`teardown` precisa de instalação extra:** depois do instalador, rode `npm install && npx playwright install chromium` dentro de `~/.claude/skills/teardown` (Node 20 ou mais novo; o vídeo usa `ffmpeg` e o som, Python 3). O `--force` do instalador troca a pasta inteira, então repita esse passo depois dele. Os GIFs de exemplo (`docs/`, 14 MB) ficam fora do pack.
 
 ### 7. Dados e SQL (plugin `data`)
 

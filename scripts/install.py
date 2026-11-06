@@ -35,7 +35,7 @@ GROUPS = [
     "com-automacao/skills",
 ]
 # skills que ficam na raiz do proprio pacote
-ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs"}
+ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown"}
 # pastas de apoio referenciadas por caminho relativo (../../references)
 SUPPORT = {"agent-skills/references": "../references"}
 
