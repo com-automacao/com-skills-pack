@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-06 18:00 UTC**
+Última verificação: **2026-11-06 18:01 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -24,11 +24,11 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`f8356f3`](https://github.com/morluto/rea/commit/f8356f3d713d707b4a6d9eb5ab3941787f546ccc) | 2026-11-06 17:59 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`22f0b46`](https://github.com/obra/superpowers/commit/22f0b463e7a5e579904dd6211a520321035526f7) | 2026-11-04 18:40 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`078c0c7`](https://github.com/upstash/context7/commit/078c0c731d19eb88d2391b236ab82a127dbabac3) | 2026-11-06 17:59 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`6c7276c`](https://github.com/earthtojake/text-to-cad/commit/6c7276c6159fbc03537cbfc946033362af0f3ad4) | 2026-10-30 19:58 UTC | 🔴 bloqueado |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`b4b2a37`](https://github.com/earthtojake/text-to-cad/commit/b4b2a372f2b607b8f4ff950278a95923994649da) | 2026-11-06 18:01 UTC | 🔴 bloqueado |
 | `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT | copiado | 1 | [`c1c8a8c`](https://github.com/cloudflare/security-audit-skill/commit/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | copiado | 3 | [`96608e0`](https://github.com/DietrichGebert/ponytail/commit/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
-| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | só link | 1 | [`57a8bdd`](https://github.com/unclebob/ub-mode/commit/57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f) | 2026-10-30 18:25 UTC | 🔴 bloqueado |
+| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | só link | 1 | [`3da62bf`](https://github.com/unclebob/ub-mode/commit/3da62bf3fcfd2034de41f30d920d2739e566171f) | 2026-11-06 18:01 UTC | 🔴 bloqueado |
 
 ## Skills disponíveis na origem e ainda não incluídas
 
