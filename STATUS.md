@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-07 16:51 UTC**
+Última verificação: **2026-11-08 17:06 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -18,10 +18,10 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `anthropic-skills` | [anthropics/skills](https://github.com/anthropics/skills) | NONE | copiado | 2 | [`2c5958e`](https://github.com/anthropics/skills/commit/2c5958ecac7cee2b583967a2c4981d0f4a75c579) | 2026-11-07 16:50 UTC | 🟢 ok |
 | `base44` | [base44/skills](https://github.com/base44/skills) | MIT | copiado | 5 | [`3d191d2`](https://github.com/base44/skills/commit/3d191d2063e43b757cbabc61083dbb56304d05ec) | 2026-11-05 18:46 UTC | 🟢 ok |
 | `ruflo` | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | MIT | copiado | 36 | [`3fe9d70`](https://github.com/ruvnet/ruflo/commit/3fe9d70ba7d08ff12233003a9342037ab80af3ce) | 2026-11-07 16:50 UTC | 🟢 ok |
-| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`e67880f`](https://github.com/akitaonrails/ai-memory/commit/e67880f83fccb98075422ebe2bce4869c2e89f28) | 2026-11-07 16:51 UTC | 🟢 ok |
+| `ai-memory` | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | MIT | copiado | 1 | [`957b1dd`](https://github.com/akitaonrails/ai-memory/commit/957b1dd078448405f8d80d809b15c9bd137a5d9f) | 2026-11-08 17:05 UTC | 🟢 ok |
 | `codeigniter-skills` | [yasserstudio/codeigniter-skills](https://github.com/yasserstudio/codeigniter-skills) | MIT | copiado | 1 | [`19acc9f`](https://github.com/yasserstudio/codeigniter-skills/commit/19acc9fff91807d761f2296bae51165ebad761c1) | 2026-10-13 16:23 UTC | 🟢 ok |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | MIT | copiado | 1 | [`d3701c1`](https://github.com/vercel-labs/skills/commit/d3701c11b1101251af14c9d148f026e1a47ebe17) | 2026-11-06 17:59 UTC | 🟢 ok |
-| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`c928bb8`](https://github.com/morluto/rea/commit/c928bb8d80bb1c30f2211090ec86dc25eab58ca2) | 2026-11-07 16:51 UTC | 🟢 ok |
+| `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`5044e20`](https://github.com/morluto/rea/commit/5044e20171564d201d5fe49c18e2ea6f90c53010) | 2026-11-08 17:05 UTC | 🟡 aviso |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`22f0b46`](https://github.com/obra/superpowers/commit/22f0b463e7a5e579904dd6211a520321035526f7) | 2026-11-04 18:40 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`078c0c7`](https://github.com/upstash/context7/commit/078c0c731d19eb88d2391b236ab82a127dbabac3) | 2026-11-06 17:59 UTC | 🟢 ok |
 | `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`6c7276c`](https://github.com/earthtojake/text-to-cad/commit/6c7276c6159fbc03537cbfc946033362af0f3ad4) | 2026-10-30 19:58 UTC | 🔴 bloqueado |
