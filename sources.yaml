@@ -399,13 +399,14 @@ sources:
       - skills/threejs-textures
 
   ub-mode:
-    # Sem licenca declarada: redistribuir e proibido. So monitoramos.
-    # Instalacao: copiar SKILL.md para ~/.claude/skills/ub-mode/
+    # Ganhou licenca MIT em 2026-11; antes era so monitorado (mode: link).
     repo: unclebob/ub-mode
     branch: master
-    license: NONE
-    mode: link
+    license: MIT
+    mode: vendor
     paths:
+      - LICENSE
+      - README.md
       - SKILL.md
 
 # Ajustes locais aplicados por cima da copia upstream a cada sync.

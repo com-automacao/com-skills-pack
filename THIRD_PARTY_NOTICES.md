@@ -30,6 +30,6 @@ licença original da sua origem.
 | `illumi` | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | MIT | [packs/illumi/LICENSE](packs/illumi/LICENSE) |
 | `teardown` | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | MIT | [packs/teardown/LICENSE](packs/teardown/LICENSE) |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | [packs/threejs-skills/LICENSE](packs/threejs-skills/LICENSE) |
-| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | não redistribuído (só link) |
+| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | MIT | [packs/ub-mode/LICENSE](packs/ub-mode/LICENSE) |
 
 `packs/com-automacao/` contém skills próprias da Com Automação.

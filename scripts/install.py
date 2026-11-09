@@ -36,7 +36,7 @@ GROUPS = [
     "illumi/skills",
 ]
 # skills que ficam na raiz do proprio pacote
-ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown"}
+ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown", "ub-mode": "ub-mode"}
 # pastas de apoio referenciadas por caminho relativo (../../references)
 SUPPORT = {"agent-skills/references": "../references"}
 

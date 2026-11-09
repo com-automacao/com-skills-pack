@@ -313,16 +313,15 @@ O plugin traz o servidor local `cad`, que mostra os modelos na conversa. **Windo
 
 | Skill | O que faz |
 |---|---|
-| `cad` | Cria e edita peças e montagens 3D paramétricas em código, com visualização ao vivo na conversa; exporta STEP, STL, 3MF e GLB, mede geometria e articula montagens. |
-| `step-parts` | Busca e baixa peças compráveis prontas no step.parts (servos, motores, placas, conectores, parafusos, rolamentos). |
+| `cad` | Cria e edita peças e montagens 3D paramétricas em código, com visualização ao vivo na conversa. Também faz perfis 2D e DXF para corte, verifica se a peça pode ser usinada, dobrada, injetada ou impressa, busca peças prontas e anima montagens. Exporta STEP, STL, 3MF, GLB e DXF. |
 | `engineering-drawing` | Gera desenho técnico em PDF: vistas, cotas, furos, notas e carimbo em folha ISO. |
-| `dfm` | Revisa se a peça é viável de fabricar (usinagem, chapa, injeção). |
-| `dfam-check` | Revisa se a peça é viável em impressão 3D. |
-| `gcode` | Fatia o modelo e gera G-code para impressão 3D. |
-| `bambu-labs` | Envia e acompanha impressões em impressoras Bambu Lab. |
-| `dxf` | Gera arquivos DXF 2D para corte a laser, plasma ou jato d'água. |
+| `fea` | **Nova.** Simulação de esforço: diz se a peça aguenta a carga, onde concentra tensão, quanto deforma e o fator de segurança. |
+| `pcb` | **Nova.** Cria, posiciona, roteia e revisa placas de circuito no KiCad (esquemático, regras elétricas, arquivos para fabricar na JLCPCB ou PCBWay). |
+| `print3d` | **Nova.** Fatia STL, 3MF ou OBJ em G-code com o OrcaSlicer e envia para impressoras Bambu Lab. Nunca inicia a impressão sozinho. |
+| `robot-simulation` | **Nova.** Descrições de robôs e cenas (URDF, SRDF, SDF) para ROS, MoveIt e Gazebo. |
 | `sendcutsend` | Revisa arquivos DXF e STEP antes do pedido no SendCutSend: material, espessura e se o arquivo será aceito. |
-| `urdf` / `srdf` / `sdf` | Descrições de robôs e cenas para simulação (ROS, MoveIt, Gazebo). |
+
+Na versão 0.11 o autor juntou as skills antigas: `dxf`, `dfm`, `dfam-check` e `step-parts` viraram parte da `cad`; `gcode` e `bambu-labs` viraram `print3d`; `urdf`, `srdf` e `sdf` viraram `robot-simulation`.
 
 ### 18. Auditoria de segurança (Cloudflare)
 
@@ -372,13 +371,20 @@ Origem: [jakubkrehel/skills](https://github.com/jakubkrehel/skills) (MIT), publi
 | `state-machine` | *Comando.* Mostra todos os estados de um componente com dados falsos e um seletor. |
 | `afk` | *Comando.* Trabalha no projeto enquanto você está fora: cria melhorias num branch local e deixa um relatório. Use só com tudo salvo no Git. |
 
+### 21. ub-mode (Uncle Bob)
+
+Origem: [unclebob/ub-mode](https://github.com/unclebob/ub-mode) (MIT desde novembro de 2026; antes ficava fora do pack por não ter licença). Pasta: `ub-mode/`. Instalada pelo `scripts/install.py`. **Nova no pack.**
+
+| Skill | O que faz |
+|---|---|
+| `ub-mode` | Método de engenharia do Uncle Bob: fazer funcionar, fazer direito, prática. As ferramentas que ele cita (crapper, dryer, mutator) são instaladas à parte; veja o README da origem. |
+
 ---
 
 ## Fora do pack
 
 | O quê | Por quê |
 |---|---|
-| `ub-mode` ([unclebob/ub-mode](https://github.com/unclebob/ub-mode)) | Método de engenharia do Uncle Bob: fazer funcionar, fazer direito, prática. O repositório não tem licença: **só monitorado**, sem cópia no pack. Para instalar, copie o `SKILL.md` para `~/.claude/skills/ub-mode/`. |
 | `maestri-*` (7) | Vêm com o app comercial Maestri; não há repositório público. |
 | Nativas do Claude Code (`/code-review`, `/simplify`, `/security-review`, `/init`, `run`, `claude-api`, `dataviz`, `plugin-authoring`, `update-config`) | Já vêm com o Claude Code em qualquer instalação. |
 | Design visual, documentos, vendas, marketing | Não são de programação. |

@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-09 18:06 UTC**
+Última verificação: **2026-11-09 18:18 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -24,13 +24,13 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`e9b6c87`](https://github.com/morluto/rea/commit/e9b6c87c1cacac24a0376a93e70aa07d0d530b9a) | 2026-11-09 18:05 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`22f0b46`](https://github.com/obra/superpowers/commit/22f0b463e7a5e579904dd6211a520321035526f7) | 2026-11-04 18:40 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`6e68ffc`](https://github.com/upstash/context7/commit/6e68ffcbad0e23cf4fa8c11795ce9e551aeef19b) | 2026-11-09 18:05 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`6c7276c`](https://github.com/earthtojake/text-to-cad/commit/6c7276c6159fbc03537cbfc946033362af0f3ad4) | 2026-10-30 19:58 UTC | 🔴 bloqueado |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`e34cb6e`](https://github.com/earthtojake/text-to-cad/commit/e34cb6e4c7a9000b44da0dbec2b0c5bd98b43fb5) | 2026-11-09 18:18 UTC | 🟢 ok |
 | `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT | copiado | 1 | [`c1c8a8c`](https://github.com/cloudflare/security-audit-skill/commit/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | copiado | 3 | [`96608e0`](https://github.com/DietrichGebert/ponytail/commit/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `illumi` | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | MIT | copiado | 15 | [`659cc4e`](https://github.com/jakubkrehel/skills/commit/659cc4e5b6df90cfe1f306f5ae1c83fa549e075c) | 2026-11-09 18:06 UTC | 🟢 ok |
 | `teardown` | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | MIT | copiado | 11 | [`a91262a`](https://github.com/elvarofficial/teardown/commit/a91262ac1109051e014662d42ecb0b7bc1f113b1) | 2026-11-06 20:07 UTC | 🟢 ok |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
-| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | NONE | só link | 1 | [`57a8bdd`](https://github.com/unclebob/ub-mode/commit/57a8bdd28e45ed41900ace0bafa2ff76dd9ed70f) | 2026-10-30 18:25 UTC | 🔴 bloqueado |
+| `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | MIT | copiado | 2 | [`3da62bf`](https://github.com/unclebob/ub-mode/commit/3da62bf3fcfd2034de41f30d920d2739e566171f) | 2026-11-09 18:18 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
 
@@ -49,6 +49,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
 - `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
 - `genjutsu`: [skills/paint](https://github.com/AThevon/genjutsu/tree/HEAD/skills/paint)
+- `illumi`: [skills/teardown](https://github.com/jakubkrehel/skills/tree/HEAD/skills/teardown)
 - `ponytail`: [skills/ponytail-audit](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-audit)
 - `ponytail`: [skills/ponytail-debt](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-debt)
 - `ponytail`: [skills/ponytail-gain](https://github.com/DietrichGebert/ponytail/tree/HEAD/skills/ponytail-gain)
@@ -80,18 +81,12 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `superpowers`: [skills/verification-before-completion](https://github.com/obra/superpowers/tree/HEAD/skills/verification-before-completion)
 - `superpowers`: [skills/writing-plans](https://github.com/obra/superpowers/tree/HEAD/skills/writing-plans)
 - `superpowers`: [skills/writing-skills](https://github.com/obra/superpowers/tree/HEAD/skills/writing-skills)
-- `text-to-cad`: [skills/bambu-labs](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/bambu-labs)
 - `text-to-cad`: [skills/cad](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/cad)
-- `text-to-cad`: [skills/dfam-check](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/dfam-check)
-- `text-to-cad`: [skills/dfm](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/dfm)
-- `text-to-cad`: [skills/dxf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/dxf)
 - `text-to-cad`: [skills/engineering-drawing](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/engineering-drawing)
-- `text-to-cad`: [skills/gcode](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/gcode)
-- `text-to-cad`: [skills/sdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/sdf)
+- `text-to-cad`: [skills/fea](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/fea)
+- `text-to-cad`: [skills/pcb](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/pcb)
+- `text-to-cad`: [skills/print3d](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/print3d)
+- `text-to-cad`: [skills/robot-simulation](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/robot-simulation)
 - `text-to-cad`: [skills/sendcutsend](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/sendcutsend)
-- `text-to-cad`: [skills/srdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/srdf)
-- `text-to-cad`: [skills/step-parts](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/step-parts)
-- `text-to-cad`: [skills/urdf](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/urdf)
-- `illumi`: [skills/teardown](https://github.com/jakubkrehel/skills/tree/HEAD/skills/teardown)
 
 Para incluir, acrescente o caminho em `sources.yaml` e rode o sync.
