@@ -131,6 +131,8 @@ Origem: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills). P
 
 Origem do genjutsu: [AThevon/genjutsu](https://github.com/AThevon/genjutsu) (MIT). **Atenção:** a skill única `genjutsu` foi dividida pelo autor em `paint`, `cast` e `bunshin`. Quem tem a versão antiga instalada deve trocá-la pelas três.
 
+**genjutsu ou illumi?** O genjutsu cria a aparência e o movimento. O illumi (seção 20) acerta os detalhes e revisa. Nas tarefas grandes, rode o genjutsu primeiro e o illumi depois.
+
 ### 5. Animação com GSAP (oficiais)
 
 Origem: [greensock/gsap-skills](https://github.com/greensock/gsap-skills) (MIT). Pasta: `gsap-skills/skills/`.
@@ -344,6 +346,31 @@ Origem: [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) (M
 | `ponytail-debt` | Lista os comentários `shortcut:` deixados para depois, como um livro de dívidas. |
 | `ponytail-gain` | Mostra a economia medida (menos código, custo e tempo) no benchmark do autor. |
 | `ponytail-help` | Referência rápida de níveis e comandos. |
+
+### 20. illumi (revisão e acabamento de interface)
+
+Origem: [jakubkrehel/skills](https://github.com/jakubkrehel/skills) (MIT), publicado pelo autor como plugin `interfaces`. Aqui o conjunto se chama illumi. Pasta: `illumi/skills/`. Instalada pelo `scripts/install.py`. **Nova.**
+
+- Quem já instalou o plugin oficial (`/plugin marketplace add jakubkrehel/skills` e `/plugin install interfaces@interfaces`) deve rodar o instalador com `--skip illumi`, para não ter as skills em dobro.
+- A `teardown` do autor fica fora do pack: o nome colide com a `teardown` da seção 6. Quem quiser as duas instala o plugin oficial, em que ela vira `interfaces:teardown`.
+- As marcadas com *comando* não rodam sozinhas: você chama com `/nome`.
+
+| Skill | O que faz |
+|---|---|
+| `better-interface` | Revisa uma tela, um fluxo ou a interface inteira (acessibilidade, layout, texto, tipografia, cor e acabamento) e entrega um relatório em ordem de prioridade. |
+| `better-ui` | Acabamento com valores exatos: arredondamento, alinhamento óptico, sombras, estados de ícone e animação. |
+| `better-typography` | Escala tipográfica, espaçamento, recursos de fonte, quebra de linha, corte de texto e pontuação. |
+| `better-colors` | Gera paletas, nomeia cores semânticas, converte formatos e mede contraste. |
+| `better-layout` | Agrupamento, alinhamento, ordem de leitura e estrutura responsiva que aguenta tradução e espelhamento. |
+| `better-accessibility` | Teclado e foco, ARIA, nomes acessíveis, formulários, leitor de tela, movimento e zoom, pela WCAG 2.2. |
+| `better-writing` | Escreve e revisa o texto da interface (rótulos, erros, estados vazios, confirmações) no tom do produto. |
+| `build-design` | Monta a tela a partir de um Figma ou de uma imagem, usando os tokens e componentes do projeto. |
+| `interface-review` | *Comando.* Revisa um branch, PR ou mudança não commitada atrás de problemas de interface que ela criou. |
+| `explain-interface` | *Comando.* Explica como um site, efeito ou animação foi feito, a partir de uma URL ou print. |
+| `variant` | *Comando.* Gera várias versões de um componente para você comparar e escolher. |
+| `break` | *Comando.* Mostra um componente em todos os cenários possíveis numa página temporária e testa os limites. |
+| `state-machine` | *Comando.* Mostra todos os estados de um componente com dados falsos e um seletor. |
+| `afk` | *Comando.* Trabalha no projeto enquanto você está fora: cria melhorias num branch local e deixa um relatório. Use só com tudo salvo no Git. |
 
 ---
 

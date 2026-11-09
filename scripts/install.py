@@ -33,6 +33,7 @@ GROUPS = [
     "security-audit/skills",
     "find-skills/skills",
     "com-automacao/skills",
+    "illumi/skills",
 ]
 # skills que ficam na raiz do proprio pacote
 ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown"}

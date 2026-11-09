@@ -328,6 +328,32 @@ sources:
       - hooks
       - skills
 
+  illumi:
+    # Plugin "interfaces" de jakubkrehel; aqui chamado de illumi. Revisao e acabamento de interface.
+    # Fica fora: skills/teardown (o nome colide com a teardown do elvarofficial, que ja esta no pack).
+    repo: jakubkrehel/skills
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - README.md
+      - skills/afk
+      - skills/better-accessibility
+      - skills/better-colors
+      - skills/better-interface
+      - skills/better-layout
+      - skills/better-typography
+      - skills/better-ui
+      - skills/better-writing
+      - skills/break
+      - skills/build-design
+      - skills/explain-interface
+      - skills/interface-review
+      - skills/state-machine
+      - skills/variant
+
   teardown:
     # Simulador 3D de maquinas. Fica fora: docs/ (14 MB de GIFs de exemplo).
     # Depois de instalar: npm install && npx playwright install chromium na pasta.
