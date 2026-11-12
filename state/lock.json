@@ -959,6 +959,37 @@
   "repo": "morluto/rea",
   "updated_at": "2026-11-12 18:57 UTC"
  },
+ "reanimate": {
+  "checked_at": "2026-11-12 20:42 UTC",
+  "commit": "3f7a55a2986a84ca2173e86ee9127eefe31d046d",
+  "files": {
+   "LICENSE": "6bce4169a631cbe6d18089ed7e15d7ffe2afd736272d0ed9dc0e40e7f98d6f41",
+   "README.md": "540aec8fa3ab8488b77414308c29cc9180927f90a04dc6ea5b317a2c16056241",
+   "skills/reanimate/LICENSE": "6bce4169a631cbe6d18089ed7e15d7ffe2afd736272d0ed9dc0e40e7f98d6f41",
+   "skills/reanimate/SKILL.md": "dec8499d220918750de9d5ca14162f7fe5bf96edda84dbf851355545e1adedc8",
+   "skills/reanimate/references/analysis.md": "859fc52aa2b606e8be50406b026adaa40a222c7407388ff05faddf2449685081",
+   "skills/reanimate/references/capture.md": "9b2251a8c06a3fc240f472e079f6a4e35bcf603d0b78b2ad8ef4877e5814c3e7",
+   "skills/reanimate/references/implementation.md": "91b5ce233c673fddd2b704ddf4c19f9e385b57265063fa576cba7998cfdcbb48",
+   "skills/reanimate/references/verify.md": "068a7bbea01f0ea3f76342a2ab632eae2fe336689c1236ad65baf2779e77e216",
+   "skills/reanimate/references/webgl.md": "f3ea47e59c03557d1b39509dc5584d45707018f874289ef52cdf2cca51f7ad56",
+   "skills/reanimate/scripts/bun.lock": "4dced96ffc7dd38a78ae55914375a55112e468b28620f1bf9a8c31679f9419bd",
+   "skills/reanimate/scripts/capture.ts": "605ceb44ff627c038f12d402a908b3f6df042391e2f85025cabd3e0a6e12730c",
+   "skills/reanimate/scripts/compare.ts": "c907d1a8a131bc7af8e9114e9eb06e0ba001ee2c26b4c300b55335918738ddb5",
+   "skills/reanimate/scripts/easing.ts": "0bb9ad7833c4b4c9e1b1dcfe9b1223ee22d74424f44b33a2d5724cd44ffa2656",
+   "skills/reanimate/scripts/frames.ts": "52dee2562900069c6814f830939b892d949bd59537929b3a6313f0695207015c",
+   "skills/reanimate/scripts/gl.ts": "912a23070bc5ea772c1714410a4493262dac35c42d16c557044a85297c02de1b",
+   "skills/reanimate/scripts/inpage/clock.js": "52b34d5267432a3eca342eb57dcb09084841055b8e62ce707c199afc50d0d5ff",
+   "skills/reanimate/scripts/inpage/gl-hooks.js": "5ef67551eb7060f0415b33519fcdba8687e5382745ff4d3d73e069467b94f7c6",
+   "skills/reanimate/scripts/lib.ts": "1ec9f75dab68894ac4c7f91197f13b80f1417bdaffe1b7dfa1382918c913d680",
+   "skills/reanimate/scripts/package.json": "97c500cccee5fb44bd50571a3e6e690d236e611804fa175371fbb4657bce8320",
+   "skills/reanimate/scripts/setup.sh": "4fe14d84d87f6627961eacbe0a85c65378289edacf67cb86555de48599580d7c",
+   "skills/reanimate/scripts/sheet.ts": "6267c057d808eb8cfc68052fb7ca097834930a7aa995d7afccb1cd2a3d9c921c"
+  },
+  "known_upstream": [],
+  "license": "MIT",
+  "repo": "NiazMorshed2007/reanimate",
+  "updated_at": "2026-11-12 20:42 UTC"
+ },
  "ruflo": {
   "checked_at": "2026-11-12 18:57 UTC",
   "commit": "dc25dd9b522bf1f3761f0d061a0bd0deb1900ba1",

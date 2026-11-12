@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-12 18:58 UTC**
+Última verificação: **2026-11-12 20:42 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -24,10 +24,11 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`a8527d4`](https://github.com/morluto/rea/commit/a8527d43b8439476f5c9d1497315dfe7dd5e1f38) | 2026-11-12 18:57 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`22f0b46`](https://github.com/obra/superpowers/commit/22f0b463e7a5e579904dd6211a520321035526f7) | 2026-11-04 18:40 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`c5e26f6`](https://github.com/upstash/context7/commit/c5e26f6919055d29b8d3ead20500eb06e8036295) | 2026-11-12 18:57 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`2909a73`](https://github.com/earthtojake/text-to-cad/commit/2909a73bba04530e80b724928af8c2386752e88b) | 2026-11-09 21:27 UTC | 🔴 bloqueado |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`2909a73`](https://github.com/earthtojake/text-to-cad/commit/2909a73bba04530e80b724928af8c2386752e88b) | 2026-11-09 21:27 UTC | 🟢 ok |
 | `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT | copiado | 1 | [`c1c8a8c`](https://github.com/cloudflare/security-audit-skill/commit/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | copiado | 3 | [`96608e0`](https://github.com/DietrichGebert/ponytail/commit/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `illumi` | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | MIT | copiado | 15 | [`8b254eb`](https://github.com/jakubkrehel/skills/commit/8b254eb75dadf3615a6abce87aed28e1b6e4d77c) | 2026-11-10 18:42 UTC | 🟢 ok |
+| `reanimate` | [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate) | MIT | copiado | 2 | [`3f7a55a`](https://github.com/NiazMorshed2007/reanimate/commit/3f7a55a2986a84ca2173e86ee9127eefe31d046d) | 2026-11-12 20:42 UTC | 🟢 ok |
 | `teardown` | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | MIT | copiado | 11 | [`a91262a`](https://github.com/elvarofficial/teardown/commit/a91262ac1109051e014662d42ecb0b7bc1f113b1) | 2026-11-06 20:07 UTC | 🟢 ok |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
 | `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | MIT | copiado | 2 | [`3da62bf`](https://github.com/unclebob/ub-mode/commit/3da62bf3fcfd2034de41f30d920d2739e566171f) | 2026-11-09 18:18 UTC | 🟢 ok |

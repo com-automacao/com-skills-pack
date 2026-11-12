@@ -354,6 +354,19 @@ sources:
       - skills/state-machine
       - skills/variant
 
+  reanimate:
+    # Clona animacoes quadro a quadro e prova com comparacao. Fica fora: site/ (37 MB, site de demonstracao).
+    # Depois de instalar: bash scripts/setup.sh na pasta (precisa do bun; instala playwright e ffmpeg-static).
+    repo: NiazMorshed2007/reanimate
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - README.md
+      - skills/reanimate
+
   teardown:
     # Simulador 3D de maquinas. Fica fora: docs/ (14 MB de GIFs de exemplo).
     # Depois de instalar: npm install && npx playwright install chromium na pasta.

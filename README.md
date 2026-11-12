@@ -128,6 +128,7 @@ Origem: [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills). P
 | `_jutsu/*` | `genjutsu/skills/_jutsu/` | 17 módulos internos que as três acima carregam: CSS nativo, Framer Motion, GSAP, Three.js/R3F, Compose, SwiftUI, princípios mobile e desktop, auditoria. |
 | `motion-design` | `motion-design/skills/` | Princípios de motion: tempo, easing, coreografia e os princípios da Disney aplicados a UI. ([LottieFiles](https://github.com/LottieFiles/motion-design-skill), MIT) |
 | `design-dna` | `design-dna/` | Extrai de prints ou URLs um perfil JSON com tokens, estilo e efeitos, e gera designs a partir dele. ([zanwei/design-dna](https://github.com/zanwei/design-dna), MIT) |
+| `reanimate` | `reanimate/skills/` | **Nova.** Clona uma animação, seção ou efeito de um site, vídeo, gif ou Lottie para o seu código, grava o clone e compara quadro a quadro com a referência até tempo, curva e sequência baterem. Cobre CSS, JS, canvas, WebGL e three.js. Depois de instalar, rode `bash scripts/setup.sh` na pasta dela (precisa do [bun](https://bun.sh)). ([NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate), MIT) |
 
 Origem do genjutsu: [AThevon/genjutsu](https://github.com/AThevon/genjutsu) (MIT). **Atenção:** a skill única `genjutsu` foi dividida pelo autor em `paint`, `cast` e `bunshin`. Quem tem a versão antiga instalada deve trocá-la pelas três.
 
