@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-13 18:33 UTC**
+Última verificação: **2026-11-13 18:34 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -24,7 +24,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`3cb75d4`](https://github.com/morluto/rea/commit/3cb75d46bf6ee0a44d846a4d3e2cc3196e9ba418) | 2026-11-13 18:32 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`22f0b46`](https://github.com/obra/superpowers/commit/22f0b463e7a5e579904dd6211a520321035526f7) | 2026-11-04 18:40 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`5c4a4b4`](https://github.com/upstash/context7/commit/5c4a4b43cd5010f5678c6fceac3dd16865112e67) | 2026-11-13 18:32 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`2909a73`](https://github.com/earthtojake/text-to-cad/commit/2909a73bba04530e80b724928af8c2386752e88b) | 2026-11-09 21:27 UTC | 🔴 bloqueado |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`f08344f`](https://github.com/earthtojake/text-to-cad/commit/f08344fb2cc5b93132a8990895e54ba72ae88bbd) | 2026-11-13 18:33 UTC | 🔴 bloqueado |
 | `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT | copiado | 1 | [`c1c8a8c`](https://github.com/cloudflare/security-audit-skill/commit/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | copiado | 3 | [`96608e0`](https://github.com/DietrichGebert/ponytail/commit/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `illumi` | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | MIT | copiado | 15 | [`a72290d`](https://github.com/jakubkrehel/skills/commit/a72290d140249813898ba8648becf6415abcb059) | 2026-11-13 18:33 UTC | 🟢 ok |
@@ -86,6 +86,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `text-to-cad`: [skills/fea](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/fea)
 - `text-to-cad`: [skills/pcb](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/pcb)
 - `text-to-cad`: [skills/print3d](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/print3d)
+- `text-to-cad`: [skills/render](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/render)
 - `text-to-cad`: [skills/robot-simulation](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/robot-simulation)
 - `text-to-cad`: [skills/sendcutsend](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/sendcutsend)
 

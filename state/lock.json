@@ -1,6 +1,6 @@
 {
  "agent-skills": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "301b02b12bff98e4688e6984af6556802322bbde",
   "files": {
    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
@@ -50,7 +50,7 @@
   "updated_at": "2026-11-02 20:47 UTC"
  },
  "ai-memory": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "a11eff2514f24cb30c21917236ec187c0a359143",
   "files": {
    "LICENSE": "18332c61780ce8e694d4fa330770cd4d8c85e33f47ac13a80d72d70bb032ae72",
@@ -68,7 +68,7 @@
   "updated_at": "2026-11-13 18:32 UTC"
  },
  "anthropic-skills": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
   "files": {
    "skills/mcp-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
@@ -107,7 +107,7 @@
   "updated_at": "2026-11-07 16:50 UTC"
  },
  "base44": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "8a7fc77304c8a9ab995d68aa5cdcbce6eddb631b",
   "files": {
    "LICENSE": "5546cdc657881c6a454bb4d09044e59fb4f84f3951fcb88c8102b7fe8332b4a4",
@@ -203,7 +203,7 @@
   "updated_at": "2026-11-11 18:43 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -218,7 +218,7 @@
   "updated_at": "2026-10-13 16:23 UTC"
  },
  "context7": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "5c4a4b43cd5010f5678c6fceac3dd16865112e67",
   "files": {
    "LICENSE": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c",
@@ -232,7 +232,7 @@
   "updated_at": "2026-11-13 18:32 UTC"
  },
  "design-dna": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "593e39bc9e3652734653bd75544a333d7d43615e",
   "files": {
    "LICENSE": "2de108bcd0d904f8756e1135ca77ce1e3e9ca0edb1ae6abecb97dea76d27d174",
@@ -253,7 +253,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "find-skills": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "b716f9dc2ba36b6aa8f0080615e5a3a6caeac63b",
   "files": {
    "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
@@ -265,7 +265,7 @@
   "updated_at": "2026-11-13 18:32 UTC"
  },
  "genjutsu": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "5e00595ab7495d6bb966639f2f5ff1dbee364389",
   "files": {
    "LICENSE": "19fd36b46fd5b393c6d58ad1ac26afd436bdce6951a9952094eff70366e5b314",
@@ -389,7 +389,7 @@
   "updated_at": "2026-11-06 17:59 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -486,7 +486,7 @@
   "updated_at": "2026-11-13 18:33 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "0c0c49bc168e648dbaf9c8c080474de0b3a941b6",
   "files": {
    "CHANGELOG.md": "f4bce68c4bfe964c13a30e648c7d0fff56ed692f1a1f121a16842d2876ddcd83",
@@ -813,7 +813,7 @@
   "updated_at": "2026-11-05 18:46 UTC"
  },
  "knowledge-work-plugins": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "43ccfc0d22c5dbe2dd7e1b3670a6fbaed4dfe745",
   "files": {
    "LICENSE": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26",
@@ -844,7 +844,7 @@
   "updated_at": "2026-11-13 18:32 UTC"
  },
  "mattpocock-skills": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
   "files": {
    "LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
@@ -858,7 +858,7 @@
   "updated_at": "2026-11-12 18:57 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
@@ -933,7 +933,7 @@
   "updated_at": "2026-11-04 12:51 UTC"
  },
  "rea": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "3cb75d46bf6ee0a44d846a4d3e2cc3196e9ba418",
   "files": {
    ".agents/skills/reverse-engineer-anything/SKILL.md": "b53cce995c43ca59fd6f6a306106fcfbf5db3dc2837f13598bb665e230ef798e",
@@ -989,7 +989,7 @@
   "updated_at": "2026-11-12 20:42 UTC"
  },
  "ruflo": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "002d8c1ac031871fc14220e964f4dbb35b60428f",
   "files": {
    ".claude/commands/agents/README.md": "52f50d320ed2058cc815a836530e43cba4511df56eb9edac8837b922339fcbd7",
@@ -1215,7 +1215,7 @@
   "updated_at": "2026-11-13 18:32 UTC"
  },
  "scroll-craft": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "75d81f74e83692add18cd7a8a8e078b8a887a579",
   "files": {
    "LICENSE": "dd471a27eca72488a53e6ea6fbe9392d81aa3f01e950e63fe328affb2ddfa6e3",
@@ -1281,7 +1281,7 @@
   "updated_at": "2026-11-04 12:51 UTC"
  },
  "superpowers": {
-  "checked_at": "2026-11-13 18:32 UTC",
+  "checked_at": "2026-11-13 18:33 UTC",
   "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
   "files": {
    ".claude-plugin/marketplace.json": "04015bf36c0c8e475e61509f4c0c2e72838abb1b6ab70a2c44f04be4317f79fa",
@@ -1394,7 +1394,7 @@
   "updated_at": "2026-11-04 18:40 UTC"
  },
  "teardown": {
-  "checked_at": "2026-11-13 18:33 UTC",
+  "checked_at": "2026-11-13 18:34 UTC",
   "commit": "a91262ac1109051e014662d42ecb0b7bc1f113b1",
   "files": {
    ".gitignore": "63df382d21483b30e255f410358cc24fb6052643287fe25df0ea270bd9ea79e8",
@@ -1475,48 +1475,49 @@
  },
  "text-to-cad": {
   "checked_at": "2026-11-13 18:33 UTC",
-  "commit": "2909a73bba04530e80b724928af8c2386752e88b",
+  "commit": "f08344fb2cc5b93132a8990895e54ba72ae88bbd",
   "files": {
    ".claude-plugin/icon.png": "8c44d41c85e0131a3daf2ae58ec1bef6eb54f8731db665dea5dc7c19524aacbe",
-   ".claude-plugin/marketplace.json": "339fb408bd582ba5efb67309a447fe3b45e863c1e4748ed05d1bddcdc51eb137",
-   ".claude-plugin/plugin.json": "9b900076d07bfe8d8a292378e7c0defe99d9bedb75a9b176b4fb9792b612bf17",
+   ".claude-plugin/marketplace.json": "7579fd14c52d5fd005dcc319c327fcdc5a8948bc54f1a82400eacab47beba14a",
+   ".claude-plugin/plugin.json": "74bd85aaf59ad87c28d29fc923b53dbcfb58717fb99804968e3e23eebc3bef41",
    "LICENSE": "c11168234f932c4a39bb640571079e73b178b4459682a5507e5944ad723058b3",
-   "claude.mcp.json": "5899f884ad2b903e4ec4df877923edbbb161fd5139171600794df6d01d687738",
+   "claude.mcp.json": "b6faa8609b3303b5eb602e1dd149890dafe2b874f2d84f9cc0f5c28305664bf2",
    "skills/cad/LICENSE": "c11168234f932c4a39bb640571079e73b178b4459682a5507e5944ad723058b3",
-   "skills/cad/SKILL.md": "6d88985637b15e9f36a5feae80e7ed500148d543a04d09bfcfe88dc1da94654a",
+   "skills/cad/SKILL.md": "605ea5d3363e12df9e5b3a4028a8482df724aff48282f1c0d7e8591c3318e744",
    "skills/cad/agents/openai.yaml": "2250f0db89ddfc238baccd2c81a27628505a21e7916db74e006b1b3b973a6697",
-   "skills/cad/references/2d-profiles-and-dxf.md": "f8ee609231d6e32ff9f9730cf435020334f20e4328ce8df006d1b88afd32638f",
-   "skills/cad/references/animation.md": "21addd71a0fa13039a1e2596f65c79e9ae303974c5a3349c9e9968eebf8b3fd0",
-   "skills/cad/references/build123d-modeling.md": "8ffbb7002247797ce4404e59ee57b923a2045a2abd6b2753ca9e346b97725de6",
-   "skills/cad/references/environments.md": "2a89abee4c094d12d878fc873da22546e590bdc6943be55af55639b60771e6da",
-   "skills/cad/references/exports.md": "e91852db73ab8d682892bb67b921333722016ac50d09ea85ac7ebe89a3b2e629",
-   "skills/cad/references/inspection-and-validation.md": "83e179e3fbc28af9b6a3133a1668b9fc6cdff848de2288caa5bbef1e2c277cd3",
-   "skills/cad/references/kinematics.md": "83f20b5f9fee2ae4c2281bae394128395f4ed4a2ce45844bfb6c9569bba2f20c",
-   "skills/cad/references/manufacturing-cnc.md": "54739dd9070b0adccdd5d203d6064b2019c5a4f496c37a1e173598f02595dccd",
-   "skills/cad/references/manufacturing-injection-molding.md": "909b941ac087269c647f0f312f6f0044bfb9c52ab96b0f130e95d961e8663e52",
-   "skills/cad/references/manufacturing-printing.md": "ae4cf5a83e910b135964f82073e0f6752ac4190785d09c140236f96bae1e5d8e",
-   "skills/cad/references/manufacturing-sheet-metal.md": "78c79f707fa47e314bf8c839fcf894fedf4c206d16bbfab6a71e3b9ac1a948f5",
-   "skills/cad/references/model-contract.md": "96ef0b1cf2e53c2d284801c442de3e6864da313c583b79f9c01b0bbea67b30fd",
-   "skills/cad/references/positioning.md": "3396866f28a4604da1e984c2102b36407b09b938b3a0dfcd7a6dc8c9a12ff56a",
-   "skills/cad/references/project-layout.md": "bb497adfb2ceb8151e8f0d07db67b7b963eff60ee6ab2d08873480d7029e8da2",
-   "skills/cad/references/snapshot-review.md": "a4eb05db87afe576d7163b5c0b2fea945fd1665765929c1bcd7211dc1b1cf06d",
+   "skills/cad/references/2d-profiles-and-dxf.md": "26ad3b24860e17406b9f3aed1ad1ca099cdb643395436a45105bca6f5761d0ef",
+   "skills/cad/references/animation.md": "fb926e7cacad19562f5d45707cbb4b4ed55b88dac8a28c611b55a5bf033e61a8",
+   "skills/cad/references/build123d-modeling.md": "d713248f71b82c9a57de9cbe12865179b530eefb983fdb6eb69dc540f818d065",
+   "skills/cad/references/environments.md": "435a97d10ead0919486a20b2511d5d1573126051e1ab8ea4cc3c50479d76dd64",
+   "skills/cad/references/exports.md": "9e6c7fba3c30005a4d2bd9442b010c2ebe00f55c8ba524004273426f56ed7fde",
+   "skills/cad/references/inspection-and-validation.md": "4cd804c05528e3d721265d08e3a4854e01e6c1c2e724b742c8e00995a2a7008b",
+   "skills/cad/references/kinematics.md": "b9f18052a00adfed2fa1626c6468639ed751e98951398aa9bf1f5801b216a1cc",
+   "skills/cad/references/manufacturing-cnc.md": "eefbd5c4310d0d8627cb65cb56162cc6ea3a2a83e0d320b2890b152f5ca0bea8",
+   "skills/cad/references/manufacturing-injection-molding.md": "e928e40e1078ec9c5377695225b61531f0b4861a8a3e5faf4a802bbc22035f35",
+   "skills/cad/references/manufacturing-printing.md": "0e8f69db50a7ab02670e133047f7ba3cdbeda0f5e48d9916a33bf333ff6bf92f",
+   "skills/cad/references/manufacturing-review.md": "5360304a32e245e444db9ca4b8b8b98c53fca3ac665cd256855bb4f26fb65626",
+   "skills/cad/references/manufacturing-sheet-metal.md": "bc72a28c0bb06a9c550d12e529b0fcfe2bee2b961742c996a88a14614353f6b7",
+   "skills/cad/references/model-contract.md": "203c9f0655135a0189a9e274b51640d9547e1a59ea1d1d95bc2a7c3b54d8c224",
+   "skills/cad/references/positioning.md": "f1abb15b0abc639ca5a1e06cd86d8b564afc5540e17bbc760c5b5a1252caea0e",
+   "skills/cad/references/project-layout.md": "a72f506fa838b1c9912b40059b8943551d1b8ac6b90a52975b6db44c63d4a7c2",
+   "skills/cad/references/snapshot-review.md": "dde6440751217f3713a330177120316c5aa03c7099ae9deaa25f203b06539bd7",
    "skills/engineering-drawing/LICENSE": "c11168234f932c4a39bb640571079e73b178b4459682a5507e5944ad723058b3",
-   "skills/engineering-drawing/SKILL.md": "796d0ab228228f3842a83801122e21a6409452c84778dab44a87929de219e468",
+   "skills/engineering-drawing/SKILL.md": "a621cb0821b877cb3fa4d0b14d201406ce68bb3aff466b6637fa8e9e2f74362d",
    "skills/engineering-drawing/agents/openai.yaml": "67ca4aa8737ebd56a40c7cc6453a3e1ac72c5f88817401c81171e1acd370789f",
    "skills/engineering-drawing/references/sheet-api.md": "b88ae0b337ccc5927be6f1c2e60a0b3afd98bd877e983b424b174d3d81d73f93",
    "skills/fea/LICENSE": "c11168234f932c4a39bb640571079e73b178b4459682a5507e5944ad723058b3",
-   "skills/fea/SKILL.md": "a1bd69917e631f14749cb6bada2c596897f7fb173ce864d073a6fdc503cb50c1",
+   "skills/fea/SKILL.md": "fca279381fd9dadb2e16e6f7f370428de9fc0ebbdd2d61c3347f99dffacb2180",
    "skills/fea/agents/openai.yaml": "ac72cff3f3d5555501b704dacb1284086cf288532963fe5ed41d2db580d3b50f",
    "skills/fea/references/linear-static.md": "3f95baa6b067b733e9572a1d91b1ecb9d730d5b5086f93d062df966ca9a43ba5",
    "skills/fea/references/materials.md": "91dd8f1abfa56faaba5398c3bff7750788e74a478500a73861bd00bfaf58ce7d",
    "skills/fea/references/study-file.md": "d8f3589709fe7da8a5a179962f0b38735c22e43d0dcd025355882681b4185016",
    "skills/pcb/LICENSE": "5d561b8127b91caa4cb60e1065cbe263014f2a156f734caceda39746f5b84e00",
-   "skills/pcb/SKILL.md": "5737026cd9858f04bd078838f20e7f6ee33f8e651b072fe1b19e5bd72b283016",
+   "skills/pcb/SKILL.md": "c212ce07c0b752c0fbe5da36a54993ecb414aab0e22d84e68773785f8d5ea812",
    "skills/pcb/agents/openai.yaml": "ff10ba3524718aee4a161834f8ba62255dfb26c3dacb2162e97c4e17593c4e53",
    "skills/pcb/references/board-api.md": "b87bba844cf98309b7a963c4ee283075123db88c5a625fbe3127010ef150db98",
    "skills/pcb/references/checks.md": "f0ca12ff9742301b8ddd30d1ab881e044236ab9eac02622b53cb0a8077a3c9cf",
    "skills/pcb/references/layout.md": "2ed36b8c01554f5949dfafee0dccab72c5bf93ddce54def3f555d35fd213263e",
-   "skills/pcb/references/manufacturing.md": "e446c93cf95dbf410c31beb5ec5b49d414f5e0b8b6086d0f0c80e0ea87a1ad1a",
+   "skills/pcb/references/manufacturing.md": "41e5b25a20914ad0eb5f8ff91d1cff3312472250827ce473fd6b57ecdf1eb38d",
    "skills/pcb/references/parts.md": "36cedca46f90e98ffd6676828bd9217b81cf55306a6b3d0f445ae8d3296287d8",
    "skills/pcb/references/placement.md": "04eddf3dc2f62f26765ee2dc142165da2ce37980e59e449119401825c350f96c",
    "skills/pcb/references/review-assembly.md": "9e157cb9e585b73d250d5cf2a1b11706205fef74cfed27ecfb7dfb0b214196a8",
@@ -1527,31 +1528,35 @@
    "skills/print3d/SKILL.md": "546db4d2c8d455ecca1daa1abedbce0d22559940379ce99ed0268ba8cc0cb931",
    "skills/print3d/agents/openai.yaml": "114a0294b0dd746c2fac45876d6c774b0154e9c142c36256d0307c5f7fcc885f",
    "skills/print3d/scripts/orca_presets.py": "13bb97bcd0aaff3f13e5b9313fa4ac41a8d3b11a3b7a893b9ad7cbaae488aa24",
+   "skills/render/LICENSE": "c11168234f932c4a39bb640571079e73b178b4459682a5507e5944ad723058b3",
+   "skills/render/SKILL.md": "284dfec4df805630fafe8b9922deff91f2b3f91f699c08d21c732bb9e242dc56",
+   "skills/render/agents/openai.yaml": "b70495528e5c06199888c92334b58a881ac728e82ad8389e82d031995ddd22a0",
+   "skills/render/references/scene-script.md": "f8dde5fb8fb854d85bb55a6afdd614a5c5b6244c686db3d015770785647a50d5",
+   "skills/render/references/shots.md": "28f9f5093c5891dc3835c47800f439d15ef27269648d64baf5892b74492a78ed",
    "skills/robot-simulation/LICENSE": "c11168234f932c4a39bb640571079e73b178b4459682a5507e5944ad723058b3",
-   "skills/robot-simulation/SKILL.md": "8b82f48f83629b5b6ee8ab237d8ed4489df3690cef082fabe8afe2ea2d8fe424",
-   "skills/robot-simulation/agents/openai.yaml": "4c95ee3f9c89edec74a574d548707dcc6920347c267bd2ea95e8afd36bfc5eeb",
-   "skills/robot-simulation/references/guardrails.md": "f6ab78ec84361d2a4081604fcb32a58ace671b737ee975d763c36a9c3e1a9b76",
-   "skills/robot-simulation/references/inertials.md": "9572880783833aa3ef7959d4b0cb71a300b7c27bb762a388a7d2aa14e7e21986",
-   "skills/robot-simulation/references/interoperability.md": "b4965c7c10e889c3167ba3571801af6f33366f3d7f1d512ecfc87f45a6ecc614",
-   "skills/robot-simulation/references/meshes.md": "da979bf015c1532fa12d80d2dadc819a4bb5f26730a4146f1ea9e92fc9010e76",
-   "skills/robot-simulation/references/sdf-authoring.md": "203fb460b09f5db68e18398752a8459ea1d10059d3fca8e8de23b94b1417d544",
-   "skills/robot-simulation/references/sdf-checks.md": "6925bbaa5a2d442594ade0b88a6f9efebc2e2bd1430cb3e0cc5c8d157ae907ff",
-   "skills/robot-simulation/references/sdf-examples.md": "79e5169e68f98f2938ec21be115e5ff9152cefaf6e479398b2a6323101550b2d",
-   "skills/robot-simulation/references/sdf-frames.md": "cde25869ed654d6137f57154d2430d66e0e22aecee2d2d4b9bae9eb5d29ca153",
-   "skills/robot-simulation/references/sdf-ledger.md": "86b8ce097eb1e2701df3591c6385d6e4a9bae23401bb0b5d9a6d032c0c6b893f",
-   "skills/robot-simulation/references/snapshots.md": "68eabc048196e71042d10045e34ced38d54ce566aa096d9223265d7a713fb549",
-   "skills/robot-simulation/references/srdf-authoring.md": "6ba669c14312d8f541b6971455d42e22726296676832ad05f81038c18ec95389",
+   "skills/robot-simulation/SKILL.md": "b0b6b705bf5d4b9d454a7d1971c879791571192edca8b3ecf13744322da1d808",
+   "skills/robot-simulation/agents/openai.yaml": "af4ec4fb17fe6ee076d785f57bba92e18509bcc3cacf97571e7137681c75128d",
+   "skills/robot-simulation/references/from-a-vendor-step.md": "5307cf391bde67372d604252ff2df2919dd1fd97e46c0ed3a222310154a5af2e",
+   "skills/robot-simulation/references/guardrails.md": "7ae584c5e70423b2c48a4e959bcea8fb4e1b93b915e7de3328fb78b8a79f6883",
+   "skills/robot-simulation/references/inertials.md": "a499dee807256b4e1876489cd9dc81ca76e92c68f16885ed16d8ea4d2607ed78",
+   "skills/robot-simulation/references/interoperability.md": "63f9c7892d77cd64ff93feefcfc0ac669c02427dee3920cd0d11129ec2e57cfa",
+   "skills/robot-simulation/references/meshes.md": "8ef63ba364f04f6291e16a9d90bba75eabc54942e917cb88aa490a785bfa58c1",
+   "skills/robot-simulation/references/mjcf-authoring.md": "33d26bb22fa7f070ad1265610cc481ed7355ceedfff33d54a36d6bb963c6b8dd",
+   "skills/robot-simulation/references/mjcf-checks.md": "2aa30f0a54a82dcef20571aa0d3e95230d872248eac4c83148c1058c3639dde1",
+   "skills/robot-simulation/references/mujoco-environment.md": "44d5137901572d85c47e49a3ed0008f06906edd74ba2547d7c61c72dd88ce175",
+   "skills/robot-simulation/references/snapshots.md": "bb0680b3d88bfef2512f2d7033f8552e5f37851dd8310aa69bf3922478213dad",
+   "skills/robot-simulation/references/srdf-authoring.md": "220acd57c43a47ab2d451238878a9660fc815373e2690e36cc60ef4c57c9d0cc",
    "skills/robot-simulation/references/srdf-checks.md": "edffa1c27c0482b49e1f052b16e047b598f48619922a09fa418a421b023988c9",
    "skills/robot-simulation/references/srdf-disabled-collisions.md": "941a9ff5f01a389ce49abed3d3c1ac56be4c519223d11e7f351147b36f97130c",
    "skills/robot-simulation/references/srdf-end-effectors.md": "9ca3475b466cc8ca932d540eb2aaf468d45a19ba85b70a79bf2bff3082d50e60",
    "skills/robot-simulation/references/srdf-ledger.md": "5c43edb018ab0ce8a3ca2391eb53a49a8f731b5206988d79c843abd30b0ab0de",
    "skills/robot-simulation/references/urdf-authoring.md": "2e63a1f16e6b4dfec66af6c009508b1cddac42252c0e62c16b232e04a3fa5e18",
-   "skills/robot-simulation/references/urdf-checks.md": "ac315cca70fa03011444b73ea8114987052d038282615c522cef9b4cb01b4894",
-   "skills/robot-simulation/references/urdf-four-bar.md": "f5811dc7718c30268a9189be0cfc8c96d94d1c34043cda542f10486e0a8bb9a7",
+   "skills/robot-simulation/references/urdf-checks.md": "26959e8133cb298846f5bd75aaf2656aecf3abb8da57964d9bcf926aab392600",
+   "skills/robot-simulation/references/urdf-four-bar.md": "e6bed8799a62aab8c8fa26284f393d125fc676da949c480a3360c9fa72dd7e1f",
    "skills/robot-simulation/references/urdf-frames.md": "858080c80c9932fa00707566ba2c9f08c3b592c515e477372b1985e63a4f7763",
-   "skills/robot-simulation/references/urdf-ledger.md": "b21c6771f476c243b8504d054dbfc3d539a1fbf64ab3101b68734ea6a5d9c15b",
+   "skills/robot-simulation/references/urdf-ledger.md": "2da811121a0a045a518502ea3e30db21b7eaaca0fe1a63ddab2f82f33db168e0",
    "skills/sendcutsend/LICENSE": "c11168234f932c4a39bb640571079e73b178b4459682a5507e5944ad723058b3",
-   "skills/sendcutsend/SKILL.md": "98ac24cd9c5ef9a3373c152db6509ae1acf78192f4ea0aa5e51216f9b1822d43",
+   "skills/sendcutsend/SKILL.md": "bb233859e8bd7f08693c32036b9835204b3791cfa9425c80a4088dd2189a0f9e",
    "skills/sendcutsend/agents/openai.yaml": "70167b8d1ebf3665be5d8ce378c4c12cae71734819f55bfb965acd8fdfaa3154",
    "skills/sendcutsend/references/official-sources.md": "87ea5c0278b1fbacd81b9bfedc1aa0dd6aa45b0a9d5e22043ae39aef707ffdf2",
    "skills/sendcutsend/references/report-template.md": "9cb28ca7dcaa9eac154ab93d42495e1c7ac6e7bc1bd494cadc14de40f35c702e"
@@ -1562,15 +1567,16 @@
    "skills/fea",
    "skills/pcb",
    "skills/print3d",
+   "skills/render",
    "skills/robot-simulation",
    "skills/sendcutsend"
   ],
   "license": "MIT",
   "repo": "earthtojake/text-to-cad",
-  "updated_at": "2026-11-09 21:27 UTC"
+  "updated_at": "2026-11-13 18:33 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-11-13 18:33 UTC",
+  "checked_at": "2026-11-13 18:34 UTC",
   "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
    "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
@@ -1594,7 +1600,7 @@
   "updated_at": "2026-10-22 13:45 UTC"
  },
  "ub-mode": {
-  "checked_at": "2026-11-13 18:33 UTC",
+  "checked_at": "2026-11-13 18:34 UTC",
   "commit": "3da62bf3fcfd2034de41f30d920d2739e566171f",
   "files": {
    "LICENSE": "cf496364b10d049ba2b04ac4c04f29ab1a34b54be96209cb32666fac9eba6bf3",
