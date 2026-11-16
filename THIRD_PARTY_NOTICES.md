@@ -28,6 +28,7 @@ licença original da sua origem.
 | `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT | [packs/security-audit/LICENSE](packs/security-audit/LICENSE) |
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | [packs/ponytail/LICENSE](packs/ponytail/LICENSE) |
 | `illumi` | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | MIT | [packs/illumi/LICENSE](packs/illumi/LICENSE) |
+| `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 | [packs/impeccable/LICENSE](packs/impeccable/LICENSE) |
 | `reanimate` | [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate) | MIT | [packs/reanimate/LICENSE](packs/reanimate/LICENSE) |
 | `teardown` | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | MIT | [packs/teardown/LICENSE](packs/teardown/LICENSE) |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | [packs/threejs-skills/LICENSE](packs/threejs-skills/LICENSE) |

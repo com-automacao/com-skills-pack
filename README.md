@@ -380,6 +380,18 @@ Origem: [unclebob/ub-mode](https://github.com/unclebob/ub-mode) (MIT desde novem
 |---|---|
 | `ub-mode` | Método de engenharia do Uncle Bob: fazer funcionar, fazer direito, prática. As ferramentas que ele cita (crapper, dryer, mutator) são instaladas à parte; veja o README da origem. |
 
+### 22. Impeccable (direção visual e vocabulário de design)
+
+Origem: [pbakaus/impeccable](https://github.com/pbakaus/impeccable) (Apache-2.0). Pasta: `impeccable/.claude/`. A skill é instalada pelo `scripts/install.py`; na primeira vez que roda, o script dela baixa o motor nativo (cerca de 22 MB) das releases do próprio repositório e confere o checksum. **Nova no pack.**
+
+| Skill | O que faz |
+|---|---|
+| `impeccable` | Um comando com vários modos: `init` (entrevista e contexto de design do projeto), `document` (gera o DESIGN.md), `critique` e `audit` (revisão), `polish`, `bolder`, `quieter`, `typeset`, `colorize`, `animate`, `layout` e outros. Detecta padrões de "cara de IA" antes de publicar. O `bunshin` a usa para a direção visual quando ela está instalada. |
+
+Os 5 agentes de apoio (`impeccable-finish-reviewer` e outros) ficam em `impeccable/.claude/agents/`. Para usá-los, copie os arquivos para `~/.claude/agents/`; sem eles, a skill usa uma versão reduzida de cada papel. O instalador oficial faz tudo de uma vez: `npx impeccable install --user --providers=claude --no-hooks -y`.
+
+**genjutsu, illumi ou Impeccable?** Pedido genérico de interface continua no genjutsu, e revisão de detalhes no illumi. Use o Impeccable quando pedir por nome, para criar o contexto de design do projeto (`init`, `document`), ou dentro do bunshin.
+
 ---
 
 ## Fora do pack

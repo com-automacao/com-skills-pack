@@ -35,6 +35,7 @@ GROUPS = [
     "com-automacao/skills",
     "illumi/skills",
     "reanimate/skills",
+    "impeccable/.claude/skills",
 ]
 # skills que ficam na raiz do proprio pacote
 ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown", "ub-mode": "ub-mode"}

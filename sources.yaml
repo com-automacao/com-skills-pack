@@ -354,6 +354,22 @@ sources:
       - skills/state-machine
       - skills/variant
 
+  impeccable:
+    # Direcao visual, critica e auditoria de interface; o bunshin usa quando esta instalado.
+    # O launcher em scripts/ baixa o motor nativo (~22 MB) e confere com engine-checksums.txt.
+    # Instalacao oficial: npx impeccable install --user --providers=claude --no-hooks -y
+    repo: pbakaus/impeccable
+    branch: main
+    license: Apache-2.0
+    mode: vendor
+    watch: .claude
+    paths:
+      - LICENSE
+      - NOTICE.md
+      - README.md
+      - .claude/skills/impeccable
+      - .claude/agents
+
   reanimate:
     # Clona animacoes quadro a quadro e prova com comparacao. Fica fora: site/ (37 MB, site de demonstracao).
     # Depois de instalar: bash scripts/setup.sh na pasta (precisa do bun; instala playwright e ffmpeg-static).
