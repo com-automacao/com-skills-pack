@@ -394,24 +394,86 @@ Os 5 agentes de apoio (`impeccable-finish-reviewer` e outros) ficam em `impeccab
 
 ---
 
-## Pack B: seleção do ECC
+## ECC no Pack A (curadoria)
 
-Origem: [affaan-m/ECC](https://github.com/affaan-m/ECC) (MIT). Pasta: `ecc/skills/`. O ECC tem 327 skills, 72 agentes e hooks; aqui entram só 12 skills escolhidas, sem hooks, agentes ou regras. Instaladas pelo `scripts/install.py` como as outras. No zip, o Pack B vem separado (`skills-dev-pack-B.zip`); o Pack A é todo o resto.
+Origem: [affaan-m/ECC](https://github.com/affaan-m/ECC) (MIT). Pasta: `ecc/skills/`. Das 327 skills do ECC, **249 entram no Pack A** e são instaladas pelo `scripts/install.py` como as outras. Ficam de fora 49 que repetem o que o pack já tem e 29 que só funcionam com o ECC instalado; essas estão no Pack B.
 
-| Skill | O que faz |
+Destaques para quem trabalha com sites e conteúdo: `seo`, `web-perimeter-owasp-2025-audit`, `production-audit`, `mysql-patterns`, `frontend-slides`, `brand-voice`, `article-writing`, `remotion-video-creation`. Para cuidar do próprio arsenal: `skill-stocktake`, `mcp-dependency-review`, `security-scan`, `skill-scout`, `config-gc`, `config-health`.
+
+<details><summary>As 249 skills do ECC no Pack A</summary>
+
+`agent-architecture-audit`, `agent-eval`, `agent-harness-construction`, `agent-introspection-debugging`, `agent-payment-x402`, `agent-runtime-gateway-smoke-test`, `agent-security-hardening`, `agent-self-evaluation`, `agentic-engineering`, `ai-first-engineering`, `ai-regression-testing`, `android-clean-architecture`, `angular-developer`, `api-connector-builder`, `article-writing`, `backend-patterns`, `benchmark-methodology`, `benchmark-optimization-loop`, `bengali-nlp`, `blender-motion-state-inspection`, `brand-discovery`, `brand-voice`, `bun-runtime`, `canary-watch`, `carrier-relationship-management`, `change-impact`, `cisco-ios-patterns`, `click-path-audit`, `clickhouse-io`, `code-tour`, `codebase-onboarding`, `codehealth-mcp`, `competitive-platform-analysis`, `competitive-report-structure`, `compose-multiplatform-patterns`, `config-gc`, `config-health`, `connections-optimizer`, `content-engine`, `content-hash-cache-pattern`, `context-budget`, `contract-first`, `cost-aware-llm-pipeline`, `council`, `council-multi-model`, `counterparty-channel-discipline`, `cpp-coding-standards`, `cpp-testing`, `crosspost`, `csharp-testing`, `customer-billing-ops`, `customs-trade-compliance`, `dart-flutter-patterns`, `dashboard-builder`, `data-scraper-agent`, `data-throughput-accelerator`, `database-migrations`, `deep-research`, `defi-amm-security`, `django-celery`, `django-patterns`, `django-security`, `django-tdd`, `django-verification`, `docker-patterns`, `dotnet-patterns`, `dynamic-workflow-mode`, `e2e-testing`, `energy-procurement`, `enterprise-agent-ops`, `error-handling`, `esign-field-placement`, `eval-harness`, `evm-token-decimals`, `exa-search`, `fal-ai-media`, `fastapi-patterns`, `flox-environments`, `flutter-dart-code-review`, `foundation-models-on-device`, `frontend-patterns`, `frontend-slides`, `fsharp-testing`, `gan-style-harness`, `generating-python-installer`, `godot-patterns`, `godot-testing`, `golang-patterns`, `golang-testing`, `google-workspace-ops`, `growth-log`, `healthcare-cdss-patterns`, `healthcare-emr-patterns`, `healthcare-eval-harness`, `healthcare-phi-compliance`, `hexagonal-architecture`, `hipaa-compliance`, `homelab-network-readiness`, `homelab-network-setup`, `homelab-pihole-dns`, `homelab-vlan-segmentation`, `homelab-wireguard-vpn`, `hookify-rules`, `i18n-sync`, `inherit-legacy-style`, `inventory-demand-planning`, `investor-materials`, `investor-outreach`, `ios-icon-gen`, `issue-review`, `iterative-retrieval`, `ito-baskets`, `ito-compute`, `ito-inference`, `ito-training`, `java-coding-standards`, `jira-integration`, `jpa-patterns`, `knowledge-ops`, `kotlin-coroutines-flows`, `kotlin-exposed-patterns`, `kotlin-ktor-patterns`, `kotlin-patterns`, `kotlin-testing`, `kubernetes-patterns`, `laravel-patterns`, `laravel-plugin-discovery`, `laravel-security`, `laravel-tdd`, `laravel-verification`, `latency-critical-systems`, `lead-intelligence`, `liquid-glass-design`, `living-docs-governance`, `llm-trading-agent-security`, `logistics-exception-management`, `loop-design-check`, `mailtrap-email-integration`, `manim-video`, `market-research`, `marketing-campaign`, `master-agreement-generator`, `mcp-dependency-review`, `ml-adoption-playbook`, `mle-workflow`, `module-governance`, `module-regression`, `mybatis-patterns`, `mysql-patterns`, `nestjs-patterns`, `netmiko-ssh-automation`, `network-bgp-diagnostics`, `network-config-validation`, `network-interface-health`, `nextjs-turbopack`, `nodejs-keccak256`, `nutrient-document-processing`, `nuxt4-patterns`, `opensource-pipeline`, `operator-approval-loop`, `osint-investigation`, `perl-patterns`, `perl-security`, `perl-testing`, `plan-canvas`, `plankton-code-quality`, `platform-factory`, `postgres-patterns`, `prediction-market-oracle-research`, `prediction-market-risk-review`, `prisma-patterns`, `production-audit`, `production-scheduling`, `project-flow-ops`, `prompt-caching-strategy`, `python-patterns`, `python-testing`, `pytorch-patterns`, `quality-nonconformance`, `quarkus-patterns`, `quarkus-security`, `quarkus-tdd`, `quarkus-verification`, `rails-patterns`, `rails-security`, `react-native-patterns`, `react-patterns`, `react-performance`, `react-testing`, `recsys-pipeline-architect`, `recursive-decision-ledger`, `redis-patterns`, `regex-vs-llm-structured-text`, `remotion-video-creation`, `returns-reverse-logistics`, `roundhouse-x402`, `rules-distill`, `rust-patterns`, `rust-testing`, `safety-guard`, `santa-method`, `scientific-db-openalex-database`, `scientific-db-pubmed-database`, `scientific-db-uspto-database`, `scientific-pkg-gget`, `scientific-thinking-literature-review`, `scientific-thinking-scholar-evaluation`, `search-first`, `security-scan`, `seo`, `short-video-distribution`, `skill-comply`, `skill-scout`, `skill-stocktake`, `social-graph-ranker`, `social-publisher`, `springboot-patterns`, `springboot-security`, `springboot-tdd`, `springboot-verification`, `story-lifecycle`, `strategic-compact`, `swift-actor-persistence`, `swift-concurrency-6-2`, `swift-protocol-di-testing`, `swiftui-patterns`, `taste`, `taste-application`, `taste-distillation`, `tasteforge-video`, `terminal-opener`, `terraform-patterns`, `test-collaboration`, `tinystruct-patterns`, `token-budget-advisor`, `token-card`, `typescript-patterns`, `ui-demo`, `ui-to-vue`, `uncloud`, `video-editing`, `videodb`, `visa-doc-translate`, `vite-patterns`, `vue-patterns`, `web-perimeter-owasp-2025-audit`, `windows-desktop-e2e`, `x-api`, `yoruba-localization-testing`
+
+</details>
+
+<details><summary>As 49 que ficaram de fora por repetir o pack (e o que já cobre cada uma)</summary>
+
+| Skill do ECC | Já coberta por |
 |---|---|
-| `skill-stocktake` | Audita a qualidade das skills e comandos instalados (varredura rápida ou completa). Precisa do `jq`. |
-| `mcp-dependency-review` | Revisa a configuração de um MCP antes de aprovar, sem rodar o servidor. |
-| `security-scan` | Procura riscos de segurança e injeção na pasta `.claude` com o AgentShield (`npx ecc-agentshield`, do mesmo autor). |
-| `skill-scout` | Antes de criar uma skill, procura se já existe uma pronta. |
-| `seo` | Audita, planeja e implementa SEO técnico, on-page, dados estruturados e Core Web Vitals. |
-| `web-perimeter-owasp-2025-audit` | Auditoria passiva de segurança de um site no ar, pelo OWASP Top 10 de 2025. |
-| `mysql-patterns` | Boas práticas de MySQL e MariaDB: esquema, consultas, índices, transações. |
-| `production-audit` | "O que quebra em produção?" antes de lançar, só com o que está no PC. |
-| `frontend-slides` | Apresentações em HTML com animação, do zero ou convertendo PowerPoint. |
-| `brand-voice` | Perfil do seu jeito de escrever, tirado de textos reais, para reaproveitar. |
-| `article-writing` | Artigos, guias e newsletters na voz dos seus exemplos. |
-| `remotion-video-creation` | Vídeos em código com Remotion (React). |
+| `accessibility` | better-accessibility |
+| `frontend-a11y` | better-accessibility |
+| `api-design` | api-and-interface-design |
+| `architecture-decision-records` | documentation-and-adrs |
+| `context-and-decisions` | documentation-and-adrs |
+| `design-system` | paint / design:design-system |
+| `documentation-lookup` | Context7 |
+| `frontend-design-direction` | genjutsu / impeccable |
+| `git-workflow` | git-workflow-and-versioning |
+| `conventional-commit-review` | git-workflow-and-versioning |
+| `make-interfaces-feel-better` | illumi |
+| `motion-advanced` | motion-design / cast |
+| `motion-foundations` | motion-design / cast |
+| `motion-patterns` | motion-design / cast |
+| `security-review` | security-and-hardening |
+| `security-bounty-hunter` | security-audit |
+| `tdd-workflow` | test-driven-development |
+| `verification-loop` | superpowers:verification-before-completion |
+| `coding-standards` | code-review-and-quality |
+| `deployment-patterns` | ci-cd-and-automation / shipping-and-launch |
+| `benchmark` | performance-optimization |
+| `github-ops` | github-* (Ruflo) |
+| `browser-qa` | browser-testing-with-devtools |
+| `mcp-server-patterns` | mcp-builder |
+| `intent-driven-development` | spec-driven-development |
+| `product-capability` | product-management:write-spec |
+| `product-lens` | idea-refine |
+| `blueprint` | superpowers:writing-plans |
+| `plan-orchestrate` | superpowers:executing-plans |
+| `parallel-execution-optimizer` | superpowers:dispatching-parallel-agents |
+| `orch-add-feature` | superpowers |
+| `orch-build-mvp` | superpowers |
+| `orch-change-feature` | superpowers |
+| `orch-fix-defect` | superpowers:systematic-debugging |
+| `orch-pipeline` | superpowers |
+| `orch-refine-code` | code-simplification |
+| `ralphinho-rfc-pipeline` | Ruflo |
+| `dev-team` | Ruflo |
+| `team-agent-orchestration` | Ruflo |
+| `team-builder` | Ruflo |
+| `devfleet` | Ruflo |
+| `dmux-workflows` | Ruflo |
+| `autonomous-loops` | Ruflo / /loop |
+| `continuous-agent-loop` | Ruflo / /loop |
+| `agentic-os` | Ruflo |
+| `autonomous-agent-harness` | Ruflo |
+| `leanrea` | REA |
+| `ck` | ai-memory |
+| `unified-memory` | ai-memory |
+
+</details>
+
+As 29 que só funcionam com o ECC instalado: `agent-sort`, `automation-audit-ops`, `brownfield-retrospective`, `configure-ecc`, `continuous-learning`, `continuous-learning-v2`, `cost-tracking`, `deepseek-harness-setup`, `delivery-gate`, `docs-governance`, `ecc-contribution-review`, `ecc-guide`, `ecc-recipes`, `ecc-tools-cost-audit`, `email-ops`, `finance-billing-ops`, `gateguard`, `hermes-imports`, `messages-ops`, `nanoclaw-repl`, `nasiko-control-plane`, `openclaw-persona-forge`, `prompt-optimizer`, `repo-scan`, `research-ops`, `skill-host-compat`, `terminal-ops`, `unified-notifications-ops`, `workspace-surface-audit`.
+
+## Pack B: ECC completo
+
+Origem: [affaan-m/ECC](https://github.com/affaan-m/ECC) (MIT). Pasta: `ecc-full/`. O ECC inteiro: plugin, 327 skills, 72 agentes, 98 comandos, regras, hooks e instaladores. Fica fora só o que não serve para usar: `assets/` (23 MB de imagens), `docs/` (13 MB), `tests/` (9 MB) e `.github/`. No zip, vem separado (`skills-dev-pack-B.zip`).
+
+Não é instalado pelo `scripts/install.py`. Use o próprio ECC, a partir da pasta `packs/ecc-full`:
+
+- Como plugin do Claude Code: `claude plugin marketplace add ./packs/ecc-full` e depois `claude plugin install ecc@ecc`.
+- Ou pelo instalador dele: `npx ecc-universal@2.2.3 install --guided`.
+
+**Atenção:** o plugin vem com hooks ligados (perfil `standard`), que rodam scripts sozinhos durante as sessões; dá para desligar na configuração do plugin (`hooks_enabled`). As skills do Pack B repetem as do Pack A: se instalar os dois, as do ECC aparecem em dobro (com o prefixo `ecc:` no plugin).
 
 ## Fora do pack
 
