@@ -36,6 +36,7 @@ GROUPS = [
     "illumi/skills",
     "reanimate/skills",
     "impeccable/.claude/skills",
+    "ecc/skills",  # Pack B
 ]
 # skills que ficam na raiz do proprio pacote
 ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown", "ub-mode": "ub-mode"}
@@ -49,12 +50,14 @@ def plan(skip):
         if g.split("/")[0] in skip:
             continue
         base = ROOT / g
+        if not base.exists():  # zip A ou B traz so parte de packs/
+            continue
         for d in sorted(p for p in base.iterdir() if p.is_dir()):
             # _jutsu do genjutsu nao tem SKILL.md proprio, mas as skills dependem dele
             if (d / "SKILL.md").exists() or d.name.startswith("_"):
                 items.append((d, d.name))
     for src, name in ROOT_SKILLS.items():
-        if src not in skip:
+        if src not in skip and (ROOT / src).exists():
             items.append((ROOT / src, name))
     return items
 
@@ -75,7 +78,7 @@ def main():
     # backup fora da pasta de skills: senao o Claude Code carrega a copia antiga como skill duplicada
     backup = Path(a.backup_dir).expanduser().resolve() / stamp
     jobs = [(s, dest / n) for s, n in plan(skip)]
-    jobs += [(ROOT / s, (dest / rel).resolve()) for s, rel in SUPPORT.items() if s.split("/")[0] not in skip]
+    jobs += [(ROOT / s, (dest / rel).resolve()) for s, rel in SUPPORT.items() if s.split("/")[0] not in skip and (ROOT / s).exists()]
     for src, target in jobs:
         if target.exists() and not a.force:
             print(f"  pula      {target.name} (ja existe; use --force)")

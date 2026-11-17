@@ -354,6 +354,29 @@ sources:
       - skills/state-machine
       - skills/variant
 
+  ecc:
+    # PACK B: 12 skills escolhidas do ECC (327 no total). Sem hooks, agentes ou regras.
+    # security-scan roda "npx ecc-agentshield" (mesmo autor); web-perimeter so faz requisicoes passivas.
+    repo: affaan-m/ECC
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - skills/skill-stocktake
+      - skills/mcp-dependency-review
+      - skills/security-scan
+      - skills/skill-scout
+      - skills/seo
+      - skills/web-perimeter-owasp-2025-audit
+      - skills/mysql-patterns
+      - skills/production-audit
+      - skills/frontend-slides
+      - skills/brand-voice
+      - skills/article-writing
+      - skills/remotion-video-creation
+
   impeccable:
     # Direcao visual, critica e auditoria de interface; o bunshin usa quando esta instalado.
     # O launcher em scripts/ baixa o motor nativo (~22 MB) e confere com engine-checksums.txt.

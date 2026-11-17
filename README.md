@@ -394,6 +394,25 @@ Os 5 agentes de apoio (`impeccable-finish-reviewer` e outros) ficam em `impeccab
 
 ---
 
+## Pack B: seleção do ECC
+
+Origem: [affaan-m/ECC](https://github.com/affaan-m/ECC) (MIT). Pasta: `ecc/skills/`. O ECC tem 327 skills, 72 agentes e hooks; aqui entram só 12 skills escolhidas, sem hooks, agentes ou regras. Instaladas pelo `scripts/install.py` como as outras. No zip, o Pack B vem separado (`skills-dev-pack-B.zip`); o Pack A é todo o resto.
+
+| Skill | O que faz |
+|---|---|
+| `skill-stocktake` | Audita a qualidade das skills e comandos instalados (varredura rápida ou completa). Precisa do `jq`. |
+| `mcp-dependency-review` | Revisa a configuração de um MCP antes de aprovar, sem rodar o servidor. |
+| `security-scan` | Procura riscos de segurança e injeção na pasta `.claude` com o AgentShield (`npx ecc-agentshield`, do mesmo autor). |
+| `skill-scout` | Antes de criar uma skill, procura se já existe uma pronta. |
+| `seo` | Audita, planeja e implementa SEO técnico, on-page, dados estruturados e Core Web Vitals. |
+| `web-perimeter-owasp-2025-audit` | Auditoria passiva de segurança de um site no ar, pelo OWASP Top 10 de 2025. |
+| `mysql-patterns` | Boas práticas de MySQL e MariaDB: esquema, consultas, índices, transações. |
+| `production-audit` | "O que quebra em produção?" antes de lançar, só com o que está no PC. |
+| `frontend-slides` | Apresentações em HTML com animação, do zero ou convertendo PowerPoint. |
+| `brand-voice` | Perfil do seu jeito de escrever, tirado de textos reais, para reaproveitar. |
+| `article-writing` | Artigos, guias e newsletters na voz dos seus exemplos. |
+| `remotion-video-creation` | Vídeos em código com Remotion (React). |
+
 ## Fora do pack
 
 | O quê | Por quê |
