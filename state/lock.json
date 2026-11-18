@@ -203,7 +203,7 @@
   "updated_at": "2026-11-15 17:44 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-11-17 19:52 UTC",
+  "checked_at": "2026-11-18 13:21 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -215,7 +215,7 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "yasserstudio/codeigniter-skills",
-  "updated_at": "2026-10-13 16:23 UTC"
+  "updated_at": "2026-11-18 13:21 UTC"
  },
  "context7": {
   "checked_at": "2026-11-17 19:52 UTC",
@@ -253,7 +253,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "ecc": {
-  "checked_at": "2026-11-17 19:53 UTC",
+  "checked_at": "2026-11-18 13:22 UTC",
   "commit": "3f14a103a8694e51c1df9a806217a6d0b5f7a6f7",
   "files": {
    "LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
@@ -860,7 +860,7 @@
   ],
   "license": "MIT",
   "repo": "affaan-m/ECC",
-  "updated_at": "2026-11-17 18:43 UTC"
+  "updated_at": "2026-11-18 13:22 UTC"
  },
  "ecc-full": {
   "checked_at": "2026-11-17 19:53 UTC",

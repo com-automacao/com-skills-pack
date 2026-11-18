@@ -516,8 +516,14 @@ def apply_overrides(dest: Path, overrides: dict):
     for rel, fields in overrides.items():
         skill_md = dest / rel / "SKILL.md"
         if skill_md.exists():
-            raw = skill_md.read_bytes().decode("utf-8")
-            skill_md.write_bytes(set_frontmatter_fields(raw.replace("\r\n", "\n"), fields).encode("utf-8"))
+            fields = dict(fields)
+            # _append: secao acrescentada ao fim do SKILL.md; sobrevive as atualizacoes da origem
+            append = fields.pop("_append", "")
+            raw = skill_md.read_bytes().decode("utf-8").replace("\r\n", "\n")
+            text = set_frontmatter_fields(raw, fields) if fields else raw
+            if append:
+                text = text.rstrip("\n") + "\n\n" + append.strip("\n") + "\n"
+            skill_md.write_bytes(text.encode("utf-8"))
 
 
 def vendor_files(job: Job, overrides: dict):

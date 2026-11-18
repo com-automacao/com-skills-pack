@@ -154,6 +154,13 @@ def test_override_e_aplicado_por_cima_da_copia(env):
     assert "faz a" not in text and "Texto original" in text
 
 
+def test_override_append_acrescenta_secao_e_mantem_o_resto(env):
+    r = run(env, overrides={"s": {"skills/a": {"_append": "## Neste ambiente\n\nNota local."}}})
+    text = pack(env, "skills/a/SKILL.md").read_text(encoding="utf-8")
+    assert r["applied"] and text.endswith("## Neste ambiente\n\nNota local.\n")
+    assert "Texto original" in text and "_append" not in text
+
+
 # ---------------------------------------------------------------- saude do repositorio
 
 def test_repositorio_inacessivel_bloqueia_e_para(env):

@@ -96,3 +96,15 @@ Use this skill before or inside:
 - cold or warm outbound across X, LinkedIn, and email
 
 If another skill already has a partial voice capture section, this skill is the canonical source of truth.
+
+## Neste ambiente (substitui os padrões do autor original)
+
+Ignore a seção "Affaan / ECC Defaults" e a instrução de incluir a landing page do ECC: são padrões do autor da skill, não deste usuário. O X não é fonte principal aqui.
+
+Fontes, nesta ordem:
+1. Textos que o usuário colar ou apontar na conversa.
+2. Posts e página do LinkedIn da Com Automação e o perfil pessoal do fundador.
+3. Instagram da Com Automação.
+4. Site da empresa e materiais comerciais.
+
+O idioma padrão do perfil é português do Brasil.

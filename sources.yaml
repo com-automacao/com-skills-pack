@@ -794,8 +794,55 @@ sources:
       - SKILL.md
 
 # Ajustes locais aplicados por cima da copia upstream a cada sync.
-# Hoje: so campos do frontmatter do SKILL.md.
+# Campos do frontmatter do SKILL.md, e _append: secao acrescentada ao fim do SKILL.md.
 overrides:
+  codeigniter-skills:
+    skills/codeigniter:
+      _append: |
+        ## PHP mínimo por versão (hospedagem compartilhada)
+
+        Confira a versão do PHP do domínio no cPanel antes de atualizar o framework:
+
+        | CodeIgniter | PHP |
+        |---|---|
+        | 3.1.13 (última do CI3) | roda em PHP 8.x, com avisos de depreciação a partir do 8.2; teste antes de subir o PHP do servidor |
+        | 4.5 e 4.6 | 8.1 ou mais novo |
+        | 4.7 (4.7.4 em jul/2026) | 8.2 ou mais novo |
+
+        Se a hospedagem não oferece PHP 8.2, fique no CI 4.6 até migrar de plano. Ao trocar a versão do PHP no cPanel, rode a aplicação em staging primeiro.
+  ecc:
+    skills/mysql-patterns:
+      _append: |
+        ## Notas para este ambiente
+
+        - `SHOW SLAVE STATUS` foi **removido no MySQL 8.4 LTS**. Use `SHOW REPLICA STATUS` (existe desde o 8.0.22). Só use o nome antigo em servidor 5.7 ou 8.0 antigo.
+        - Em hospedagem compartilhada (cPanel) não há `SET GLOBAL` nem acesso ao `my.cnf`. O diagnóstico fica em `EXPLAIN`, no slow query log que o painel oferece e nos índices; réplica de leitura não existe nesse cenário.
+    skills/article-writing:
+      _append: |
+        ## Português do Brasil
+
+        O idioma padrão é **português do Brasil**, salvo pedido em contrário. A seção "Banned Patterns" acima vale também traduzida, e estes clichês em PT-BR ficam proibidos:
+
+        - "No cenário atual", "Em um mundo cada vez mais...", "Nos dias de hoje"
+        - "Vale ressaltar que", "É importante destacar", "Cabe lembrar"
+        - "Neste artigo, vamos explorar", "Sem mais delongas"
+        - "Mais do que nunca", "Um verdadeiro divisor de águas", "Alavancar resultados"
+        - Fechamentos como "E aí, o que você achou?" ou "Fica a dica"
+
+        Antes de escrever, use o perfil do `brand-voice` se ele existir para o autor ou a marca.
+    skills/brand-voice:
+      _append: |
+        ## Neste ambiente (substitui os padrões do autor original)
+
+        Ignore a seção "Affaan / ECC Defaults" e a instrução de incluir a landing page do ECC: são padrões do autor da skill, não deste usuário. O X não é fonte principal aqui.
+
+        Fontes, nesta ordem:
+        1. Textos que o usuário colar ou apontar na conversa.
+        2. Posts e página do LinkedIn da Com Automação e o perfil pessoal do fundador.
+        3. Instagram da Com Automação.
+        4. Site da empresa e materiais comerciais.
+
+        O idioma padrão do perfil é português do Brasil.
   agent-skills:
     skills/frontend-ui-engineering:
       description: >-

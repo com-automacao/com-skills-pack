@@ -406,3 +406,15 @@ $session->setTempdata('otp', $code, 300); // auto-expires in 5 minutes
 | No CLI generator | `php spark make:*` |
 
 See [deployment.md](references/deployment.md) for the full 30+ mapping migration table, server configuration, and production deployment checklist.
+
+## PHP mínimo por versão (hospedagem compartilhada)
+
+Confira a versão do PHP do domínio no cPanel antes de atualizar o framework:
+
+| CodeIgniter | PHP |
+|---|---|
+| 3.1.13 (última do CI3) | roda em PHP 8.x, com avisos de depreciação a partir do 8.2; teste antes de subir o PHP do servidor |
+| 4.5 e 4.6 | 8.1 ou mais novo |
+| 4.7 (4.7.4 em jul/2026) | 8.2 ou mais novo |
+
+Se a hospedagem não oferece PHP 8.2, fique no CI 4.6 até migrar de plano. Ao trocar a versão do PHP no cPanel, rode a aplicação em staging primeiro.

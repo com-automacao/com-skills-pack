@@ -34,6 +34,23 @@ Pergunte a URL apenas se ela mudar o que você entrega. Se o usuário disser "ai
 
 Os caminhos abaixo assumem Next.js App Router. Para outros stacks (Vite, Astro, WordPress, HTML estático), a ideia do check é a mesma — procure o equivalente em vez de reprovar por não achar o arquivo exato.
 
+### Equivalentes em PHP / CodeIgniter (hospedagem compartilhada)
+
+Descubra a versão primeiro: `system/core/CodeIgniter.php` (`CI_VERSION`) no CI3; `vendor/codeigniter4/framework` ou `system/CodeIgniter.php` no CI4.
+
+| Item | CodeIgniter 3 | CodeIgniter 4 |
+|---|---|---|
+| 4. Página 404 | `$route['404_override']` em `application/config/routes.php` e a view `application/views/errors/html/error_404.php` | `$routes->set404Override()` em `app/Config/Routes.php` e `app/Views/errors/html/error_404.php` |
+| 9, 10, 16, 17. Favicon, OG, título, description | `<head>` da view de layout (ex.: `application/views/templates/header.php`); confira se o título vem de variável por página | Layout em `app/Views/layouts/` com `renderSection()`; mesma conferência por página |
+| 11. Sitemap | `sitemap.xml` na raiz pública ou um controller que gera o XML (rota `sitemap.xml`) | Igual, em `public/` ou controller em `app/Controllers/` |
+| 15. Robots | `robots.txt` na raiz pública | `public/robots.txt` |
+| 2. Formulário | Controller que recebe o POST e a lib `email` (`application/config/email.php`); SMTP preenchido e `form_validation` ligado | `app/Config/Email.php` (SMTP) e a validação do controller; confira o CSRF em `app/Config/Filters.php` |
+| 6. HTTPS | Redirect no `.htaccess` (`RewriteCond %{HTTPS} off`) e `$config['base_url']` com `https://` | `app.forceGlobalSecureRequests = true` no `.env` ou `app/Config/App.php`, e `baseURL` com `https://` |
+| 20. Segurança | Cabeçalhos no `.htaccess` (`Header always set ...`); `ENVIRONMENT` = `production` no `index.php` | `app/Config/Filters.php` (filtro `secureheaders`), `CI_ENVIRONMENT = production` no `.env`; `.env` fora da pasta pública |
+| 18. Hospedagem | No cPanel: backup automático, versão do PHP do domínio (o CI 4.7 exige PHP 8.2) e SSL (AutoSSL/Let's Encrypt) | Igual |
+
+Em hospedagem compartilhada, `writable/` (CI4) ou `application/cache` e `application/logs` (CI3) precisam de permissão de escrita, e nada além da pasta pública deve ser acessível pelo navegador: teste abrindo `/.env`, `/application/` ou `/app/` no domínio.
+
 ### A. SEO e presença — 7 itens, verificáveis no repositório
 
 **4. Página 404** — Existe uma 404 própria, com o visual do site e caminho de volta para a home? Em Next: `src/app/not-found.tsx`. Falha comum: a 404 padrão do framework, sem identidade e sem link de saída.

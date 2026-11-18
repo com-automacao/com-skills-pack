@@ -411,3 +411,8 @@ When this skill is used for review, return:
 - Skill: `backend-patterns` - API and service-layer patterns
 - Skill: `security-review` - secret handling, auth, and least privilege
 - Agent: `database-reviewer` - broader database review workflow
+
+## Notas para este ambiente
+
+- `SHOW SLAVE STATUS` foi **removido no MySQL 8.4 LTS**. Use `SHOW REPLICA STATUS` (existe desde o 8.0.22). Só use o nome antigo em servidor 5.7 ou 8.0 antigo.
+- Em hospedagem compartilhada (cPanel) não há `SET GLOBAL` nem acesso ao `my.cnf`. O diagnóstico fica em `EXPLAIN`, no slow query log que o painel oferece e nos índices; réplica de leitura não existe nesse cenário.

@@ -78,3 +78,15 @@ Before delivering:
 - the voice matches the supplied examples or the agreed `VOICE PROFILE`
 - every section adds something new
 - formatting matches the intended medium
+
+## Português do Brasil
+
+O idioma padrão é **português do Brasil**, salvo pedido em contrário. A seção "Banned Patterns" acima vale também traduzida, e estes clichês em PT-BR ficam proibidos:
+
+- "No cenário atual", "Em um mundo cada vez mais...", "Nos dias de hoje"
+- "Vale ressaltar que", "É importante destacar", "Cabe lembrar"
+- "Neste artigo, vamos explorar", "Sem mais delongas"
+- "Mais do que nunca", "Um verdadeiro divisor de águas", "Alavancar resultados"
+- Fechamentos como "E aí, o que você achou?" ou "Fica a dica"
+
+Antes de escrever, use o perfil do `brand-voice` se ele existir para o autor ou a marca.
