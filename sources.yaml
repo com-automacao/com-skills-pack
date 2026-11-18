@@ -796,6 +796,61 @@ sources:
 # Ajustes locais aplicados por cima da copia upstream a cada sync.
 # Campos do frontmatter do SKILL.md, e _append: secao acrescentada ao fim do SKILL.md.
 overrides:
+  gsap-skills:
+    skills/gsap-core:
+      description: >-
+        Official GSAP skill for the core API — gsap.to(), from(), fromTo(), easing,
+        duration, stagger, defaults, gsap.matchMedia() (responsive, prefers-reduced-motion). Use when the project already uses GSAP, the user asks for GSAP, or
+        when writing GSAP tweens, easing, responsive or reduced-motion animation of
+        DOM/SVG. Choosing whether and how to animate a UI is the genjutsu `cast`
+        skill's call (it may pick GSAP); use this skill once GSAP is the chosen or
+        existing library.
+    skills/gsap-react:
+      description: >-
+        Official GSAP skill for React — useGSAP hook, refs, gsap.context(), cleanup.
+        Use when animating with GSAP in React or Next.js, or when the user asks
+        about GSAP with React, useGSAP, or cleanup on unmount. Choosing whether and
+        how to animate a UI is the genjutsu `cast` skill's call (it may pick GSAP);
+        use this skill once GSAP is the chosen or existing library.
+    skills/gsap-frameworks:
+      description: >-
+        Official GSAP skill for Vue, Svelte, and other non-React frameworks —
+        lifecycle, scoping selectors, cleanup on unmount. Use when animating with
+        GSAP in Vue, Nuxt, Svelte or SvelteKit, or when the user asks about GSAP
+        with onMounted, onMount, onDestroy. For React use gsap-react. Choosing
+        whether and how to animate a UI is the genjutsu `cast` skill's call (it may
+        pick GSAP); use this skill once GSAP is the chosen or existing library.
+    skills/gsap-scrolltrigger:
+      description: >-
+        Official GSAP skill for ScrollTrigger — scroll-linked animations, pinning,
+        scrub, triggers. Use when building scroll-based animation, parallax or
+        pinned sections with GSAP, or when the user asks about ScrollTrigger, scrub
+        or pinning. Choosing whether and how to animate a UI is the genjutsu `cast`
+        skill's call (it may pick GSAP); use this skill once GSAP is the chosen or
+        existing library.
+    skills/gsap-timeline:
+      description: >-
+        Official GSAP skill for timelines — gsap.timeline(), position parameter,
+        nesting, playback. Use when sequencing or choreographing GSAP animations, or
+        when the user asks about GSAP timelines, the position parameter, or
+        animation order in GSAP. Choosing whether and how to animate a UI is the
+        genjutsu `cast` skill's call (it may pick GSAP); use this skill once GSAP is
+        the chosen or existing library.
+  motion-design:
+    skills/motion-design:
+      description: >-
+        Motion design principles — timing, easing, choreography and Disney
+        principles adapted for UI — for illustration and character animation,
+        Lottie, motion graphics, video and a brand's motion identity. Works with
+        CSS, Framer Motion, GSAP, Lottie, Spring or any animation system. For
+        animating or adding micro-interactions to an existing interface the genjutsu
+        `cast` skill takes precedence, and exact UI durations belong to
+        `interfaces:better-ui`; use this skill there only as a principles reference
+        when asked.
+      _append: |
+        ## Neste ambiente
+
+        A regra "Always three motion layers" (primary + secondary + ambient) é uma recomendação para peças de motion (ilustração, Lottie, vídeo), não uma obrigação. Em interface, movimento demais atrapalha: siga o `cast` e respeite `prefers-reduced-motion`.
   codeigniter-skills:
     skills/codeigniter:
       _append: |

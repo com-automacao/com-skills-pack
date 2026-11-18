@@ -3977,7 +3977,7 @@
   "updated_at": "2026-11-16 21:04 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-11-17 19:52 UTC",
+  "checked_at": "2026-11-18 13:25 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -3993,7 +3993,7 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "greensock/gsap-skills",
-  "updated_at": "2026-10-13 16:22 UTC"
+  "updated_at": "2026-11-18 13:25 UTC"
  },
  "illumi": {
   "checked_at": "2026-11-17 19:53 UTC",
@@ -4529,7 +4529,7 @@
   "updated_at": "2026-11-12 18:57 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-11-17 19:52 UTC",
+  "checked_at": "2026-11-18 13:25 UTC",
   "commit": "2e1f3c052dd70c60b598413e2fc5d7704d9e9896",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
@@ -4555,7 +4555,7 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "LottieFiles/motion-design-skill",
-  "updated_at": "2026-11-17 19:52 UTC"
+  "updated_at": "2026-11-18 13:25 UTC"
  },
  "ponytail": {
   "checked_at": "2026-11-17 19:53 UTC",

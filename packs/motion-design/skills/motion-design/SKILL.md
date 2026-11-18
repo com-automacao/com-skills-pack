@@ -1,11 +1,6 @@
 ---
 name: motion-design
-description: >
-  Applies motion design principles to create emotionally-driven, technically sound animations and transitions.
-  Provides timing, easing, choreography, and Disney animation principles adapted for UI.
-  Use when creating animations, transitions, micro-interactions, loading states, page transitions,
-  scroll-triggered effects, or any motion work. Works with CSS, Framer Motion, GSAP, Lottie, Spring,
-  or any animation system.
+description: "Motion design principles — timing, easing, choreography and Disney principles adapted for UI — for illustration and character animation, Lottie, motion graphics, video and a brand's motion identity. Works with CSS, Framer Motion, GSAP, Lottie, Spring or any animation system. For animating or adding micro-interactions to an existing interface the genjutsu `cast` skill takes precedence, and exact UI durations belong to `interfaces:better-ui`; use this skill there only as a principles reference when asked."
 license: MIT
 metadata:
   author: LottieFiles
@@ -330,3 +325,7 @@ Select ONE archetype per project. Apply consistently.
 - [state-feedback.md](patterns/state-feedback.md) — Success, error, loading, hover
 - [ambient-continuous.md](patterns/ambient-continuous.md) — Looping, breathing, parallax
 - [multi-element.md](patterns/multi-element.md) — Stagger + choreography recipes
+
+## Neste ambiente
+
+A regra "Always three motion layers" (primary + secondary + ambient) é uma recomendação para peças de motion (ilustração, Lottie, vídeo), não uma obrigação. Em interface, movimento demais atrapalha: siga o `cast` e respeite `prefers-reduced-motion`.
