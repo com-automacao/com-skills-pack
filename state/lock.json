@@ -1,10 +1,10 @@
 {
  "agent-skills": {
-  "checked_at": "2026-11-18 19:24 UTC",
-  "commit": "39b723ceebf81474d0557c1fecd01eddab585563",
+  "checked_at": "2026-11-19 19:29 UTC",
+  "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
   "files": {
    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
-   "references/accessibility-checklist.md": "bf6448af1a98833dcd5974ca4a823aef3c5d99873446fdfe9e64020d3fb8cd2f",
+   "references/accessibility-checklist.md": "290870b5d6b00d4e359c28c0fb98ea5ac625cd651bde3cbe276d61a39e69d743",
    "references/definition-of-done.md": "d1c75d2ae65d2c7a9cd01f93fa8de63e00e75f2fe5d08be224d576157054dcee",
    "references/observability-checklist.md": "25fcd0e854596a5ab6f11b002050d245bf78f5ae0fcbd1df699b89451ae0e1e8",
    "references/orchestration-patterns.md": "61e543d86f19f86b83074f8c1c769455c7085a2c72dd47b1da21a8c63785be4a",
@@ -13,8 +13,8 @@
    "references/testing-patterns.md": "8607fda9150f639eae3097d322399e08c5978cce56fe3a3c6291553cb89edf88",
    "skills/api-and-interface-design/SKILL.md": "cc5e2166c484b2c297e8253f56e7525e5031f81d66101ca4e760ef378ea6bad0",
    "skills/browser-testing-with-devtools/SKILL.md": "e28dd45416e6df93f0db6fffeb3aa2477a0e48a22f8e05fd5bb1892484115bb6",
-   "skills/ci-cd-and-automation/SKILL.md": "5e0e55c059670a7838dc9d58dc20a3a645c0d43c974416490112af7de522df95",
-   "skills/code-review-and-quality/SKILL.md": "5dc8f98d9d23e74676091a945b2649bb52456e34f293238ee2511281104a94c0",
+   "skills/ci-cd-and-automation/SKILL.md": "1710bed2509331cd2d570ee6effba1a1479f65e6b761b3b765ce343356d9dcf5",
+   "skills/code-review-and-quality/SKILL.md": "4699e7a1b4ad2f325a77cad28d9f78ea11fd9f7f0e1e813e0cbbbab4e7964607",
    "skills/code-simplification/SKILL.md": "e13b433345e6bf425c3625442ac1b3507b371c18d7ea3e3db822da7a7f742a29",
    "skills/context-engineering/SKILL.md": "5ee2929d3aded01587aa24fc9907693c8820f87f807ea0c52a263af718b62d0b",
    "skills/debugging-and-error-recovery/SKILL.md": "95e393819043b50b3ba6f4d89f0fea620d03e560eb52b592b3eb7a41836aaea1",
@@ -38,23 +38,24 @@
    "skills/security-and-hardening/references/hardening-patterns.md": "451abdcef110e61470d8969151986f397b84c6eb2770d7788787b2b857c31e33",
    "skills/shipping-and-launch/SKILL.md": "92fec446ec4e947a7b8aac88b851aa5743ff8cb39d5987fb53df08ba8a160d64",
    "skills/source-driven-development/SKILL.md": "df38a852658679a67c7a9e4840160570c95094a13a63307e834045ddbf8aa287",
-   "skills/spec-driven-development/SKILL.md": "58dd9f5f2e53830c0c0dd9651998bd6ee4e2a1cc520c9dcf855dfb2fbb3f5059",
+   "skills/spec-driven-development/SKILL.md": "516eaa5fbe8b1dd2e3a675f0a4361443d3828c41aec04750ae4b3143bb4f82ed",
    "skills/test-driven-development/SKILL.md": "24ff76db6227bd74075381f16a5830add333439968f23c3f73987fac2290fe2a"
   },
   "known_upstream": [
+   "skills/accessibility-engineering",
    "skills/constraint-driven-development",
    "skills/using-agent-skills"
   ],
   "license": "MIT",
   "repo": "addyosmani/agent-skills",
-  "updated_at": "2026-11-14 17:10 UTC"
+  "updated_at": "2026-11-19 19:29 UTC"
  },
  "ai-memory": {
-  "checked_at": "2026-11-18 19:24 UTC",
-  "commit": "411d90d1ede070d874b1d5039b0ba0a08764eb49",
+  "checked_at": "2026-11-19 19:30 UTC",
+  "commit": "443a9825473506b0aefa8cece7b55dcbff68e52f",
   "files": {
    "LICENSE": "18332c61780ce8e694d4fa330770cd4d8c85e33f47ac13a80d72d70bb032ae72",
-   "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md": "6b9572fee9f811d4b35ed15835b259b1cf4087ca432307472c877f76ecb68dc0",
+   "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md": "3c64f02fbddeb34c38b08aa225cd0ba5665c6ae4cd57fb1c47d5b713e84966e6",
    "crates/ai-memory-core/src/routing_skills/ai-memory-handoff/SKILL.md": "1e320ff2902cb90d4511c24a7574a9466ef1c474a20af719beda5f48a0584457",
    "crates/ai-memory-core/src/routing_skills/ai-memory-learning-maintenance/SKILL.md": "6fa35891c97e98270e9b4ac023a7cdf650c2f92dcdcb82bce7b0dbc5437f74c9",
    "crates/ai-memory-core/src/routing_skills/ai-memory-messaging/SKILL.md": "b03ab481d45c64afbc129ee21ba4b40c7af8ed8b4e8905d4a8398486536a6534",
@@ -65,10 +66,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "akitaonrails/ai-memory",
-  "updated_at": "2026-11-18 19:24 UTC"
+  "updated_at": "2026-11-19 19:30 UTC"
  },
  "anthropic-skills": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
   "files": {
    "skills/mcp-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
@@ -107,7 +108,7 @@
   "updated_at": "2026-11-16 21:04 UTC"
  },
  "base44": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "df01a9c6556ba6974184df4b6a888733572ded80",
   "files": {
    "LICENSE": "5546cdc657881c6a454bb4d09044e59fb4f84f3951fcb88c8102b7fe8332b4a4",
@@ -203,7 +204,7 @@
   "updated_at": "2026-11-18 19:24 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:30 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -218,8 +219,8 @@
   "updated_at": "2026-11-18 13:21 UTC"
  },
  "context7": {
-  "checked_at": "2026-11-18 19:24 UTC",
-  "commit": "018a603bc99d4cd21feaac1021501185d092ac09",
+  "checked_at": "2026-11-19 19:30 UTC",
+  "commit": "f1872ebb2f3d943b293bb86fdc0c2905988820d9",
   "files": {
    "LICENSE": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c",
    "plugins/claude/context7/.claude-plugin/plugin.json": "38d9722bc43c83a5974bb75433f106d45b57eac7c61e083b0342e90c225f0e00",
@@ -229,10 +230,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "upstash/context7",
-  "updated_at": "2026-11-18 19:24 UTC"
+  "updated_at": "2026-11-19 19:30 UTC"
  },
  "design-dna": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "593e39bc9e3652734653bd75544a333d7d43615e",
   "files": {
    "LICENSE": "2de108bcd0d904f8756e1135ca77ce1e3e9ca0edb1ae6abecb97dea76d27d174",
@@ -253,7 +254,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "ecc": {
-  "checked_at": "2026-11-18 19:26 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "3f14a103a8694e51c1df9a806217a6d0b5f7a6f7",
   "files": {
    "LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
@@ -863,7 +864,7 @@
   "updated_at": "2026-11-18 13:22 UTC"
  },
  "ecc-full": {
-  "checked_at": "2026-11-18 19:26 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "3f14a103a8694e51c1df9a806217a6d0b5f7a6f7",
   "files": {
    ".adal/README.md": "3239a58ed38a0489aabe2135cc1e9ba0279aa31a0abdb28843f9eed020b295ee",
@@ -3841,7 +3842,7 @@
   "updated_at": "2026-11-17 19:53 UTC"
  },
  "find-skills": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:30 UTC",
   "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
   "files": {
    "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
@@ -3853,7 +3854,7 @@
   "updated_at": "2026-11-17 19:52 UTC"
  },
  "genjutsu": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "a22540b623590505879d6489dd03d7f3072bce05",
   "files": {
    "LICENSE": "19fd36b46fd5b393c6d58ad1ac26afd436bdce6951a9952094eff70366e5b314",
@@ -3977,7 +3978,7 @@
   "updated_at": "2026-11-16 21:04 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -3996,14 +3997,14 @@
   "updated_at": "2026-11-18 13:25 UTC"
  },
  "illumi": {
-  "checked_at": "2026-11-18 19:26 UTC",
-  "commit": "547d415dc10a23e66088eba5aa6664e6e772432c",
+  "checked_at": "2026-11-19 19:31 UTC",
+  "commit": "672ae44ace6aaed65b86cbb1e2fd6fbea0e79578",
   "files": {
    "LICENSE": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f",
-   "README.md": "5ceb7b46d40e1dd016962f7958f8897555f80b512c5fbcfe807e0173535f521b",
+   "README.md": "31871d60c001d66b02de4916e86e6d20bce5dd15e4a6ad733c3e7924f9bebc63",
    "skills/afk/SKILL.md": "67f03cbf8e096511603fb000430b1c2fed2af7f1f151aef56e36f355c9accb86",
    "skills/afk/agents/openai.yaml": "1f0f34f1022c4b9a0218f46ff4bd1cda0e5b4beb3dc87bb3a37b70a2d6f7867b",
-   "skills/better-accessibility/SKILL.md": "6a6465c044783968bae9896fd9e2e78437b90578fe3309b6dee6ef6a920e45f9",
+   "skills/better-accessibility/SKILL.md": "7f943812c4f3e89372fc2b094f73148dc1eb424676e8532dd57730b89016e32a",
    "skills/better-accessibility/agents/openai.yaml": "98699206d4fb00b72bcaf69bb446f541644cc0cc3d23967e266731e100a55563",
    "skills/better-accessibility/focus-and-keyboard.md": "ace66413242a31df97f1d5101bddc98d871c97716cbc936a439291ea5fda7e54",
    "skills/better-accessibility/forms.md": "ed63f7424eb1d3515e4261504467d77840317dda7c0df86c965ee334b3499589",
@@ -4021,15 +4022,15 @@
    "skills/better-colors/palette-structure.md": "55b9ff6fa3064ffc3c252c06712b4e4bbd04161b3b18f90b961412a5e420285b",
    "skills/better-colors/reporting.md": "a1bc3a334d51ae7d48da0fb5807cecd36f4446913240edb3365793527ef16bec",
    "skills/better-colors/token-naming.md": "be879f4ef883f20c16b8aac3505e04c914fef2f230c601c9dec24eb36580c02a",
-   "skills/better-interface/SKILL.md": "6bba6017fe6b0cfd72e4bed9ed7f74926634efa808f1bdff23748ac4fa94bdf1",
+   "skills/better-interface/SKILL.md": "e93f1b6e60337ccca0b7caaea9da7cc60ba9dd86b08f958e03b0d1defa23100c",
    "skills/better-interface/agents/openai.yaml": "541c5d823f474543d4f3a314a9292215f8c90c152249e72411ff3e3632cf55bc",
    "skills/better-interface/review-format.md": "21655c85833395f0a617a54ae4517e365e663aada17d8995f0b4a65cf31d2697",
-   "skills/better-layout/SKILL.md": "fda25f5dddffd5a7a0aa9252f76269f9602d9384bf0925a356c2431408e308d6",
+   "skills/better-layout/SKILL.md": "59599cf3087df9c28a1ada41532274704d16b23a1486288609b8943516d5be31",
    "skills/better-layout/agents/openai.yaml": "d51a2ca663c9331f8f23b7a550e5f848f83e81361e21f2280cc384e99cc0ae15",
    "skills/better-layout/grouping-and-alignment.md": "30057c8e063a3cb0026140c82de0c16510080c7c306876caacba1206d7e2483a",
    "skills/better-layout/reporting.md": "57a9bb08903f5005254bf09fe771f72f383934272812c21160041a704121ee3c",
    "skills/better-layout/spacing-and-adaptivity.md": "c823e1c53250497047d809206e4866a3de2ef335612e41d7422bde16cc6c93c0",
-   "skills/better-typography/SKILL.md": "7fce3adcd4e8429c59eabef8726b06d2211fff8d7370f380e32906df0a6b0c2c",
+   "skills/better-typography/SKILL.md": "b3ce4facc8a774baa5b456d1f1958e91bf4b12e489789ea4308a25dcdc9bf2b4",
    "skills/better-typography/agents/openai.yaml": "01d8b8f835112e97ba0e4d97a07775e919407ebb5aab0cce9b4fa280e66b19b8",
    "skills/better-typography/choosing-fonts.md": "a5c1691ebc68d09f094638ed7133a4cd67d1a58e5d59f8cebce2562540ac1b46",
    "skills/better-typography/css-cheat-sheet.md": "c8af752864f740583c183d1793bc6049c5e11475f4ddca16d325429f3578e3f8",
@@ -4038,14 +4039,10 @@
    "skills/better-typography/spacing-and-sizing.md": "c82c5951893945c50acdb631fbf73a70bddc855ff56e58ded55012199fb7c183",
    "skills/better-typography/variable-fonts-and-opentype.md": "bd590fbb10001e69771ddfd0eaec656d72de04eaccba45cae769dcc8c7e4963d",
    "skills/better-typography/wrapping-and-punctuation.md": "db373af9d72884eb5d84cd7ad89a7e62519fe3e6cb03c7aa15f1bae818072e2c",
-   "skills/better-ui/SKILL.md": "faedbe348e34638fa89c839e7473108f6912d7c94810b3205d8f0098da6669ae",
+   "skills/better-ui/SKILL.md": "6e1d613ee9f8fd03cbfb9eb321252855779e88cff2c941e18f84b31f35faaff1",
    "skills/better-ui/agents/openai.yaml": "799e0b58bded32edf5c217f97e08c364660ec24234978b2e3f7dee1868bea871",
-   "skills/better-ui/animations.md": "6d05551916736876b64ce708d19557b95d19438577c5fe3e273f30b257355637",
-   "skills/better-ui/enter-exit.md": "914c0947672d8851bdd1d71656640d411cef268772926540bd273db67ee628cd",
-   "skills/better-ui/icon-transitions.md": "f03eb87eba72ffc447d25b05ee5204c77a90d5eb8568aa443c7067d8eae09f1d",
-   "skills/better-ui/icons.md": "eac6195bb5d5ba77efd6d9d7751295a7b0d4dadf6a68146639091b02f1e3dbbd",
-   "skills/better-ui/performance.md": "db59db84ab371903b7ebdb69f1e92bdc0f2e041331d9dd65d312e4d1b5d449d6",
-   "skills/better-ui/reporting.md": "7030d8d2dc6360478a782e8371ecf0dc798c6c9fb5fe9aa3634b27574272d9fe",
+   "skills/better-ui/icons.md": "8c927f41001a774665ecf8aebfec9757538c8788f482b6258e2f41565efa3cb5",
+   "skills/better-ui/reporting.md": "ef99d565552b45172c69410e073bbe1a198ef8160aa9b50b37fb661d440025d0",
    "skills/better-ui/surfaces.md": "036f4957885754ed93f3256790c8b6d6280d068f5fb2cad7554d99acacd2930e",
    "skills/better-writing/SKILL.md": "4e7f745ae1f6def19da579cbaa69f19d26ce7c5200d21e7bd14eb4e88fae51ce",
    "skills/better-writing/agents/openai.yaml": "a5aec7e0cbc87930962f139eff4341dcf87e83fd19b9447e3f614db2bc71de67",
@@ -4054,7 +4051,7 @@
    "skills/break/SKILL.md": "bd8bc31723eb0a1c927edec30757cb16fb99309cf9614da87dd00dd96b406f34",
    "skills/break/agents/openai.yaml": "e3e6b1a83f90763fa8cb166b4ec483ebc78fc84311fb0594d29f03d8ef76eddc",
    "skills/break/scenarios.md": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
-   "skills/build-design/SKILL.md": "d51cb44f594de7248340e9369c767f70a955483ba77f9976697cdbaf2f073a68",
+   "skills/build-design/SKILL.md": "91f92c3dc0a85b882ac83daabd09b47e05770a4f6c8348b1ae830606cf126664",
    "skills/build-design/agents/openai.yaml": "858842fc00a7d7f086201a02c33af730d41fb00fab1ace92b7109fd8ba23f518",
    "skills/build-design/figma.md": "998359b07687762f0d4a7dc320b76fb6e985ff1e468f91ef1a14e4bcaac18942",
    "skills/explain-interface/SKILL.md": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
@@ -4063,7 +4060,7 @@
    "skills/explain-interface/from-an-image.md": "b1a4b003815ad905242dabb099988932f0b5bf9441150758965cba0f073b76cf",
    "skills/explain-interface/no-browser.md": "8d48861e81ff1c1634a9d0f0ffa5108aef78087b32e3f60a16edd46d864e2b17",
    "skills/explain-interface/read-the-system.md": "d21bcb5a9a1176a31a19b32f223a719326b9ad813db6f004f9a3e170bede7787",
-   "skills/interface-review/SKILL.md": "3c38b563ec39f709d76480a26952a158a169659449526f6f2c2e2837bf6c8fd2",
+   "skills/interface-review/SKILL.md": "57dbc1dae8b3386a4dbd8ff8b359af255af4b9d3abea905a8959544a10b8efea",
    "skills/interface-review/agents/openai.yaml": "c8bb068bbd40629f03d7d4c0284924f8df1dfdf7f1a7b0fabb88b265202fa23f",
    "skills/interface-review/removed-signals.md": "85179b4e434cd2d2dbe68c0253e66d7f433a878147bfcdad8b904024c9e583cb",
    "skills/interface-review/scope-resolution.md": "7210fb22a51b5b08a2868866c65053dc214c61eb542a000f70464aebc2fba446",
@@ -4075,14 +4072,15 @@
    "skills/variant/picker.md": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34"
   },
   "known_upstream": [
+   "skills/better-motion",
    "skills/upskill"
   ],
   "license": "MIT",
   "repo": "jakubkrehel/skills",
-  "updated_at": "2026-11-18 19:26 UTC"
+  "updated_at": "2026-11-19 19:31 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "0c0c49bc168e648dbaf9c8c080474de0b3a941b6",
   "files": {
    "CHANGELOG.md": "f4bce68c4bfe964c13a30e648c7d0fff56ed692f1a1f121a16842d2876ddcd83",
@@ -4409,90 +4407,90 @@
   "updated_at": "2026-11-05 18:46 UTC"
  },
  "impeccable": {
-  "checked_at": "2026-11-18 19:26 UTC",
-  "commit": "d41d9860b0094dcb68030657da63461212835aaa",
+  "checked_at": "2026-11-19 19:31 UTC",
+  "commit": "b49177d32788f2dc585c42831d845dacf1ebed2c",
   "files": {
    ".claude/agents/impeccable-asset-producer.md": "381ce24761836e932444fa2d9642c5c7d343c8540ddbb9cb80ef6a6af279b3bc",
    ".claude/agents/impeccable-documenter.md": "7ee1d7ca89bff39beca45de80ec388dbaebe904a836f7f2c62de70d4ca707009",
-   ".claude/agents/impeccable-finish-reviewer.md": "d675ae0bb998f88e58a9726c3a893ff6432ea0c9cab2188d5a5d452635494d92",
+   ".claude/agents/impeccable-finish-reviewer.md": "2ac34bc0806f167f7b0103a93b21b322e3e20ac7c0764a1473628d2cac61c426",
    ".claude/agents/impeccable-manual-edit-applier.md": "6e606d157f08dac40f2cebec5cda01ea8fd28809cf2985d3db66875610f5e398",
    ".claude/agents/impeccable-motion-reviewer.md": "4f64705713e7fcde30f18ada24eece89a424df25e3f7d29b2231a31bb958d50c",
-   ".claude/skills/impeccable/SKILL.md": "92fd4f279b4114ef5ebabbe986a2a54e8262e93e0bbc16554e73f57c7747a95e",
+   ".claude/skills/impeccable/SKILL.md": "4016dcce91b3eca06756ac7e03c7b644ea6a1278163e1202b8b3034c06e4664e",
    ".claude/skills/impeccable/reference/adapt.md": "ea9dfb9576f5f6566d488e3f2b9b3770e974e2b4b05d6e69724898f1e16845dd",
    ".claude/skills/impeccable/reference/adapt.native.md": "acbeecbcbf6558d438ed4aec6b85027d72587bf181b8ae12d4dfbe8dce62e9a5",
    ".claude/skills/impeccable/reference/android.md": "43780abcf10ac12a569d98001ae38af2b337727a0f7ce66268246ac1d54b5d34",
    ".claude/skills/impeccable/reference/animate.md": "bcfeac70dae3a796e79eb126a44d0b41bd7235a0a734159ebd3adbfcec37b1f8",
-   ".claude/skills/impeccable/reference/audit.md": "e1637178d0b7588f0c07ff3bfcb93a16eed2917ffee3031dd93d74e9acb26e3a",
-   ".claude/skills/impeccable/reference/audit.native.md": "b4ad84428c37b60c6fc6d2e5f517746593c654a7b448176ff8f0d0d259b0f45f",
+   ".claude/skills/impeccable/reference/audit.md": "dc714231c614c13acea309ed315068dc6ab8e62b3db35cf2890a0c9c97fedcf0",
+   ".claude/skills/impeccable/reference/audit.native.md": "d47edf03d1a53910fdf89860c31eb847af2e3fbe479dc23caf732673fd49b709",
    ".claude/skills/impeccable/reference/bolder.md": "bd217b7bc011c2346ce94902071ecd940aa017e8f563539e31c1ad38ce256401",
    ".claude/skills/impeccable/reference/clarify.md": "6c382f8283756e8a693d832b750f7e4cbff1ca5bdcc3825b2b4ef4da9f21876a",
    ".claude/skills/impeccable/reference/colorize.md": "d1fbd55074abb2251bdaa03749d34acc42c38e46e47549f18f5848df57d43c42",
    ".claude/skills/impeccable/reference/component-review.md": "6996198844d6459392b816e7bfb7d256f07b6884614e88069ffab5544b4886df",
-   ".claude/skills/impeccable/reference/craft-floor.md": "ba01bbab98671095b76c2170324abdcceb55fd39fd281bc46daddc2b3c2b0753",
+   ".claude/skills/impeccable/reference/craft-floor.md": "9ed569418edc4a348ca6ac85cc2436e95e9ebfa624cabd352b809b7c1f2ff8b7",
    ".claude/skills/impeccable/reference/craft.md": "9205e222bc6565b37fb504ceec93233c2d2a456802b69d16e6b1c44723907c4c",
    ".claude/skills/impeccable/reference/critique-rubric.md": "ba070404e3f61c62b40c25a5d096b803825408de12a0fbb559b1587c89692866",
-   ".claude/skills/impeccable/reference/critique.md": "f43ac6e546486dcd73b8855eb001ef4968534dfc94f2edfbdb1f1c90323dbcb5",
+   ".claude/skills/impeccable/reference/critique.md": "b63cb887b97a26bce304f4f266e04b3c2efa739c648b5900eb9e69f938f809f4",
    ".claude/skills/impeccable/reference/degraded/asset-producer.md": "153936d4487fd9bf495f50b96c0c4fee258144583192d7f040310fc08384a02d",
    ".claude/skills/impeccable/reference/degraded/documenter.md": "5a175082e1357b20cbf25c965e18b520700aa441d9fdb76757cc43fc590b9305",
-   ".claude/skills/impeccable/reference/degraded/finish-reviewer.md": "cb47276e5195f65b42c54b693f8f9b2078f93b6aa55a301ada797790df2bf37b",
+   ".claude/skills/impeccable/reference/degraded/finish-reviewer.md": "905e318d3664baae7ac01afa8d52446e8e9aff92ed549a582cd71f6569411ae9",
    ".claude/skills/impeccable/reference/degraded/manual-edit-applier.md": "357b19acc7ef688c337a4f020633a49db23c84620b13636f9ff20d3ab934df1a",
    ".claude/skills/impeccable/reference/degraded/motion-reviewer.md": "363003cd992724abdec08c30d54e79e33829d1938b5f875a7770be98d15e043f",
    ".claude/skills/impeccable/reference/delight.md": "56500b1f9d2fcec8324d7f448d813048b5831a46d3feeb1055bd3eb17ec3660f",
    ".claude/skills/impeccable/reference/distill.md": "a5702d46b5a17a38c555044439c2e76585848ee8c5a74b8470fa5de06aaa03f8",
-   ".claude/skills/impeccable/reference/doctor.md": "5b89d4b4c2acd125bc6a4f4839b2312b8b95ea94160960e987163c714dd98f54",
+   ".claude/skills/impeccable/reference/doctor.md": "729b2d4779652b14f0dd8ac4c128583ab54199a3c6fa35936ba74a8653ef98a9",
    ".claude/skills/impeccable/reference/document.md": "6a729b362d2a63ba7a17d14a122fa35963d0cf5923121204cc59708edd004a7b",
    ".claude/skills/impeccable/reference/extract.md": "29044a3df6598786b2f9023af89aa6683b9745b7cd9a0c89386da2d0e50e0166",
    ".claude/skills/impeccable/reference/foundations.md": "8be7197e4b7c1d858b3c350827e7ae79cb598186a034ece2fc26f62e3d48f990",
    ".claude/skills/impeccable/reference/generate.md": "b174077972447e829db722dacbf6d6bb643184832b42686f17492348bab9bfe8",
    ".claude/skills/impeccable/reference/harden.md": "98244db22d907a134cac0c94ffb829ba480ba61cfac67ae155ac2f46444da7c9",
    ".claude/skills/impeccable/reference/hooks.md": "d9bbd42c311ed28c38be9fc4dc460a23ed6042c6b8911cdb73df8b746da27718",
-   ".claude/skills/impeccable/reference/init.md": "72dfec68faf7fc58097d18961e7e1650af099b257a3b241bea813b00beae37a0",
+   ".claude/skills/impeccable/reference/init.md": "2d82b692fb2b427be1e2b2d188d3fe93e3353693508c4d05234fb9f3112a5d45",
    ".claude/skills/impeccable/reference/ios.md": "40c87038b5f75147a5952a96237acf312a327bf70c1bcd8e0a5f064625ae9668",
    ".claude/skills/impeccable/reference/layout.md": "64802d14087fc96b38ef3881fef8098b36068d07f3b942031637b18eef3dd2af",
    ".claude/skills/impeccable/reference/live-setup.md": "ceddbcf4515c3c45f5a2bb57c188a620f0cf8001f2288df73c58d530f895689e",
-   ".claude/skills/impeccable/reference/live.md": "d8f00ee1b3d04304ce91b0981389915cdeaf642364107e9b865f15a00221757e",
+   ".claude/skills/impeccable/reference/live.md": "c8d7111a36772aa47f277a0dfdd421c86a53041873632426b94642b82533dca0",
    ".claude/skills/impeccable/reference/mode-operate.md": "7a52dd7a94ee75f6ae89542c86a1b6e1d306812b16e0d9dbf12d4acad44d148b",
    ".claude/skills/impeccable/reference/mode-persuade.md": "21e78c8a77badb3f83290cd4577ed3b24bd4dd3b57136d7da75733d4f3ee9ac0",
    ".claude/skills/impeccable/reference/mode-read.md": "a569989e6a3d6453b4c45e9474e162a15cc54e11732ac6baa7990a6e7cccc0b5",
    ".claude/skills/impeccable/reference/new-work-comp.md": "ede0fee36507bc143bf4864bb4bf2e3e32b364c63444d9a4b2e390e0fc5a1872",
    ".claude/skills/impeccable/reference/new-work-world.md": "29e18324ff2b125fddd148fc05d46014fc6405962e26bdf15f4e8997f077eb38",
-   ".claude/skills/impeccable/reference/new-work.md": "5c501b9f8ebc957a7641bb3dfcf5171c13daef9ac491fef4e0f40868cdb34bd6",
+   ".claude/skills/impeccable/reference/new-work.md": "710c72eab7a172a9edd8f8b6ae1de2c8783e8f6cb0dddc58937d7ff0e8d6c876",
    ".claude/skills/impeccable/reference/onboard.md": "9fa9e5cd55b00cc17ddf0d8053b8f238ad833d0d4527933257d9f1622833c8de",
    ".claude/skills/impeccable/reference/operate.md": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d",
    ".claude/skills/impeccable/reference/optimize.md": "7ecc07226fa99b198eba37ea57f3c3e2465a80cc65093f0098dc888f7ee27273",
    ".claude/skills/impeccable/reference/overdrive.md": "3dcde0d10ba7098b8fc10557663ec10af3505d72cb78282e9a9168ade0ef1009",
-   ".claude/skills/impeccable/reference/polish.md": "b8d49a3cab3428d9f351502e9c2c5802cef187e0d2af626ef3e1cd1837fd06bf",
+   ".claude/skills/impeccable/reference/polish.md": "48b1b024c2c2d168197570382ecd7e19e5c25983fc7c014ee79d53de5517037a",
    ".claude/skills/impeccable/reference/quieter.md": "51592b206ae91048701d221391a1ecd9011c6a103ecf8f2c29d7c0896198ecf5",
    ".claude/skills/impeccable/reference/region-map.md": "4ea8e05d0f88d24f182ad554da84317f90b9730e29fad262143ddf423a1f8645",
    ".claude/skills/impeccable/reference/routing.md": "56285b28b0ffe471761c2ad062d3f933ed2346ca1b617f1323a30fed99a1a852",
    ".claude/skills/impeccable/reference/shape.md": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23",
    ".claude/skills/impeccable/reference/typeset.md": "1c6cf66f66276da34b52f059cf64bfbb1e4020bab27cc3fd11ce399e58edcb8f",
    ".claude/skills/impeccable/reference/visualize.md": "3138cd268dd74f2726c480b4172742a36eb84b4a0ca9b55b644b409491389e6c",
-   ".claude/skills/impeccable/scripts/VERSION": "19408c72bbb91a1f1e134b12c4366af698302c129d3a789800be552c92e77dc7",
+   ".claude/skills/impeccable/scripts/VERSION": "246a6387221ae9ed8e7b362df6959a816c0a2a1e8f98481beec0cecfe3976486",
    ".claude/skills/impeccable/scripts/command-metadata.json": "c6dcbeed7f13152205ca022c8f24d08683770835083f0a7325261c1c2d5f215c",
    ".claude/skills/impeccable/scripts/data/font-index-failures.json": "835f19a0a3812f3652dd6979a2ce5597f654fd01f26e1b420b92d5f42b997ce4",
    ".claude/skills/impeccable/scripts/data/font-index.json": "47edbdfaf27073c47033d1ac7dfee881be49e2dcbda7671d1157300481dde6da",
-   ".claude/skills/impeccable/scripts/engine-checksums.txt": "fef1eacc1167f48a5a958376f55067353cc813643b4dbc67426e1de9a0847fd1",
+   ".claude/skills/impeccable/scripts/engine-checksums.txt": "1c5f99b7551d026f9aeccc4e34bf082ce0da663a6e0c790912b6bb3d8f3c9d19",
    ".claude/skills/impeccable/scripts/impeccable": "9a82c1d8a5fc34b0edb3040cf25098c7c5a662e703118e99f96bacd543ed6d68",
    ".claude/skills/impeccable/scripts/impeccable.cmd": "34ce99f691c2380e27108915fe921e3c716bbe532d7a7cfce3b7f0d5c68dccdd",
    ".claude/skills/impeccable/scripts/live-browser-dom.js": "4b379aff87ce0f485008a2b6a0dc711d00a869f5cf0ec2459279d6364fbf0c9e",
    ".claude/skills/impeccable/scripts/live-browser-ignores.js": "ba8905ab865fde5162e34fc17eb80eba26cc990b319b14a6eed6ca89fd491897",
    ".claude/skills/impeccable/scripts/live-browser-session.js": "e042339a54d4521fc47555b602013ed5b51410ec9d7d8878d99a526f5f237f68",
-   ".claude/skills/impeccable/scripts/live-browser.js": "718d8cef65b92222219a45ffd024230ffad7273ff368f80e41e9f4d56d3cbd96",
+   ".claude/skills/impeccable/scripts/live-browser.js": "994b06b63602c99d87206cfd9184a6f40bc7fc7881e92fc652c9eee0c055a36d",
    ".claude/skills/impeccable/scripts/modern-screenshot.umd.js": "bb36665889124a0b6e15f16045265737449c3bdcf2712cdb08af3cfa01563e2b",
    "LICENSE": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
-   "NOTICE.md": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb",
-   "README.md": "4a033dceedd19e7edf86b28250fc65c9c52115f18faaea791c327da2681237ab"
+   "NOTICE.md": "01bf53e5d24d64e19e9e1c33b24c37cef0d314323df7bf678c6ba22d4528a115",
+   "README.md": "24ae9abcfbf91338ea6ae6b8ba9e3686e097f7638f99acabb7f7fa803a9c0a04"
   },
   "known_upstream": [
    ".claude/skills"
   ],
   "license": "Apache-2.0",
   "repo": "pbakaus/impeccable",
-  "updated_at": "2026-11-16 13:33 UTC"
+  "updated_at": "2026-11-19 19:31 UTC"
  },
  "knowledge-work-plugins": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "b4c9a4e1de4b42868b74a6fe30ac766f64e43a3e",
   "files": {
    "LICENSE": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26",
@@ -4523,8 +4521,8 @@
   "updated_at": "2026-11-18 19:24 UTC"
  },
  "mattpocock-skills": {
-  "checked_at": "2026-11-18 19:24 UTC",
-  "commit": "5863806dd4e15c63174bee4e7515a4256792ecfa",
+  "checked_at": "2026-11-19 19:29 UTC",
+  "commit": "abeeaf95660ba9e8b7c753eb38f441ca707a8823",
   "files": {
    "LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
    "skills/engineering/improve-codebase-architecture/HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
@@ -4534,11 +4532,11 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "mattpocock/skills",
-  "updated_at": "2026-11-12 18:57 UTC"
+  "updated_at": "2026-11-19 19:29 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-11-18 19:24 UTC",
-  "commit": "2e1f3c052dd70c60b598413e2fc5d7704d9e9896",
+  "checked_at": "2026-11-19 19:29 UTC",
+  "commit": "d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
    "skills/motion-design/SKILL.md": "c639050706d07e62501db06c90c644d24d4815d5c05908b64771e1bf775778d7",
@@ -4554,7 +4552,7 @@
    "skills/motion-design/patterns/entrance-exit.md": "70b3fc3a8d58ebe58e293e643b78fd13750d9c8ef1c8fc5fe85e52f7378cbd91",
    "skills/motion-design/patterns/multi-element.md": "46c8da91843c593deb763a4a7fa32849bdaeb7a7ecd4d559e3b21bcc976f2c46",
    "skills/motion-design/patterns/state-feedback.md": "dac86388c2d8fcdfc2f194b4f8877caedcdc010df9ce29d27dfc99d08cf8c60e",
-   "skills/motion-design/reference/export-and-render.md": "ea5708e1a253da752c3298942d05d156c0b131e5c6111b68852ebde27e51fb4a",
+   "skills/motion-design/reference/export-and-render.md": "355468ea4aef4679b18d98c379db5806c07036165e0f63eae978607e89c4ab1b",
    "skills/motion-design/reference/property-selection.md": "053d830795fc824fed27618fbd18084207af6aeed55b73c0a6e1d5665de894ae",
    "skills/motion-design/reference/quality-checklist.md": "c11bf193b700d9c9ebc5d871f1d5f193bccc441c4eccc0509b53a40d6e8dc558",
    "skills/motion-design/reference/timing-easing-tables.md": "e478f3b99c4cac3f96eca008e20f8808d4cfae165f5799f260092baf9b6ebcff",
@@ -4563,10 +4561,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "LottieFiles/motion-design-skill",
-  "updated_at": "2026-11-18 13:25 UTC"
+  "updated_at": "2026-11-19 19:29 UTC"
  },
  "ponytail": {
-  "checked_at": "2026-11-18 19:25 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
   "files": {
    ".claude-plugin/marketplace.json": "5c17acc0d30732735a7bf725214b8db9f8a1bb3485233744c7a5e0ca1d7434e8",
@@ -4613,17 +4611,17 @@
   "updated_at": "2026-11-04 12:51 UTC"
  },
  "rea": {
-  "checked_at": "2026-11-18 19:24 UTC",
-  "commit": "b236bcfe34a006fa61e6df0924ba6b4784870b09",
+  "checked_at": "2026-11-19 19:30 UTC",
+  "commit": "b5a9d487344f21e299df8928c37dcd88160ab1b3",
   "files": {
-   ".agents/skills/reverse-engineer-anything/SKILL.md": "f4a725ddb3b5d3afe757a20e204760463f9305677f3204ce11bbe17aa7c5b754",
+   ".agents/skills/reverse-engineer-anything/SKILL.md": "a72466a84419572dfed31e55a9d99f0b3d6f3cdfcea4e1cd34d4a376f4ea64f7",
    ".agents/skills/reverse-engineer-anything/references/android-applications.md": "4fe894d463daaf9175192633186160fc50fb6718b5cc8186bf853377a9f72e7f",
    ".agents/skills/reverse-engineer-anything/references/connection-and-recovery.md": "b5654bf13171b6fbe0dadaeccb48764de504ea560b3c8d55cf6831838c0fa776",
    ".agents/skills/reverse-engineer-anything/references/desktop-build.md": "7e0b1ab7ff7372d39681bc88e924b4afbabd95091d13aba72928f55668a82b17",
    ".agents/skills/reverse-engineer-anything/references/environments.md": "1be68bc9b15e5ace9b731a64125b64eb457ab0276c7961a41b6fa1240d179007",
    ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "ea6eaf1d11bb6d663503017aabc18e4c82b9f1f0277c35fc41ca63dda26ae602",
-   ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "4d1671a90634320724eb61b53e828c7faaadca77721798cef40e420357f5ff18",
-   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "7a6170cc079ac116ac8566d06c4e376f8334427f1aff4145bf7e29d1d66b5f4d",
+   ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "2e264fbbb39030affa692553e603f6a28bee0cc822456ebfded836936615fb0c",
+   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "b60bae4ac69f0b4d286d6740a36a387347f88238b624efa200de78919930b79a",
    ".agents/skills/reverse-engineer-anything/references/runtime-observation.md": "ff7ecd3d76c264e641804e025f6ec35d1cfe8b8aba006b226061ed71842a3c12",
    "LICENSE": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b"
   },
@@ -4635,10 +4633,10 @@
   ],
   "license": "MIT",
   "repo": "morluto/rea",
-  "updated_at": "2026-11-18 19:24 UTC"
+  "updated_at": "2026-11-19 19:30 UTC"
  },
  "reanimate": {
-  "checked_at": "2026-11-18 19:26 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "3f7a55a2986a84ca2173e86ee9127eefe31d046d",
   "files": {
    "LICENSE": "6bce4169a631cbe6d18089ed7e15d7ffe2afd736272d0ed9dc0e40e7f98d6f41",
@@ -4669,8 +4667,8 @@
   "updated_at": "2026-11-12 20:42 UTC"
  },
  "ruflo": {
-  "checked_at": "2026-11-18 19:24 UTC",
-  "commit": "edf7ddb3fefa15bca87986225b5a5ef7d4d059e5",
+  "checked_at": "2026-11-19 19:29 UTC",
+  "commit": "f8267e76d91eb75e4e66735200e1d23112f05484",
   "files": {
    ".claude/commands/agents/README.md": "52f50d320ed2058cc815a836530e43cba4511df56eb9edac8837b922339fcbd7",
    ".claude/commands/agents/agent-capabilities.md": "1fa62c27d0e4b9969e7394c1cbbcfd92ecb95750f66ea67204ad10de7b9a7223",
@@ -4892,10 +4890,10 @@
   ],
   "license": "MIT",
   "repo": "ruvnet/ruflo",
-  "updated_at": "2026-11-18 19:24 UTC"
+  "updated_at": "2026-11-19 19:29 UTC"
  },
  "scroll-craft": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:29 UTC",
   "commit": "75d81f74e83692add18cd7a8a8e078b8a887a579",
   "files": {
    "LICENSE": "dd471a27eca72488a53e6ea6fbe9392d81aa3f01e950e63fe328affb2ddfa6e3",
@@ -4930,7 +4928,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "security-audit": {
-  "checked_at": "2026-11-18 19:25 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
   "files": {
    "LICENSE": "e598e694aa506650c7192d5ea3be0e50aca0d356ea00551c53429f0b01eb6391",
@@ -4961,7 +4959,7 @@
   "updated_at": "2026-11-04 12:51 UTC"
  },
  "superpowers": {
-  "checked_at": "2026-11-18 19:24 UTC",
+  "checked_at": "2026-11-19 19:30 UTC",
   "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
   "files": {
    ".claude-plugin/marketplace.json": "04015bf36c0c8e475e61509f4c0c2e72838abb1b6ab70a2c44f04be4317f79fa",
@@ -5074,7 +5072,7 @@
   "updated_at": "2026-11-04 18:40 UTC"
  },
  "teardown": {
-  "checked_at": "2026-11-18 19:26 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "a91262ac1109051e014662d42ecb0b7bc1f113b1",
   "files": {
    ".gitignore": "63df382d21483b30e255f410358cc24fb6052643287fe25df0ea270bd9ea79e8",
@@ -5154,7 +5152,7 @@
   "updated_at": "2026-11-06 20:07 UTC"
  },
  "text-to-cad": {
-  "checked_at": "2026-11-18 19:25 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "2909a73bba04530e80b724928af8c2386752e88b",
   "files": {
    ".claude-plugin/icon.png": "8c44d41c85e0131a3daf2ae58ec1bef6eb54f8731db665dea5dc7c19524aacbe",
@@ -5250,7 +5248,7 @@
   "updated_at": "2026-11-09 21:27 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-11-18 19:26 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
    "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
@@ -5274,7 +5272,7 @@
   "updated_at": "2026-10-22 13:45 UTC"
  },
  "ub-mode": {
-  "checked_at": "2026-11-18 19:26 UTC",
+  "checked_at": "2026-11-19 19:31 UTC",
   "commit": "3da62bf3fcfd2034de41f30d920d2739e566171f",
   "files": {
    "LICENSE": "cf496364b10d049ba2b04ac4c04f29ab1a34b54be96209cb32666fac9eba6bf3",
