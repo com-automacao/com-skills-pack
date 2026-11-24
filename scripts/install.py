@@ -37,6 +37,7 @@ GROUPS = [
     "reanimate/skills",
     "impeccable/.claude/skills",
     "ecc/skills",  # Pack B
+    "video-cleanup/skills",  # Pack C
 ]
 # skills que ficam na raiz do proprio pacote
 ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown", "ub-mode": "ub-mode",

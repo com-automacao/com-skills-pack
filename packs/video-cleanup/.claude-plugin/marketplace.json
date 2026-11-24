@@ -1,0 +1,15 @@
+{
+  "name": "video-cleanup",
+  "description": "Video and speech-audio cleanup tools for Claude",
+  "owner": {
+    "name": "Mehdi Ksibi",
+    "url": "https://github.com/Mehdi-Ks"
+  },
+  "plugins": [
+    {
+      "name": "video-cleanup",
+      "source": "./",
+      "description": "Fix noisy, quiet or lopsided speech audio and low-quality picture in videos, and add simple branding."
+    }
+  ]
+}

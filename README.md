@@ -483,6 +483,7 @@ Um zip à parte (`skills-video-pack-C.zip`) com as skills de vídeo, para quem s
 |---|---|---|
 | `video-shotcraft` | [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) (Apache-2.0) | Vídeo de produto em Remotion a partir de capturas reais do site: 124 receitas de tomada, modelo pronto, sincronia com a batida, efeitos sonoros do Freesound e editor no navegador. |
 | `effects` | [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) (MIT) | 51 efeitos em vídeo de rosto falando (Reels, TikTok, Shorts), com rastreio do rosto; Python + ffmpeg. |
+| `video-cleanup` | [Mehdi-Ks/video-cleanup](https://github.com/Mehdi-Ks/video-cleanup) (MIT) | Limpa o áudio de fala (ruído, volume baixo, estéreo de um lado só), melhora imagem recomprimida e põe logo, tarja com nome e tela final; Python + ffmpeg. |
 | `video-editing` | ECC | Corte e montagem de gravação real com FFmpeg e Remotion. |
 | `remotion-video-creation` | ECC | Boas práticas de Remotion (vídeo em React). |
 | `manim-video` | ECC | Vídeos explicativos com animação técnica (Manim). |
@@ -493,11 +494,14 @@ Um zip à parte (`skills-video-pack-C.zip`) com as skills de vídeo, para quem s
 | `taste`, `taste-distillation`, `taste-application`, `tasteforge-video` | ECC | Direção de estilo para clipes curtos: mede vídeos de referência num pacote de estilo e aplica em material novo. |
 | `motion-design` | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) (MIT) | Princípios de movimento para motion graphics, Lottie e vídeo. |
 
-As skills do ECC e o `motion-design` também estão no Pack A; o zip C só as reúne. `video-shotcraft` e `effects` ficam fora do zip A.
+As skills do ECC e o `motion-design` também estão no Pack A; o zip C só as reúne. `video-shotcraft`, `effects` e `video-cleanup` ficam fora do zip A.
+
+**Créditos:** nenhuma destas skills é da Com Automação. Cada uma pertence ao autor indicado na tabela, mantém a licença original (arquivo `LICENSE` na pasta dela) e aparece em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). O pack só reúne as cópias para instalar nos computadores da equipe; a versão oficial e as atualizações ficam nos repositórios dos autores.
 
 Depois de instalar:
 
 - `video-shotcraft`: Node 20+ e ffmpeg; `npm install` em `template/` e em `workbench/` na primeira produção. O arquivo da skill é em chinês (o Claude responde em português). Fica fora do pack a pasta de músicas de fundo (`assets/audio`, licença Mixkit), as notas internas e as imagens do README.
+- `video-cleanup`: ffmpeg e Python 3.9+; `python scripts/setup_tools.py` na pasta da skill instala numpy e Pillow e baixa o DeepFilterNet (~30 MB). Se o plugin oficial `video-cleanup` já está instalado, rode o instalador com `--skip video-cleanup` para não ficar em dobro.
 - `effects`: ffmpeg e Python 3.10+. No Windows, crie o ambiente à mão na pasta da skill: `python -m venv .venv` e `.venv\Scripts\python.exe -m pip install -r requirements.txt`.
 
 ## Fora do pack

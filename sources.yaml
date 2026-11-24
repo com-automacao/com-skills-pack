@@ -793,7 +793,7 @@ sources:
       - README.md
       - SKILL.md
 
-  # PACK C (video): video-shotcraft e video-effects, mais as skills de video do ecc e o motion-design.
+  # PACK C (video): video-shotcraft, video-effects e video-cleanup, mais as skills de video do ecc e o motion-design.
   # Ficam fora do zip do Pack A; veja o README, secao "Pack C".
   video-shotcraft:
     # Videos de produto em Remotion a partir de capturas reais; SKILL.md em chines.
@@ -840,6 +840,23 @@ sources:
       - scripts
       - fonts
       - models
+
+  video-cleanup:
+    # Limpa o audio de fala (DeepFilterNet), melhora a imagem e poe logo, tarja com nome e tela final.
+    # Primeiro uso: scripts/setup_tools.py instala numpy e Pillow (pip --user) e baixa o DeepFilterNet
+    # do GitHub conferindo o SHA-256; ffmpeg so com --install-ffmpeg.
+    repo: Mehdi-Ks/video-cleanup
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - README.md
+      - PRIVACY.md
+      - requirements.txt
+      - .claude-plugin
+      - skills/video-cleanup
 
 # Ajustes locais aplicados por cima da copia upstream a cada sync.
 # Campos do frontmatter do SKILL.md, e _append: secao acrescentada ao fim do SKILL.md.

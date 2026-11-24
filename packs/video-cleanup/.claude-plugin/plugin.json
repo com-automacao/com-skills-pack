@@ -1,0 +1,17 @@
+{
+  "name": "video-cleanup",
+  "displayName": "Video Cleanup",
+  "version": "1.0.1",
+  "description": "Clean up speech audio (AI noise removal, loudness, stereo fixes) and picture quality in talking-head and demo videos, and add a logo watermark, name lower third and end card. Runs locally in Claude Code; needs Python and ffmpeg (Windows, macOS, Linux).",
+  "author": {
+    "name": "Mehdi Ksibi",
+    "url": "https://github.com/Mehdi-Ks"
+  },
+  "homepage": "https://github.com/Mehdi-Ks/video-cleanup",
+  "repository": "https://github.com/Mehdi-Ks/video-cleanup",
+  "documentationUrl": "https://github.com/Mehdi-Ks/video-cleanup#readme",
+  "supportUrl": "https://github.com/Mehdi-Ks/video-cleanup/issues",
+  "privacyPolicyUrl": "https://github.com/Mehdi-Ks/video-cleanup/blob/main/PRIVACY.md",
+  "license": "MIT",
+  "keywords": ["video", "audio", "noise-reduction", "ffmpeg", "deepfilternet", "branding", "loudness"]
+}

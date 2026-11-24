@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-24 19:44 UTC**
+Última verificação: **2026-11-24 19:59 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -37,6 +37,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | MIT | copiado | 2 | [`3da62bf`](https://github.com/unclebob/ub-mode/commit/3da62bf3fcfd2034de41f30d920d2739e566171f) | 2026-11-09 18:18 UTC | 🟢 ok |
 | `video-shotcraft` | [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | Apache-2.0 | copiado | 16 | [`59f3e9b`](https://github.com/Vincentwei1021/video-shotcraft/commit/59f3e9b9e936ff2bce0e18446226d770a3f2f61f) | 2026-11-24 19:43 UTC | 🟢 ok |
 | `video-effects` | [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) | NOASSERTION | copiado | 7 | [`60840ac`](https://github.com/Vibha-Ramprakash/claude-video-effects/commit/60840acc7e126a5e34068276a23e912ec4c8c34c) | 2026-11-24 19:44 UTC | 🟢 ok |
+| `video-cleanup` | [Mehdi-Ks/video-cleanup](https://github.com/Mehdi-Ks/video-cleanup) | MIT | copiado | 5 | [`658cbb0`](https://github.com/Mehdi-Ks/video-cleanup/commit/658cbb0ce27648b36976912645033d84349cfe48) | 2026-11-24 19:59 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
 

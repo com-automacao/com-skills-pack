@@ -5285,6 +5285,30 @@
   "repo": "unclebob/ub-mode",
   "updated_at": "2026-11-09 18:18 UTC"
  },
+ "video-cleanup": {
+  "checked_at": "2026-11-24 19:59 UTC",
+  "commit": "658cbb0ce27648b36976912645033d84349cfe48",
+  "files": {
+   ".claude-plugin/icon.png": "29ed2f7edb7a506d1596fe9675631eaf32818ea7a0b95d4ce7f10d9998ae1dfa",
+   ".claude-plugin/marketplace.json": "58c94a30edda39cdb9860564210209f452a000e9b34cfe2a46cd0c6a65c6039c",
+   ".claude-plugin/plugin.json": "9dc03e262c71eeaf3d3195accfebec86b015d96df8b4912cda38b7a434009343",
+   "LICENSE": "9532641f36cabe60e1dec7aec91541c270c6f446d12c8f72fa39e8ca1c587ab7",
+   "PRIVACY.md": "d75852d0ab34d96165883b6ece3b42f942b3a42f19306a66e0e9e3300e182aac",
+   "README.md": "31581d4096b4a555b962847adaa81a68df69cee2c75c6fc49e923f1ab246b0b8",
+   "requirements.txt": "7606f629483995d564d511964f1fcf18fb4280b06d3a50e933a86018ab459b79",
+   "skills/video-cleanup/SKILL.md": "1b338450e1628aa88b885dad90ccc963a82777cb15e96d2f10d035c46d54d807",
+   "skills/video-cleanup/scripts/analyze.py": "22d25b8bcaaf7cf720798c23b2eac316b23f1222a29d0a575b18bf2ce475b43e",
+   "skills/video-cleanup/scripts/audiofix.py": "b22db4d14e355963ad882012a09dd8de1717afbe89e4d76274949e6aba40fc6e",
+   "skills/video-cleanup/scripts/common.py": "26d4543b91605dfdd0dd5335a2fb162b978cf39242ff1ee9ea8d8e5fab815ed3",
+   "skills/video-cleanup/scripts/extract_logo.py": "337eaaeb06ec6e2f2964da767f1b310551203e898c5cd593cb8b7b69c7e9f78b",
+   "skills/video-cleanup/scripts/setup_tools.py": "388d5c47843337d865aa5692cdc044b0801532e5a91d150a3b28437cbbaed810",
+   "skills/video-cleanup/scripts/videofix.py": "d4664edd842c6118be65b71d47d7085106f20a82477f4904b163e84667521a0d"
+  },
+  "known_upstream": [],
+  "license": "MIT",
+  "repo": "Mehdi-Ks/video-cleanup",
+  "updated_at": "2026-11-24 19:59 UTC"
+ },
  "video-effects": {
   "checked_at": "2026-11-24 19:44 UTC",
   "commit": "60840acc7e126a5e34068276a23e912ec4c8c34c",
