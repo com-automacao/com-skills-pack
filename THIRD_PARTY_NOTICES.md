@@ -35,5 +35,7 @@ licença original da sua origem.
 | `teardown` | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | MIT | [packs/teardown/LICENSE](packs/teardown/LICENSE) |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | [packs/threejs-skills/LICENSE](packs/threejs-skills/LICENSE) |
 | `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | MIT | [packs/ub-mode/LICENSE](packs/ub-mode/LICENSE) |
+| `video-shotcraft` | [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | Apache-2.0 | [packs/video-shotcraft/LICENSE](packs/video-shotcraft/LICENSE) |
+| `video-effects` | [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) | NOASSERTION | [packs/video-effects/LICENSE](packs/video-effects/LICENSE) |
 
 `packs/com-automacao/` contém skills próprias da Com Automação.

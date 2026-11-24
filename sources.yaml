@@ -793,9 +793,73 @@ sources:
       - README.md
       - SKILL.md
 
+  # PACK C (video): video-shotcraft e video-effects, mais as skills de video do ecc e o motion-design.
+  # Ficam fora do zip do Pack A; veja o README, secao "Pack C".
+  video-shotcraft:
+    # Videos de produto em Remotion a partir de capturas reais; SKILL.md em chines.
+    # Fica fora: assets/audio (24 MB de BGM Mixkit, licenca nao permite redistribuir como acervo),
+    # assets/readme (6 MB), shot-polish/ (notas internas), videos/, READMEs traduzidos e .github/.
+    # Depois de instalar: npm install em template/ e em workbench/ (precisa de Node e ffmpeg).
+    repo: Vincentwei1021/video-shotcraft
+    branch: main
+    license: Apache-2.0
+    mode: vendor
+    paths:
+      - LICENSE
+      - README.md
+      - SKILL.md
+      - .claude-plugin
+      - .gitignore
+      - package.json
+      - package-lock.json
+      - assets/lib
+      - assets/scripts
+      - assets/brand
+      - demos
+      - gallery
+      - jianying-export
+      - publish
+      - references
+      - template
+      - workbench
+
+  video-effects:
+    # 51 efeitos para video de rosto falando (instalada como "effects"). Fica fora: assets/ (so a imagem do README).
+    # Primeiro uso: scripts/setup.sh cria .venv com numpy, opencv, pillow e mediapipe; precisa de ffmpeg.
+    # O arquivo LICENSE e MIT (com uma nota sobre fontes e modelos), mas o GitHub informa NOASSERTION.
+    repo: Vibha-Ramprakash/claude-video-effects
+    branch: main
+    license: NOASSERTION
+    mode: vendor
+    paths:
+      - LICENSE
+      - README.md
+      - SKILL.md
+      - .gitignore
+      - requirements.txt
+      - scripts
+      - fonts
+      - models
+
 # Ajustes locais aplicados por cima da copia upstream a cada sync.
 # Campos do frontmatter do SKILL.md, e _append: secao acrescentada ao fim do SKILL.md.
 overrides:
+  video-shotcraft:
+    ".":
+      _append: |
+        ## Neste ambiente
+
+        - Responda no idioma do usuário (português), mesmo com este arquivo em chinês.
+        - A pasta `assets/audio/bgm/` não vem neste pack. Use a música que o usuário trouxer; sem música, pergunte antes de buscar uma.
+        - Na entrega, pule os passos 1 e 2 do fechamento (citar o autor nas redes e enviar à vitrine). Mencione o passo 3 só se o usuário editar no CapCut ou no JianYing.
+        - Publicar em rede social (`publish/upload_post.py`) só com pedido explícito do usuário, conferindo texto e plataformas antes.
+  video-effects:
+    ".":
+      _append: |
+        ## Neste ambiente
+
+        - Antes de instalar ffmpeg ou Python (winget, brew), peça confirmação ao usuário; a regra acima de "não pedir para rodar comandos" não cobre instalar programas no sistema.
+        - No Windows, o Python da skill fica em `.venv\Scripts\python.exe`, e o `scripts/setup.sh` não serve (ele procura `.venv/bin`). Faça a instalação à mão na pasta da skill: `python -m venv .venv` e depois `.venv\Scripts\python.exe -m pip install -r requirements.txt`.
   gsap-skills:
     skills/gsap-core:
       description: >-

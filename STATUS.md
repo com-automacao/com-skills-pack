@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-23 22:41 UTC**
+Última verificação: **2026-11-24 19:44 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -29,12 +29,14 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | copiado | 3 | [`ebd8654`](https://github.com/DietrichGebert/ponytail/commit/ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10) | 2026-11-22 18:32 UTC | 🟢 ok |
 | `illumi` | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | MIT | copiado | 15 | [`672ae44`](https://github.com/jakubkrehel/skills/commit/672ae44ace6aaed65b86cbb1e2fd6fbea0e79578) | 2026-11-19 19:31 UTC | 🟢 ok |
 | `ecc` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | MIT | copiado | 249 | [`4adeee6`](https://github.com/affaan-m/ECC/commit/4adeee6732a12d1540f49a4d50a38ce8c97f9a53) | 2026-11-20 19:08 UTC | 🟢 ok |
-| `ecc-full` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | MIT | copiado | 82 | [`3f14a10`](https://github.com/affaan-m/ECC/commit/3f14a103a8694e51c1df9a806217a6d0b5f7a6f7) | 2026-11-17 19:53 UTC | 🔴 bloqueado |
+| `ecc-full` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | MIT | copiado | 82 | [`3f14a10`](https://github.com/affaan-m/ECC/commit/3f14a103a8694e51c1df9a806217a6d0b5f7a6f7) | 2026-11-17 19:53 UTC | 🟢 ok |
 | `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 | copiado | 4 | [`b49177d`](https://github.com/pbakaus/impeccable/commit/b49177d32788f2dc585c42831d845dacf1ebed2c) | 2026-11-19 19:31 UTC | 🟢 ok |
 | `reanimate` | [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate) | MIT | copiado | 2 | [`3f7a55a`](https://github.com/NiazMorshed2007/reanimate/commit/3f7a55a2986a84ca2173e86ee9127eefe31d046d) | 2026-11-12 20:42 UTC | 🟢 ok |
 | `teardown` | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | MIT | copiado | 11 | [`a91262a`](https://github.com/elvarofficial/teardown/commit/a91262ac1109051e014662d42ecb0b7bc1f113b1) | 2026-11-06 20:07 UTC | 🟢 ok |
 | `threejs-skills` | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | MIT | copiado | 13 | [`0e18186`](https://github.com/CloudAI-X/threejs-skills/commit/0e181866f095b5f06d005133876e926515390d95) | 2026-10-22 13:45 UTC | 🟢 ok |
 | `ub-mode` | [unclebob/ub-mode](https://github.com/unclebob/ub-mode) | MIT | copiado | 2 | [`3da62bf`](https://github.com/unclebob/ub-mode/commit/3da62bf3fcfd2034de41f30d920d2739e566171f) | 2026-11-09 18:18 UTC | 🟢 ok |
+| `video-shotcraft` | [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | Apache-2.0 | copiado | 16 | [`59f3e9b`](https://github.com/Vincentwei1021/video-shotcraft/commit/59f3e9b9e936ff2bce0e18446226d770a3f2f61f) | 2026-11-24 19:43 UTC | 🟢 ok |
+| `video-effects` | [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) | NOASSERTION | copiado | 7 | [`60840ac`](https://github.com/Vibha-Ramprakash/claude-video-effects/commit/60840acc7e126a5e34068276a23e912ec4c8c34c) | 2026-11-24 19:44 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
 

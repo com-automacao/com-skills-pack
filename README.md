@@ -475,6 +475,31 @@ Não é instalado pelo `scripts/install.py`. Use o próprio ECC, a partir da pas
 
 **Atenção:** o plugin vem com hooks ligados (perfil `standard`), que rodam scripts sozinhos durante as sessões; dá para desligar na configuração do plugin (`hooks_enabled`). As skills do Pack B repetem as do Pack A: se instalar os dois, as do ECC aparecem em dobro (com o prefixo `ecc:` no plugin).
 
+## Pack C: vídeo
+
+Um zip à parte (`skills-video-pack-C.zip`) com as skills de vídeo, para quem só quer essa parte. Instala com o mesmo `scripts/install.py`.
+
+| Skill | Origem | Para quê |
+|---|---|---|
+| `video-shotcraft` | [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) (Apache-2.0) | Vídeo de produto em Remotion a partir de capturas reais do site: 124 receitas de tomada, modelo pronto, sincronia com a batida, efeitos sonoros do Freesound e editor no navegador. |
+| `effects` | [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) (MIT) | 51 efeitos em vídeo de rosto falando (Reels, TikTok, Shorts), com rastreio do rosto; Python + ffmpeg. |
+| `video-editing` | ECC | Corte e montagem de gravação real com FFmpeg e Remotion. |
+| `remotion-video-creation` | ECC | Boas práticas de Remotion (vídeo em React). |
+| `manim-video` | ECC | Vídeos explicativos com animação técnica (Manim). |
+| `ui-demo` | ECC | Grava demonstrações de sistema web com o Playwright. |
+| `short-video-distribution` | ECC | Confere o arquivo e prepara legenda e título para TikTok, Shorts e Reels. |
+| `fal-ai-media` | ECC | Gera imagem, vídeo e áudio pelo fal.ai (pago, precisa de chave). |
+| `videodb` | ECC | Indexa, busca e edita vídeo pela API do VideoDB (precisa de chave). |
+| `taste`, `taste-distillation`, `taste-application`, `tasteforge-video` | ECC | Direção de estilo para clipes curtos: mede vídeos de referência num pacote de estilo e aplica em material novo. |
+| `motion-design` | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) (MIT) | Princípios de movimento para motion graphics, Lottie e vídeo. |
+
+As skills do ECC e o `motion-design` também estão no Pack A; o zip C só as reúne. `video-shotcraft` e `effects` ficam fora do zip A.
+
+Depois de instalar:
+
+- `video-shotcraft`: Node 20+ e ffmpeg; `npm install` em `template/` e em `workbench/` na primeira produção. O arquivo da skill é em chinês (o Claude responde em português). Fica fora do pack a pasta de músicas de fundo (`assets/audio`, licença Mixkit), as notas internas e as imagens do README.
+- `effects`: ffmpeg e Python 3.10+. No Windows, crie o ambiente à mão na pasta da skill: `python -m venv .venv` e `.venv\Scripts\python.exe -m pip install -r requirements.txt`.
+
 ## Fora do pack
 
 | O quê | Por quê |

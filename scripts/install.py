@@ -39,7 +39,8 @@ GROUPS = [
     "ecc/skills",  # Pack B
 ]
 # skills que ficam na raiz do proprio pacote
-ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown", "ub-mode": "ub-mode"}
+ROOT_SKILLS = {"design-dna": "design-dna", "img2threejs": "img2threejs", "teardown": "teardown", "ub-mode": "ub-mode",
+               "video-shotcraft": "video-shotcraft", "video-effects": "effects"}  # as duas ultimas: Pack C
 # pastas de apoio referenciadas por caminho relativo (../../references)
 SUPPORT = {"agent-skills/references": "../references"}
 
