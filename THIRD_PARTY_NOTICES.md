@@ -39,5 +39,6 @@ licença original da sua origem.
 | `video-effects` | [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) | NOASSERTION | [packs/video-effects/LICENSE](packs/video-effects/LICENSE) |
 | `video-cleanup` | [Mehdi-Ks/video-cleanup](https://github.com/Mehdi-Ks/video-cleanup) | MIT | [packs/video-cleanup/LICENSE](packs/video-cleanup/LICENSE) |
 | `emil-skills` | [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT | [packs/emil-skills/LICENSE](packs/emil-skills/LICENSE) |
+| `lgpd-skills` | [goul4rt/lgpd-skills](https://github.com/goul4rt/lgpd-skills) | MIT | [packs/lgpd-skills/LICENSE](packs/lgpd-skills/LICENSE) |
 
 `packs/com-automacao/` contém skills próprias da Com Automação.

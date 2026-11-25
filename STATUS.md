@@ -2,7 +2,7 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-25 12:19 UTC**
+Última verificação: **2026-11-25 18:01 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
@@ -39,6 +39,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `video-effects` | [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) | NOASSERTION | copiado | 7 | [`60840ac`](https://github.com/Vibha-Ramprakash/claude-video-effects/commit/60840acc7e126a5e34068276a23e912ec4c8c34c) | 2026-11-24 19:44 UTC | 🟢 ok |
 | `video-cleanup` | [Mehdi-Ks/video-cleanup](https://github.com/Mehdi-Ks/video-cleanup) | MIT | copiado | 5 | [`658cbb0`](https://github.com/Mehdi-Ks/video-cleanup/commit/658cbb0ce27648b36976912645033d84349cfe48) | 2026-11-24 19:59 UTC | 🟢 ok |
 | `emil-skills` | [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT | copiado | 4 | [`64eb3de`](https://github.com/emilkowalski/skills/commit/64eb3deb9a5fbfa041faf783e0bc3fd635872e9c) | 2026-11-25 12:19 UTC | 🟢 ok |
+| `lgpd-skills` | [goul4rt/lgpd-skills](https://github.com/goul4rt/lgpd-skills) | MIT | copiado | 5 | [`65e625d`](https://github.com/goul4rt/lgpd-skills/commit/65e625daf56f84a2c8d9b8b063d1d70481abba3d) | 2026-11-25 18:01 UTC | 🟢 ok |
 
 ## Skills disponíveis na origem e ainda não incluídas
 
@@ -460,6 +461,23 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `ecc-full`: [skills/workspace-surface-audit](https://github.com/affaan-m/ECC/tree/HEAD/skills/workspace-surface-audit)
 - `ecc-full`: [skills/x-api](https://github.com/affaan-m/ECC/tree/HEAD/skills/x-api)
 - `ecc-full`: [skills/yoruba-localization-testing](https://github.com/affaan-m/ECC/tree/HEAD/skills/yoruba-localization-testing)
+- `emil-skills`: [skills/animate-expo](https://github.com/emilkowalski/skills/tree/HEAD/skills/animate-expo)
+- `emil-skills`: [skills/animate](https://github.com/emilkowalski/skills/tree/HEAD/skills/animate)
+- `emil-skills`: [skills/animation-performance](https://github.com/emilkowalski/skills/tree/HEAD/skills/animation-performance)
+- `emil-skills`: [skills/apple-design](https://github.com/emilkowalski/skills/tree/HEAD/skills/apple-design)
+- `emil-skills`: [skills/ask-emil](https://github.com/emilkowalski/skills/tree/HEAD/skills/ask-emil)
+- `emil-skills`: [skills/ask-sonner](https://github.com/emilkowalski/skills/tree/HEAD/skills/ask-sonner)
+- `emil-skills`: [skills/choreograph](https://github.com/emilkowalski/skills/tree/HEAD/skills/choreograph)
+- `emil-skills`: [skills/emil-design-eng](https://github.com/emilkowalski/skills/tree/HEAD/skills/emil-design-eng)
+- `emil-skills`: [skills/find-animation-opportunities](https://github.com/emilkowalski/skills/tree/HEAD/skills/find-animation-opportunities)
+- `emil-skills`: [skills/gestures](https://github.com/emilkowalski/skills/tree/HEAD/skills/gestures)
+- `emil-skills`: [skills/improve-animations](https://github.com/emilkowalski/skills/tree/HEAD/skills/improve-animations)
+- `emil-skills`: [skills/learn-taste](https://github.com/emilkowalski/skills/tree/HEAD/skills/learn-taste)
+- `emil-skills`: [skills/pick-ui-library](https://github.com/emilkowalski/skills/tree/HEAD/skills/pick-ui-library)
+- `emil-skills`: [skills/prototype](https://github.com/emilkowalski/skills/tree/HEAD/skills/prototype)
+- `emil-skills`: [skills/remove-animations](https://github.com/emilkowalski/skills/tree/HEAD/skills/remove-animations)
+- `emil-skills`: [skills/review-animations](https://github.com/emilkowalski/skills/tree/HEAD/skills/review-animations)
+- `emil-skills`: [skills/write-swift](https://github.com/emilkowalski/skills/tree/HEAD/skills/write-swift)
 - `genjutsu`: [skills/_jutsu](https://github.com/AThevon/genjutsu/tree/HEAD/skills/_jutsu)
 - `genjutsu`: [skills/bunshin](https://github.com/AThevon/genjutsu/tree/HEAD/skills/bunshin)
 - `genjutsu`: [skills/cast](https://github.com/AThevon/genjutsu/tree/HEAD/skills/cast)
@@ -505,22 +523,24 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `text-to-cad`: [skills/print3d](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/print3d)
 - `text-to-cad`: [skills/robot-simulation](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/robot-simulation)
 - `text-to-cad`: [skills/sendcutsend](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/sendcutsend)
-- `emil-skills`: [skills/animate-expo](https://github.com/emilkowalski/skills/tree/HEAD/skills/animate-expo)
-- `emil-skills`: [skills/animate](https://github.com/emilkowalski/skills/tree/HEAD/skills/animate)
-- `emil-skills`: [skills/animation-performance](https://github.com/emilkowalski/skills/tree/HEAD/skills/animation-performance)
-- `emil-skills`: [skills/apple-design](https://github.com/emilkowalski/skills/tree/HEAD/skills/apple-design)
-- `emil-skills`: [skills/ask-emil](https://github.com/emilkowalski/skills/tree/HEAD/skills/ask-emil)
-- `emil-skills`: [skills/ask-sonner](https://github.com/emilkowalski/skills/tree/HEAD/skills/ask-sonner)
-- `emil-skills`: [skills/choreograph](https://github.com/emilkowalski/skills/tree/HEAD/skills/choreograph)
-- `emil-skills`: [skills/emil-design-eng](https://github.com/emilkowalski/skills/tree/HEAD/skills/emil-design-eng)
-- `emil-skills`: [skills/find-animation-opportunities](https://github.com/emilkowalski/skills/tree/HEAD/skills/find-animation-opportunities)
-- `emil-skills`: [skills/gestures](https://github.com/emilkowalski/skills/tree/HEAD/skills/gestures)
-- `emil-skills`: [skills/improve-animations](https://github.com/emilkowalski/skills/tree/HEAD/skills/improve-animations)
-- `emil-skills`: [skills/learn-taste](https://github.com/emilkowalski/skills/tree/HEAD/skills/learn-taste)
-- `emil-skills`: [skills/pick-ui-library](https://github.com/emilkowalski/skills/tree/HEAD/skills/pick-ui-library)
-- `emil-skills`: [skills/prototype](https://github.com/emilkowalski/skills/tree/HEAD/skills/prototype)
-- `emil-skills`: [skills/remove-animations](https://github.com/emilkowalski/skills/tree/HEAD/skills/remove-animations)
-- `emil-skills`: [skills/review-animations](https://github.com/emilkowalski/skills/tree/HEAD/skills/review-animations)
-- `emil-skills`: [skills/write-swift](https://github.com/emilkowalski/skills/tree/HEAD/skills/write-swift)
+- `lgpd-skills`: [skills/lgpd-anonymization](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-anonymization)
+- `lgpd-skills`: [skills/lgpd-audit-logging](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-audit-logging)
+- `lgpd-skills`: [skills/lgpd-audit](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-audit)
+- `lgpd-skills`: [skills/lgpd-consent-schema](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-consent-schema)
+- `lgpd-skills`: [skills/lgpd-data-mapping](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-data-mapping)
+- `lgpd-skills`: [skills/lgpd-dpa](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-dpa)
+- `lgpd-skills`: [skills/lgpd-dpo-encarregado](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-dpo-encarregado)
+- `lgpd-skills`: [skills/lgpd-dsar](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-dsar)
+- `lgpd-skills`: [skills/lgpd-eca-digital-minors](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-eca-digital-minors)
+- `lgpd-skills`: [skills/lgpd-encryption-keys](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-encryption-keys)
+- `lgpd-skills`: [skills/lgpd-incident-response](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-incident-response)
+- `lgpd-skills`: [skills/lgpd-international-transfer](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-international-transfer)
+- `lgpd-skills`: [skills/lgpd-legacy-retrofit](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-legacy-retrofit)
+- `lgpd-skills`: [skills/lgpd-legal-basis](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-legal-basis)
+- `lgpd-skills`: [skills/lgpd-privacy-policy](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-privacy-policy)
+- `lgpd-skills`: [skills/lgpd-retention-erasure](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-retention-erasure)
+- `lgpd-skills`: [skills/lgpd-ripd](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-ripd)
+- `lgpd-skills`: [skills/lgpd-ropa](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-ropa)
+- `lgpd-skills`: [skills/lgpd-vendor-audit](https://github.com/goul4rt/lgpd-skills/tree/HEAD/skills/lgpd-vendor-audit)
 
 Para incluir, acrescente o caminho em `sources.yaml` e rode o sync.

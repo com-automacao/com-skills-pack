@@ -1,0 +1,33 @@
+{
+  "name": "lgpd-skills",
+  "owner": {
+    "name": "goul4rt",
+    "url": "https://github.com/goul4rt"
+  },
+  "metadata": {
+    "description": "LGPD Privacy Engineering Toolkit — Agent Skills para LGPD, normas da ANPD e ECA Digital."
+  },
+  "plugins": [
+    {
+      "name": "lgpd-skills",
+      "source": "./",
+      "description": "LGPD Privacy Engineering Toolkit — auditoria de código assistida por IA, controles técnicos e governança para LGPD (Lei 13.709/2018), normas da ANPD (até nov/2026) e ECA Digital (Lei 15.211/2025 + Dec. 12.880/2026). 1 maestro + 18 sub-skills.",
+      "version": "1.3.0",
+      "author": {
+        "name": "goul4rt",
+        "url": "https://github.com/goul4rt"
+      },
+      "homepage": "https://github.com/goul4rt/lgpd-skills",
+      "license": "MIT",
+      "keywords": [
+        "lgpd",
+        "privacy-engineering",
+        "privacy",
+        "anpd",
+        "data-protection",
+        "eca-digital",
+        "security"
+      ]
+    }
+  ]
+}

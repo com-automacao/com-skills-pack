@@ -406,6 +406,25 @@ Entram só 3 das 20 skills do repositório. As de criar animação ficam fora po
 
 **`break-ui` ou `/break` do illumi?** A `break-ui` entra sozinha quando você pede para testar o pior caso, e usa dados realistas e os limites do banco. O `/break` do illumi só roda quando você chama, e mostra o componente em todos os cenários numa página temporária, com larguras, RTL e temas.
 
+### 24. LGPD (privacidade e proteção de dados)
+
+Origem: [goul4rt/lgpd-skills](https://github.com/goul4rt/lgpd-skills) (MIT). Pasta: `lgpd-skills/skills/`. Instalada pelo `scripts/install.py` e também incluída no Pack B como plugin. **Nova.**
+
+São 19 skills em português sobre a LGPD (Lei 13.709/2018), as resoluções da ANPD e o ECA Digital. As skills inspecionam código, schemas e configurações e redigem documentos, mas **não substituem revisão jurídica**: o maestro pausa para revisão humana antes de fechar o registro de operações, o RIPD, a política de privacidade e a comunicação à ANPD.
+
+| Skill | O que faz |
+|---|---|
+| `lgpd-audit` | Maestro: pergunta o contexto, descobre o que o projeto trata de dado pessoal e chama as outras na ordem certa. Num vazamento em andamento, pula direto para a resposta a incidente. Guarda tudo em `.lgpd/` no projeto. |
+| `lgpd-legacy-retrofit` | Entrada para sistema que já existe: varre o código, aponta as lacunas e monta um plano de correção por prioridade. |
+| `lgpd-data-mapping`, `lgpd-legal-basis`, `lgpd-ropa`, `lgpd-ripd` | Mapa de dados, base legal de cada tratamento, registro de operações (Art. 37) e relatório de impacto (RIPD). |
+| `lgpd-consent-schema`, `lgpd-dsar`, `lgpd-retention-erasure` | Consentimento em registro que não se apaga, pedidos do titular (acesso, correção, exclusão) com prazo, e retenção e exclusão de dados. |
+| `lgpd-encryption-keys`, `lgpd-anonymization`, `lgpd-audit-logging` | Criptografia e chaves, anonimização e pseudonimização, e log de auditoria à prova de alteração. |
+| `lgpd-incident-response` | Roteiro de incidente: contenção, prazo e modelos de comunicação à ANPD e ao titular. |
+| `lgpd-privacy-policy`, `lgpd-dpo-encarregado`, `lgpd-dpa`, `lgpd-vendor-audit`, `lgpd-international-transfer` | Política de privacidade, encarregado (DPO), contrato com operadores, avaliação de fornecedores e transferência para fora do país. |
+| `lgpd-eca-digital-minors` | Obrigações do ECA Digital (Lei 15.211/2025) para produtos usados por crianças e adolescentes. |
+
+Quem já instalou o plugin oficial (`/plugin marketplace add goul4rt/lgpd-skills`) deve rodar o instalador com `--skip lgpd-skills`, para não ter as skills em dobro.
+
 ---
 
 ## ECC no Pack A (curadoria)
@@ -486,6 +505,8 @@ Não é instalado pelo `scripts/install.py`. Use o próprio ECC, a partir da pas
 
 - Como plugin do Claude Code: `claude plugin marketplace add ./packs/ecc-full` e depois `claude plugin install ecc@ecc`.
 - Ou pelo instalador dele: `npx ecc-universal@2.2.3 install --guided`.
+
+**LGPD no Pack B:** o zip B leva também `packs/lgpd-skills` (seção 24), que se instala como plugin: `claude plugin marketplace add ./packs/lgpd-skills` e depois `claude plugin install lgpd-skills@lgpd-skills`. Não tem hooks. Se já instalou o Pack A, não precisa: as mesmas skills já estão nele.
 
 **Atenção:** o plugin vem com hooks ligados (perfil `standard`), que rodam scripts sozinhos durante as sessões; dá para desligar na configuração do plugin (`hooks_enabled`). As skills do Pack B repetem as do Pack A: se instalar os dois, as do ECC aparecem em dobro (com o prefixo `ecc:` no plugin).
 

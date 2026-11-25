@@ -874,6 +874,24 @@ sources:
       - skills/mobile-native
       - skills/animation-vocabulary
 
+  lgpd-skills:
+    # LGPD, normas da ANPD e ECA Digital: 1 maestro (lgpd-audit) + 18 sub-skills, em portugues.
+    # Entra no Pack A (instalador) e no Pack B (como plugin, pela pasta .claude-plugin).
+    # Ficam fora: assets/ (6 MB de gif e video de demonstracao), examples/, tests/, .github/ e
+    # os manifestos de Codex, Cursor, Gemini e OpenCode.
+    repo: goul4rt/lgpd-skills
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - README.md
+      - PRIVACY.md
+      - CHANGELOG.md
+      - .claude-plugin
+      - skills
+
 # Ajustes locais aplicados por cima da copia upstream a cada sync.
 # Campos do frontmatter do SKILL.md, e _append: secao acrescentada ao fim do SKILL.md.
 overrides:
