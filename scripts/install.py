@@ -34,6 +34,7 @@ GROUPS = [
     "find-skills/skills",
     "com-automacao/skills",
     "illumi/skills",
+    "emil-skills/skills",
     "reanimate/skills",
     "impeccable/.claude/skills",
     "ecc/skills",  # Pack B

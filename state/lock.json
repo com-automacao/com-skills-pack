@@ -3842,6 +3842,40 @@
   "repo": "affaan-m/ECC",
   "updated_at": "2026-11-17 19:53 UTC"
  },
+ "emil-skills": {
+  "checked_at": "2026-11-25 12:19 UTC",
+  "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
+  "files": {
+   "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+   "README.md": "5d442010b00b14cb272ccc96255770cb2a81063958a878b598d79a4a08f38d53",
+   "skills/animation-vocabulary/SKILL.md": "42df33f1583483cc441fcd76693b3399148602705d2e9b8a26665d6b1951cd0b",
+   "skills/break-ui/CATALOG.md": "80522dcc81039bf317bce5adcb7b499e9d9da3c98952abb4dfb34ba6c1c32360",
+   "skills/break-ui/SKILL.md": "fb126d176f3b6bf7dfe71f2ae6620ab3dd81e6282c672a1801720055addfce18",
+   "skills/mobile-native/SKILL.md": "705e267bc47ea61e4c6f94d121efeebdb994055f482673b8a72f4a0dd62f1968"
+  },
+  "known_upstream": [
+   "skills/animate-expo",
+   "skills/animate",
+   "skills/animation-performance",
+   "skills/apple-design",
+   "skills/ask-emil",
+   "skills/ask-sonner",
+   "skills/choreograph",
+   "skills/emil-design-eng",
+   "skills/find-animation-opportunities",
+   "skills/gestures",
+   "skills/improve-animations",
+   "skills/learn-taste",
+   "skills/pick-ui-library",
+   "skills/prototype",
+   "skills/remove-animations",
+   "skills/review-animations",
+   "skills/write-swift"
+  ],
+  "license": "MIT",
+  "repo": "emilkowalski/skills",
+  "updated_at": "2026-11-25 12:19 UTC"
+ },
  "find-skills": {
   "checked_at": "2026-11-24 21:14 UTC",
   "commit": "57217cf86ba38148a57af9e90d14a4c049558330",

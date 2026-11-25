@@ -392,6 +392,20 @@ Os 5 agentes de apoio (`impeccable-finish-reviewer` e outros) ficam em `impeccab
 
 **genjutsu, illumi ou Impeccable?** Pedido genérico de interface continua no genjutsu, e revisão de detalhes no illumi. Use o Impeccable quando pedir por nome, para criar o contexto de design do projeto (`init`, `document`), ou dentro do bunshin.
 
+### 23. Emil Kowalski (testes de interface e mobile)
+
+Origem: [emilkowalski/skills](https://github.com/emilkowalski/skills) (MIT), de Emil Kowalski (autor do Sonner e do Vaul). Pasta: `emil-skills/skills/`. Instalada pelo `scripts/install.py`. **Nova.**
+
+Entram só 3 das 20 skills do repositório. As de criar animação ficam fora porque o genjutsu (`cast`) já faz isso, e as de revisar animação porque o illumi já faz. Também ficam fora as de nicho: Expo, Swift, Sonner, `prototype` e `learn-taste`.
+
+| Skill | O que faz |
+|---|---|
+| `break-ui` | Testa uma tela com os piores dados realistas (nome enorme, e-mail sem quebra, lista vazia, contagem de 1, número gigante, emoji), coloca um botão "dados de demonstração / pior caso" e lista o que quebrou com a correção de cada item. Só corrige quando você pedir. |
+| `mobile-native` | Faz o site parecer app no celular: hover que gruda, piscada ao tocar, bug do 100vh, campo que dá zoom, toque lento, conteúdo embaixo do notch, PWA, carrossel e folha inferior. |
+| `animation-vocabulary` | Dá o nome certo de um efeito de movimento que você só sabe descrever ("o pulinho quando o menu abre" → *pop in*), para pedir à IA ou ao designer. |
+
+**`break-ui` ou `/break` do illumi?** A `break-ui` entra sozinha quando você pede para testar o pior caso, e usa dados realistas e os limites do banco. O `/break` do illumi só roda quando você chama, e mostra o componente em todos os cenários numa página temporária, com larguras, RTL e temas.
+
 ---
 
 ## ECC no Pack A (curadoria)

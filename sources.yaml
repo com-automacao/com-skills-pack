@@ -858,6 +858,22 @@ sources:
       - .claude-plugin
       - skills/video-cleanup
 
+  emil-skills:
+    # Skills de design engineering de Emil Kowalski (Vercel, Linear; autor do Sonner e do Vaul).
+    # Entram so as 3 que o pack nao cobre. Ficam fora as de criar animacao (genjutsu cast ja faz),
+    # as de revisar animacao (illumi), e as de nicho (Expo, Swift, Sonner, prototype, learn-taste).
+    repo: emilkowalski/skills
+    branch: main
+    license: MIT
+    mode: vendor
+    watch: skills
+    paths:
+      - LICENSE
+      - README.md
+      - skills/break-ui
+      - skills/mobile-native
+      - skills/animation-vocabulary
+
 # Ajustes locais aplicados por cima da copia upstream a cada sync.
 # Campos do frontmatter do SKILL.md, e _append: secao acrescentada ao fim do SKILL.md.
 overrides:
@@ -917,6 +933,46 @@ overrides:
         animation order in GSAP. Choosing whether and how to animate a UI is the
         genjutsu `cast` skill's call (it may pick GSAP); use this skill once GSAP is
         the chosen or existing library.
+  emil-skills:
+    skills/break-ui:
+      description: >-
+        Try to break a piece of UI by feeding it worst-case but realistic data —
+        long names, unbreakable emails, one-letter names, missing fields, huge
+        counts, zero items, long labels, non-Latin text, emoji, extreme numbers —
+        then render it behind a "Demo data / Worst case" toggle and report
+        everything that broke, with the fix for each. Use when the user asks to
+        stress-test, break, or find edge cases in a component or screen, or to
+        "try the worst case". For a full scenario grid on a harness page the user
+        can run the illumi command `/break`; for visual critique use
+        `better-interface`; for motion use `better-motion`.
+      _append: |
+        ## Neste ambiente
+
+        - Responda em português. A frase de abertura da seção "Initial Response" vira: "Pronto para jogar os piores dados realistas na sua interface e mostrar o que quebra."
+        - As skills `prototype`, `emil-design-eng` e `review-animations` citadas acima não estão instaladas. Use no lugar: `variant` (illumi) para versões alternativas, `better-interface` para crítica visual e `better-motion` para movimento.
+        - Inclua nos dados de teste nomes e textos brasileiros reais: acentos, nomes compostos longos ("Maria Aparecida dos Santos Albuquerque"), razão social com "LTDA - ME", CPF/CNPJ formatados e valores em R$ com milhar.
+    skills/mobile-native:
+      description: >-
+        Make a web app feel native on a phone — the small CSS and meta-tag fixes
+        that separate "a website in a browser" from something that feels
+        installed. Covers sticky hover states, tap highlight flashes, the 100vh
+        bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking
+        scroll, content under the notch, long-press selecting button text,
+        carousels that scroll the wrong way, mismatched status bars, and testing
+        on real hardware. Use when a web app is being built for or reviewed on
+        mobile, when something "works in Chrome but feels wrong on my phone",
+        when building a PWA, a bottom sheet, a carousel, a full-screen layout, or
+        any touch interaction. For motion itself use the genjutsu `cast` skill.
+      _append: |
+        ## Neste ambiente
+
+        - Responda em português. A frase de abertura da seção "Initial Response" vira: "Pronto para fazer o seu web app parecer nativo no celular."
+        - As skills `animate`, `animate-expo` e `review-animations` citadas acima não estão instaladas. Para movimento use o `cast` (genjutsu); para revisar movimento, `better-motion` (illumi).
+    skills/animation-vocabulary:
+      _append: |
+        ## Neste ambiente
+
+        Responda em português, mas mantenha o termo técnico em inglês (é o que se usa para pedir à IA ou ao designer), com uma tradução curta ao lado. A frase de abertura da seção "Initial Response" vira: "Pronto para dar nome a qualquer efeito de movimento que você descrever."
   motion-design:
     skills/motion-design:
       description: >-
