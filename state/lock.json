@@ -1,6 +1,6 @@
 {
  "agent-skills": {
-  "checked_at": "2026-11-24 21:13 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
   "files": {
    "LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
@@ -51,8 +51,8 @@
   "updated_at": "2026-11-19 19:29 UTC"
  },
  "ai-memory": {
-  "checked_at": "2026-11-24 21:14 UTC",
-  "commit": "ccc7dc0db1271e94785b3e7e5a1758a89fde202d",
+  "checked_at": "2026-11-25 20:29 UTC",
+  "commit": "45a97cf8157ac646abc1633f430fc1a52a9f874a",
   "files": {
    "LICENSE": "18332c61780ce8e694d4fa330770cd4d8c85e33f47ac13a80d72d70bb032ae72",
    "crates/ai-memory-core/src/routing_skills/ai-memory-durable-pages/SKILL.md": "fbc5cf2c36b43a36d1e6cb8739d5bd4324f16f6d85ea7253e5e61c6864d6c88c",
@@ -66,10 +66,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "akitaonrails/ai-memory",
-  "updated_at": "2026-11-24 21:14 UTC"
+  "updated_at": "2026-11-25 20:29 UTC"
  },
  "anthropic-skills": {
-  "checked_at": "2026-11-24 21:14 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
   "files": {
    "skills/mcp-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
@@ -108,7 +108,7 @@
   "updated_at": "2026-11-16 21:04 UTC"
  },
  "base44": {
-  "checked_at": "2026-11-24 21:14 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "5bb6707c82157995085aca775d4534a59e024dbb",
   "files": {
    "LICENSE": "5546cdc657881c6a454bb4d09044e59fb4f84f3951fcb88c8102b7fe8332b4a4",
@@ -204,7 +204,7 @@
   "updated_at": "2026-11-22 18:31 UTC"
  },
  "codeigniter-skills": {
-  "checked_at": "2026-11-24 21:14 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "19acc9fff91807d761f2296bae51165ebad761c1",
   "files": {
    "LICENSE": "1d150b5ac2eda94cf46dae34994f277e0b289078703d560e46da7838543343cc",
@@ -219,8 +219,8 @@
   "updated_at": "2026-11-18 13:21 UTC"
  },
  "context7": {
-  "checked_at": "2026-11-24 21:14 UTC",
-  "commit": "d0f2ef972852848904c23ac27a0b8e14254e3360",
+  "checked_at": "2026-11-25 20:29 UTC",
+  "commit": "6335fd8458bb942205c24c8b89e8bc97b0950804",
   "files": {
    "LICENSE": "85cfb556dc2b22b55d2565674fcdaac82f3f2f6b7a928d27003132721bb6736c",
    "plugins/claude/context7/.claude-plugin/plugin.json": "38d9722bc43c83a5974bb75433f106d45b57eac7c61e083b0342e90c225f0e00",
@@ -230,10 +230,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "upstash/context7",
-  "updated_at": "2026-11-24 21:14 UTC"
+  "updated_at": "2026-11-25 20:29 UTC"
  },
  "design-dna": {
-  "checked_at": "2026-11-24 21:13 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "593e39bc9e3652734653bd75544a333d7d43615e",
   "files": {
    "LICENSE": "2de108bcd0d904f8756e1135ca77ce1e3e9ca0edb1ae6abecb97dea76d27d174",
@@ -254,7 +254,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "ecc": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "4adeee6732a12d1540f49a4d50a38ce8c97f9a53",
   "files": {
    "LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
@@ -865,7 +865,7 @@
   "updated_at": "2026-11-20 19:08 UTC"
  },
  "ecc-full": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "3f14a103a8694e51c1df9a806217a6d0b5f7a6f7",
   "files": {
    ".adal/README.md": "3239a58ed38a0489aabe2135cc1e9ba0279aa31a0abdb28843f9eed020b295ee",
@@ -3843,7 +3843,7 @@
   "updated_at": "2026-11-17 19:53 UTC"
  },
  "emil-skills": {
-  "checked_at": "2026-11-25 12:19 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c",
   "files": {
    "LICENSE": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
@@ -3877,7 +3877,7 @@
   "updated_at": "2026-11-25 12:19 UTC"
  },
  "find-skills": {
-  "checked_at": "2026-11-24 21:14 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "57217cf86ba38148a57af9e90d14a4c049558330",
   "files": {
    "LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
@@ -3889,7 +3889,7 @@
   "updated_at": "2026-11-17 19:52 UTC"
  },
  "genjutsu": {
-  "checked_at": "2026-11-24 21:13 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "a22540b623590505879d6489dd03d7f3072bce05",
   "files": {
    "LICENSE": "19fd36b46fd5b393c6d58ad1ac26afd436bdce6951a9952094eff70366e5b314",
@@ -4013,7 +4013,7 @@
   "updated_at": "2026-11-16 21:04 UTC"
  },
  "gsap-skills": {
-  "checked_at": "2026-11-24 21:13 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
   "files": {
    "LICENSE": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90",
@@ -4032,7 +4032,7 @@
   "updated_at": "2026-11-18 13:25 UTC"
  },
  "illumi": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "672ae44ace6aaed65b86cbb1e2fd6fbea0e79578",
   "files": {
    "LICENSE": "ed1dfe988fc40511b4845ccd9050a143a2002fee3bedc8064c47fa342b5d8d4f",
@@ -4115,7 +4115,7 @@
   "updated_at": "2026-11-19 19:31 UTC"
  },
  "img2threejs": {
-  "checked_at": "2026-11-24 21:13 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "0c0c49bc168e648dbaf9c8c080474de0b3a941b6",
   "files": {
    "CHANGELOG.md": "f4bce68c4bfe964c13a30e648c7d0fff56ed692f1a1f121a16842d2876ddcd83",
@@ -4442,20 +4442,20 @@
   "updated_at": "2026-11-05 18:46 UTC"
  },
  "impeccable": {
-  "checked_at": "2026-11-24 21:15 UTC",
-  "commit": "b49177d32788f2dc585c42831d845dacf1ebed2c",
+  "checked_at": "2026-11-25 20:30 UTC",
+  "commit": "9e460a87ef338ee9d12c7beed8fedc597a5af5f7",
   "files": {
    ".claude/agents/impeccable-asset-producer.md": "381ce24761836e932444fa2d9642c5c7d343c8540ddbb9cb80ef6a6af279b3bc",
    ".claude/agents/impeccable-documenter.md": "7ee1d7ca89bff39beca45de80ec388dbaebe904a836f7f2c62de70d4ca707009",
    ".claude/agents/impeccable-finish-reviewer.md": "2ac34bc0806f167f7b0103a93b21b322e3e20ac7c0764a1473628d2cac61c426",
    ".claude/agents/impeccable-manual-edit-applier.md": "6e606d157f08dac40f2cebec5cda01ea8fd28809cf2985d3db66875610f5e398",
    ".claude/agents/impeccable-motion-reviewer.md": "4f64705713e7fcde30f18ada24eece89a424df25e3f7d29b2231a31bb958d50c",
-   ".claude/skills/impeccable/SKILL.md": "4016dcce91b3eca06756ac7e03c7b644ea6a1278163e1202b8b3034c06e4664e",
+   ".claude/skills/impeccable/SKILL.md": "b47190010986596d350ca7d33fee86b221f864cd5b416db628e5cded817f74e5",
    ".claude/skills/impeccable/reference/adapt.md": "ea9dfb9576f5f6566d488e3f2b9b3770e974e2b4b05d6e69724898f1e16845dd",
    ".claude/skills/impeccable/reference/adapt.native.md": "acbeecbcbf6558d438ed4aec6b85027d72587bf181b8ae12d4dfbe8dce62e9a5",
    ".claude/skills/impeccable/reference/android.md": "43780abcf10ac12a569d98001ae38af2b337727a0f7ce66268246ac1d54b5d34",
    ".claude/skills/impeccable/reference/animate.md": "bcfeac70dae3a796e79eb126a44d0b41bd7235a0a734159ebd3adbfcec37b1f8",
-   ".claude/skills/impeccable/reference/audit.md": "dc714231c614c13acea309ed315068dc6ab8e62b3db35cf2890a0c9c97fedcf0",
+   ".claude/skills/impeccable/reference/audit.md": "ccd0c3c3a932edf6cc8b2e31d44b62b908acd0c9d01d1a86e9bfa6e2ada40072",
    ".claude/skills/impeccable/reference/audit.native.md": "d47edf03d1a53910fdf89860c31eb847af2e3fbe479dc23caf732673fd49b709",
    ".claude/skills/impeccable/reference/bolder.md": "bd217b7bc011c2346ce94902071ecd940aa017e8f563539e31c1ad38ce256401",
    ".claude/skills/impeccable/reference/clarify.md": "6c382f8283756e8a693d832b750f7e4cbff1ca5bdcc3825b2b4ef4da9f21876a",
@@ -4464,7 +4464,7 @@
    ".claude/skills/impeccable/reference/craft-floor.md": "9ed569418edc4a348ca6ac85cc2436e95e9ebfa624cabd352b809b7c1f2ff8b7",
    ".claude/skills/impeccable/reference/craft.md": "9205e222bc6565b37fb504ceec93233c2d2a456802b69d16e6b1c44723907c4c",
    ".claude/skills/impeccable/reference/critique-rubric.md": "ba070404e3f61c62b40c25a5d096b803825408de12a0fbb559b1587c89692866",
-   ".claude/skills/impeccable/reference/critique.md": "b63cb887b97a26bce304f4f266e04b3c2efa739c648b5900eb9e69f938f809f4",
+   ".claude/skills/impeccable/reference/critique.md": "d5e418c019fe1eb79292760281da1ca4c6ee26f080cce9bd58572d6810799f57",
    ".claude/skills/impeccable/reference/degraded/asset-producer.md": "153936d4487fd9bf495f50b96c0c4fee258144583192d7f040310fc08384a02d",
    ".claude/skills/impeccable/reference/degraded/documenter.md": "5a175082e1357b20cbf25c965e18b520700aa441d9fdb76757cc43fc590b9305",
    ".claude/skills/impeccable/reference/degraded/finish-reviewer.md": "905e318d3664baae7ac01afa8d52446e8e9aff92ed549a582cd71f6569411ae9",
@@ -4476,19 +4476,19 @@
    ".claude/skills/impeccable/reference/document.md": "6a729b362d2a63ba7a17d14a122fa35963d0cf5923121204cc59708edd004a7b",
    ".claude/skills/impeccable/reference/extract.md": "29044a3df6598786b2f9023af89aa6683b9745b7cd9a0c89386da2d0e50e0166",
    ".claude/skills/impeccable/reference/foundations.md": "8be7197e4b7c1d858b3c350827e7ae79cb598186a034ece2fc26f62e3d48f990",
-   ".claude/skills/impeccable/reference/generate.md": "b174077972447e829db722dacbf6d6bb643184832b42686f17492348bab9bfe8",
+   ".claude/skills/impeccable/reference/generate.md": "d85a316324bcd676a1b81a7adf1f321d997885829fedc038145af9558a5a680c",
    ".claude/skills/impeccable/reference/harden.md": "98244db22d907a134cac0c94ffb829ba480ba61cfac67ae155ac2f46444da7c9",
    ".claude/skills/impeccable/reference/hooks.md": "d9bbd42c311ed28c38be9fc4dc460a23ed6042c6b8911cdb73df8b746da27718",
    ".claude/skills/impeccable/reference/init.md": "2d82b692fb2b427be1e2b2d188d3fe93e3353693508c4d05234fb9f3112a5d45",
    ".claude/skills/impeccable/reference/ios.md": "40c87038b5f75147a5952a96237acf312a327bf70c1bcd8e0a5f064625ae9668",
    ".claude/skills/impeccable/reference/layout.md": "64802d14087fc96b38ef3881fef8098b36068d07f3b942031637b18eef3dd2af",
    ".claude/skills/impeccable/reference/live-setup.md": "ceddbcf4515c3c45f5a2bb57c188a620f0cf8001f2288df73c58d530f895689e",
-   ".claude/skills/impeccable/reference/live.md": "c8d7111a36772aa47f277a0dfdd421c86a53041873632426b94642b82533dca0",
+   ".claude/skills/impeccable/reference/live.md": "a6282b24748668803b1756581e0b845d95d1bfed35611ea1401c248deb4a5fd5",
    ".claude/skills/impeccable/reference/mode-operate.md": "7a52dd7a94ee75f6ae89542c86a1b6e1d306812b16e0d9dbf12d4acad44d148b",
    ".claude/skills/impeccable/reference/mode-persuade.md": "21e78c8a77badb3f83290cd4577ed3b24bd4dd3b57136d7da75733d4f3ee9ac0",
    ".claude/skills/impeccable/reference/mode-read.md": "a569989e6a3d6453b4c45e9474e162a15cc54e11732ac6baa7990a6e7cccc0b5",
-   ".claude/skills/impeccable/reference/new-work-comp.md": "ede0fee36507bc143bf4864bb4bf2e3e32b364c63444d9a4b2e390e0fc5a1872",
-   ".claude/skills/impeccable/reference/new-work-world.md": "29e18324ff2b125fddd148fc05d46014fc6405962e26bdf15f4e8997f077eb38",
+   ".claude/skills/impeccable/reference/new-work-comp.md": "71a592003a996a4833ee027b128c36a93a98cfddb69e12754397f3d9ebdb4136",
+   ".claude/skills/impeccable/reference/new-work-world.md": "9a5e6d6e6d5a5563f84c3c535bc556f8daf06a093e3f5013cad6c81de96e2f4f",
    ".claude/skills/impeccable/reference/new-work.md": "710c72eab7a172a9edd8f8b6ae1de2c8783e8f6cb0dddc58937d7ff0e8d6c876",
    ".claude/skills/impeccable/reference/onboard.md": "9fa9e5cd55b00cc17ddf0d8053b8f238ad833d0d4527933257d9f1622833c8de",
    ".claude/skills/impeccable/reference/operate.md": "a9d2203acd45ca33a13d5c68b02b23ed512425ac15f0e8438318ed124b43729d",
@@ -4501,31 +4501,31 @@
    ".claude/skills/impeccable/reference/shape.md": "a55f016c046cb6a27c55bd7f346375aeb506a755c4fbca19a5f92dbd42309c23",
    ".claude/skills/impeccable/reference/typeset.md": "1c6cf66f66276da34b52f059cf64bfbb1e4020bab27cc3fd11ce399e58edcb8f",
    ".claude/skills/impeccable/reference/visualize.md": "3138cd268dd74f2726c480b4172742a36eb84b4a0ca9b55b644b409491389e6c",
-   ".claude/skills/impeccable/scripts/VERSION": "246a6387221ae9ed8e7b362df6959a816c0a2a1e8f98481beec0cecfe3976486",
+   ".claude/skills/impeccable/scripts/VERSION": "2622ca328c7b1324e68d4116c0765138da26de706f9945b903c20ea4e99d491e",
    ".claude/skills/impeccable/scripts/command-metadata.json": "c6dcbeed7f13152205ca022c8f24d08683770835083f0a7325261c1c2d5f215c",
    ".claude/skills/impeccable/scripts/data/font-index-failures.json": "835f19a0a3812f3652dd6979a2ce5597f654fd01f26e1b420b92d5f42b997ce4",
    ".claude/skills/impeccable/scripts/data/font-index.json": "47edbdfaf27073c47033d1ac7dfee881be49e2dcbda7671d1157300481dde6da",
-   ".claude/skills/impeccable/scripts/engine-checksums.txt": "1c5f99b7551d026f9aeccc4e34bf082ce0da663a6e0c790912b6bb3d8f3c9d19",
-   ".claude/skills/impeccable/scripts/impeccable": "9a82c1d8a5fc34b0edb3040cf25098c7c5a662e703118e99f96bacd543ed6d68",
-   ".claude/skills/impeccable/scripts/impeccable.cmd": "34ce99f691c2380e27108915fe921e3c716bbe532d7a7cfce3b7f0d5c68dccdd",
+   ".claude/skills/impeccable/scripts/engine-checksums.txt": "2f0ad0e6d2347b4bc741faea7214ed819769e2e41d523b7634cf4c02c3fc47f4",
+   ".claude/skills/impeccable/scripts/impeccable": "4d405a06b9f13f0f92d08d4aa82cd66106a131b7d3dd5855531d09a6430db910",
+   ".claude/skills/impeccable/scripts/impeccable.cmd": "67a39557950acc624113e4db011033f278dc98da1fbbabd5a82ec2153fc135ce",
    ".claude/skills/impeccable/scripts/live-browser-dom.js": "4b379aff87ce0f485008a2b6a0dc711d00a869f5cf0ec2459279d6364fbf0c9e",
    ".claude/skills/impeccable/scripts/live-browser-ignores.js": "ba8905ab865fde5162e34fc17eb80eba26cc990b319b14a6eed6ca89fd491897",
    ".claude/skills/impeccable/scripts/live-browser-session.js": "e042339a54d4521fc47555b602013ed5b51410ec9d7d8878d99a526f5f237f68",
-   ".claude/skills/impeccable/scripts/live-browser.js": "994b06b63602c99d87206cfd9184a6f40bc7fc7881e92fc652c9eee0c055a36d",
+   ".claude/skills/impeccable/scripts/live-browser.js": "3d2a723589f9d4caeca2a96ea1d0f5a4a595a35426dbd0ea1688d78159cd099a",
    ".claude/skills/impeccable/scripts/modern-screenshot.umd.js": "bb36665889124a0b6e15f16045265737449c3bdcf2712cdb08af3cfa01563e2b",
    "LICENSE": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812",
    "NOTICE.md": "01bf53e5d24d64e19e9e1c33b24c37cef0d314323df7bf678c6ba22d4528a115",
-   "README.md": "24ae9abcfbf91338ea6ae6b8ba9e3686e097f7638f99acabb7f7fa803a9c0a04"
+   "README.md": "8660d4dd9c2c4335fd52759411a68a07db13265df20c654083d868d86543e38e"
   },
   "known_upstream": [
    ".claude/skills"
   ],
   "license": "Apache-2.0",
   "repo": "pbakaus/impeccable",
-  "updated_at": "2026-11-19 19:31 UTC"
+  "updated_at": "2026-11-25 20:30 UTC"
  },
  "knowledge-work-plugins": {
-  "checked_at": "2026-11-24 21:14 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "5e504ae11498f2b8daa30d86b7dab97b2ecd8092",
   "files": {
    "LICENSE": "a6946284993aeec75c7d75906064b66210c46051e562077efb30eb6dcfe72e26",
@@ -4556,7 +4556,7 @@
   "updated_at": "2026-11-24 21:14 UTC"
  },
  "lgpd-skills": {
-  "checked_at": "2026-11-25 18:01 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "65e625daf56f84a2c8d9b8b063d1d70481abba3d",
   "files": {
    ".claude-plugin/marketplace.json": "99d996ec8013bb8906c6f291cb7c120a24d4a082386ceb2301b7915d2cc0a769",
@@ -4633,8 +4633,8 @@
   "updated_at": "2026-11-25 18:01 UTC"
  },
  "mattpocock-skills": {
-  "checked_at": "2026-11-24 21:14 UTC",
-  "commit": "d65391149dbb5fe76478e76fa8d5122b2aa5a70e",
+  "checked_at": "2026-11-25 20:29 UTC",
+  "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
   "files": {
    "LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
    "skills/engineering/improve-codebase-architecture/HTML-REPORT.md": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
@@ -4644,10 +4644,10 @@
   "known_upstream": [],
   "license": "MIT",
   "repo": "mattpocock/skills",
-  "updated_at": "2026-11-24 21:14 UTC"
+  "updated_at": "2026-11-25 20:29 UTC"
  },
  "motion-design": {
-  "checked_at": "2026-11-24 21:13 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb",
   "files": {
    "LICENSE": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80",
@@ -4676,7 +4676,7 @@
   "updated_at": "2026-11-19 19:29 UTC"
  },
  "ponytail": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10",
   "files": {
    ".claude-plugin/marketplace.json": "5c17acc0d30732735a7bf725214b8db9f8a1bb3485233744c7a5e0ca1d7434e8",
@@ -4723,8 +4723,8 @@
   "updated_at": "2026-11-22 18:32 UTC"
  },
  "rea": {
-  "checked_at": "2026-11-24 21:14 UTC",
-  "commit": "42bbf33f2d29aadcaedf6f25d477c8e59157bdd0",
+  "checked_at": "2026-11-25 20:29 UTC",
+  "commit": "a9d103167484234027415cf7816f4bd8335bf8a7",
   "files": {
    ".agents/skills/reverse-engineer-anything/SKILL.md": "897c212fc913bbd5f37dbac18c87e6a50c5f61c4cb14164c5a4f489fdce455a3",
    ".agents/skills/reverse-engineer-anything/references/android-applications.md": "986822805d66ef34a90bf31dcc8d5767e5580469d1e4bb4606141eb292c7127a",
@@ -4733,7 +4733,7 @@
    ".agents/skills/reverse-engineer-anything/references/environments.md": "1be68bc9b15e5ace9b731a64125b64eb457ab0276c7961a41b6fa1240d179007",
    ".agents/skills/reverse-engineer-anything/references/evidence-workflows.md": "ea6eaf1d11bb6d663503017aabc18e4c82b9f1f0277c35fc41ca63dda26ae602",
    ".agents/skills/reverse-engineer-anything/references/javascript-applications.md": "2e264fbbb39030affa692553e603f6a28bee0cc822456ebfded836936615fb0c",
-   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "09d23b1ada4cc0400be5ea0a10f453421b2288e1c33966dab84d3e9ac3713dea",
+   ".agents/skills/reverse-engineer-anything/references/native-and-artifacts.md": "261a125d0b483179793fda71d9bb0566c28e1e7aa80e29242c302c19e459263c",
    ".agents/skills/reverse-engineer-anything/references/runtime-observation.md": "ff7ecd3d76c264e641804e025f6ec35d1cfe8b8aba006b226061ed71842a3c12",
    "LICENSE": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b"
   },
@@ -4745,10 +4745,10 @@
   ],
   "license": "MIT",
   "repo": "morluto/rea",
-  "updated_at": "2026-11-24 21:14 UTC"
+  "updated_at": "2026-11-25 20:29 UTC"
  },
  "reanimate": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "3f7a55a2986a84ca2173e86ee9127eefe31d046d",
   "files": {
    "LICENSE": "6bce4169a631cbe6d18089ed7e15d7ffe2afd736272d0ed9dc0e40e7f98d6f41",
@@ -4779,8 +4779,8 @@
   "updated_at": "2026-11-12 20:42 UTC"
  },
  "ruflo": {
-  "checked_at": "2026-11-24 21:14 UTC",
-  "commit": "99aeeac722ccdec103c9647a5463c6332b8d16f3",
+  "checked_at": "2026-11-25 20:29 UTC",
+  "commit": "48b04dce286a1df4af0411923821cf63399d7c8b",
   "files": {
    ".claude/commands/agents/README.md": "52f50d320ed2058cc815a836530e43cba4511df56eb9edac8837b922339fcbd7",
    ".claude/commands/agents/agent-capabilities.md": "1fa62c27d0e4b9969e7394c1cbbcfd92ecb95750f66ea67204ad10de7b9a7223",
@@ -5002,10 +5002,10 @@
   ],
   "license": "MIT",
   "repo": "ruvnet/ruflo",
-  "updated_at": "2026-11-24 21:14 UTC"
+  "updated_at": "2026-11-25 20:29 UTC"
  },
  "scroll-craft": {
-  "checked_at": "2026-11-24 21:14 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "75d81f74e83692add18cd7a8a8e078b8a887a579",
   "files": {
    "LICENSE": "dd471a27eca72488a53e6ea6fbe9392d81aa3f01e950e63fe328affb2ddfa6e3",
@@ -5040,7 +5040,7 @@
   "updated_at": "2026-10-13 16:22 UTC"
  },
  "security-audit": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
   "files": {
    "LICENSE": "e598e694aa506650c7192d5ea3be0e50aca0d356ea00551c53429f0b01eb6391",
@@ -5071,7 +5071,7 @@
   "updated_at": "2026-11-04 12:51 UTC"
  },
  "superpowers": {
-  "checked_at": "2026-11-24 21:14 UTC",
+  "checked_at": "2026-11-25 20:29 UTC",
   "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
   "files": {
    ".claude-plugin/marketplace.json": "04015bf36c0c8e475e61509f4c0c2e72838abb1b6ab70a2c44f04be4317f79fa",
@@ -5184,7 +5184,7 @@
   "updated_at": "2026-11-04 18:40 UTC"
  },
  "teardown": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "a91262ac1109051e014662d42ecb0b7bc1f113b1",
   "files": {
    ".gitignore": "63df382d21483b30e255f410358cc24fb6052643287fe25df0ea270bd9ea79e8",
@@ -5264,7 +5264,7 @@
   "updated_at": "2026-11-06 20:07 UTC"
  },
  "text-to-cad": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "2909a73bba04530e80b724928af8c2386752e88b",
   "files": {
    ".claude-plugin/icon.png": "8c44d41c85e0131a3daf2ae58ec1bef6eb54f8731db665dea5dc7c19524aacbe",
@@ -5360,7 +5360,7 @@
   "updated_at": "2026-11-09 21:27 UTC"
  },
  "threejs-skills": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "0e181866f095b5f06d005133876e926515390d95",
   "files": {
    "LICENSE": "d26f12fa1a0e03fd5aa4d3cbf05262a9f1c684672d0864abac78b3bbb12b268c",
@@ -5384,7 +5384,7 @@
   "updated_at": "2026-10-22 13:45 UTC"
  },
  "ub-mode": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "3da62bf3fcfd2034de41f30d920d2739e566171f",
   "files": {
    "LICENSE": "cf496364b10d049ba2b04ac4c04f29ab1a34b54be96209cb32666fac9eba6bf3",
@@ -5397,7 +5397,7 @@
   "updated_at": "2026-11-09 18:18 UTC"
  },
  "video-cleanup": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "658cbb0ce27648b36976912645033d84349cfe48",
   "files": {
    ".claude-plugin/icon.png": "29ed2f7edb7a506d1596fe9675631eaf32818ea7a0b95d4ce7f10d9998ae1dfa",
@@ -5421,7 +5421,7 @@
   "updated_at": "2026-11-24 19:59 UTC"
  },
  "video-effects": {
-  "checked_at": "2026-11-24 21:15 UTC",
+  "checked_at": "2026-11-25 20:30 UTC",
   "commit": "60840acc7e126a5e34068276a23e912ec4c8c34c",
   "files": {
    ".gitignore": "3c7c5f320c9f9290a0e24f9507a8635f8bd56d19f2b33d16bd7594bfd94fafc5",
@@ -5459,13 +5459,13 @@
   "updated_at": "2026-11-24 19:44 UTC"
  },
  "video-shotcraft": {
-  "checked_at": "2026-11-24 21:15 UTC",
-  "commit": "59f3e9b9e936ff2bce0e18446226d770a3f2f61f",
+  "checked_at": "2026-11-25 20:30 UTC",
+  "commit": "1152363da5c824b32dba6d8a2ef7f935b677e445",
   "files": {
    ".claude-plugin/plugin.json": "c1e229b4c6215755fdc8664ef91d2f36fe2ac5311a128bc8d53106147a137f69",
    ".gitignore": "0569ec00c847d6946a5398cb205e4743b3e0581bc3d5e7ff2818090891f2f8fa",
    "LICENSE": "b2ce9877a55547ada9b870150664d1468ff777e67cc9888806a73927d31c5771",
-   "README.md": "a95c64ecce0186e5add501af1a800c3ba916ebc535095170d27de9ba0717f700",
+   "README.md": "2a57804d87c51846ee134babae0c9faaf17e3aee7dd20a6c9a2ad6708e203301",
    "SKILL.md": "9e6b2d68f50cae3d5405178d35d2bd305ee2045691fa726b63bae3ab8bb62e6b",
    "assets/brand/BRAND.md": "92d78705df1173ab91da08cb3fe560243af28d07c37f505e73fa2bad564c9d03",
    "assets/brand/brand-board.svg": "f884bb99c544a5d5dde375d717b47f5ba6df6bb078dcad66e00733a7698476ac",
@@ -6187,7 +6187,6 @@
    "workbench/.gitignore": "4a52326a30185e5b3080da098c35ede9d5a255b0d8a51360cb9de89025a1dd2d",
    "workbench/GUIDE.md": "cf05c67f7e5ab19660b0bd764ba7c7c30a4d42792f4bd9cd28a47dc9a50843bc",
    "workbench/README.md": "5029b425bc7861af23e957d2b40d5a3b9a1ac409181d57f122e98fb828a52e0e",
-   "workbench/demosrc": "00ec8ab362db8191f9713f8c38a6e6a31d0731633e5ebc54952cfe1862eb2d00",
    "workbench/docs/card-preview.png": "303061c102921440b9575bc7a18a49993260281e36ac9aa78fbdcfa6a863d66b",
    "workbench/docs/inspector.png": "5cbf3267d827cde0f8ee057de04325dfd885ae76e16cb566010d256caca95b26",
    "workbench/docs/library-cards.png": "e3d18e27a1df3e09675d40466cc979607b1b4309b800dd4ca1374ba7c1d8fed1",
@@ -6266,6 +6265,6 @@
   "known_upstream": [],
   "license": "Apache-2.0",
   "repo": "Vincentwei1021/video-shotcraft",
-  "updated_at": "2026-11-24 19:43 UTC"
+  "updated_at": "2026-11-25 20:30 UTC"
  }
 }
