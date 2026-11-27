@@ -2,11 +2,11 @@
 
 _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 
-Última verificação: **2026-11-27 20:00 UTC**
+Última verificação: **2026-11-27 20:01 UTC**
 
 | Fonte | Repositório | Licença | Modo | Itens | Commit | Atualizado em | Estado |
 |---|---|---|---|---:|---|---|---|
-| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`8c99fa3`](https://github.com/addyosmani/agent-skills/commit/8c99fa36d90068c82d547f7c12a9d67a3e95f4ee) | 2026-11-19 19:29 UTC | 🔴 bloqueado |
+| `agent-skills` | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | MIT | copiado | 24 | [`e997ac5`](https://github.com/addyosmani/agent-skills/commit/e997ac5b9a74eab332d5e9793bb38a38c8cfdd74) | 2026-11-27 20:00 UTC | 🔴 bloqueado |
 | `gsap-skills` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | MIT | copiado | 8 | [`aed9cfd`](https://github.com/greensock/gsap-skills/commit/aed9cfd3277740755f6bfc1155c7aa645403b760) | 2026-11-18 13:25 UTC | 🟢 ok |
 | `genjutsu` | [AThevon/genjutsu](https://github.com/AThevon/genjutsu) | NOASSERTION | copiado | 1 | [`a22540b`](https://github.com/AThevon/genjutsu/commit/a22540b623590505879d6489dd03d7f3072bce05) | 2026-11-16 21:04 UTC | 🟢 ok |
 | `motion-design` | [LottieFiles/motion-design-skill](https://github.com/LottieFiles/motion-design-skill) | MIT | copiado | 1 | [`d77a9fc`](https://github.com/LottieFiles/motion-design-skill/commit/d77a9fc8cb371cab1ba5420df5bfd232cd14c9bb) | 2026-11-19 19:29 UTC | 🟢 ok |
@@ -24,12 +24,12 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 | `rea` | [morluto/rea](https://github.com/morluto/rea) | MIT | copiado | 1 | [`132b53f`](https://github.com/morluto/rea/commit/132b53f2e65c4e7121f393195b9610b12ee7f574) | 2026-11-27 19:59 UTC | 🟢 ok |
 | `superpowers` | [obra/superpowers](https://github.com/obra/superpowers) | MIT | copiado | 3 | [`22f0b46`](https://github.com/obra/superpowers/commit/22f0b463e7a5e579904dd6211a520321035526f7) | 2026-11-04 18:40 UTC | 🟢 ok |
 | `context7` | [upstash/context7](https://github.com/upstash/context7) | MIT | copiado | 1 | [`1783909`](https://github.com/upstash/context7/commit/17839096a0efe61b4b8a88cc20a8147784234cfa) | 2026-11-27 19:59 UTC | 🟢 ok |
-| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`2909a73`](https://github.com/earthtojake/text-to-cad/commit/2909a73bba04530e80b724928af8c2386752e88b) | 2026-11-09 21:27 UTC | 🔴 bloqueado |
+| `text-to-cad` | [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) | MIT | copiado | 3 | [`2ad3adf`](https://github.com/earthtojake/text-to-cad/commit/2ad3adf74936b455543e2b32d20e068fa1ef74e4) | 2026-11-27 20:01 UTC | 🔴 bloqueado |
 | `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | MIT | copiado | 1 | [`c1c8a8c`](https://github.com/cloudflare/security-audit-skill/commit/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8) | 2026-11-04 12:51 UTC | 🟢 ok |
 | `ponytail` | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT | copiado | 3 | [`ebd8654`](https://github.com/DietrichGebert/ponytail/commit/ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10) | 2026-11-22 18:32 UTC | 🟢 ok |
 | `illumi` | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | MIT | copiado | 15 | [`672ae44`](https://github.com/jakubkrehel/skills/commit/672ae44ace6aaed65b86cbb1e2fd6fbea0e79578) | 2026-11-19 19:31 UTC | 🟢 ok |
 | `ecc` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | MIT | copiado | 249 | [`4adeee6`](https://github.com/affaan-m/ECC/commit/4adeee6732a12d1540f49a4d50a38ce8c97f9a53) | 2026-11-20 19:08 UTC | 🟢 ok |
-| `ecc-full` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | MIT | copiado | 82 | [`3f14a10`](https://github.com/affaan-m/ECC/commit/3f14a103a8694e51c1df9a806217a6d0b5f7a6f7) | 2026-11-17 19:53 UTC | 🔴 bloqueado |
+| `ecc-full` | [affaan-m/ECC](https://github.com/affaan-m/ECC) | MIT | copiado | 82 | [`4adeee6`](https://github.com/affaan-m/ECC/commit/4adeee6732a12d1540f49a4d50a38ce8c97f9a53) | 2026-11-27 20:01 UTC | 🔴 bloqueado |
 | `impeccable` | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 | copiado | 4 | [`2fc5e14`](https://github.com/pbakaus/impeccable/commit/2fc5e1459efbbf06d92c7306517c286bf12490cf) | 2026-11-26 20:13 UTC | 🟢 ok |
 | `reanimate` | [NiazMorshed2007/reanimate](https://github.com/NiazMorshed2007/reanimate) | MIT | copiado | 2 | [`3f7a55a`](https://github.com/NiazMorshed2007/reanimate/commit/3f7a55a2986a84ca2173e86ee9127eefe31d046d) | 2026-11-12 20:42 UTC | 🟢 ok |
 | `teardown` | [elvarofficial/teardown](https://github.com/elvarofficial/teardown) | MIT | copiado | 11 | [`a91262a`](https://github.com/elvarofficial/teardown/commit/a91262ac1109051e014662d42ecb0b7bc1f113b1) | 2026-11-06 20:07 UTC | 🟢 ok |
@@ -445,6 +445,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `ecc-full`: [skills/token-budget-advisor](https://github.com/affaan-m/ECC/tree/HEAD/skills/token-budget-advisor)
 - `ecc-full`: [skills/token-card](https://github.com/affaan-m/ECC/tree/HEAD/skills/token-card)
 - `ecc-full`: [skills/typescript-patterns](https://github.com/affaan-m/ECC/tree/HEAD/skills/typescript-patterns)
+- `ecc-full`: [skills/ui-canvas](https://github.com/affaan-m/ECC/tree/HEAD/skills/ui-canvas)
 - `ecc-full`: [skills/ui-demo](https://github.com/affaan-m/ECC/tree/HEAD/skills/ui-demo)
 - `ecc-full`: [skills/ui-to-vue](https://github.com/affaan-m/ECC/tree/HEAD/skills/ui-to-vue)
 - `ecc-full`: [skills/uncloud](https://github.com/affaan-m/ECC/tree/HEAD/skills/uncloud)
@@ -540,6 +541,7 @@ _Arquivo gerado por `scripts/sync.py`. Não edite à mão._
 - `text-to-cad`: [skills/fea](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/fea)
 - `text-to-cad`: [skills/pcb](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/pcb)
 - `text-to-cad`: [skills/print3d](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/print3d)
+- `text-to-cad`: [skills/render](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/render)
 - `text-to-cad`: [skills/robot-simulation](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/robot-simulation)
 - `text-to-cad`: [skills/sendcutsend](https://github.com/earthtojake/text-to-cad/tree/HEAD/skills/sendcutsend)
 

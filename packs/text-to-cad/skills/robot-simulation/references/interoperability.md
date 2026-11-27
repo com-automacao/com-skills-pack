@@ -1,68 +1,75 @@
-# How URDF, SRDF and SDF fit together
+# How URDF, SRDF and MJCF fit together
 
-Use this reference when work touches more than one description of the same robot, or upstream geometry, Gazebo/libsdformat, model packages, or the CAD Viewer.
+Read this when work touches more than one description of the same robot: what the two generated
+formats say differently, and how a robot that has only a URDF gets an MJCF. Which format owns what,
+and what a URDF edit asks of the SRDF beside it, are in [SKILL.md](../SKILL.md#author-by-hand).
 
-## Format boundary
+## One description, two writers
 
-- **URDF** owns physical robot structure: links, joints, geometry, inertials, limits, mimic joints, transmissions, and robot-state publishing.
-- **SRDF** owns MoveIt semantics: virtual joints, passive joints, planning groups, group states, end effectors, and disabled collision pairs.
-- **SDF** owns simulator/world semantics: physics, sensors, lights, plugins, worlds, and simulation-specific metadata.
+A CAD model with a mechanism is described once and written by the destination's suffix, `cad model
+export <id> robot.xml` (MJCF) or `robot.urdf` ([from CAD](from-cad.md)). Export each from the model,
+never one from the other. An SRDF is always hand-written, over the generated URDF's names
+([srdf-authoring.md](srdf-authoring.md)).
 
-Do not place geometry, inertials, joint origins, link poses, mesh references, physical joint limits, transmissions, or `ros2_control` interfaces in SRDF. SDF should not define planning groups, end-effectors, group states, or disabled-collision matrices: if the task becomes IK or path-planning work, that is the SRDF's job ([SKILL.md](../SKILL.md#srdf)).
+The two files name every link and joint alike, so a controller, an SRDF and a policy read the same
+names in each, except that a URDF name keeps `[A-Za-z0-9_]` and takes `_` for any other character.
+Each format keeps links and joints apart, so a link and a joint may share a name. The URDF export
+says where they do, since tools that name the two together collide them (`cad urdf validate` warns
+`joint_link_name_collision`): name the link apart with `link(shape, name)` (a finger's joint
+`finger_left`, its link `finger_left_link`). A name already held in its kind takes `_2`.
 
-## Ownership
+What one format cannot say, or says its own way:
 
-- CAD or mesh workflows own mesh generation and per-link splitting/export ([meshes.md](meshes.md)).
-- The URDF owns its references, scales, placements, and structure.
-- SRDF/MoveIt workflows own semantic groups, named joint poses via `<group_state>`, and planning metadata. Renaming links or joints in the URDF breaks them; update both in the same task.
-- An SRDF pairs with its URDF by colocation and robot name alone ([srdf-authoring.md](srdf-authoring.md#urdf-pairing-non-negotiable)).
+| | MJCF | URDF |
+| --- | --- | --- |
+| Named poses (mechanism states) | keys | not written: URDF has none (an SRDF's group states hold them for MoveIt) |
+| A joint that closes a loop | a `site` on each body where it stands and an `<equality>`: two `connect`s for a hinge, one for a ball | left out, and said in the export's log: URDF is a tree |
+| A ball joint | `ball` | the export is refused by name: URDF has no ball joint |
+| A cylindrical joint | a hinge `<name>` and a slide `<name>/slide` on one body | `<name>` and `<name>_slide`, with a massless link `<name>_turn` between |
+| A named frame (`frame()`) | a site | an empty link on a fixed joint `<frame>_joint`, as a ROS `tool0` |
+| A drive's speed bound (`limits(velocity=)`) | not written: MJCF has none | `<limit velocity>` |
+| The base, bolted (the default) or free (`free()`) | the base body with no joint, welded to the world, or with a `<freejoint>` | the root either way: a URDF bolts nothing (a consumer adds its own `world` link) |
+| A root link with mass, or placed off the world's frame | as any body | an empty `base_link` (`base_footprint` above a root named `base_link`) on a fixed joint before it ([the base link](from-cad.md#links-and-the-base)) |
+| A link with no material | no `<inertial>`: MuJoCo weighs its geoms, visual and collision both, and the check warns `inertia_from_visuals` | no `<inertial>`: `cad urdf validate` warns of a moving one |
+| A part with painted faces (a STEP's or an xbf's face colours, `paint()`) | a visual geom per colour, as the viewer draws it | a `<visual>` per colour |
+| Collisions | each part's mesh as a `collision` geom, which MuJoCo collides as its convex hull | each part's mesh as its `<collision>` |
+| Contact exclusions | `<contact><exclude>` for every jointed pair touching at rest | not written (an SRDF's `disable_collisions` for MoveIt) |
+| A simulation's choices: collision shapes, contact friction, excluded pairs, joint armature, damping and dry friction, actuators | a MuJoCo function sets them on the robot's spec and saves its file | not written: no primitive or hull `<collision>`, no `<dynamics>`; the simulator that reads the URDF makes them |
 
-## When the URDF changes
+## MJCF
 
-Renamed links or joints, changed limits, or restructured chains invalidate the SRDF silently. After any URDF edit, re-run the SRDF validator on the paired `.srdf`, and re-check group states against the new limits. Treat URDF+SRDF as a pair in every task that touches either. A derived SDF is re-derived too ([below](#sdf-from-a-urdf)).
+A robot with a CAD model here gets its MJCF from the model ([above](#one-description-two-writers)).
+A robot that has only a hand-written URDF gets a first one from MuJoCo itself, which reads a URDF;
+text-to-cad ships no converter in either direction. In a script `cad run` runs:
 
-## SDF from a URDF
+```python
+import mujoco
 
-Keep the simulator document aligned with the upstream robot-description source when one exists.
-
-**Derive, don't re-author.** When a robot already has a URDF, the SDF model for that robot is derived from it: same link/joint names, same tree, same limits, same inertials, same mesh assets. Translate mechanically — URDF joint `<origin>` becomes the SDF joint `<pose relative_to="parent_link">`, and each child link gets `<pose relative_to="joint_name">0 0 0 0 0 0</pose>` (the frame-graph pattern in [sdf-examples.md](sdf-examples.md#two-link-model-with-an-explicit-joint-frame)) — or use `gz sdf -p robot.urdf` as a starting point when Gazebo tooling is available, then review its output against this skill's contract. Independently re-authoring the same robot in SDF creates divergence that no validator catches. Record the source URDF (path and revision) in the SDF ledger comment.
-
-Joint names colliding with link names break URDF-to-SDF conversion; `cad urdf validate` warns about them.
-
-Upstream robot-description data usually owns:
-
-- link and joint structure used by robot-state publishing;
-- physical joint limits;
-- inertials and visual/collision geometry when that source is authoritative;
-- control-related structure and runtime interfaces.
-
-Use SDF for simulator/world concerns:
-
-- simulator plugins;
-- sensors requiring simulator-specific XML;
-- surfaces/contact/friction;
-- lights, terrain, physics, and worlds;
-- nested models and includes;
-- simulator-specific metadata.
-
-Do not use SDF to paper over a wrong upstream frame tree unless the task explicitly targets a simulator-only model.
-
-## Gazebo / libsdformat
-
-The bundled validator is a lightweight preflight check. Use the target simulator's parser and loader when compatibility matters.
-
-Good checks include:
-
-```bash
-gz sdf --check path/to/model.sdf
+model = mujoco.MjModel.from_xml_path("robot.urdf")
+mujoco.mj_saveLastXML("robot.xml", model)   # what MuJoCo loaded, as MJCF, in radians
 ```
 
-and a real simulator load in the target environment ([sdf-checks.md](sdf-checks.md#smoke-tests)).
+Keep the URDF the source of the structure and record its path and revision in the MJCF's ledger
+comment. Never author the same robot a second time in MJCF: the two drift apart where no validator
+looks. What MuJoCo makes of a URDF, by its defaults for one:
 
-## CAD Viewer
+- **Visuals are dropped, and every link on a fixed joint is fused into its parent**: a
+  `base_footprint`, a camera's link and a frame-only `tool0` are gone. A
+  `<mujoco><compiler discardvisual="false" fusestatic="false"/></mujoco>` element inside `<robot>`
+  keeps both.
+- **Geoms**: a `<collision>` becomes a geom in group 0 that collides, and a kept `<visual>` one in
+  group 1 that does not. Move them into a `collision` class (`group="3"`) and a `visual` class
+  (`group="2"`) ([mjcf-authoring.md](mjcf-authoring.md#visual-and-collision-geoms)).
+- **Meshes**: a `package://` path is not resolved, and the load fails (`Error opening file`). Make
+  the paths relative to the URDF, or add `strippath="true" meshdir="meshes"` to that `<compiler>`,
+  which finds each mesh by its file name in that folder. A URDF's `scale` becomes the
+  `<mesh scale>`; a millimetre STL without one is 1000x too large ([meshes.md](meshes.md)).
+- **Inertials** carry over. A link without one is weighed from its collision geoms at MuJoCo's
+  default density, 1000 kg/m^3, which is rarely right ([inertials.md](inertials.md)).
+- **Joints** keep their names, ranges and effort (as `actuatorfrcrange`), and a `<mimic>` becomes an
+  `<equality><joint>`. A velocity limit is dropped.
+- **What a URDF has not**: actuators, a `home` key, `<option integrator="implicitfast"/>`, the split
+  into robot and scene.
 
-CAD Viewer can review `.urdf`, `.srdf` and `.sdf` files visually and help catch gross placement or resource issues. It cannot prove simulator dynamics, inertial validity, plugin loading, sensor topics, joint-axis semantics, or planning correctness.
-
-After creating or modifying a file, show it ([Show the model](../SKILL.md#show-the-model)). Report any failure explicitly.
-
-CAD Viewer renders SDF as static structure plus direct inspection controls. It draws a model nested in the model with it (its links and joints named by scope, `arm::elbow`), lists plugins, sensors, lights and includes as metadata (an included model is not drawn), and does not execute plugins or consume file-authored motion contracts. An SRDF is drawn as its paired URDF's geometry, opened at its `home` group state when it declares one ([snapshots.md](snapshots.md)).
+The result is a draft: check it with `cad mujoco check` ([mjcf-checks.md](mjcf-checks.md)), and keep
+its joint names, so the URDF, the SRDF and the MJCF name one joint one way.
